@@ -28,6 +28,7 @@
 		</div>
 		<div class="siteWrapperOverlay"></div>
 	<div class="siteWrapper">
+	<div class="service-pop-out"></div>
 
 	<div class="headerContainer">
 
@@ -59,7 +60,11 @@ if ( is_front_page() ) { ?>
 	<div class="homePageFeature">
 		<h2>CALS IT/ACS</h2>
 		<h2 class="subHeading">Here for you.</h2>
-		<a href="/our-services/" class="button large blue">Our Services</a>
+		
+		<div class="services-searchbox">
+				<input type="text" id="services-searchfield" value="" placeholder="Search">
+				<a href="#" class="our-services button large blue">Our Services</a>
+		</div><!-- END .searchbox-->
 	</div>
 
 <?php } ?>

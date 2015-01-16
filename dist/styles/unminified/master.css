@@ -1096,6 +1096,12 @@ p {
     font-family: "Raleway", sans-serif;
     font-weight: 300; }
 
+.service-pop-out {
+  width: 1px;
+  height: 1px;
+  display: none;
+  background-color: steelBlue; }
+
 body.page.page-template-default div.site-content {
   background-color: #f9f9f9; }
   body.page.page-template-default div.site-content div#primary {

@@ -32,7 +32,7 @@ gulp.task('styles', function() {
 
 // Scripts
 gulp.task('scripts', function() {
-  return gulp.src(['bower_components/jquery/dist/jquery.min.js','./js/CALSboilerplate_underscores_custom.js','./js/parallax.js','./js/menu.js'])
+  return gulp.src(['bower_components/jquery/dist/jquery.min.js','./js/velocity.min.js','./js/velocity.ui.js','./js/CALSboilerplate_underscores_custom.js','./js/parallax.js','./js/menu.js'])
     .pipe(concat('main.js'))
     .pipe(gulp.dest('dist/scripts'))
     .pipe(rename({ suffix: '.min' }))
@@ -65,6 +65,11 @@ gulp.task('images', function() {
 gulp.task('clean', function() {
   return gulp.src(['dist/styles', 'dist/scripts', 'dist/images'], {read: false})
     .pipe(clean());
+});
+
+//clear cache
+gulp.task('clear', function (done) {
+    return cache.clearAll(done);
 });
 
 // Default task

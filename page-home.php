@@ -14,7 +14,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+		
 			<div class="row homeSubFeatures">
 				<div class="span-33">
 					<div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/hosting.svg" alt=" "></div>
