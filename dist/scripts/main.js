@@ -786,33 +786,35 @@ $(".service-pop-out").velocity({
 });*/
 
 
-$( ".our-services" ).click(function(e) {
+	$( ".our-services" ).click(function(e) {
 
-	e.preventDefault();
+		e.preventDefault();
 
-  	$(".service-pop-out").velocity({
+	  	$(".service-pop-out").velocity({
 
- 		//properties:{ width: "500", height: "50" },
- 		properties:{ width: "100%", height: "500", /*translateX: "150" */},
- 		
-  		options:{ duration: "1000", easing:"easeInOutCubic", display:"block" }
+	 		properties:{ width: "92%", height: "500" , opacity:"1"},
+	 		
+	  		options:{ duration: "800", easing:"easeInOutCubic", display:"block"}
+		});
+
+		
 	});
-
-});
+	
 
 	$("#services-searchfield").focus(function(e) {
 
-					 	 e.preventDefault();
+		e.preventDefault();
 
-					 	 $(".service-pop-out").velocity({
+		$(".service-pop-out").velocity({
 
-					 		properties:{ width: "500", height: "50" },
+		properties:{ width: "92%", height: "500" , opacity:"1"},
 					 		
-					  		options:{ duration: "1000", easing:"easeInOutCubic", display:"block" }
+		options:{ duration: "800", easing:"easeInOutCubic", display:"block"}
 
-						});
+		});
 
 	});
+
 
 })( jQuery );
 
