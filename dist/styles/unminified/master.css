@@ -1101,10 +1101,43 @@ p {
   height: 100px;
   display: none;
   background-color: steelBlue;
-  position: absolute;
+  position: fixed;
   z-index: 20;
   margin-left: 4%;
   margin-top: 2%; }
+  .service-pop-out .pop-out-heading {
+    position: fixed; }
+
+.pop-out-close {
+  background-color: beige;
+  position: absolute;
+  bottom: 10%;
+  right: 10%; }
+
+.red {
+  width: 25%;
+  height: 100%;
+  float: left; }
+
+.orange {
+  width: 25%;
+  height: 100%;
+  float: left; }
+
+.yellow {
+  width: 25%;
+  height: 100%;
+  float: left; }
+
+.green {
+  width: 25%;
+  height: 100%;
+  float: left; }
+
+.helpOption {
+  position: absolute;
+  bottom: 5%;
+  margin-left: 5%; }
 
 body.page.page-template-default div.site-content {
   background-color: #f9f9f9; }

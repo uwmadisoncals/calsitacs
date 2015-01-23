@@ -28,7 +28,28 @@
 		</div>
 		<div class="siteWrapperOverlay"></div>
 	<div class="siteWrapper">
-	<div class="service-pop-out"></div>
+	<div class="service-pop-out">
+		<div class="pop-out-heading"><h1>What can we help you with?</h1></div>
+		
+		<div class="red">
+			<div class="helpOption"><h3>help option1</h3></div>
+		</div>
+
+		<div class="orange">
+			<div class="helpOption"><h3>help option1</h3></div>
+		</div>
+
+		<div class="yellow">
+			<div class="helpOption"><h3>help option1</h3></div>
+		</div>
+
+		<div class="green">
+			<div class="helpOption"><h3>help option1</h3></div>
+		</div>
+
+		<a href="#" class="button pop-out-close">close</a>
+
+	</div>
 
 	<div class="headerContainer">
 
