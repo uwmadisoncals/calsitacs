@@ -83,14 +83,17 @@
 .service-pop-out{
   width:100px;
   height:100px;
-  display:none;
+  //display:none;
   background-color:steelBlue;
-  position:fixed;
+  //position:fixed;
+  position:absolute;
   z-index:20;
-  margin-left: 4%;
-  margin-top:2%;
+  //top:400px;
+  //left:400px;
+  //margin-left: 4%;
+  //margin-top:2%;
   .pop-out-heading{
-    position:fixed;
+    position:absolute;
   }
 }
 .pop-out-close{
