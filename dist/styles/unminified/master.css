@@ -1099,8 +1099,9 @@ p {
 .service-pop-out {
   width: 100px;
   height: 100px;
+  display: none;
   background-color: steelBlue;
-  position: absolute;
+  position: fixed;
   z-index: 20; }
   .service-pop-out .pop-out-heading {
     position: absolute; }
