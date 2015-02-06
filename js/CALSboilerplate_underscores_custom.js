@@ -75,18 +75,30 @@ $(".service-pop-out").velocity({
 
 		e.preventDefault();
 
+	
 
+		$(".service-pop-out").velocity({
 
-	  	$(".service-pop-out").velocity({
+		properties:{ width: "100%", height: windowHeight , left: "0px", top: "0px", opacity:"1"/*,translateX:"-200px"*/},
+					 		
+		options:{ duration: "800", easing:"easeInOutCubic", display:"block"}
 
-	 		properties:{ width: "92%", height: "500" , opacity:"1"},
-	 		
-	  		options:{ duration: "800", easing:"easeInOutCubic", display:"block"}
 		});
 
 		$(".helpOption")
 		.velocity("transition.slideLeftIn", { stagger: 250 })
 		.delay(750)
+    	//.velocity({ opacity: 0 }, 750)
+
+		/*$(".helpOption").velocity({
+
+		properties:{ opacity:"1"},
+					 		
+		options:{ duration: "2000", easing:"easeInOutCubic", display:"block"}
+
+		});*/
+
+		$(".service-pop-out").addClass("open");
 
 		
 	});
