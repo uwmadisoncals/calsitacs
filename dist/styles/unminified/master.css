@@ -1099,6 +1099,7 @@ p {
 .service-pop-out {
   width: 100px;
   height: 100px;
+  display: none;
   background-color: steelBlue;
   position: fixed;
   z-index: 20; }

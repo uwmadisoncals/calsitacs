@@ -7,17 +7,31 @@
 	var windowHeight = $(window).height(); //Height of window
 	var currentScrollVal = 0;
 
+	var lastScrollTop = 0;
 	$(window).scroll(function() {
-    currentScrollVal = $(window).scrollTop();
-    //console.log("currentScrollVal "+currentScrollVal);
+		var st = $(this).scrollTop();
+		var diff = Math.abs(lastScrollTop-st);
 
-    var position = $("#services-searchfield").position();
-	var posLeft = "left";
-	var posTop = "top";
-	var opts={};
-  
-	opts[posTop]=position.top-currentScrollVal;
-	console.log("position.top: "+position.top+" currentScrollVal: "+currentScrollVal+" posTop: "+opts[posTop]);
+		var myTop = parseInt($(".service-pop-out").css("top"),10);
+
+		if(st > lastScrollTop){
+			console.log("scrolling down, st: "+st+", diff: "+diff+", myTop: "+myTop);
+			myTop = myTop - diff;
+			//console.log("st: "+st+" myTop: "+myTop);
+
+		}else{
+			console.log("scrolling up, st: "+st+" myTop: "+myTop);
+			myTop = myTop + diff;
+		}
+
+		lastScrollTop=st;
+
+
+	$( ".service-pop-out" ).css({top:myTop});
+
+
+
+
     });
 
 	//Initialize position.left and position.right on page load
@@ -47,11 +61,14 @@
 		opts={};
 		opts[posLeft]=position.left;
 		opts[posTop]=position.top;
+
+		var searchFieldLeft = $("#services-searchfield").position().left;
 		
-		
+
 		if(!$(".service-pop-out").hasClass("open")){
 
-			$( ".service-pop-out" ).css({top:position.top,left:position.left});
+
+			$( ".service-pop-out" ).css({left:searchFieldLeft});
 			
 		}
 		
@@ -64,7 +81,8 @@
 
 		e.preventDefault();
 
-	
+		window.thisTop = parseInt($(".service-pop-out").css("top"),10);
+		window.thisLeft = parseInt($(".service-pop-out").css("left"),10);
 
 		$(".service-pop-out").velocity({
 
@@ -89,7 +107,8 @@
 
 		e.preventDefault();
 
-	
+		window.thisTop = parseInt($(".service-pop-out").css("top"),10);
+		window.thisLeft = parseInt($(".service-pop-out").css("left"),10);
 
 		$(".service-pop-out").velocity({
 
@@ -116,9 +135,11 @@
 
 		e.preventDefault();
 
+		//alert("thisTop: "+window.thisTop+", thisLeft: "+window.thisLeft);
+
 	  	$(".service-pop-out").velocity({
 
-	 		properties:{ width: "100", height: "100" ,left:position.left, top:position.top, opacity:"0"},
+	 		properties:{ width: "100", height: "100" ,left:window.thisLeft, top:window.thisTop, opacity:"0"},
 	 		
 	  		options:{ duration: "800", easing:"easeInOutCubic", display:"none"}
 		});
