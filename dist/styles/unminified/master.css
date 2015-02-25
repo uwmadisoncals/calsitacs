@@ -1273,6 +1273,7 @@ ul.tabs {
 ul.tabs li {
   display: inline-block;
   height: 50px;
+  width: 15.5em;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #808080), to(#737373));
   background: -webkit-linear-gradient(top, #808080 50%, #737373 100%);
   background: linear-gradient(to bottom, #808080 50%, #737373 100%);
