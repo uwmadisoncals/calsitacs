@@ -1280,7 +1280,11 @@ ul.tabs li {
   border-radius: 0.15em;
   padding: 18px 20px;
   color: #fff;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: height 0.1s;
+  transition: 0.1s;
+  -webkit-transition: width 0.1s;
+  transition: width 0.1s; }
 
 ul.tabs li:hover {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #727272), to(#737373));
@@ -1299,3 +1303,9 @@ ul.tabs li.current {
 
 .tab-content.current {
   display: inherit; }
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  ul.tabs li {
+    display: inline-block;
+    height: 65px;
+    width: 10em; } }

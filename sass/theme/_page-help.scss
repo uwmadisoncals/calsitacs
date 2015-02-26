@@ -1,3 +1,4 @@
+
 .page-help #content{
 	//background-color: #4C4C4C;
 }
@@ -22,6 +23,10 @@ ul.tabs {
     //margin-bottom: 4px;
     color: #fff;
     cursor: pointer; 
+    -webkit-transition: height .1s;
+    transition: .1s;
+     -webkit-transition: width .1s;
+    transition: width .1s;
 }
 
   ul.tabs li:hover {
@@ -31,6 +36,8 @@ ul.tabs {
   ul.tabs li.current {
    	//background-color: #800000;
    	background: linear-gradient(to bottom,rgba(150,0,1,.8) 50%,rgba(112,0,0,1.0) 100%);
+    //background:$primaryHeaderBg;
+
    }
 
 
@@ -43,4 +50,12 @@ ul.tabs {
 
 .tab-content.current{
 	display: inherit;
+}
+
+@media only screen and (min-width: 300px) and (max-width:600px){
+  ul.tabs li {
+    display: inline-block;
+    height: 65px;
+    width:10em;
+    }
 }
