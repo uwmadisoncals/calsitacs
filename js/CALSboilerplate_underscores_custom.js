@@ -3,7 +3,7 @@
 (function($) {
 
 	//alert("test");
-
+	//Include the page-home.js if current page is .page-home
 	if($('body').is('.page-home')){
 
 		var documentHeight = $(document).height(); //Height of document
@@ -78,35 +78,8 @@
 
 		});
 
-
-
-		$( ".our-services" ).click(function(e) {
-
-			e.preventDefault();
-
-			window.thisTop = parseInt($(".service-pop-out").css("top"),10);
-			window.thisLeft = parseInt($(".service-pop-out").css("left"),10);
-
-			$(".service-pop-out").velocity({
-
-			properties:{ width: "100%", height: windowHeight , left: "0px", top: "0px", opacity:"1"/*,translateX:"-200px"*/},
-						 		
-			options:{ duration: "800", easing:"easeInOutCubic", display:"block"}
-
-			});
-
-			$(".helpOption")
-			.velocity("transition.slideLeftIn", { stagger: 250 })
-			.delay(750)
-	    	
-
-			$(".service-pop-out").addClass("open");
-
-			
-		});
-		
-
-		$("#services-searchfield").focus(function(e) {
+		///function to animate service pop out, when the wpadminbar is not showing
+		function animateSPO(e){
 
 			e.preventDefault();
 
@@ -128,10 +101,32 @@
 
 			$(".service-pop-out").addClass("open");
 
+		}
 
+		//function to animate service pop out, when the wpadminbar is showing
+		function adminAnimateSPO(e){
 
-		});
+			e.preventDefault();
 
+			window.thisTop = parseInt($(".service-pop-out").css("top"),10);
+			window.thisLeft = parseInt($(".service-pop-out").css("left"),10);
+
+			$(".service-pop-out").velocity({
+
+			properties:{ width: "100%", height: documentHeight , left: "0px", top: "32px", opacity:"1"/*,translateX:"-200px"*/}, //top is 32px, to account for wpadminbar
+						 		
+			options:{ duration: "800", easing:"easeInOutCubic", display:"block"}
+
+			});
+
+			$(".helpOption")
+			.velocity("transition.slideLeftIn", { stagger: 250 })
+			.delay(750)
+	    	
+
+			$(".service-pop-out").addClass("open");
+
+		}
 
 
 		$( ".pop-out-close" ).click(function(e) {
@@ -151,7 +146,36 @@
 		});
 
 
-		}
+		//Conditional that executes correct function according to whether wpadminbar is showing
+		if($("#wpadminbar").length) {
+			//wpadminbar showing, user logged on
+			$( ".our-services" ).click(function(e) {
+			adminAnimateSPO(e);		
+			});
+		
+
+			$("#services-searchfield").focus(function(e) {
+			adminAnimateSPO(e);
+			});
+
+		}else{
+
+			//wpadminbar not showing, user logged off
+			$( ".our-services" ).click(function(e) {
+			animateSPO(e);		
+			});
+		
+
+			$("#services-searchfield").focus(function(e) {
+			animateSPO(e);
+			});
+
+		} //end else
+
+
+		
+	} //end if is page-home
+
 
 
 })( jQuery );
