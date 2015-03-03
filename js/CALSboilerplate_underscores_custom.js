@@ -147,5 +147,4 @@
 		$(".service-pop-out").removeClass("open");
 	});
 
-
 })( jQuery );

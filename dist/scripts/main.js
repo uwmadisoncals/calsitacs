@@ -913,7 +913,6 @@ return function (global, window, document, undefined) {
 		$(".service-pop-out").removeClass("open");
 	});
 
-
 })( jQuery );
 
 ( function( $ ) {

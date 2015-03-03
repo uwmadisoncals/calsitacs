@@ -59,15 +59,23 @@ $(document).ready(function(){
 	
 	$('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('form-data');
-
+	
 		$('ul.tabs li').removeClass('current');
 		$('.tab-content').removeClass('current');
-
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
 	})
-
 })
+
+// $(document).ready(function(){
+// 	setInterval(function(){
+// 		$('.tab-content')
+// 			.velocity("transtion.slideDownBigIn", {drag:true})
+// 			.delay(750)
+// 			.velocity({opacity:0}, 750)
+// 	}, 2000);
+
+// })
 </script>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
