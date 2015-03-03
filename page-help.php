@@ -17,6 +17,7 @@ get_header(); ?>
             <li class="current" form-data="form-1">ACS Support Request Form</li>
             <li form-data="form-2">CALSNET Services Form</li>
         </ul>
+        	<div id="borderTop"></div>
             <div id="form-1" class="tab-content current">
                 <h2>ACS Support Request Form</h2>
 
@@ -59,11 +60,11 @@ $(document).ready(function(){
 	
 	$('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('form-data');
-	
 		$('ul.tabs li').removeClass('current');
-		$('.tab-content').removeClass('current');
+		$('.tab-content').removeClass('current').hide();
 		$(this).addClass('current');
-		$("#"+tab_id).addClass('current');
+		$('#borderTop').velocity("transition.slideRightIn", 1000);
+		$("#"+tab_id).velocity("transition.slideLeftIn", 1000).addClass('current');
 	})
 })
 

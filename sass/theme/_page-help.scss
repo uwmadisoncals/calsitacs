@@ -8,7 +8,7 @@ ul.tabs {
   margin-top: 20px;
   padding: 0;
   text-align: center; 
-  border-bottom: solid 3px silver;
+  //border-bottom: solid 3px silver;
 }
 
   ul.tabs li {
@@ -40,6 +40,9 @@ ul.tabs {
 
    }
 
+#borderTop{
+   border-top: solid 4px silver;
+}
 
 .tab-content{
 	 display: none;
