@@ -46,6 +46,11 @@
 </div><!-- #page -->
 </div><!-- .siteWrapper -->
 <?php wp_footer(); ?>
+
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/scripts/main.min.js"></script>
+
+<!-- For Debugging, use javascript debugger and uncomment this-->
+<!-- <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/scripts/main.js"></script>-->
+
 </body>
 </html>
