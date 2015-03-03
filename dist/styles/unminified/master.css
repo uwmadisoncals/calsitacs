@@ -1268,7 +1268,7 @@ html body.page footer#colophon.site-footer {
 ul.tabs {
   margin-top: 20px;
   padding: 0;
-  text-align: center; }
+  text-align: -webkit-center; }
 
 ul.tabs li {
   display: inline-block;

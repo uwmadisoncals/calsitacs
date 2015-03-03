@@ -56,15 +56,18 @@ get_header(); ?>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
+
 $(document).ready(function(){
 	
+	$('.content-area').velocity("transition.slideDownBigIn", 1000);
+
 	$('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('form-data');
 		$('ul.tabs li').removeClass('current');
-		$('.tab-content').removeClass('current').hide();
+		$('.tab-content').velocity({opacity:0},500).removeClass('current').hide();
 		$(this).addClass('current');
-		$('#borderTop').velocity("transition.slideLeftIn", 1000);
-		$("#"+tab_id).show().velocity("transition.slideRightIn", 1000).addClass('current');
+		$('#borderTop').velocity("transition.slideLeftIn", 1500);
+		$("#"+tab_id).show().velocity("transition.slideRightIn", 1800).addClass('current');
 	})
 })
 
