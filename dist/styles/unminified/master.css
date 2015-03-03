@@ -960,6 +960,7 @@ p {
   filter: blur(4px); }
 
 .menuTrigger, .menuTrigger:visited {
+  height: 2.2em;
   float: right;
   padding: 0.6em;
   color: rgba(255, 255, 255, 0.9);
