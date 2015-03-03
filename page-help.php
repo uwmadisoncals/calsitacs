@@ -63,8 +63,8 @@ $(document).ready(function(){
 		$('ul.tabs li').removeClass('current');
 		$('.tab-content').removeClass('current').hide();
 		$(this).addClass('current');
-		$('#borderTop').velocity("transition.slideRightIn", 1000);
-		$("#"+tab_id).velocity("transition.slideLeftIn", 1000).addClass('current');
+		$('#borderTop').velocity("transition.slideLeftIn", 1000);
+		$("#"+tab_id).show().velocity("transition.slideRightIn", 1000).addClass('current');
 	})
 })
 
