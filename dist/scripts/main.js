@@ -946,7 +946,6 @@ return function (global, window, document, undefined) {
 	} //end if is page-home
 
 
-
 })( jQuery );
 
 ( function( $ ) {

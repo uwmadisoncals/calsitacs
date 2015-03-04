@@ -17,6 +17,7 @@ get_header(); ?>
             <li class="current" form-data="form-1">ACS Support Request Form</li>
             <li form-data="form-2">CALSNET Services Form</li>
         </ul>
+        	<div id="borderTop"></div>
             <div id="form-1" class="tab-content current">
                 <h2>ACS Support Request Form</h2>
 
@@ -55,19 +56,31 @@ get_header(); ?>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
+
 $(document).ready(function(){
 	
+	$('.content-area').velocity("transition.slideDownBigIn", 1000);
+	//$('.content-area').velocity("callout.bounce", 1000);
 	$('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('form-data');
-
 		$('ul.tabs li').removeClass('current');
-		$('.tab-content').removeClass('current');
-
-		$(this).addClass('current');
-		$("#"+tab_id).addClass('current');
+		$('.tab-content').velocity({opacity:0},300).removeClass('current').fadeOut();
+		$(this).addClass('current').velocity("callout.pulse",300);
+		$('#borderTop').velocity("transition.slideLeftIn", 1500);
+		$("#"+tab_id).fadeIn().velocity("transition.slideRightBigIn", 1300).addClass('current');
+		//$("#"+tab_id).fadeIn().velocity("transition.bounceLeftIn", 500).addClass('current');
 	})
-
 })
+
+// $(document).ready(function(){
+// 	setInterval(function(){
+// 		$('.tab-content')
+// 			.velocity("transtion.slideDownBigIn", {drag:true})
+// 			.delay(750)
+// 			.velocity({opacity:0}, 750)
+// 	}, 2000);
+
+// })
 </script>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

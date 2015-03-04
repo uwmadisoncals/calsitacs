@@ -960,6 +960,7 @@ p {
   filter: blur(4px); }
 
 .menuTrigger, .menuTrigger:visited {
+  height: 2.2em;
   float: right;
   padding: 0.6em;
   color: rgba(255, 255, 255, 0.9);
@@ -1272,17 +1273,18 @@ html body.page footer#colophon.site-footer {
 ul.tabs {
   margin-top: 20px;
   padding: 0;
-  text-align: center;
-  border-bottom: solid 3px silver; }
+  text-align: center; }
 
 ul.tabs li {
   display: inline-block;
   height: 50px;
-  width: 15.5em;
+  width: 30%;
+  margin-left: 20px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #808080), to(#737373));
   background: -webkit-linear-gradient(top, #808080 50%, #737373 100%);
   background: linear-gradient(to bottom, #808080 50%, #737373 100%);
-  border-radius: 0.15em;
+  border-top-left-radius: 0.25em;
+  border-top-right-radius: 0.25em;
   padding: 18px 20px;
   color: #fff;
   cursor: pointer;
@@ -1297,9 +1299,10 @@ ul.tabs li:hover {
   background: linear-gradient(to bottom, #727272 50%, #737373 100%); }
 
 ul.tabs li.current {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(150, 0, 1, 0.8)), to(#700000));
-  background: -webkit-linear-gradient(top, rgba(150, 0, 1, 0.8) 50%, #700000 100%);
-  background: linear-gradient(to bottom, rgba(150, 0, 1, 0.8) 50%, #700000 100%); }
+  background: #960001; }
+
+#borderTop {
+  border-top: solid 4px silver; }
 
 .tab-content {
   display: none;

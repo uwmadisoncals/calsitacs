@@ -180,5 +180,4 @@
 	} //end if is page-home
 
 
-
 })( jQuery );
