@@ -1106,6 +1106,11 @@ p {
   .service-pop-out .pop-out-heading {
     position: absolute; }
 
+.SPOWrapper {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
 .pop-out-close {
   background-color: beige;
   position: absolute;
