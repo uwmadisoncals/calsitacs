@@ -94,6 +94,8 @@
 
 			});
 
+			
+
 			$(".helpOption")
 			.velocity("transition.slideLeftIn", { stagger: 250 })
 			.delay(750)
@@ -119,6 +121,7 @@
 
 			});
 
+			
 			$(".helpOption")
 			.velocity("transition.slideLeftIn", { stagger: 250 })
 			.delay(750)

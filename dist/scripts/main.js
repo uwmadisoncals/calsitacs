@@ -860,6 +860,8 @@ return function (global, window, document, undefined) {
 
 			});
 
+			
+
 			$(".helpOption")
 			.velocity("transition.slideLeftIn", { stagger: 250 })
 			.delay(750)
@@ -885,6 +887,7 @@ return function (global, window, document, undefined) {
 
 			});
 
+			
 			$(".helpOption")
 			.velocity("transition.slideLeftIn", { stagger: 250 })
 			.delay(750)
