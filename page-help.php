@@ -38,8 +38,8 @@ get_header(); ?>
 			 <h2>CALSNET Service Form</h2>
 			 <?php while ( have_posts() ) : the_post(); ?>
 
-				<?php //get_template_part( 'content', 'page' ); ?>
-				<?php get_template_part ('content', get_post_format()); ?>
+				<?php get_template_part( 'content', 'page' ); ?>
+				<?php //get_template_part ('content', get_post_format()); ?>
 
 				<?php
 					// If comments are open or we have at least one comment, load up the comment template
@@ -64,23 +64,14 @@ $(document).ready(function(){
 	$('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('form-data');
 		$('ul.tabs li').removeClass('current');
-		$('.tab-content').velocity({opacity:0},300).removeClass('current').fadeOut();
+		$('.tab-content').removeClass('current').velocity({opacity:0},300).fadeOut();
 		$(this).addClass('current').velocity("callout.pulse",300);
 		$('#borderTop').velocity("transition.slideLeftIn", 1500);
-		$("#"+tab_id).fadeIn().velocity("transition.slideRightBigIn", 1300).addClass('current');
+		$("#"+tab_id).addClass('current').fadeIn().velocity("transition.slideRightBigIn", 1300);
 		//$("#"+tab_id).fadeIn().velocity("transition.bounceLeftIn", 500).addClass('current');
 	})
 })
 
-// $(document).ready(function(){
-// 	setInterval(function(){
-// 		$('.tab-content')
-// 			.velocity("transtion.slideDownBigIn", {drag:true})
-// 			.delay(750)
-// 			.velocity({opacity:0}, 750)
-// 	}, 2000);
-
-// })
 </script>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
