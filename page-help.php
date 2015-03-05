@@ -36,20 +36,27 @@ get_header(); ?>
 		</div>
 		<div id="form-2" class="tab-content">
 			 <h2>CALSNET Service Form</h2>
-			 <?php while ( have_posts() ) : the_post(); ?>
+		<?php 
+				// the query
+				$the_query = new WP_Query( 'page_id=247'); ?>
 
-				<?php get_template_part( 'content', 'page' ); ?>
-				<?php //get_template_part ('content', get_post_format()); ?>
+				<?php if ( $the_query->have_posts() ) : ?>
 
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() ) :
-						//comments_template();
-					endif;
-				?>
 
-			<?php endwhile; // end of the loop. ?>
+				<!-- the loop -->
+					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+						<h2><?php// the_title(); ?></h2>
+							<div><?php the_content(); ?></div>
+					<?php endwhile; ?>
+				<!-- end of the loop -->
 
+				<!-- pagination here -->
+
+				<?php wp_reset_postdata(); ?>
+
+					<?php else : ?>
+						<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+				<?php endif; ?>
 		</div>
 	</main><!-- #main -->
 </div><!-- #primary -->
