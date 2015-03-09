@@ -11,6 +11,8 @@
 		var currentScrollVal = 0;
 
 		var lastScrollTop = 0;
+
+/*
 		$(window).scroll(function() {
 			var st = $(this).scrollTop();
 			var diff = Math.abs(lastScrollTop-st);
@@ -35,7 +37,7 @@
 
 
 
-	    });
+	    });*/
 
 		//Initialize position.left and position.right on page load
 		var position = $("#services-searchfield").position();
@@ -115,7 +117,7 @@
 
 			$(".service-pop-out").velocity({
 
-			properties:{ width: "100%", height: documentHeight , left: "0px", top: "32px", opacity:"1"/*,translateX:"-200px"*/}, //top is 32px, to account for wpadminbar
+			properties:{ width: "100%", height: "100%"/*windowHeight*/ , left: "0px", top: "32px", opacity:"1"/*,translateX:"-200px"*/}, //top is 32px, to account for wpadminbar
 						 		
 			options:{ duration: "800", easing:"easeInOutCubic", display:"block"}
 

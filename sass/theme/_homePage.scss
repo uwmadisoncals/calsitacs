@@ -99,16 +99,20 @@
 
 .SPOWrapper{
   display:block;
-  //background-color:yellow;
-  width:100%;
+  background-color:yellow;
+  width:60%;
   height:100%;
+  position:relative;
+  margin:5% auto;
 }
 
 .pop-out-close{
   background-color:beige;
   position:absolute;
-  bottom:10%;
-  right:10%;
+  //bottom:10%;
+  right:0;
+  top:0;
+  //right:10%;
 }
 
 .red{
