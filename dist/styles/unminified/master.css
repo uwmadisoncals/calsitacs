@@ -1273,6 +1273,11 @@ html body.page footer#colophon.site-footer {
     html body.page footer#colophon.site-footer a.copyright_link:hover {
       text-decoration: underline; }
 
+.page-help .gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit] {
+  font-size: 1em;
+  background: #960001 !important;
+  border-bottom: none !important; }
+
 .formContent {
   padding: 3em; }
 
@@ -1313,7 +1318,8 @@ ul.tabs li.current {
 .tab-content {
   display: none;
   background: #ededed;
-  padding: 15px; }
+  padding: 15px;
+  border-bottom: solid 4px silver; }
 
 .tab-content.current {
   display: inherit; }

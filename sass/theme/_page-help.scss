@@ -3,6 +3,12 @@
 	//background-color: #4C4C4C;
 }
 
+.page-help .gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit] {
+  font-size: 1em;
+  background: $primaryHeaderBg !important;
+  border-bottom:none !important;
+}
+
 .formContent{
   padding: 3em;
 }
@@ -49,13 +55,14 @@ ul.tabs {
    }
 
 #borderTop{
-   border-top: solid 4px silver;
+   border-top: solid 4px silver; //#5598d1
 }
 
 .tab-content{
 	 display: none;
 	 background: #ededed;
 	 padding: 15px;
+   border-bottom: solid 4px silver;
 }
 
 .tab-content.current{
