@@ -1270,6 +1270,9 @@ html body.page footer#colophon.site-footer {
     html body.page footer#colophon.site-footer a.copyright_link:hover {
       text-decoration: underline; }
 
+.formContent {
+  padding: 3em; }
+
 ul.tabs {
   margin-top: 20px;
   padding: 0;

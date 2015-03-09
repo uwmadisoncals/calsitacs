@@ -21,32 +21,16 @@ get_header(); ?>
             <div id="form-1" class="tab-content current">
                 <h2>ACS Support Request Form</h2>
 
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'content', 'page' ); ?>
-
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
-
-			<?php endwhile; // end of the loop. ?>
-		</div>
-		<div id="form-2" class="tab-content">
-			 <h2>CALSNET Service Form</h2>
-		<?php 
+                <?php 
 				// the query
-				$the_query = new WP_Query( 'page_id=247'); ?>
+				$the_query = new WP_Query( 'page_id=316'); ?>
 
 				<?php if ( $the_query->have_posts() ) : ?>
-
 
 				<!-- the loop -->
 					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						<h2><?php// the_title(); ?></h2>
-							<div><?php the_content(); ?></div>
+							<div class="formContent"><?php the_content(); ?></div>
 					<?php endwhile; ?>
 				<!-- end of the loop -->
 
@@ -56,7 +40,35 @@ get_header(); ?>
 
 					<?php else : ?>
 						<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-				<?php endif; ?>
+				<?php endif; 
+
+		?>
+
+		</div>
+		<div id="form-2" class="tab-content">
+			 <h2>CALSNET Service Form</h2>
+		<?php 
+				// the query
+				$the_query = new WP_Query( 'page_id=303'); ?>
+
+				<?php if ( $the_query->have_posts() ) : ?>
+
+				<!-- the loop -->
+					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+						<h2><?php// the_title(); ?></h2>
+							<div class="formContent"><?php the_content(); ?></div>
+					<?php endwhile; ?>
+				<!-- end of the loop -->
+
+				<!-- pagination here -->
+
+				<?php wp_reset_postdata(); ?>
+
+					<?php else : ?>
+						<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+				<?php endif; 
+
+		?>
 		</div>
 	</main><!-- #main -->
 </div><!-- #primary -->
@@ -74,7 +86,7 @@ $(document).ready(function(){
 		$('.tab-content').removeClass('current').velocity({opacity:0},300).fadeOut();
 		$(this).addClass('current').velocity("callout.pulse",300);
 		$('#borderTop').velocity("transition.slideLeftIn", 1500);
-		$("#"+tab_id).addClass('current').fadeIn().velocity("transition.slideRightBigIn", 1300);
+		$("#"+tab_id).opacity(0).addClass('current').fadeIn().velocity("transition.slideRightBigIn", 1300);
 		//$("#"+tab_id).fadeIn().velocity("transition.bounceLeftIn", 500).addClass('current');
 	})
 })
