@@ -31,6 +31,7 @@ get_header(); ?>
 					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						<h2><?php// the_title(); ?></h2>
 							<div class="formContent"><?php the_content(); ?></div>
+							<?php edit_post_link( $link, $before, $after, $id ); ?> 
 					<?php endwhile; ?>
 				<!-- end of the loop -->
 
@@ -57,6 +58,7 @@ get_header(); ?>
 					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						<h2><?php// the_title(); ?></h2>
 							<div class="formContent"><?php the_content(); ?></div>
+							<?php edit_post_link( $link, $before, $after, $id ); ?> 
 					<?php endwhile; ?>
 				<!-- end of the loop -->
 
