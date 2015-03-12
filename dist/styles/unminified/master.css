@@ -1331,20 +1331,24 @@ ul.tabs li.current {
     width: 10em; } }
 
 /* Test css code for page-news */
+#news-section {
+  margin-top: 2em; }
+
 #news-date {
   font-size: 10px; }
 
 #news-head {
+  position: relative;
   border-top-right-radius: 0.1em;
   border-top-left-radius: 0.1em;
   padding: 0.5em;
   background: #950001;
   font-size: 30px;
-  color: white; }
+  color: white;
+  z-index: 1; }
 
 #news-content {
   padding: 1em;
   color: #615d5d;
   background: #f9f9f9;
-  border: 1px solid silver;
-  margin-bottom: 2em; }
+  border: 1px solid silver; }

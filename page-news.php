@@ -26,27 +26,39 @@ get_header(); ?>
 				$postslist = get_posts( $args );
 				foreach ( $postslist as $post ) :
   				setup_postdata( $post ); ?> 
+  			<div id="news-section">
 					<?php echo get_edit_post_link('edit','<p>','</p>'); ?> 
+				
 					<div id="news-head">
-						<div id="news-date"><?php the_date(); ?></div>
+						<div id="news-date"> <?php the_date(); ?></div>
 					<br />
 						<?php the_title(); ?>
 					</div>
 
 					<div id="news-content">   
-						<?php the_excerpt(); ?>
+						<?//php the_excerpt(); ?>
+						<?php the_content(); ?>
 						<?php edit_post_link( $link, $before, $after, $id ); ?> 
 					</div> 
+				
+			
 				<?php
 				endforeach; 
 					wp_reset_postdata();
 
 
 				?>
-
-
-
+			</div>
 		</main><!-- #main -->
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		$('#news-section').velocity("transition.bounceUpIn", 1000);
+		$('#news-content').velocity("transition.bounceUpIn", 1000);
+		})
+	</script>
+
 	</div><!-- #primary -->
 
 <?php /* get_sidebar(); */?>
