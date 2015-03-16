@@ -19,7 +19,7 @@
 		<!-- <img src="" alt="" class="logo"> -->
 		<div class="uwaddress">
 			<h3>CALS IT ACS</h3>
-			<a href="">University of Wisconsin Madison</a>
+			<a href="http://www.wisc.edu/">University of Wisconsin Madison</a>
 			<address>
 				<span class="street">216 Agricultural Hall,</span>
 				<span>• 1450 Linden Dr.</span>
@@ -28,9 +28,9 @@
 			</address>
 			<div class="phone">(608) 262-3193</div>
 			<div class="links">
-				<a href="">Contact Us</a>
-				<a href="">• Accessibility</a>
-				<a href="">• Code-of-conduct</a>
+				<a href="<?php echo site_url(); ?>/contact">Contact Us</a>
+				<a href="<?php echo site_url(); ?>/accessibility">• Accessibility</a>
+				<a href="<?php echo site_url(); ?>/code-of-conduct">• Code-of-conduct</a>
 			</div>
 		</div>
 			
@@ -38,10 +38,10 @@
 		<div class="support">
 			<h3>Did you know?</h3>
 			<p class="mission-statement">CALS_IT_ presently hosts over 130 sites.</p>
-			<a href="" class="button blue 1234">Support CALS</a>
+			<a href="https://www.myuwconnect.org/give" class="button blue 1234">Support CALS</a>
 		</div>
-		<div class="copyright_container"><a class="copyright_link cf" href="">©2014. Board of Regents of the University of Wisconsin System</a></div>
-
+		<div class="copyright_container"><a class="copyright_link cf" href=""><?php echo comicpress_copyright(); ?>. Board of Regents of the University of Wisconsin System</a></div>
+		
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 </div><!-- .siteWrapper -->
