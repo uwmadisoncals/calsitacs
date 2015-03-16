@@ -1,7 +1,10 @@
 html body.page footer#colophon.site-footer{
-	width:100%;
+	/*width:100%;
 	background-color:#3E3938;
 	min-height:250px;
+	position:fixed;
+	bottom: 0;
+	left:0;*/
 	div.darkband{
 		width:100%;
 		height:8px;
@@ -69,4 +72,20 @@ html body.page footer#colophon.site-footer{
 			text-decoration:underline;
 		}
 	}
+}
+
+html body.page footer#colophon.site-footer.footerPositionFixed{
+	width:100%;
+	background-color:#3E3938;
+	min-height:250px;
+	position:fixed;
+	bottom: 0;
+	left:0;
+}
+
+html body.page footer#colophon.site-footer.footerPositionStatic{
+	width:100%;
+	background-color:#3E3938;
+	min-height:250px;
+	position:static;
 }

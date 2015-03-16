@@ -3,6 +3,50 @@
 (function($) {
 
 	//alert("test");
+	
+	var windowHeight = $( window ).height(); // get the computed height of the browser viewport
+	//var footerHeight = $("#colophon").height(); // get the computed height of the footer
+	var footerHeight = 250; // get the computed height of the footer
+	var bodyHeight = $("body.page").height(); // get the computed height of the body
+
+	var calculatedBodyHeight = bodyHeight + footerHeight; // add the height of the footer to the height of the body
+	//var calculatedBodyHeight2 = bodyHeight - footerHeight; // add the height of the footer to the height of the body
+
+	console.log("windowHeight: "+windowHeight+", bodyHeight: "+ bodyHeight+", calculatedBodyHeight: "+calculatedBodyHeight+", footerHeight: "+footerHeight); //examine current heights in the console
+
+	// Apply or remove CSS classes based on whether windowHeight is less than calculatedBodyHeight
+	if(windowHeight <= calculatedBodyHeight){
+			console.log(" -fixed +static");
+			$("#colophon").removeClass("footerPositionFixed");
+			$("#colophon").addClass("footerPositionStatic");
+		}else{
+			console.log("  +fixed -static");
+			$("#colophon").removeClass("footerPositionStatic");
+			$("#colophon").addClass("footerPositionFixed");
+		}
+	//Same statements as directly above, yet wrapped in a resize event trigger
+	$(window).resize(function(){
+
+		var windowHeight = $( window ).height(); // get the computed height of the browser viewport
+		//var footerHeight = $("#colophon").height(); // get the computed height of the footer
+		var footerHeight = 250; // get the computed height of the footer
+		var bodyHeight = $("body.page").height(); // get the computed height of the body
+
+		var calculatedBodyHeight = bodyHeight + footerHeight; // add the height of the footer to the height of the body
+		//var calculatedBodyHeight2 = bodyHeight - footerHeight; // add the height of the footer to the height of the body
+
+		console.log("windowHeight: "+windowHeight+", footerHeight: "+footerHeight+", bodyHeight: "+ bodyHeight);
+
+		if(windowHeight <= calculatedBodyHeight){
+			console.log("windowHeight is equal to or less than bodyHeight!");
+			$("#colophon").removeClass("footerPositionFixed");
+			$("#colophon").addClass("footerPositionStatic");
+		}else {
+			$("#colophon").removeClass("footerPositionStatic");
+			$("#colophon").addClass("footerPositionFixed");
+		}
+	});
+
 	//Include the page-home.js if current page is .page-home
 	if($('body').is('.page-home')){
 
