@@ -1,0 +1,31 @@
+
+#news-section{
+margin-top: 2em;
+}
+
+#news-date{
+  font-size: 10px;
+}
+
+
+#news-head{
+  //margin-top: 2em;
+  position: relative;
+  border-top-right-radius: .1em;
+  border-top-left-radius: .1em;
+  padding: .5em;
+  background: rgb(149, 0, 1);
+  font-size: 30px;
+  color: white;
+  z-index:1; //makes divs infront of other divs
+
+}
+
+#news-content{
+  padding: 1em;
+  color: rgb(97, 93, 93);
+  background: rgb(249, 249, 249);
+  border: 1px solid silver;
+  //z-index:-1;
+  //margin-bottom: 2em;
+}
