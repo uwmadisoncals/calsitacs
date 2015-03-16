@@ -62,7 +62,10 @@ get_header(); ?>
 					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						<h2><?php the_title(); ?></h2>
 							<div class="formContent"><?php the_content(); ?></div>
-							<?php edit_post_link( $link, $before, $after, $id ); ?> 
+
+							<?php // This code adds an edit link for wp-users to edit content
+							edit_post_link( $link, $before, $after, $id ); ?> 
+
 					<?php endwhile; ?>
 				<!-- end of the loop -->
 
@@ -79,24 +82,6 @@ get_header(); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script>
 
-$(document).ready(function(){
-	
-	$('.content-area').velocity("transition.slideDownBigIn", 1000);
-	//$('.content-area').velocity("callout.bounce", 1000);
-	$('ul.tabs li').click(function(){
-		var tab_id = $(this).attr('form-data');
-		$('ul.tabs li').removeClass('current');
-		$('.tab-content').removeClass('current').fadeOut(); //velocity({opacity:0},300).fadeOut();
-		$(this).addClass('current').velocity("callout.pulse",300);
-		$('#borderTop').velocity("transition.slideLeftIn", 1500);
-		$("#"+tab_id).addClass('current').velocity("transition.bounceLeftIn", 1300);
-		//$("#"+tab_id).fadeIn().velocity("transition.bounceLeftIn", 500).addClass('current');
-	})
-})
-
-</script>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
