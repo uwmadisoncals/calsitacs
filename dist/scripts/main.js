@@ -1126,7 +1126,7 @@ return function (global, window, document, undefined) {
 	$('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('form-data');
 		$('ul.tabs li').removeClass('current');
-		$('.tab-content').removeClass('current').fadeOut(); //velocity({opacity:0},300).fadeOut();
+		$('.tab-content').removeClass('current').fadeOut();
 		$(this).addClass('current').velocity("callout.pulse",300);
 		$('#borderTop').velocity("transition.slideLeftIn", 1500);
 		$("#"+tab_id).addClass('current').velocity("transition.bounceLeftIn", 1300);
