@@ -16,7 +16,7 @@
 	console.log("windowHeight: "+windowHeight+", bodyHeight: "+ bodyHeight+", calculatedBodyHeight: "+calculatedBodyHeight+", footerHeight: "+footerHeight); //examine current heights in the console
 
 	// Apply or remove CSS classes based on whether windowHeight is less than calculatedBodyHeight
-	if(windowHeight <= bodyHeight){
+	/*if(windowHeight <= bodyHeight){
 			console.log(" -fixed +static");
 			$("#colophon").removeClass("footerPositionFixed");
 			$("#colophon").addClass("footerPositionStatic");
@@ -24,7 +24,27 @@
 			console.log("  +fixed -static");
 			$("#colophon").removeClass("footerPositionStatic");
 			$("#colophon").addClass("footerPositionFixed");
+		}*/
+
+			if($("#colophon").css("position") == "static"){
+			bodyHeight_static = bodyHeight - 250;
+			if(windowHeight <= bodyHeight_static){
+				$("#colophon").removeClass("footerPositionFixed");
+				$("#colophon").addClass("footerPositionStatic");
+			}else{
+				$("#colophon").removeClass("footerPositionStatic");
+				$("#colophon").addClass("footerPositionFixed");
+			}
+		}else if($("#colophon").css("position") == "fixed"){
+			if(windowHeight <= bodyHeight){
+				$("#colophon").removeClass("footerPositionFixed");
+				$("#colophon").addClass("footerPositionStatic");
+			}else{
+				$("#colophon").removeClass("footerPositionStatic");
+				$("#colophon").addClass("footerPositionFixed");
+			}
 		}
+
 	//Same statements as directly above, yet wrapped in a resize event trigger
 	$(window).resize(function(){
 		//alert($("#colophon").css("position"));
@@ -37,7 +57,7 @@
 		//var calculatedBodyHeight2 = bodyHeight - footerHeight; // add the height of the footer to the height of the body
 
 		console.log("windowHeight: "+windowHeight+", bodyHeight: "+ bodyHeight+", calculatedBodyHeight: "+calculatedBodyHeight+", footerHeight: "+footerHeight); //examine current heights in the console
-
+		/*
 		if(windowHeight <= bodyHeight){
 			console.log(" -fixed +static");
 			$("#colophon").removeClass("footerPositionFixed");
@@ -46,6 +66,25 @@
 			console.log("  +fixed -static");
 			$("#colophon").removeClass("footerPositionStatic");
 			$("#colophon").addClass("footerPositionFixed");
+		}*/
+
+		if($("#colophon").css("position") == "static"){
+			bodyHeight_static = bodyHeight - 250;
+			if(windowHeight <= bodyHeight_static){
+				$("#colophon").removeClass("footerPositionFixed");
+				$("#colophon").addClass("footerPositionStatic");
+			}else{
+				$("#colophon").removeClass("footerPositionStatic");
+				$("#colophon").addClass("footerPositionFixed");
+			}
+		}else if($("#colophon").css("position") == "fixed"){
+			if(windowHeight <= bodyHeight){
+				$("#colophon").removeClass("footerPositionFixed");
+				$("#colophon").addClass("footerPositionStatic");
+			}else{
+				$("#colophon").removeClass("footerPositionStatic");
+				$("#colophon").addClass("footerPositionFixed");
+			}
 		}
 	});
 
@@ -232,10 +271,10 @@
 	if ($("#colophon").css("position") == "static"){
 		var rawBodyHeight = $("body.page").height(); // get the computed height of the body
 		var bodyHeight = rawBodyHeight - 250;
-		//alert("static bodyHeight: "+bodyHeight);
+		alert("static, bodyHeight: "+bodyHeight);
 	}else if($("#colophon").css("position") == "fixed"){
 		var bodyHeight = $("body.page").height(); // get the computed height of the body
-		//alert("fixed bodyHeight: "+ bodyHeight);
+		alert("fixed, bodyHeight: "+ bodyHeight);
 	}
 
 
