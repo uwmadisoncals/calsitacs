@@ -22,7 +22,9 @@
 	if($("#colophon").css("position") == "fixed"){
 
 			var bodyHeight_fixed = bodyHeight + 250; //define new variable equal to bodyheight plus footer height
-			
+			if($("#wpadminbar").length) { //if logged in to admin, account for height of the wpadminbar by adding 32 pixels.
+					bodyHeight_fixed += 32;
+			}
 
 			if(windowHeight <= bodyHeight_fixed){
 				$("#colophon").removeClass("footerPositionFixed"); //remove position fixed from footer
@@ -51,6 +53,9 @@
 		if($("#colophon").css("position") == "fixed"){
 
 				var bodyHeight_fixed = bodyHeight + 250; //define new variable equal to bodyheight plus footer height
+				if($("#wpadminbar").length) { //if logged in to admin, account for height of the wpadminbar by adding 32 pixels.
+					bodyHeight_fixed += 32;
+				}
 				
 
 				if(windowHeight <= bodyHeight_fixed){
