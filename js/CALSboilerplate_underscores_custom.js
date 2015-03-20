@@ -5,90 +5,78 @@
 	//alert("test");
 	
 	
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Fixed Footer Feature:
+	// 
+	// Based upon the relationship between viewport size, and <body> height, toggle on or off the fixed position of the footer.
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
 	var windowHeight = $( window ).height(); // get the computed height of the browser viewport
-	//var footerHeight = $("#colophon").height(); // get the computed height of the footer
-	var footerHeight = 250; // get the computed height of the footer
-	//var bodyHeight = $("body.page").height(); // get the computed height of the body
+	var footerHeight = 250; // hardcoded height for the footer
+	var bodyHeight = $("body.page").height(); // get the computed height of the body
 
-	var calculatedBodyHeight = bodyHeight + footerHeight; // add the height of the footer to the height of the body
-	//var calculatedBodyHeight2 = bodyHeight - footerHeight; // add the height of the footer to the height of the body
+	//Console.log for Debugging
+	//console.log("Position: " + $("#colophon").css("position") + ", windowHeight: " + windowHeight + ", bodyHeight: "+bodyHeight +", bodyHeight+250: "+(bodyHeight+250));
 
-	console.log("windowHeight: "+windowHeight+", bodyHeight: "+ bodyHeight+", calculatedBodyHeight: "+calculatedBodyHeight+", footerHeight: "+footerHeight); //examine current heights in the console
+	// If footer is position fixed. This matters because whether fixed vs static affects calculation of body height.
+	if($("#colophon").css("position") == "fixed"){
 
-	// Apply or remove CSS classes based on whether windowHeight is less than calculatedBodyHeight
-	/*if(windowHeight <= bodyHeight){
-			console.log(" -fixed +static");
-			$("#colophon").removeClass("footerPositionFixed");
-			$("#colophon").addClass("footerPositionStatic");
-		}else{
-			console.log("  +fixed -static");
-			$("#colophon").removeClass("footerPositionStatic");
-			$("#colophon").addClass("footerPositionFixed");
-		}*/
+			var bodyHeight_fixed = bodyHeight + 250; //define new variable equal to bodyheight plus footer height
+			
 
-			if($("#colophon").css("position") == "static"){
-			bodyHeight_static = bodyHeight - 250;
-			if(windowHeight <= bodyHeight_static){
-				$("#colophon").removeClass("footerPositionFixed");
-				$("#colophon").addClass("footerPositionStatic");
-			}else{
-				$("#colophon").removeClass("footerPositionStatic");
-				$("#colophon").addClass("footerPositionFixed");
+			if(windowHeight <= bodyHeight_fixed){
+				$("#colophon").removeClass("footerPositionFixed"); //remove position fixed from footer
+				$("#colophon").addClass("footerPositionStatic"); //add position static to footer
 			}
-		}else if($("#colophon").css("position") == "fixed"){
-			if(windowHeight <= bodyHeight){
-				$("#colophon").removeClass("footerPositionFixed");
-				$("#colophon").addClass("footerPositionStatic");
-			}else{
-				$("#colophon").removeClass("footerPositionStatic");
-				$("#colophon").addClass("footerPositionFixed");
-			}
-		}
 
-	//Same statements as directly above, yet wrapped in a resize event trigger
+	//If footer is position static
+	}else if($("#colophon").css("position") == "static"){
+			if(windowHeight >= bodyHeight){
+				$("#colophon").removeClass("footerPositionStatic");//remove position static to footer
+				$("#colophon").addClass("footerPositionFixed"); //add postition fixed to footer
+			}
+	}	
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Fixed Footer Feature, for on resize events.
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	$(window).resize(function(){
-		//alert($("#colophon").css("position"));
+
+
 		var windowHeight = $( window ).height(); // get the computed height of the browser viewport
-		//var footerHeight = $("#colophon").height(); // get the computed height of the footer
 		var footerHeight = 250; // get the computed height of the footer
 		var bodyHeight = $("body.page").height(); // get the computed height of the body
+	
+		// If footer is position fixed. This matters because whether fixed vs static affects calculation of body height.
+		if($("#colophon").css("position") == "fixed"){
 
-		var calculatedBodyHeight = bodyHeight + footerHeight; // add the height of the footer to the height of the body
-		//var calculatedBodyHeight2 = bodyHeight - footerHeight; // add the height of the footer to the height of the body
+				var bodyHeight_fixed = bodyHeight + 250; //define new variable equal to bodyheight plus footer height
+				
 
-		console.log("windowHeight: "+windowHeight+", bodyHeight: "+ bodyHeight+", calculatedBodyHeight: "+calculatedBodyHeight+", footerHeight: "+footerHeight); //examine current heights in the console
-		/*
-		if(windowHeight <= bodyHeight){
-			console.log(" -fixed +static");
-			$("#colophon").removeClass("footerPositionFixed");
-			$("#colophon").addClass("footerPositionStatic");
-		}else {
-			console.log("  +fixed -static");
-			$("#colophon").removeClass("footerPositionStatic");
-			$("#colophon").addClass("footerPositionFixed");
-		}*/
+				if(windowHeight <= bodyHeight_fixed){
+					$("#colophon").removeClass("footerPositionFixed"); //remove position fixed from footer
+					$("#colophon").addClass("footerPositionStatic"); //add position static to footer
+				}
 
-		if($("#colophon").css("position") == "static"){
-			bodyHeight_static = bodyHeight - 250;
-			if(windowHeight <= bodyHeight_static){
-				$("#colophon").removeClass("footerPositionFixed");
-				$("#colophon").addClass("footerPositionStatic");
-			}else{
-				$("#colophon").removeClass("footerPositionStatic");
-				$("#colophon").addClass("footerPositionFixed");
-			}
-		}else if($("#colophon").css("position") == "fixed"){
-			if(windowHeight <= bodyHeight){
-				$("#colophon").removeClass("footerPositionFixed");
-				$("#colophon").addClass("footerPositionStatic");
-			}else{
-				$("#colophon").removeClass("footerPositionStatic");
-				$("#colophon").addClass("footerPositionFixed");
-			}
+		//If footer is position static
+		}else if($("#colophon").css("position") == "static"){
+				if(windowHeight >= bodyHeight){
+					$("#colophon").removeClass("footerPositionStatic");//remove position static to footer
+					$("#colophon").addClass("footerPositionFixed"); //add postition fixed to footer
+				}
 		}
-	});
 
-	//Include the page-home.js if current page is .page-home
+		//console.log for Debugging.
+		//console.log("Position: " + $("#colophon").css("position") + ", windowHeight: " + windowHeight + ", bodyHeight: "+bodyHeight +", bodyHeight+250: "+(bodyHeight+250));
+
+	}); //END .resize 
+
+
+
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Execute the following if current page is .page-home
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	if($('body').is('.page-home')){
 
 		var documentHeight = $(document).height(); //Height of document
@@ -265,17 +253,6 @@
 
 		
 	} //end if is page-home
-
-	//alert($("#colophon").css("position"));
-
-	if ($("#colophon").css("position") == "static"){
-		var rawBodyHeight = $("body.page").height(); // get the computed height of the body
-		var bodyHeight = rawBodyHeight - 250;
-		alert("static, bodyHeight: "+bodyHeight);
-	}else if($("#colophon").css("position") == "fixed"){
-		var bodyHeight = $("body.page").height(); // get the computed height of the body
-		alert("fixed, bodyHeight: "+ bodyHeight);
-	}
 
 
 })( jQuery );
