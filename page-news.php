@@ -30,9 +30,9 @@ get_header(); ?>
 					<?php echo get_edit_post_link('edit','<p>','</p>'); ?> 
 				
 					<div id="news-head">
-						<div id="news-date"> <?php the_date(); ?></div>
-					<br />
-						<?php the_title(); ?>
+						<div id="news-title"><?php the_title(); ?></div>
+						<div id="news-date"> Posted: <?php the_time('F j, Y')?> at <?php the_time('g:i a'); ?></div>
+					<!--<br />!-->
 					</div>
 
 					<div id="news-content">   

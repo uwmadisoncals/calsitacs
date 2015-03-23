@@ -1372,3 +1372,6 @@ ul.tabs li.current {
   color: #615d5d;
   background: #f9f9f9;
   border: 1px solid silver; }
+
+#news-title {
+  margin-bottom: 0.4em !important; }
