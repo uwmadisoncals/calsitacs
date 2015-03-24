@@ -32,13 +32,13 @@ get_header(); ?>
 					<div id="news-head">
 						<div id="news-title"><?php the_title(); ?></div>
 						<div id="news-date"> Posted: <?php the_time('F j, Y')?> at <?php the_time('g:i a'); ?></div>
+						<div id="edit-link"><?php edit_post_link( $link, $before, $after, $id ); ?></div>
 					<!--<br />!-->
 					</div>
 
 					<div id="news-content">   
 						<?//php the_excerpt(); ?>
 						<?php the_content(); ?>
-						<?php edit_post_link( $link, $before, $after, $id ); ?> 
 					</div> 
 				
 			
