@@ -1376,7 +1376,6 @@ ul.tabs li.current {
 #news-title {
   margin-bottom: 0.4em !important; }
 
-#edit-link a, a:visited, a:hover, a:active {
-  color: white;
+.page-news #edit-link {
   font-size: 10px;
   padding-top: 5px; }
