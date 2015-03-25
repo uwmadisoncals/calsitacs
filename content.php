@@ -52,6 +52,7 @@
 		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'calsboilerplate_underscores' ), __( '1 Comment', 'calsboilerplate_underscores' ), __( '% Comments', 'calsboilerplate_underscores' ) ); ?></span>
 		<?php endif; ?>
 
-		<?php edit_post_link( __( 'Edit', 'calsboilerplate_underscores' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Edit', 'calsboilerplate_underscores' ), '<span class="edit-link">', '</span>' );
+		?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
