@@ -1104,7 +1104,7 @@ html body.page {
   width: 100px;
   height: 100px;
   display: none;
-  background-color: steelBlue;
+  background-color: #CBC8B7;
   position: fixed;
   z-index: 20; }
   .service-pop-out .pop-out-heading {
@@ -1112,11 +1112,13 @@ html body.page {
 
 .SPOWrapper {
   display: block;
-  background-color: yellow;
+  background-color: #f9f9f9;
   width: 60%;
   height: 100%;
   position: relative;
-  margin: 5% auto; }
+  margin: 5% auto;
+  -webkit-box-shadow: 10px 10px 5px #888888;
+  box-shadow: 10px 10px 5px #888888; }
 
 .pop-out-close {
   background-color: beige;

@@ -84,7 +84,7 @@
   width:100px;
   height:100px;
   display:none;
-  background-color:steelBlue;
+  background-color:$uwTan;
   //position:fixed;
   position:fixed;
   z-index:20;
@@ -99,11 +99,12 @@
 
 .SPOWrapper{
   display:block;
-  background-color:yellow;
+  background-color:$calsitacsOffWhite;
   width:60%;
   height:100%;
   position:relative;
   margin:5% auto;
+  box-shadow: 10px 10px 5px #888888;
 }
 
 .pop-out-close{
