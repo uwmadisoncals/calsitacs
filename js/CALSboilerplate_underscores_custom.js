@@ -4,11 +4,14 @@
 
 	//alert("test");
 	
-	/*swal({
-		title: "An input!",   
-		text: "Write something interesting:",
+	function SPO_swal(){
+
+		swal({
+		title: "cals itacs",   
+		text: "What can we help you with?",
 		type: "input",   showCancelButton: true,
 		closeOnConfirm: false,
+		customClass:"myCustomClass",
 		animation: "slide-from-top" },
 
 		function(inputValue){
@@ -20,7 +23,11 @@
 			}
 			swal("Nice!", "You wrote: " + inputValue, "success");
 		});
-		*/
+
+	};
+
+
+		
 	
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Fixed Footer Feature:
@@ -250,12 +257,14 @@
 		if($("#wpadminbar").length) {
 			//wpadminbar showing, user logged on
 			$( ".our-services" ).click(function(e) {
-			adminAnimateSPO(e);		
+			//adminAnimateSPO(e);
+			SPO_swal();	
 			});
 		
 
 			$("#services-searchfield").focus(function(e) {
-			adminAnimateSPO(e);
+			//adminAnimateSPO(e);
+			SPO_swal();
 			});
 
 		}else{

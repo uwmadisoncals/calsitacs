@@ -1159,6 +1159,13 @@ svg.closeButton {
   box-sizing: border-box;
   padding: 5px; }
 
+div[data-custom-class="myCustomClass"] {
+  background-color: pink;
+  margin-left: 0;
+  margin-top: 0;
+  width: 100%;
+  left: 0%; }
+
 body.page.page-template-default div.site-content {
   background-color: #f9f9f9; }
   body.page.page-template-default div.site-content div#primary {
