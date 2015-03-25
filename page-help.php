@@ -23,7 +23,8 @@ get_header(); ?>
 
                 <?php
 				// the query 
-				$the_query = new WP_Query( 'page_id=209'); ?>
+				$the_query = new WP_Query( 'page_id=209');
+				//$the_query = new WP_Query( 'page_id=316'); ?>
 
 				<?php if ( $the_query->have_posts() ) : ?>
 
@@ -54,8 +55,9 @@ get_header(); ?>
 			 <!--<h2>CALSNET Service Form</h2>!-->
 		<?php 
 				// the query
-				$the_query = new WP_Query( 'page_id=209'); ?>
-
+				$the_query = new WP_Query( 'page_id=209');
+				//$the_query = new WP_Query( 'page_id=303'); ?>
+				
 				<?php if ( $the_query->have_posts() ) : ?>
 
 				<!-- the loop -->
@@ -76,7 +78,6 @@ get_header(); ?>
 					<?php else : ?>
 						<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 				<?php endif; 
-
 		?>
 		</div>
 	</main><!-- #main -->

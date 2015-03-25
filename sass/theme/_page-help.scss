@@ -24,6 +24,7 @@ ul.tabs {
   ul.tabs li {
     display: inline-block;
     height: 50px;
+    font-weight: lighter;
     //width: 15.5em;
     width: 30%;
     margin-left: 20px;
@@ -51,7 +52,8 @@ ul.tabs {
    	//background-color: #800000;
    	//background: linear-gradient(to bottom,rgba(150,0,1,.8) 50%,rgba(112,0,0,1.0) 100%);
     background:$primaryHeaderBg;
-
+    font-weight: normal;
+  
    }
 
 #borderTop{

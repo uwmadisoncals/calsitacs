@@ -1319,6 +1319,7 @@ ul.tabs {
 ul.tabs li {
   display: inline-block;
   height: 50px;
+  font-weight: lighter;
   width: 30%;
   margin-left: 20px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #808080), to(#737373));
@@ -1340,7 +1341,8 @@ ul.tabs li:hover {
   background: linear-gradient(to bottom, #727272 50%, #737373 100%); }
 
 ul.tabs li.current {
-  background: #960001; }
+  background: #960001;
+  font-weight: normal; }
 
 #borderTop {
   border-top: solid 4px silver; }
