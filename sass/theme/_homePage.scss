@@ -108,7 +108,7 @@
 }
 
 .pop-out-close{
-  background-color:beige;
+  background-color:none;
   position:absolute;
   //bottom:10%;
   right:0;
@@ -148,3 +148,9 @@
   margin-left:5%
 }
 
+svg.closeButton{
+  width:40px;
+  height:40px;
+  box-sizing:border-box;
+  padding:5px;
+}

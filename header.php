@@ -50,7 +50,8 @@
 				<div class="helpOption"><h3>help option1</h3></div>
 			</div>
 
-			<a href="#" class="button pop-out-close">close</a>
+			<a href="#" class="pop-out-close"><?php include("dist/images/closebutton.svg");?></a> 
+			<!-- <img src="dist/images/close-red.svg" alt="close"> -->
 
 		</div><!--End SPO Wrapper-->
 
