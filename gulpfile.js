@@ -32,7 +32,7 @@ gulp.task('styles', function() {
 
 // Scripts
 gulp.task('scripts', function() {
-  return gulp.src(['bower_components/jquery/dist/jquery.min.js','./js/velocity.min.js','./js/velocity.ui.js','./js/CALSboilerplate_underscores_custom.js','./js/parallax.js','./js/tabs.js','./js/menu.js'])
+  return gulp.src(['bower_components/jquery/dist/jquery.min.js','./js/velocity.min.js','./js/velocity.ui.js', './js/sweet-alert.min.js','./js/CALSboilerplate_underscores_custom.js','./js/parallax.js','./js/tabs.js','./js/menu.js'])
     .pipe(concat('main.js'))
     .pipe(gulp.dest('dist/scripts'))
     .pipe(rename({ suffix: '.min' }))
