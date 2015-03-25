@@ -22,7 +22,7 @@ get_header(); ?>
                 <!--<h2>ACS Support Request Form</h2>!-->
 
                 <?php
-				// the query 
+				// /the query 
 				$the_query = new WP_Query( 'page_id=209');
 				//$the_query = new WP_Query( 'page_id=316'); ?>
 
