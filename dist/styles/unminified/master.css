@@ -1160,11 +1160,25 @@ svg.closeButton {
   padding: 5px; }
 
 div[data-custom-class="myCustomClass"] {
-  background-color: pink;
-  margin-left: 0;
+  background-color: #CBC8B7;
+  margin-left: 10%;
   margin-top: 0;
-  width: 100%;
+  width: 80%;
+  height: 50%;
   left: 0%; }
+  div[data-custom-class="myCustomClass"] fieldset {
+    width: 20%;
+    margin: 0 auto; }
+  div[data-custom-class="myCustomClass"] div[class^="itacsIcon"] {
+    width: 30px;
+    height: 30px;
+    background-color: yellowgreen;
+    border-bottom: 1px solid black;
+    position: absolute; }
+  div[data-custom-class="myCustomClass"] div.itacsIcon-1 {
+    background-color: red; }
+  div[data-custom-class="myCustomClass"] div.itacsIcon-4 {
+    background-color: red; }
 
 body.page.page-template-default div.site-content {
   background-color: #f9f9f9; }

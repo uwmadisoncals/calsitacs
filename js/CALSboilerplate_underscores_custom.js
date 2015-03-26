@@ -12,6 +12,7 @@
 		type: "input",   showCancelButton: true,
 		closeOnConfirm: false,
 		customClass:"myCustomClass",
+		imageUrl:"http://it.calsmain.localhost/wp-content/themes/calsitacs/dist/images/calsitlogo.svg",
 		animation: "slide-from-top" },
 
 		function(inputValue){
