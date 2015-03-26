@@ -155,6 +155,14 @@ svg.closeButton{
   padding:5px;
 }
 
+//overriding sweet-alert default styles
+body > div.sweet-alert{
+  padding:0;
+  h2,p{
+    z-index: -1;
+  }
+}
+
 div[data-custom-class="myCustomClass"]{
   background-color:$uwTan;
   margin-left:10%;
@@ -170,20 +178,99 @@ div[data-custom-class="myCustomClass"]{
 
 
   div[class^="itacsIcon"]{
-    width: 30px;
-    height:30px;
-    background-color:yellowgreen;
-    border-bottom:1px solid black;
+    min-width: 30px;
+    min-height:30px;
+    //background-color:yellowgreen;
     position:absolute;
   }
 
   div.itacsIcon-1{
-    background-color:red;
+    top: 70px;
+    left: 400px;
+    width:10%;
+    div{
+      width:100%;
+      background-color:green;
+
+      a{
+        //width:500px;
+        img{
+        width:100%;
+        position: absolute;
+        top:0;
+        left:0;
+        }
+      }
+
+      h3{
+        width:100%;
+      }
+    }
+    
+  }
+
+  div.itacsIcon-2{
+    top: 0;
+    left: 0;
+    width:100%;
+    div{
+      width:20px;
+      height:20px;
+      background-color:green;
+      a{
+        width:500px;
+        img{
+        width:10%;
+        position: absolute;
+        top:0;
+        left:0;
+        }
+      }
+  }
+  }
+
+  div.itacsIcon-3{
+    top: 0;
+    left: 0;
+    width:100%;
+    div{
+      width:20px;
+      height:20px;
+      background-color:green;
+
+      a{
+        width:500px;
+        img{
+        width:10%;
+        position: absolute;
+        top:0;
+        left:0;
+        }
+      }
+    }
   }
 
   div.itacsIcon-4{
-    background-color:red;
+    top: 0;
+    left: 0;
+    width:100%;
+    div{
+      width:10%;
+      //height:20px;
+      background-color:green;
+
+      a{
+        width:500px;
+        img{
+        width:10%;
+        position: absolute;
+        top:0;
+        left:0;
+        }
+      }
   }
+  }
+
 }
 
 
