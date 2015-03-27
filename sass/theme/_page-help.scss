@@ -3,6 +3,10 @@
 	//background-color: #4C4C4C;
 }
 
+.page #content{
+min-height: 800px;
+}
+
 .page-help .gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit] {
   font-size: 1em;
   background: $primaryHeaderBg !important;
@@ -65,7 +69,17 @@ ul.tabs {
 	 background: #ededed;
 	 padding: 15px;
    border-bottom: solid 4px silver;
+   // -webkit-animation-name: colorchange;
+   // -webkit-animation-duration: 1.7s;
+   // animation-name:colorchange;
+   // animation-duration: 1.7s;
+   
 }
+
+// @keyframes colorchange {
+//   from {color:transparent; background-color:white}
+//   to {background-color:#ededed;}
+// }
 
 .tab-content.current{
 	display: inherit;
@@ -78,6 +92,8 @@ ul.tabs {
     width:10em;
     }
 }
+
+
 
 
 /* Test css code for page-news */

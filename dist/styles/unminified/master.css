@@ -1295,6 +1295,9 @@ html body.page footer#colophon.site-footer.footerPositionStatic {
   min-height: 250px;
   position: static; }
 
+.page #content {
+  min-height: 800px; }
+
 .page-help .gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit] {
   font-size: 1em;
   background: #960001 !important;
