@@ -1174,68 +1174,53 @@ div[data-custom-class="myCustomClass"] {
   div[data-custom-class="myCustomClass"] fieldset {
     width: 20%;
     margin: 0 auto; }
+  div[data-custom-class="myCustomClass"] .itacsClose {
+    background-color: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    padding: 5px; }
   div[data-custom-class="myCustomClass"] div[class^="itacsIcon"] {
     min-width: 30px;
     min-height: 30px;
     position: absolute; }
   div[data-custom-class="myCustomClass"] div.itacsIcon-1 {
-    top: 70px;
-    left: 400px;
+    top: 70%;
+    left: 12%;
     width: 10%; }
     div[data-custom-class="myCustomClass"] div.itacsIcon-1 div {
-      width: 100%;
-      background-color: green; }
+      width: 100%; }
       div[data-custom-class="myCustomClass"] div.itacsIcon-1 div a img {
         width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0; }
-      div[data-custom-class="myCustomClass"] div.itacsIcon-1 div h3 {
-        width: 100%; }
+        position: static; }
   div[data-custom-class="myCustomClass"] div.itacsIcon-2 {
-    top: 0;
-    left: 0;
-    width: 100%; }
+    top: 70%;
+    left: 34%;
+    width: 10%; }
     div[data-custom-class="myCustomClass"] div.itacsIcon-2 div {
-      width: 20px;
-      height: 20px;
-      background-color: green; }
-      div[data-custom-class="myCustomClass"] div.itacsIcon-2 div a {
-        width: 500px; }
-        div[data-custom-class="myCustomClass"] div.itacsIcon-2 div a img {
-          width: 10%;
-          position: absolute;
-          top: 0;
-          left: 0; }
+      width: 100%; }
+      div[data-custom-class="myCustomClass"] div.itacsIcon-2 div a img {
+        width: 100%;
+        position: static; }
   div[data-custom-class="myCustomClass"] div.itacsIcon-3 {
-    top: 0;
-    left: 0;
-    width: 100%; }
+    top: 70%;
+    left: 56%;
+    width: 10%; }
     div[data-custom-class="myCustomClass"] div.itacsIcon-3 div {
-      width: 20px;
-      height: 20px;
-      background-color: green; }
-      div[data-custom-class="myCustomClass"] div.itacsIcon-3 div a {
-        width: 500px; }
-        div[data-custom-class="myCustomClass"] div.itacsIcon-3 div a img {
-          width: 10%;
-          position: absolute;
-          top: 0;
-          left: 0; }
+      width: 100%; }
+      div[data-custom-class="myCustomClass"] div.itacsIcon-3 div a img {
+        width: 100%;
+        position: static; }
   div[data-custom-class="myCustomClass"] div.itacsIcon-4 {
-    top: 0;
-    left: 0;
-    width: 100%; }
+    top: 70%;
+    left: 78%;
+    width: 10%; }
     div[data-custom-class="myCustomClass"] div.itacsIcon-4 div {
-      width: 10%;
-      background-color: green; }
-      div[data-custom-class="myCustomClass"] div.itacsIcon-4 div a {
-        width: 500px; }
-        div[data-custom-class="myCustomClass"] div.itacsIcon-4 div a img {
-          width: 10%;
-          position: absolute;
-          top: 0;
-          left: 0; }
+      width: 100%; }
+      div[data-custom-class="myCustomClass"] div.itacsIcon-4 div a img {
+        width: 100%;
+        position: static; }
 
 body.page.page-template-default div.site-content {
   background-color: #f9f9f9; }

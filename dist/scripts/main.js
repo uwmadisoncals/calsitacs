@@ -970,12 +970,18 @@ return function (global, window, document, undefined) {
   var sweetAlertInitialize = function() {
     var sweetHTML = '<div class="sweet-overlay" tabIndex="-1"></div><div class="sweet-alert"><div class="sa-icon sa-error"><span class="sa-x-mark"><span class="sa-line sa-left"></span><span class="sa-line sa-right"></span></span></div><div class="sa-icon sa-warning"> <span class="sa-body"></span> <span class="sa-dot"></span> </div> <div class="sa-icon sa-info"></div> <div class="sa-icon sa-success"> <span class="sa-line sa-tip"></span> <span class="sa-line sa-long"></span> <div class="sa-placeholder"></div> <div class="sa-fix"></div> </div> <div class="sa-icon sa-custom"></div> 
 
-<div class="itacsIcon-1"><div><a href="http://it.calsmain.localhost/services/"><img src="http://it.calsmain.localhost/wp-content/themes/calsitacs/img/security2.svg">One</a></div></div>
-<div class="itacsIcon-2"><div><a href="http://it.calsmain.localhost/services/"><img src="http://it.calsmain.localhost/wp-content/themes/calsitacs/img/security2.svg">Two</a></div></div>
-<div class="itacsIcon-3"><div><a href="http://it.calsmain.localhost/services/"><img src="http://it.calsmain.localhost/wp-content/themes/calsitacs/img/security2.svg">Three</a></div></div>
-<div class="itacsIcon-4"><div><a href="http://it.calsmain.localhost/services/"><img src="http://it.calsmain.localhost/wp-content/themes/calsitacs/img/security2.svg">Four</a></div></div>
+<div class="itacsIcon-1"><div><a href="http://it.calsmain.localhost/services/"><img src="http://it.calsmain.localhost/wp-content/themes/calsitacs/img/security2.svg"></a><a class="itacsIconHeading" href="http://it.calsmain.localhost/services/" >One</a></div></div>
+<div class="itacsIcon-2"><div><a href="http://it.calsmain.localhost/services/"><img src="http://it.calsmain.localhost/wp-content/themes/calsitacs/img/security2.svg"></a><a class="itacsIconHeading" href="http://it.calsmain.localhost/services/" >One</a></div></div>
+<div class="itacsIcon-3"><div><a href="http://it.calsmain.localhost/services/"><img src="http://it.calsmain.localhost/wp-content/themes/calsitacs/img/security2.svg"></a><a class="itacsIconHeading" href="http://it.calsmain.localhost/services/" >One</a></div></div>
+<div class="itacsIcon-4"><div><a href="http://it.calsmain.localhost/services/"><img src="http://it.calsmain.localhost/wp-content/themes/calsitacs/img/security2.svg"></a><a class="itacsIconHeading" href="http://it.calsmain.localhost/services/" >One</a></div></div>
 
- <h2>Title</h2><p>Text</p><fieldset><input type="text" tabIndex="3" /><div class="sa-input-error"></div></fieldset> <div class="sa-error-container"><div class="icon">!</div> <p>Not valid!</p></div> <button class="cancel" tabIndex="2">Cancel</button><button class="confirm" tabIndex="1">OK</button></div>',
+ <h2>Title</h2><p>Text</p><fieldset><input type="text" tabIndex="3" /><div class="sa-input-error"></div></fieldset> <div class="sa-error-container"><div class="icon">!</div> <p>Not valid!</p></div> 
+
+ <button class="cancel" tabIndex="2">Cancel</button>
+
+ <a href="#" class="itacsClose"><img src="http://it.calsmain.localhost/wp-content/themes/calsitacs/img/closebutton.svg" ></a> 
+
+ <button class="confirm" tabIndex="1">OK</button></div>',
         sweetWrap = document.createElement('div');
 
     sweetWrap.innerHTML = sweetHTML;
@@ -1698,12 +1704,13 @@ return function (global, window, document, undefined) {
 	function SPO_swal(){
 
 		swal({
-		title: "cals itacs",   
+		title: "",   
 		text: "What can we help you with?",
 		type: "input",   showCancelButton: true,
 		closeOnConfirm: false,
 		customClass:"myCustomClass",
 		imageUrl:"http://it.calsmain.localhost/wp-content/themes/calsitacs/dist/images/calsitlogo.svg",
+		imageSize:"640x150",
 		animation: "slide-from-top" },
 
 		function(inputValue){
@@ -1972,6 +1979,8 @@ return function (global, window, document, undefined) {
 			});
 
 		} //end else
+		
+
 
 
 		

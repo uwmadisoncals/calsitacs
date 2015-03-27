@@ -7,12 +7,13 @@
 	function SPO_swal(){
 
 		swal({
-		title: "cals itacs",   
+		title: "",   
 		text: "What can we help you with?",
 		type: "input",   showCancelButton: true,
 		closeOnConfirm: false,
 		customClass:"myCustomClass",
 		imageUrl:"http://it.calsmain.localhost/wp-content/themes/calsitacs/dist/images/calsitlogo.svg",
+		imageSize:"640x150",
 		animation: "slide-from-top" },
 
 		function(inputValue){
@@ -281,6 +282,8 @@
 			});
 
 		} //end else
+		
+
 
 
 		
