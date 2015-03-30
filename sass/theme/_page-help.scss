@@ -69,17 +69,17 @@ ul.tabs {
 	 background: #ededed;
 	 padding: 15px;
    border-bottom: solid 4px silver;
-   // -webkit-animation-name: colorchange;
-   // -webkit-animation-duration: 1.7s;
-   // animation-name:colorchange;
-   // animation-duration: 1.7s;
+   -webkit-animation-name: colorchange;
+   -webkit-animation-duration: 1.7s;
+   animation-name:colorchange;
+   animation-duration: 1.7s;
    
 }
 
-// @keyframes colorchange {
-//   from {color:transparent; background-color:white}
-//   to {background-color:#ededed;}
-// }
+@keyframes colorchange {
+  from {color:transparent; background-color:white}
+  to {background-color:#ededed;}
+}
 
 .tab-content.current{
 	display: inherit;
