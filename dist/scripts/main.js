@@ -977,9 +977,9 @@ return function (global, window, document, undefined) {
 
  <h2>Title</h2><p>Text</p><fieldset><input type="text" tabIndex="3" /><div class="sa-input-error"></div></fieldset> <div class="sa-error-container"><div class="icon">!</div> <p>Not valid!</p></div> 
 
- <button class="cancel" tabIndex="2">Cancel</button>
+ <button class="cancel" tabIndex="2"><img src="http://it.calsmain.localhost/wp-content/themes/calsitacs/img/closebutton.svg"></button>
 
- <a href="#" class="itacsClose"><img src="http://it.calsmain.localhost/wp-content/themes/calsitacs/img/closebutton.svg" ></a> 
+ <a href="#" id="itacsClose" class="itacsClose"><img class="itacsCloseButton" src="http://it.calsmain.localhost/wp-content/themes/calsitacs/img/closebutton.svg" ></a> 
 
  <button class="confirm" tabIndex="1">OK</button></div>',
         sweetWrap = document.createElement('div');
@@ -1701,6 +1701,20 @@ return function (global, window, document, undefined) {
 
 	//alert("test");
 	
+	function SPO_swal_close(){
+
+	$(".sweet-alert").removeClass("showSweetAlert");
+	$(".sweet-alert").addClass("hideSweetAlert");
+	$(".sweet-alert").removeClass("visible");
+
+	};
+
+
+
+
+
+
+
 	function SPO_swal(){
 
 		swal({
@@ -1970,19 +1984,25 @@ return function (global, window, document, undefined) {
 
 			//wpadminbar not showing, user logged off
 			$( ".our-services" ).click(function(e) {
-			animateSPO(e);		
+			//animateSPO(e);	
+			SPO_swal();	
 			});
 		
 
 			$("#services-searchfield").focus(function(e) {
-			animateSPO(e);
+			//animateSPO(e);
+			SPO_swal();
 			});
 
 		} //end else
-		
+	
 
-
-
+		$("#itacsClose").click(function(e){
+		e.preventDefault();
+		//SPO_swal_close();
+		//alert("alert!");
+		console.log("logged!");
+	});
 		
 	} //end if is page-home
 

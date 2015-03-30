@@ -4,6 +4,20 @@
 
 	//alert("test");
 	
+	function SPO_swal_close(){
+
+	$(".sweet-alert").removeClass("showSweetAlert");
+	$(".sweet-alert").addClass("hideSweetAlert");
+	$(".sweet-alert").removeClass("visible");
+
+	};
+
+
+
+
+
+
+
 	function SPO_swal(){
 
 		swal({
@@ -273,19 +287,25 @@
 
 			//wpadminbar not showing, user logged off
 			$( ".our-services" ).click(function(e) {
-			animateSPO(e);		
+			//animateSPO(e);	
+			SPO_swal();	
 			});
 		
 
 			$("#services-searchfield").focus(function(e) {
-			animateSPO(e);
+			//animateSPO(e);
+			SPO_swal();
 			});
 
 		} //end else
-		
+	
 
-
-
+		$("#itacsClose").click(function(e){
+		e.preventDefault();
+		//SPO_swal_close();
+		//alert("alert!");
+		console.log("logged!");
+	});
 		
 	} //end if is page-home
 
