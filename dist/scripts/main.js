@@ -1996,15 +1996,19 @@ return function (global, window, document, undefined) {
 
 		} //end else
 	
+			$( "#itacsClose" ).click(function() {
+ 			 alert( "Handler for .click() called." );
+		});
+		
+		
+	} //end if is page-home
 
-		$("#itacsClose").click(function(e){
+	$("#itacsClose").click(function(e){
 		e.preventDefault();
 		//SPO_swal_close();
 		//alert("alert!");
 		console.log("logged!");
 	});
-		
-	} //end if is page-home
 
 
 })( jQuery );

@@ -1192,17 +1192,15 @@ div[data-custom-class="myCustomClass"] {
     div[data-custom-class="myCustomClass"] div.itacsIcon-1 div {
       width: 100%; }
       div[data-custom-class="myCustomClass"] div.itacsIcon-1 div a img {
-        width: 100%;
+        max-width: none;
         position: static; }
   div[data-custom-class="myCustomClass"] div.itacsIcon-2 {
     top: 70%;
     left: 34%;
     width: 10%; }
-    div[data-custom-class="myCustomClass"] div.itacsIcon-2 div {
-      width: 100%; }
-      div[data-custom-class="myCustomClass"] div.itacsIcon-2 div a img {
-        width: 100%;
-        position: static; }
+    div[data-custom-class="myCustomClass"] div.itacsIcon-2 div a img {
+      max-width: none;
+      position: static; }
   div[data-custom-class="myCustomClass"] div.itacsIcon-3 {
     top: 70%;
     left: 56%;
@@ -1210,7 +1208,7 @@ div[data-custom-class="myCustomClass"] {
     div[data-custom-class="myCustomClass"] div.itacsIcon-3 div {
       width: 100%; }
       div[data-custom-class="myCustomClass"] div.itacsIcon-3 div a img {
-        width: 100%;
+        max-width: none;
         position: static; }
   div[data-custom-class="myCustomClass"] div.itacsIcon-4 {
     top: 70%;
@@ -1219,7 +1217,7 @@ div[data-custom-class="myCustomClass"] {
     div[data-custom-class="myCustomClass"] div.itacsIcon-4 div {
       width: 100%; }
       div[data-custom-class="myCustomClass"] div.itacsIcon-4 div a img {
-        width: 100%;
+        max-width: none;
         position: static; }
 
 body.page.page-template-default div.site-content {

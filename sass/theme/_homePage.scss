@@ -203,7 +203,8 @@ div[data-custom-class="myCustomClass"]{
       a{
         //width:500px;
         img{
-        width:100%;
+        //width:100%;
+        max-width: none;
         position: static;
         //position: absolute;
         //top:0;
@@ -225,13 +226,14 @@ div[data-custom-class="myCustomClass"]{
     left: 34%;
     width:10%;
     div{
-      width:100%;
+      //width:100%;
       //background-color:green;
 
       a{
         //width:500px;
         img{
-        width:100%;
+        //width:100%;
+        max-width: none;
         position: static;
         //position: absolute;
         //top:0;
@@ -258,7 +260,8 @@ div[data-custom-class="myCustomClass"]{
       a{
         //width:500px;
         img{
-        width:100%;
+        //width:100%;
+        max-width: none;
         position: static;
         //position: absolute;
         //top:0;
@@ -285,7 +288,8 @@ div[data-custom-class="myCustomClass"]{
       a{
         //width:500px;
         img{
-        width:100%;
+       //width:100%;
+       max-width: none;
         position: static;
         //position: absolute;
         //top:0;
