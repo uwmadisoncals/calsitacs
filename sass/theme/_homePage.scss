@@ -192,118 +192,116 @@ div[data-custom-class="myCustomClass"]{
     position:absolute;
   }
 
-  div.itacsIcon-1{
-    top: 70%;
-    left: 12%;
-    width:10%;
-    div{
-      width:100%;
-      //background-color:green;
+      div.itacsIcon-1{
+        top: 70%;
+        left: 12%;
+        width:10%;
+        div{
+          width:100%;
+          //background-color:green;
 
-      a{
-        //width:500px;
-        img{
-        //width:100%;
-        max-width: none;
-        position: static;
-        //position: absolute;
-        //top:0;
-        //left:0;
+          a{
+            //width:500px;
+            img{
+            width:100%;
+            position: static;
+            //position: absolute;
+            //top:0;
+            //left:0;
+            }
+
+          }
+
+          a.itacsIconHeading{
+
+          }
+
         }
-
+        
       }
 
-      a.itacsIconHeading{
+      div.itacsIcon-2{
+        top: 70%;
+        left: 34%;
+        width:10%;
+        div{
+          //width:100%;
+          //background-color:green;
 
-      }
+          a{
+            //width:500px;
+            img{
+            width:100%;
 
-    }
-    
-  }
+            position: static;
+            //position: absolute;
+            //top:0;
+            //left:0;
+            }
 
-  div.itacsIcon-2{
-    top: 70%;
-    left: 34%;
-    width:10%;
-    div{
-      //width:100%;
-      //background-color:green;
+          }
 
-      a{
-        //width:500px;
-        img{
-        //width:100%;
-        max-width: none;
-        position: static;
-        //position: absolute;
-        //top:0;
-        //left:0;
+          a.itacsIconHeading{
+
+          }
+
         }
-
       }
 
-      a.itacsIconHeading{
+      div.itacsIcon-3{
+        top: 70%;
+        left: 56%;
+        width:10%;
+        div{
+          width:100%;
+          //background-color:green;
 
-      }
+          a{
+            //width:500px;
+            img{
+            width:100%;
+            position: static;
+            //position: absolute;
+            //top:0;
+            //left:0;
+            }
 
-    }
-  }
+          }
 
-  div.itacsIcon-3{
-    top: 70%;
-    left: 56%;
-    width:10%;
-    div{
-      width:100%;
-      //background-color:green;
+          a.itacsIconHeading{
 
-      a{
-        //width:500px;
-        img{
-        //width:100%;
-        max-width: none;
-        position: static;
-        //position: absolute;
-        //top:0;
-        //left:0;
+          }
+
         }
-
       }
 
-      a.itacsIconHeading{
+      div.itacsIcon-4{
+        top: 70%;
+        left: 78%; // (100-8) - 10 = 82
+        width:10%;
+        div{
+          width:100%;
+          //background-color:green;
 
-      }
+          a{
+            //width:500px;
+            img{
+           width:100%;
 
-    }
-  }
+            position: static;
+            //position: absolute;
+            //top:0;
+            //left:0;
+            }
 
-  div.itacsIcon-4{
-    top: 70%;
-    left: 78%; // (100-8) - 10 = 82
-    width:10%;
-    div{
-      width:100%;
-      //background-color:green;
+          }
 
-      a{
-        //width:500px;
-        img{
-       //width:100%;
-       max-width: none;
-        position: static;
-        //position: absolute;
-        //top:0;
-        //left:0;
+          a.itacsIconHeading{
+
+          }
+
         }
-
       }
-
-      a.itacsIconHeading{
-
-      }
-
-    }
-  }
 
 }
 

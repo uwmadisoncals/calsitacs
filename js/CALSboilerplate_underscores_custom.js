@@ -306,10 +306,10 @@
 		
 	} //end if is page-home
 
-	$("#itacsClose").click(function(e){
+	$(".itacsClose").click(function(e){
 		e.preventDefault();
-		//SPO_swal_close();
-		//alert("alert!");
+		SPO_swal_close();
+		alert("alert!");
 		console.log("logged!");
 	});
 
