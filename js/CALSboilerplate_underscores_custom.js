@@ -100,6 +100,67 @@
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	if($('body').is('.page-home')){
 
+		//Check if user is logged in
+		if($("#wpadminbar").length) {
+
+		//User logged in
+
+		}else{
+
+		//User not logged in
+
+		} 
+
+		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// service search feature
+		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		
+		var serviceSearchIsActive = false; //returns whether service search is active. Initialized to false.
+
+		function serviceSearchActivate(){
+		//console.log("serviceSearchActivate fired");
+		
+		$(".height-div").addClass("service-search-active");
+		$(".homePageFeature").addClass("service-search-active");
+			
+		}
+
+		function serviceSearchDeactivate(){
+		//console.log("serviceSearchDeactivate fired!");
+		$(".height-div").removeClass("service-search-active");
+		$(".homePageFeature").removeClass("service-search-active");
+
+
+		}
+
+		//Handle searchfield on focus event
+		$("#services-searchfield").focus(function(e) {
+
+		//alert("Works");
+		//$("#services-searchfield").blur();
+		//$("body").removeClass("footerPositionStatic");//remove position static to footer
+		$("body").addClass("service-search-active"); //add postition fixed to footer
+		serviceSearchIsActive = true;
+
+		console.log(serviceSearchIsActive);
+		serviceSearchActivate();
+
+		});
+
+		//Handle searchfield on blur event
+		$("#services-searchfield").on('blur',function() {
+
+			$("body").removeClass("service-search-active"); //add postition fixed to footer
+			serviceSearchIsActive = false;
+			console.log(serviceSearchIsActive);
+			serviceSearchDeactivate();
+
+		});
+
+		
+
+
+
 	
 	} //end if is page-home
 

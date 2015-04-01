@@ -1044,7 +1044,12 @@ html body.page {
   text-align: center;
   color: rgba(255, 255, 255, 0.9);
   background-color: transparent;
-  min-height: 400px; }
+  min-height: 400px;
+  position: relative;
+  top: 0;
+  -webkit-transition: top 1s;
+  /* Safari */
+  transition: top 1s; }
   .homePageFeature .button.large {
     padding: 2em;
     font-weight: 300;
@@ -1099,6 +1104,17 @@ html body.page {
     line-height: 1.6;
     font-family: "Raleway", sans-serif;
     font-weight: 300; }
+
+.homePageFeature.service-search-active {
+  top: -6em; }
+
+.height-div {
+  height: 0;
+  -webkit-transition: height 1s;
+  /* Safari */
+  transition: height 1s; }
+  .height-div.service-search-active {
+    height: 9em; }
 
 body.page.page-template-default div.site-content {
   background-color: #f9f9f9; }

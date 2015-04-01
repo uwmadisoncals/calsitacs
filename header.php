@@ -68,6 +68,7 @@ if ( is_front_page() ) { ?>
 	</div>
 
 <?php } ?>
+	<div class="height-div"></div>
 
 	</div>
 

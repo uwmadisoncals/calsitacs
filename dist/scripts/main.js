@@ -766,6 +766,23 @@ return function (global, window, document, undefined) {
 }));
 /* global jQuery:false */
 
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//  Notes: new requirements for SPO
+	//  
+	//  * On focus, increase height of red .headerContainer
+	//  * On focus, move up .homePageFeature
+	//  * On focus, change title text
+	//  * Use icons in some way in the new area provided 
+	//  
+	//  Additional:
+	//  
+	//  *use css animations or velocity.js
+	//  * perhaps icons are animated into view on click event.
+	// 
+	//
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 (function($) {
 
 	//alert("test");
@@ -848,6 +865,67 @@ return function (global, window, document, undefined) {
 	// Execute the following if current page is .page-home
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	if($('body').is('.page-home')){
+
+		//Check if user is logged in
+		if($("#wpadminbar").length) {
+
+		//User logged in
+
+		}else{
+
+		//User not logged in
+
+		} 
+
+		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// service search feature
+		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		
+		var serviceSearchIsActive = false; //returns whether service search is active. Initialized to false.
+
+		function serviceSearchActivate(){
+		//console.log("serviceSearchActivate fired");
+		
+		$(".height-div").addClass("service-search-active");
+		$(".homePageFeature").addClass("service-search-active");
+			
+		}
+
+		function serviceSearchDeactivate(){
+		//console.log("serviceSearchDeactivate fired!");
+		$(".height-div").removeClass("service-search-active");
+		$(".homePageFeature").removeClass("service-search-active");
+
+
+		}
+
+		//Handle searchfield on focus event
+		$("#services-searchfield").focus(function(e) {
+
+		//alert("Works");
+		//$("#services-searchfield").blur();
+		//$("body").removeClass("footerPositionStatic");//remove position static to footer
+		$("body").addClass("service-search-active"); //add postition fixed to footer
+		serviceSearchIsActive = true;
+
+		console.log(serviceSearchIsActive);
+		serviceSearchActivate();
+
+		});
+
+		//Handle searchfield on blur event
+		$("#services-searchfield").on('blur',function() {
+
+			$("body").removeClass("service-search-active"); //add postition fixed to footer
+			serviceSearchIsActive = false;
+			console.log(serviceSearchIsActive);
+			serviceSearchDeactivate();
+
+		});
+
+		
+
+
 
 	
 	} //end if is page-home

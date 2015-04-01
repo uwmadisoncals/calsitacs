@@ -4,6 +4,10 @@
   color: $white;
   background-color: transparent;
   min-height: 400px;
+  position:relative;
+  top:0;
+  -webkit-transition: top 1s; /* Safari */
+  transition: top 1s;
 
   .button.large {
     padding: 2em;
@@ -78,4 +82,27 @@
       font-family: "Raleway",sans-serif;
       font-weight: 300;
     }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Service Search field animation feature
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.headerContainer.service-search-active{
+  //background:none;
+  //background-color:pink;
+ 
+}
+
+.homePageFeature.service-search-active{
+top:-6em;
+}
+
+.height-div{
+  height: 0;
+  -webkit-transition: height 1s; /* Safari */
+  transition: height 1s;
+  &.service-search-active{
+    height: 9em;
+  }
 }
