@@ -120,8 +120,9 @@
 		function serviceSearchActivate(){
 		//console.log("serviceSearchActivate fired");
 		
-		$(".height-div").addClass("service-search-active");
+		$(".height-div").addClass("service-search-active"); //add class which increases height of .height-div and it's parent .headerContainer
 		$(".homePageFeature").addClass("service-search-active");
+		$(".cyan").addClass("service-search-active");
 			
 		}
 
@@ -129,6 +130,7 @@
 		//console.log("serviceSearchDeactivate fired!");
 		$(".height-div").removeClass("service-search-active");
 		$(".homePageFeature").removeClass("service-search-active");
+		$(".cyan").removeClass("service-search-active");
 
 
 		}

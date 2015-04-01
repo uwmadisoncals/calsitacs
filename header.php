@@ -69,6 +69,7 @@ if ( is_front_page() ) { ?>
 
 <?php } ?>
 	<div class="height-div"></div>
+	<div class="cyan"></div>
 
 	</div>
 

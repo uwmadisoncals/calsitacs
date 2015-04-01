@@ -1116,6 +1116,17 @@ html body.page {
   .height-div.service-search-active {
     height: 9em; }
 
+.cyan {
+  width: 95%;
+  height: 60%;
+  position: absolute;
+  background-color: darkcyan;
+  top: 35%;
+  left: 2.5%;
+  display: none; }
+  .cyan.service-search-active {
+    display: block; }
+
 body.page.page-template-default div.site-content {
   background-color: #f9f9f9; }
   body.page.page-template-default div.site-content div#primary {

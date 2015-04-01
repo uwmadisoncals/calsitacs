@@ -106,3 +106,16 @@ top:-6em;
     height: 9em;
   }
 }
+
+.cyan{
+width:95%;
+height:60%;
+position:absolute;
+background-color:darkcyan;
+top:35%;
+left:2.5%;
+display:none;
+&.service-search-active{
+    display:block;
+  }
+}
