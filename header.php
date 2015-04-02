@@ -69,7 +69,36 @@ if ( is_front_page() ) { ?>
 
 <?php } ?>
 	<div class="height-div"></div>
-	<div class="cyan"></div>
+	<div class="cyan">
+		<div class="serviceWrapper service1" >
+			<div>
+				<a class="serviceIcon" href="http://it.calsmain.localhost/services" ><?php include("dist/images/security.svg"); ?></a>
+				<a class="serviceHeading " href="http://it.calsmain.localhost/services">service1</a>
+			</div>
+		</div>
+
+		<div class="serviceWrapper service2" >
+			<div>
+				<a class="serviceIcon" href="http://it.calsmain.localhost/services" ><?php include("dist/images/security.svg"); ?></a>
+				<a class="serviceHeading" href="http://it.calsmain.localhost/services">service1</a>
+			</div>
+		</div>
+
+		<div class="serviceWrapper service3" >
+			<div>
+				<a class="serviceIcon" href="http://it.calsmain.localhost/services"  ><?php include("dist/images/security.svg"); ?></a>
+				<a class="serviceHeading" href="http://it.calsmain.localhost/services">service1</a>
+			</div>
+		</div>
+
+		<div class="serviceWrapper service4" >
+			<div>
+				<a class="serviceIcon" href="http://it.calsmain.localhost/services" ><?php include("dist/images/security.svg"); ?></a>
+				<a class="serviceHeading" href="http://it.calsmain.localhost/services">service1</a>
+			</div>
+		</div>
+
+	</div>
 
 	</div>
 

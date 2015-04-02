@@ -116,48 +116,94 @@
 		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		
 		var serviceSearchIsActive = false; //returns whether service search is active. Initialized to false.
+		var iconClickInProgress = false;
 
 		function serviceSearchActivate(){
-		//console.log("serviceSearchActivate fired");
-		
-		$(".height-div").addClass("service-search-active"); //add class which increases height of .height-div and it's parent .headerContainer
-		$(".homePageFeature").addClass("service-search-active");
-		$(".cyan").addClass("service-search-active");
+
+			$("body").addClass("service-search-active"); //add said class to body
+
+			//Remove old sub heading text with fade transition and replace it 
+			$(".subHeading").fadeOut("slow",function(){
+
+				$(this).text("How may we help you?").fadeIn();
+			});
+
+			$(".height-div").addClass("service-search-active"); //add class which increases height of .height-div and it's parent .headerContainer
+
+			$(".homePageFeature").addClass("service-search-active");
+
+			$(".cyan").addClass("service-search-active");
+
+			$(".serviceWrapper").addClass("service-search-active");
+
+			$(".serviceWrapper").velocity("transition.slideLeftIn", {stagger:110}).delay(750);
 			
 		}
 
 		function serviceSearchDeactivate(){
-		//console.log("serviceSearchDeactivate fired!");
-		$(".height-div").removeClass("service-search-active");
-		$(".homePageFeature").removeClass("service-search-active");
-		$(".cyan").removeClass("service-search-active");
 
+			$("body").removeClass("service-search-active"); //remove said class from body
+
+			//reinstate the original subheading text with fade transition
+			$(".subHeading").fadeOut("slow",function(){
+
+				$(this).text("Here for you.").fadeIn();
+			});
+
+			
+
+			$(".height-div").removeClass("service-search-active");
+
+			$(".homePageFeature").removeClass("service-search-active");
+
+			$(".cyan").removeClass("service-search-active");
+
+			//$(".serviceWrapper.service-search-active > div").velocity({ opacity: 0 }, { display: "none", duration:"slow" });
+			
+			//$(".serviceWrapper.service-search-active > div").fadeOut("slow");
+			
+			/*$(".serviceWrapper").velocity({
+			properties:{opacity:0},
+			options:{display:"none", duration:"slow", easing:"easeInOutCubic"}
+			});*/
+			
 
 		}
+		$(".serviceWrapper > div > a, .serviceHeading").mousedown(function(){
+
+			iconClickInProgress = true;
+			console.log("iconClickInProgress: "+iconClickInProgress);
+		});
+
+		$(".serviceWrapper > div > a, .serviceHeading").mouseup(function(){
+			iconClickInProgress = false;
+			console.log("iconClickInProgress: "+iconClickInProgress);
+		});
 
 		//Handle searchfield on focus event
 		$("#services-searchfield").focus(function(e) {
 
-		//alert("Works");
-		//$("#services-searchfield").blur();
-		//$("body").removeClass("footerPositionStatic");//remove position static to footer
-		$("body").addClass("service-search-active"); //add postition fixed to footer
-		serviceSearchIsActive = true;
+			serviceSearchIsActive = true;
 
-		console.log(serviceSearchIsActive);
-		serviceSearchActivate();
+			serviceSearchActivate();
 
 		});
 
 		//Handle searchfield on blur event
 		$("#services-searchfield").on('blur',function() {
-
-			$("body").removeClass("service-search-active"); //add postition fixed to footer
+			if(iconClickInProgress==false){
+				console.log("inside of if successfully!");
+				
+				//serviceSearchDeactivate();
+			}
+			
 			serviceSearchIsActive = false;
-			console.log(serviceSearchIsActive);
-			serviceSearchDeactivate();
+
+			
 
 		});
+
+
 
 		
 
