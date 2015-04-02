@@ -7,7 +7,7 @@
   z-index: 2;
   position:relative;
   top:0;
-  -webkit-transition: top 1s; /* Safari */
+  -webkit-transition: top 1s ; /* Safari */
   transition: top 1s;
 
   .button.large {
@@ -38,6 +38,21 @@
     -webkit-font-smoothing: antialiased;
     font-size: 3.7em;
     margin-top: 0px;
+  }
+
+  div.services-searchbox{
+      input#services-searchfield{
+
+         //-webkit-transition-property: width; /* Safari */
+        //transition-property: width;
+
+        //webkit-transition-duration: 2s;
+        //transition-duration: 2s;
+
+        //webkit-transition-timing-function:ease;
+        //transition-timing-function:ease;
+      }
+
   }
 
   .equipment {
@@ -97,6 +112,14 @@
 
 .homePageFeature.service-search-active{
 top:-8em;
+
+div.services-searchbox{
+      input#services-searchfield{
+       //width:16em;
+      }
+
+  }
+
 }
 
 .height-div{
@@ -159,9 +182,58 @@ display:none;
   &.service-search-active{
    //visibility: visible;
    div{
-      margin-left:35%;
+      //margin-left:35%;
+      position:absolute;
+      left:38%;
+      max-width:128px;
+      overflow: hidden;
       a.serviceIcon{
         display:inline-block;
+        float:left;
+      }
+      a.serviceHeading{
+        float:left;
+        clear:both;
+        width:100%;
+        text-align: center;
+        margin: .2em 0;
+        font-family: Raleway, sans-serif;
+        font-weight:300;
+        font-size:1.6em;
+        letter-spacing: 2px;
+        
+        -webkit-transition-property: font-size, color; /* Safari */
+        transition-property: font-size, color;
+
+        webkit-transition-duration: .8s;
+        transition-duration:.8s;
+
+        webkit-transition-timing-function:ease;
+        transition-timing-function:ease;
+
+        //unvisited link
+        &:link{ 
+          color:rgba(255,255,255,.9);
+          text-decoration: none;
+        }
+
+        //visited link
+        &:visited{
+          color:rgba(255,255,255,.9);
+          text-decoration: none;
+        }
+
+        //mouse over link
+        &:hover{
+          color:$uwTan;
+          font-size: 1.8em;
+          
+        }
+
+        //selected link
+        &:active{
+
+        }
       }
    }
 

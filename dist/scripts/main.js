@@ -960,7 +960,7 @@ return function (global, window, document, undefined) {
 			if(iconClickInProgress==false){
 				console.log("inside of if successfully!");
 				
-				//serviceSearchDeactivate();
+				serviceSearchDeactivate();
 			}
 			
 			serviceSearchIsActive = false;

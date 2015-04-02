@@ -1137,9 +1137,41 @@ html body.page {
   padding: 2%;
   padding-top: 8%; }
   .cyan.service-search-active div.serviceWrapper.service-search-active div {
-    margin-left: 35%; }
+    position: absolute;
+    left: 38%;
+    max-width: 128px;
+    overflow: hidden; }
     .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceIcon {
-      display: inline-block; }
+      display: inline-block;
+      float: left; }
+    .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceHeading {
+      float: left;
+      clear: both;
+      width: 100%;
+      text-align: center;
+      margin: 0.2em 0;
+      font-family: Raleway, sans-serif;
+      font-weight: 300;
+      font-size: 1.6em;
+      letter-spacing: 2px;
+      -webkit-transition-property: font-size, color;
+      /* Safari */
+      transition-property: font-size, color;
+      webkit-transition-duration: 0.8s;
+      -webkit-transition-duration: 0.8s;
+      transition-duration: 0.8s;
+      webkit-transition-timing-function: ease;
+      -webkit-transition-timing-function: ease;
+      transition-timing-function: ease; }
+      .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceHeading:link {
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: none; }
+      .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceHeading:visited {
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: none; }
+      .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceHeading:hover {
+        color: #CBC8B7;
+        font-size: 1.8em; }
 
 body.page.page-template-default div.site-content {
   background-color: #f9f9f9; }

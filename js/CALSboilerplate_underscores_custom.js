@@ -194,7 +194,7 @@
 			if(iconClickInProgress==false){
 				console.log("inside of if successfully!");
 				
-				//serviceSearchDeactivate();
+				serviceSearchDeactivate();
 			}
 			
 			serviceSearchIsActive = false;
