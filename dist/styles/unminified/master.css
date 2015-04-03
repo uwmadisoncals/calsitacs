@@ -822,13 +822,27 @@ html body.page {
 #page {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(150, 0, 1, 0.8)), to(rgba(150, 0, 1, 0)));
   background: -webkit-linear-gradient(top, rgba(150, 0, 1, 0.8) 50%, rgba(150, 0, 1, 0) 100%);
-  background: linear-gradient(to bottom, rgba(150, 0, 1, 0.8) 50%, rgba(150, 0, 1, 0) 100%); }
+  background: linear-gradient(to bottom, rgba(150, 0, 1, 0.8) 50%, rgba(150, 0, 1, 0) 100%);
+  z-index: 2; }
 
 .home .headerContainer {
   position: relative;
-  background: #960001 url("../../../dist/images/equipmentcollection2.svg") no-repeat;
-  background-position: 50% 50%;
-  background-size: 100% auto; }
+  z-index: 0; }
+  .home .headerContainer div.opacityLayer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: #960001 url("../../../dist/images/equipmentcollection2.svg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    opacity: 0;
+    -webkit-transition: 2s;
+    transition: 2s; }
+    .home .headerContainer div.opacityLayer.service-search-active {
+      opacity: 0.4; }
 
 .headerContainer {
   position: relative;
@@ -1075,6 +1089,28 @@ html body.page {
     -webkit-font-smoothing: antialiased;
     font-size: 3.7em;
     margin-top: 0px; }
+  .homePageFeature div.services-searchbox {
+    padding: 2% 0; }
+    .homePageFeature div.services-searchbox input#services-searchfield {
+      padding-left: 25px;
+      -webkit-transition-property: width;
+      transition-property: width;
+      webkit-transition-duration: 2s;
+      -webkit-transition-duration: 2s;
+      transition-duration: 2s;
+      webkit-transition-timing-function: ease;
+      -webkit-transition-timing-function: ease;
+      transition-timing-function: ease;
+      width: 16%;
+      background: url("../../../img/search.png") no-repeat 4px 4px;
+      background-color: white;
+      text-transform: capitalize; }
+      .homePageFeature div.services-searchbox input#services-searchfield.service-search-active {
+        width: 24%; }
+    .homePageFeature div.services-searchbox a.our-services {
+      padding: 3px;
+      line-height: 1.5em;
+      display: none; }
   .homePageFeature .equipment {
     position: absolute;
     top: 0px;
@@ -1123,7 +1159,8 @@ html body.page {
   position: absolute;
   top: 35%;
   left: 2.5%;
-  display: none; }
+  display: none;
+  z-index: 2; }
   .cyan.service-search-active {
     display: block; }
 

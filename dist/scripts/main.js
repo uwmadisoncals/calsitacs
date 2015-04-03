@@ -773,6 +773,7 @@ return function (global, window, document, undefined) {
 	//  * On focus, move up .homePageFeature
 	//  * On focus, change title text
 	//  * Use icons in some way in the new area provided 
+	//  * Find a way to darken or blur the background image on header
 	//  
 	//  Additional:
 	//  
@@ -888,6 +889,8 @@ return function (global, window, document, undefined) {
 
 			$("body").addClass("service-search-active"); //add said class to body
 
+			$(".serviceWrapper.service-search-active > div").css("display", "block");
+
 			//Remove old sub heading text with fade transition and replace it 
 			$(".subHeading").fadeOut("slow",function(){
 
@@ -898,9 +901,13 @@ return function (global, window, document, undefined) {
 
 			$(".homePageFeature").addClass("service-search-active");
 
+			$("#services-searchfield").addClass("service-search-active");
+
 			$(".cyan").addClass("service-search-active");
 
 			$(".serviceWrapper").addClass("service-search-active");
+
+			$(".opacityLayer").addClass("service-search-active");
 
 			$(".serviceWrapper").velocity("transition.slideLeftIn", {stagger:110}).delay(750);
 			
@@ -916,25 +923,28 @@ return function (global, window, document, undefined) {
 				$(this).text("Here for you.").fadeIn();
 			});
 
-			
+			setTimeout(function(){
 
 			$(".height-div").removeClass("service-search-active");
 
 			$(".homePageFeature").removeClass("service-search-active");
 
+			$("#services-searchfield").removeClass("service-search-active");
+
 			$(".cyan").removeClass("service-search-active");
 
-			//$(".serviceWrapper.service-search-active > div").velocity({ opacity: 0 }, { display: "none", duration:"slow" });
+			$(".opacityLayer").removeClass("service-search-active");
+
+			},200);
+
+	
+
 			
-			//$(".serviceWrapper.service-search-active > div").fadeOut("slow");
-			
-			/*$(".serviceWrapper").velocity({
-			properties:{opacity:0},
-			options:{display:"none", duration:"slow", easing:"easeInOutCubic"}
-			});*/
+			$(".serviceWrapper.service-search-active > div").fadeOut();
 			
 
 		}
+
 		$(".serviceWrapper > div > a, .serviceHeading").mousedown(function(){
 
 			iconClickInProgress = true;

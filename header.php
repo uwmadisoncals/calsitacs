@@ -100,7 +100,8 @@ if ( is_front_page() ) { ?>
 
 	</div>
 
-	</div>
+	<div class="opacityLayer"></div>
+	</div> <!--END .headerContainer -->
 
 
 
