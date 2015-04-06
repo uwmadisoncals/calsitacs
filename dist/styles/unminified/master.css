@@ -1429,6 +1429,54 @@ ul.tabs li.current {
   to {
     background-color: #ededed; } }
 
+.page-help .gform_wrapper .gfield_required {
+  margin-left: 5px;
+  -webkit-animation-name: iconchange;
+  -webkit-animation-duration: 4.5s;
+  -webkit-animation-name: iconchange;
+  animation-name: iconchange;
+  -webkit-animation-duration: 4.5s;
+  animation-duration: 4.5s; }
+
+@-webkit-keyframes iconchange {
+  from {
+    color: transparent; }
+
+  to {
+    color: #790200; } }
+
+@keyframes iconchange {
+  from {
+    color: transparent; }
+
+  to {
+    color: #790200; } }
+
+.gform_wrapper .gform_footer input[type=submit], .page-help .gform_wrapper .gform_footer input.button {
+  font-size: 1em;
+  background: #960001 !important;
+  border-bottom: none !important;
+  -webkit-animation-name: buttonchange;
+  -webkit-animation-duration: 4.5s;
+  -webkit-animation-name: buttonchange;
+  animation-name: buttonchange;
+  -webkit-animation-duration: 4.5s;
+  animation-duration: 4.5s; }
+
+@-webkit-keyframes buttonchange {
+  from {
+    background: transparent; }
+
+  to {
+    background: #790200; } }
+
+@keyframes buttonchange {
+  from {
+    background: transparent; }
+
+  to {
+    background: #790200; } }
+
 .tab-content.current {
   display: inherit; }
 
