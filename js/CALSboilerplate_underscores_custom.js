@@ -2,17 +2,17 @@
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//  Notes: new requirements for SPO
+	//  * Redudce animation speed by .5 or even less
+	//  * searchbox more prominent, replace background fill (see http://tympanus.net/Development/TextInputEffects/    ...akira)
+	//  * Instead of row of icons, display list (below it/acs heading).
+	//  * Initially, list displays common items, but search suggests as user types (fading away irrelevent list items)
+	//  * make responsive
 	//  
-	//  * On focus, increase height of red .headerContainer
-	//  * On focus, move up .homePageFeature
-	//  * On focus, change title text
-	//  * Use icons in some way in the new area provided 
-	//  * Find a way to darken or blur the background image on header
 	//  
 	//  Additional:
 	//  
-	//  *use css animations or velocity.js
-	//  * perhaps icons are animated into view on click event.
+	//  *some type of "more info" modal (or other animated div) 
+	//  
 	// 
 	//
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -159,12 +159,13 @@
 			//remove .service-search-active to several selectors 
 			$(" .height-div, .homePageFeature, .subHeading, #services-searchfield, .cyan, .opacityLayer ").removeClass("service-search-active");
 
+			
 			},200);
 
 	
-
-			
 			$(".serviceWrapper.service-search-active > div").fadeOut();
+			
+
 			
 
 		}
