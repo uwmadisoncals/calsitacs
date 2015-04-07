@@ -39,8 +39,8 @@ html body.page{
     background-position: 50% 50%;
     background-size: 100% auto;
     opacity: 2;
-    //opacity:0;
     transition: 2s;
+    pointer-events:none;
 
 
     &.service-search-active{

@@ -844,7 +844,8 @@ html body.page {
     background-size: 100% auto;
     opacity: 2;
     -webkit-transition: 2s;
-    transition: 2s; }
+    transition: 2s;
+    pointer-events: none; }
     .page-home .headerContainer div.opacityLayer.service-search-active {
       opacity: 0.4; }
 
