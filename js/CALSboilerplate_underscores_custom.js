@@ -127,13 +127,18 @@
 
 			//Remove old sub heading text with fade transition and replace it 
 			$(".subHeading").fadeOut("slow",function(){
-
+								
+				$(this).css({"font-weight": "500","font-style":"italic"});
+				
 				$(this).text("How may we help you?").fadeIn();
+
 			});
 
 			$(".height-div").addClass("service-search-active"); //add class which increases height of .height-div and it's parent .headerContainer
 
 			$(".homePageFeature").addClass("service-search-active");
+
+			$(".subHeading").addClass("service-search-active");
 
 			$("#services-searchfield").addClass("service-search-active");
 
@@ -154,6 +159,8 @@
 			//reinstate the original subheading text with fade transition
 			$(".subHeading").fadeOut("slow",function(){
 
+				$(this).css({"font-weight": "100","font-style":"normal"});
+
 				$(this).text("Here for you.").fadeIn();
 			});
 
@@ -162,6 +169,8 @@
 			$(".height-div").removeClass("service-search-active");
 
 			$(".homePageFeature").removeClass("service-search-active");
+
+			$(".subHeading").removeClass("service-search-active");
 
 			$("#services-searchfield").removeClass("service-search-active");
 
