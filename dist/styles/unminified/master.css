@@ -1182,7 +1182,13 @@ html body.page {
     position: absolute;
     left: 38%;
     max-width: 128px;
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-transition: 0.7s;
+    transition: 0.7s; }
+    .cyan.service-search-active div.serviceWrapper.service-search-active div:hover {
+      -webkit-transform: scale(1.2, 1.2);
+      -ms-transform: scale(1.2, 1.2);
+      transform: scale(1.2, 1.2); }
     .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceIcon {
       display: inline-block;
       float: left; }
