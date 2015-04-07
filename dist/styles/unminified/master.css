@@ -1452,7 +1452,7 @@ ul.tabs li.current {
   to {
     color: #790200; } }
 
-.gform_wrapper .gform_footer input[type=submit], .page-help .gform_wrapper .gform_footer input.button {
+.page-help .gform_wrapper .gform_footer input[type=submit], .page-help .gform_wrapper .gform_footer input.button {
   font-size: 1em;
   background: #960001 !important;
   border-bottom: none !important;
@@ -1515,6 +1515,9 @@ ul.tabs li.current {
 .page-news #edit-link {
   font-size: 10px;
   padding-top: 5px; }
+
+.page-services #content {
+  background: white; }
 
 body.stop-scrolling {
   height: 100%;
