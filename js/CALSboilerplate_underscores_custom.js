@@ -129,26 +129,16 @@
 			$(".subHeading").fadeOut("slow",function(){
 								
 				$(this).css({"font-weight": "500","font-style":"italic"});
-				
+
 				$(this).text("How may we help you?").fadeIn();
 
 			});
 
-			$(".height-div").addClass("service-search-active"); //add class which increases height of .height-div and it's parent .headerContainer
-
-			$(".homePageFeature").addClass("service-search-active");
-
-			$(".subHeading").addClass("service-search-active");
-
-			$("#services-searchfield").addClass("service-search-active");
-
-			$(".cyan").addClass("service-search-active");
-
-			$(".serviceWrapper").addClass("service-search-active");
-
-			$(".opacityLayer").addClass("service-search-active");
+			//add .service-search-active to several selectors 
+			$(" .height-div, .homePageFeature, .subHeading, #services-searchfield, .cyan, .serviceWrapper, .opacityLayer ").addClass("service-search-active");
 
 			$(".serviceWrapper").velocity("transition.slideLeftIn", {stagger:110}).delay(750);
+			
 			
 		}
 
@@ -166,17 +156,8 @@
 
 			setTimeout(function(){
 
-			$(".height-div").removeClass("service-search-active");
-
-			$(".homePageFeature").removeClass("service-search-active");
-
-			$(".subHeading").removeClass("service-search-active");
-
-			$("#services-searchfield").removeClass("service-search-active");
-
-			$(".cyan").removeClass("service-search-active");
-
-			$(".opacityLayer").removeClass("service-search-active");
+			//remove .service-search-active to several selectors 
+			$(" .height-div, .homePageFeature, .subHeading, #services-searchfield, .cyan, .opacityLayer ").removeClass("service-search-active");
 
 			},200);
 
@@ -204,16 +185,26 @@
 
 			serviceSearchIsActive = true;
 
-			serviceSearchActivate();
+				if($("body").hasClass("page-home")){
+
+				serviceSearchActivate();
+
+				}
+
 
 		});
 
 		//Handle searchfield on blur event
 		$("#services-searchfield").on('blur',function() {
 			if(iconClickInProgress==false){
-				console.log("inside of if successfully!");
 				
-				serviceSearchDeactivate();
+				if( $("body").hasClass("page-home") ){
+
+				serviceSearchDeactivate(); 
+				
+				}
+
+				
 			}
 			
 			serviceSearchIsActive = false;

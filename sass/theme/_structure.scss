@@ -16,7 +16,7 @@ html body.page{
   
 }
 
-.home .headerContainer {
+.page-home .headerContainer {
 
   position: relative;
   //background: $primaryHeaderBg url("../../../dist/images/equipmentcollection2.svg") no-repeat;
@@ -51,6 +51,11 @@ html body.page{
 }
 
 .headerContainer {
+  position: relative;
+  background: $primaryHeaderBg;
+  background-position: center center;
+  background-size: 100% auto;
+
 
   
 
