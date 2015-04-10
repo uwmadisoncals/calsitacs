@@ -137,7 +137,7 @@
 			//add .service-search-active to several selectors 
 			$(" .height-div, .homePageFeature, .subHeading, #services-searchfield, .cyan, .serviceWrapper, .opacityLayer ").addClass("service-search-active");
 
-			$(".serviceWrapper").velocity("transition.slideLeftIn", {stagger:110}).delay(750);
+			$(".serviceWrapper").velocity("transition.slideLeftIn", {stagger:100}).delay(500);
 			
 			
 		}
