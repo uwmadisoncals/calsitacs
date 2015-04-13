@@ -161,9 +161,7 @@
 
 			
 			},200);
-
 	
-			$(".serviceWrapper.service-search-active > div").fadeOut();
 			
 
 			

@@ -13992,9 +13992,7 @@ return function (global, window, document, undefined) {
 
 			
 			},200);
-
 	
-			$(".serviceWrapper.service-search-active > div").fadeOut();
 			
 
 			
