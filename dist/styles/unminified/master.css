@@ -1111,7 +1111,8 @@ html body.page {
       text-transform: capitalize;
       padding: 10px;
       border: solid 7px white;
-      border-radius: initial; }
+      border-radius: initial;
+      display: none; }
       .homePageFeature div.services-searchbox input#services-searchfield.service-search-active {
         width: 24%;
         height: 5em; }
@@ -1170,7 +1171,7 @@ html body.page {
   display: none;
   z-index: 2; }
   .cyan.service-search-active {
-    display: none; }
+    display: block; }
 
 .cyan.service-search-active div.serviceWrapper {
   width: 25%;
@@ -1182,48 +1183,51 @@ html body.page {
   padding: 2%;
   padding-top: 8%;
   display: none; }
-  .cyan.service-search-active div.serviceWrapper.service-search-active div {
-    position: absolute;
-    left: 38%;
-    max-width: 128px;
-    overflow: hidden;
-    -webkit-transition: 2s;
-    transition: 2s; }
-    .cyan.service-search-active div.serviceWrapper.service-search-active div:hover {
-      -webkit-transform: scale(1.2, 1.2);
-      -ms-transform: scale(1.2, 1.2);
-      transform: scale(1.2, 1.2); }
-    .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceIcon {
-      display: inline-block;
-      float: left; }
-    .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceHeading {
-      float: left;
-      clear: both;
-      width: 100%;
-      text-align: center;
-      margin: 0.2em 0;
-      font-family: Raleway, sans-serif;
-      font-weight: 300;
-      font-size: 1.6em;
-      letter-spacing: 2px;
-      -webkit-transition-property: font-size, color;
-      /* Safari */
-      transition-property: font-size, color;
-      webkit-transition-duration: 0.8s;
-      -webkit-transition-duration: 0.8s;
-      transition-duration: 0.8s;
-      webkit-transition-timing-function: ease;
-      -webkit-transition-timing-function: ease;
-      transition-timing-function: ease; }
-      .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceHeading:link {
-        color: rgba(255, 255, 255, 0.9);
-        text-decoration: none; }
-      .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceHeading:visited {
-        color: rgba(255, 255, 255, 0.9);
-        text-decoration: none; }
-      .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceHeading:hover {
-        color: #CBC8B7;
-        font-size: 1.8em; }
+  .cyan.service-search-active div.serviceWrapper.service-search-active {
+    display: none; }
+    .cyan.service-search-active div.serviceWrapper.service-search-active div {
+      position: absolute;
+      left: 38%;
+      max-width: 128px;
+      overflow: hidden;
+      -webkit-transition: 2s;
+      transition: 2s;
+      display: none; }
+      .cyan.service-search-active div.serviceWrapper.service-search-active div:hover {
+        -webkit-transform: scale(1.2, 1.2);
+        -ms-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2); }
+      .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceIcon {
+        display: inline-block;
+        float: left; }
+      .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceHeading {
+        float: left;
+        clear: both;
+        width: 100%;
+        text-align: center;
+        margin: 0.2em 0;
+        font-family: Raleway, sans-serif;
+        font-weight: 300;
+        font-size: 1.6em;
+        letter-spacing: 2px;
+        -webkit-transition-property: font-size, color;
+        /* Safari */
+        transition-property: font-size, color;
+        webkit-transition-duration: 0.8s;
+        -webkit-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+        webkit-transition-timing-function: ease;
+        -webkit-transition-timing-function: ease;
+        transition-timing-function: ease; }
+        .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceHeading:link {
+          color: rgba(255, 255, 255, 0.9);
+          text-decoration: none; }
+        .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceHeading:visited {
+          color: rgba(255, 255, 255, 0.9);
+          text-decoration: none; }
+        .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceHeading:hover {
+          color: #CBC8B7;
+          font-size: 1.8em; }
 
 input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea {
   color: #666;
@@ -1363,7 +1367,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 .input__label--yoko {
   position: relative;
   width: 100%;
-  color: #b04b40;
+  color: #CBC8B7;
   text-align: left; }
 
 .input__label--yoko::before {
@@ -1373,14 +1377,19 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
   left: 0;
   width: 100%;
   height: 4em;
-  background: #c5564a;
+  background: #CBC8B7;
   -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
   transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
   -webkit-transform-origin: 50% 100%;
   -ms-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
   -webkit-transition: -webkit-transform 0.3s;
-  transition: transform 0.3s; }
+  transition: transform 0.3s;
+  /*
+    background: -webkit-linear-gradient(top, rgba(255,0,0,0), rgba(255,0,0,1)); 
+    background: -o-linear-gradient(bottom, rgba(255,0,0,0), rgba(255,0,0,1)); 
+    background: -moz-linear-gradient(bottom, rgba(255,0,0,0), rgba(255,0,0,1)); 
+    background: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1));  */ }
 
 .input__label--yoko::after {
   content: '';
@@ -1389,7 +1398,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
   left: 0;
   width: 100%;
   height: 0.25em;
-  background: #ad473c;
+  background: #a09b7c;
   -webkit-transform-origin: 50% 0%;
   -ms-transform-origin: 50% 0%;
   transform-origin: 50% 0%;
