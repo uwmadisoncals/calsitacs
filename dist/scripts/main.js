@@ -901,9 +901,9 @@ return function (global, window, document, undefined) {
 			});
 
 			//add .service-search-active to several selectors 
-			$(" .height-div, .homePageFeature, .subHeading, #services-searchfield, .cyan, .serviceWrapper, .opacityLayer ").addClass("service-search-active");
+			$(" .height-div, .homePageFeature, .subHeading, #services-searchfield, #input-16, .cyan, .serviceWrapper, .opacityLayer ").addClass("service-search-active");
 
-			$(".serviceWrapper").velocity("transition.slideLeftIn", {stagger:100}).delay(500);
+			//$(".serviceWrapper").velocity("transition.slideLeftIn", {stagger:100}).delay(500);
 			
 			
 		}
@@ -923,7 +923,7 @@ return function (global, window, document, undefined) {
 			setTimeout(function(){
 
 			//remove .service-search-active to several selectors 
-			$(" .height-div, .homePageFeature, .subHeading, #services-searchfield, .cyan, .opacityLayer ").removeClass("service-search-active");
+			$(" .height-div, .homePageFeature, .subHeading, #services-searchfield, #input-16, .cyan, .opacityLayer ").removeClass("service-search-active");
 
 			
 			},200);
@@ -946,7 +946,7 @@ return function (global, window, document, undefined) {
 		});
 
 		//Handle searchfield on focus event
-		$("#services-searchfield").focus(function(e) {
+		$("#services-searchfield, #input-16").focus(function(e) {
 
 			serviceSearchIsActive = true;
 
@@ -960,7 +960,7 @@ return function (global, window, document, undefined) {
 		});
 
 		//Handle searchfield on blur event
-		$("#services-searchfield").on('blur',function() {
+		$("#services-searchfield, #input-16").on('blur',function() {
 			if(iconClickInProgress==false){
 				
 				if( $("body").hasClass("page-home") ){
