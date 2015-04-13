@@ -27,6 +27,7 @@ html body.page{
   background: $primaryHeaderBg;
   background-position: center center;
   background-size: 100% auto;
+  overflow:hidden;
 
     div.opacityLayer{
     position:absolute;

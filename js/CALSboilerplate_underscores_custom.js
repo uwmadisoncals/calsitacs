@@ -138,6 +138,7 @@
 			$(" .height-div, .homePageFeature, .subHeading, #services-searchfield, #input-16, .cyan, .serviceWrapper, .opacityLayer ").addClass("service-search-active");
 
 			//$(".serviceWrapper").velocity("transition.slideLeftIn", {stagger:100}).delay(500);
+			$(".searchResultsWrapper").velocity("transition.slideLeftIn", {stagger:100}).delay(500);
 			
 			
 		}
@@ -199,7 +200,7 @@
 				
 				if( $("body").hasClass("page-home") ){
 
-				serviceSearchDeactivate(); 
+				//serviceSearchDeactivate(); 
 				
 				}
 
