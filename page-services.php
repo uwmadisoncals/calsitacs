@@ -11,7 +11,10 @@
  */
 
 get_header(); ?>
-
+	<div class="titleBox">Services</div>
+		<div class="service">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/hosticon.svg" alt=" ">
+		</div>
 	<!-- <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

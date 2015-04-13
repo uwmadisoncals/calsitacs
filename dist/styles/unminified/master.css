@@ -1774,12 +1774,26 @@ ul.tabs li.current {
 
 .page-services #content {
   /* Grid Patter */
-  background-color: #E6E6E6;
+  background-color: #960001;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2px, white), color-stop(2px, transparent)), linear-gradient(90deg, white 2px, transparent 2px), -webkit-gradient(linear, left top, left bottom, color-stop(1px, rgba(255, 255, 255, 0.3)), color-stop(1px, transparent)), linear-gradient(90deg, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
   background-image: -webkit-linear-gradient(white 2px, transparent 2px), -webkit-linear-gradient(0deg, white 2px, transparent 2px), -webkit-linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px), -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
   background-image: linear-gradient(white 2px, transparent 2px), linear-gradient(90deg, white 2px, transparent 2px), linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
   background-size: 0px 0px, 0px 0px, 20px 20px, 20px 20px;
   background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px; }
+
+.service {
+  padding: 4em; }
+
+.page-services .titleBox {
+  border: 2px solid #FFFFFF;
+  font-family: Helvetica-Light;
+  font-size: 36px;
+  color: #F7F1F1;
+  height: 2em;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 0.5em;
+  padding-left: 0.5em; }
 
 body.stop-scrolling {
   height: 100%;
