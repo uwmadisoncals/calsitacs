@@ -11,13 +11,36 @@
  */
 
 get_header(); ?>
-	<div class="titleBox">Services</div>
-		<div class="service">
-			<div class="serviceIcon">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/hosticon.svg" alt=" ">
-			</div>
+	<!--SERVICES!-->
+	<div class="layout">	
+		<div class="titleBox">Services</div>
+			<div class="service">
+				<div class="serviceIcon">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/hosticon.svg" alt=" ">
+				</div>
 			<div class="serviceContent">Hello this is a test, this is a test</div>
 		</div>
+	</div>
+	<!--EQUIPMENT!-->
+	<div class="layout2">
+		<div class="titleBox">Equipment</div>
+			<div class="service">
+					<div class="serviceContent">Hello this is a test, this is a test</div>
+						<div class="serviceIcon">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/laptopicon.svg" alt=" ">
+						</div>	
+			</div>
+	</div>
+	<!--IT SECURITY!-->
+	<div class="layout">	
+		<div class="titleBox">IT Security</div>
+			<div class="service">
+				<div class="serviceIcon">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/securityicon.svg" alt=" ">
+				</div>
+			<div class="serviceContent">Hello this is a test, this is a test</div>
+		</div>
+	</div>
 	<!-- <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -31,14 +54,18 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php /* get_sidebar(); */?>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!--Velocity Animation Test!-->
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
-		$('.titleBox').velocity("transition.expandIn", 1000);
-		$('.serviceIcon').fadeIn().velocity("transition.bounceLeftIn", 1000);
-		$('.serviceContent').fadeIn().velocity("slideDown", 1000);
+		$('.serviceIcon').velocity({opacity:0},{delay:700});
+		$('.serviceContent').velocity({opacity:0});
+		$('.titleBox').velocity("transition.expandIn", 800);
+		$('.serviceContent').fadeIn().velocity("transition.bounceLeftIn", 700);
+		$('.serviceIcon').fadeIn().velocity("transition.slideLeftBigIn", 700);
+		
 
 		})
-	</script>
+	</script>!-->
 
 <?php get_footer(); ?>

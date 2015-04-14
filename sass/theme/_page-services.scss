@@ -12,16 +12,38 @@ background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
 
 }
 
+.layout{
+	min-height:750px;
+	width:100%;
+}
+
+.layout2{
+	min-height:750px;
+	width:100%;
+}
+
+.layout2 .serviceContent{
+	float:left;
+	margin:0;
+	//margin-top:-2.7em;
+}
+
+.layout2 .serviceIcon{
+	float:right;
+	padding-top: 4em;
+}
+
 .service {
-	padding:4em;
+	padding-left:4em;
+	padding-right:4em;
 	//visibility: hidden;
-	position: inherit;
 	//float:left;
 }
 
 .serviceIcon{
-	//visibility:hidden;
 	float:left;
+	padding-top: 4em;
+	//display: none;
 }
 
 .serviceContent{
@@ -36,12 +58,17 @@ background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
 	color: #F7F1F1;
 	line-height: 28px;
 	float: right;
-	margin-left: 2em;
+	//margin-left: 2em;
 	padding:1em;
 	height:23em;
 	width:20em;
-	margin-top:-2.7em;
+	//margin-top:-2.7em;
+	//display:none;
+	// -webkit-transition: opacity .7s ease-in-out;
+	// -moz-transition: opacity .7s ease-in-out;
+	// -o-transition: opacity .7s ease-in-out;
 }
+
 
 .page-services .titleBox{
 border: 1px solid #FFFFFF;

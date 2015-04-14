@@ -1197,23 +1197,27 @@ html body.page {
   .cyan.service-search-active div.searchResultsWrapper div.searchResults {
     margin: 0 auto;
     width: 80%; }
-    .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult {
-      margin: 0 0 0.5em 0;
-      text-align: center;
-      font-family: Raleway, sans-serif;
-      font-size: 1.2em;
-      letter-spacing: 1px;
-      color: rgba(255, 255, 255, 0.9); }
-      .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult {
-        text-decoration: underline; }
-        .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult:link {
-          color: rgba(255, 255, 255, 0.9);
-          text-decoration: none; }
-        .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult:visited {
-          color: rgba(255, 255, 255, 0.9);
-          text-decoration: none; }
-        .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult:hover {
-          color: #CBC8B7; }
+    .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul {
+      background-image: -webkit-gradient(linear, left top, left bottom);
+      /* rgba colors are throwing errors when using gulp to pre-process css
+      /* Commenting it out for now */ }
+      .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult {
+        margin: 0 0 0.5em 0;
+        text-align: center;
+        font-family: Raleway, sans-serif;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+        color: rgba(255, 255, 255, 0.9); }
+        .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult {
+          text-decoration: underline; }
+          .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult:link {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none; }
+          .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult:visited {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none; }
+          .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult:hover {
+            color: #CBC8B7; }
 
 .cyan.service-search-active div.serviceWrapper {
   width: 25%;
@@ -1781,12 +1785,29 @@ ul.tabs li.current {
   background-size: 0px 0px, 0px 0px, 20px 20px, 20px 20px;
   background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px; }
 
+.layout {
+  min-height: 750px;
+  width: 100%; }
+
+.layout2 {
+  min-height: 750px;
+  width: 100%; }
+
+.layout2 .serviceContent {
+  float: left;
+  margin: 0; }
+
+.layout2 .serviceIcon {
+  float: right;
+  padding-top: 4em; }
+
 .service {
-  padding: 4em;
-  position: inherit; }
+  padding-left: 4em;
+  padding-right: 4em; }
 
 .serviceIcon {
-  float: left; }
+  float: left;
+  padding-top: 4em; }
 
 .serviceContent {
   border: 1px solid #FFFFFF;
@@ -1799,11 +1820,9 @@ ul.tabs li.current {
   color: #F7F1F1;
   line-height: 28px;
   float: right;
-  margin-left: 2em;
   padding: 1em;
   height: 23em;
-  width: 20em;
-  margin-top: -2.7em; }
+  width: 20em; }
 
 .page-services .titleBox {
   border: 1px solid #FFFFFF;

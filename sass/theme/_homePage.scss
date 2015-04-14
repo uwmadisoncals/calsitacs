@@ -197,9 +197,11 @@ z-index:2;
       background-image: -webkit-gradient(
       linear,
       left top,
-      left bottom,
-      color-stop(0, rgba(255, 0, 0, 0)),
-      color-stop(1, rgba(255, 0, 0, 100)));
+      left bottom);
+      /* rgba colors are throwing errors when using gulp to pre-process css
+      /* Commenting it out for now */
+      //color-stop(0, rgba(255, 0, 0, 0)),
+      //color-stop(1, rgba(255, 0, 0, 100)));
  
       & > li.singleSearchResult{
         margin: 0 0 .5em 0;
