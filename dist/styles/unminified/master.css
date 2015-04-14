@@ -831,7 +831,8 @@ html body.page {
   position: relative;
   background: #960001;
   background-position: center center;
-  background-size: 100% auto; }
+  background-size: 100% auto;
+  overflow: hidden; }
   .page-home .headerContainer div.opacityLayer {
     position: absolute;
     top: 0;
@@ -1172,6 +1173,47 @@ html body.page {
   z-index: 2; }
   .cyan.service-search-active {
     display: block; }
+
+.cyan.service-search-active div.searchResultsWrapper {
+  /* width:25%;
+  height: 100%;
+  float:left;
+  box-sizing:border-box;
+  padding:2%;
+  padding-top:8%;
+  display:block;
+  background-color:pink; // OLD STYLES   */
+  width: 40%;
+  height: 100%;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  top: 30%;
+  left: 30%; }
+  .cyan.service-search-active div.searchResultsWrapper div.searchResults {
+    margin: 0 auto;
+    width: 80%; }
+    .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult {
+      margin: 0 0 0.5em 0;
+      text-align: center;
+      font-family: Raleway, sans-serif;
+      font-size: 1.2em;
+      letter-spacing: 1px;
+      color: rgba(255, 255, 255, 0.9); }
+      .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult {
+        text-decoration: underline; }
+        .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult:link {
+          color: rgba(255, 255, 255, 0.9);
+          text-decoration: none; }
+        .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult:visited {
+          color: rgba(255, 255, 255, 0.9);
+          text-decoration: none; }
+        .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult:hover {
+          color: #CBC8B7; }
 
 .cyan.service-search-active div.serviceWrapper {
   width: 25%;

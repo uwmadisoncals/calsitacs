@@ -83,6 +83,31 @@ if ( is_front_page() ) { ?>
 	<div class="height-div"></div>
 	<div class="cyan">
 
+		<div class="searchResultsWrapper">
+
+			<div class="searchResults">
+				<ul> 
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 1</a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 2</a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 3</a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 4</a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 5</a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 6</a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 7</a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 8</a></li>
+
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 1</a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 2</a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 3</a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 4</a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 5</a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 6</a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 7</a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 8</a></li>
+				</ul>
+			</div>
+		</div>
+
 		<!--<div class="serviceWrapper service1" >
 			<div>
 				<a class="serviceIcon" href="http://it.calsmain.localhost/services" ><?php include("dist/images/security.svg"); ?></a>
