@@ -13,7 +13,10 @@
 get_header(); ?>
 	<div class="titleBox">Services</div>
 		<div class="service">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/hosticon.svg" alt=" ">
+			<div class="serviceIcon">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/hosticon.svg" alt=" ">
+			</div>
+			<div class="serviceContent">Hello this is a test, this is a test</div>
 		</div>
 	<!-- <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -28,4 +31,14 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php /* get_sidebar(); */?>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		$('.titleBox').velocity("transition.expandIn", 1000);
+		$('.serviceIcon').fadeIn().velocity("transition.bounceLeftIn", 1000);
+		$('.serviceContent').fadeIn().velocity("slideDown", 1000);
+
+		})
+	</script>
+
 <?php get_footer(); ?>

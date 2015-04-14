@@ -14,10 +14,38 @@ background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
 
 .service {
 	padding:4em;
+	//visibility: hidden;
+	position: inherit;
+	//float:left;
+}
+
+.serviceIcon{
+	//visibility:hidden;
+	float:left;
+}
+
+.serviceContent{
+	border: 1px solid #FFFFFF;
+	border-radius: 1px;
+	//font-size: 12px;
+	/* Rectangle 8: */
+	background: rgba(0,0,0,0.09);
+	/* We offer a wide rang: */
+	font-family: Helvetica-Light;
+	font-size: 24px;
+	color: #F7F1F1;
+	line-height: 28px;
+	float: right;
+	margin-left: 2em;
+	padding:1em;
+	height:23em;
+	width:20em;
+	margin-top:-2.7em;
 }
 
 .page-services .titleBox{
-border: 2px solid #FFFFFF;
+border: 1px solid #FFFFFF;
+border-radius: 1px;
 font-family: Helvetica-Light;
 font-size: 36px;
 color: #F7F1F1;
