@@ -139,6 +139,29 @@
 
 			//$(".serviceWrapper").velocity("transition.slideLeftIn", {stagger:100}).delay(500);
 			$(".searchResultsWrapper").velocity("transition.slideLeftIn", {stagger:100}).delay(500);
+
+			//if .searchResults exists in DOM
+			if( $(".searchResults").length > 0){
+
+				var searchWidthArray = []; //define new array
+				var singleSearchResultArr = [];
+
+				//iterate over all items matching .singleSearchResult 
+				$(".singleSearchResult").each(function(index, value){
+
+					var widths = parseInt($(this).css("width")); // variable assigned width(without px units) of current item in the iteration
+					console.log(widths);
+					searchWidthArray.push(widths); //this current item width pushed onto the searchWidthArray
+					singleSearchResultArr.push(value);
+
+
+				});
+				console.log(searchWidthArray);
+				console.log(singleSearchResultArr);
+				console.log(typeof singleSearchResultArr);
+
+
+			}
 			
 			
 		}
@@ -213,12 +236,7 @@
 
 		});
 
-
-
-		
-
-
-
+		//console.log( testjs_object);
 	
 	} //end if is page-home
 
