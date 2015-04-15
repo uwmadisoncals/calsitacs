@@ -18,27 +18,117 @@ get_header(); ?>
 				<div class="serviceIcon">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/hosticon.svg" alt=" ">
 				</div>
-			<div class="serviceContent">Hello this is a test, this is a test</div>
+			<div class="serviceContent">
+			  <?php
+				// /the query 
+				//$the_query = new WP_Query( 'page_id=209');
+				$the_query = new WP_Query( 'page_id=375'); ?>
+
+				<?php if ( $the_query->have_posts() ) : ?>
+
+				<!-- the loop -->
+					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+							<div class="formContent"><?php the_content(); ?></div>
+
+								<?php // This code adds an edit link for wp-users to edit content
+									edit_post_link( $link, $before, $after, $id ); ?> 
+
+
+					<?php endwhile; ?>
+				<!-- end of the loop -->
+
+				<!-- pagination here -->
+
+				<?php wp_reset_postdata(); ?>
+
+					<?php else : ?>
+						<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+				<?php endif; 
+
+		?>	
+
+			</div>
 		</div>
 	</div>
 	<!--EQUIPMENT!-->
-	<div class="layout2">
+	<div class="layout2 hidden">
 		<div class="titleBox">Equipment</div>
 			<div class="service">
-					<div class="serviceContent">Hello this is a test, this is a test</div>
+					<div class="serviceContent">
+						
+						 <?php
+				// /the query 
+				//$the_query = new WP_Query( 'page_id=209');
+				$the_query = new WP_Query( 'page_id=368'); ?>
+
+				<?php if ( $the_query->have_posts() ) : ?>
+
+				<!-- the loop -->
+					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+							<div class="formContent"><?php the_content(); ?></div>
+
+								<?php // This code adds an edit link for wp-users to edit content
+									edit_post_link( $link, $before, $after, $id ); ?> 
+
+
+					<?php endwhile; ?>
+				<!-- end of the loop -->
+
+				<!-- pagination here -->
+
+				<?php wp_reset_postdata(); ?>
+
+					<?php else : ?>
+						<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+				<?php endif; 
+
+		?>	
+
+					</div>
 						<div class="serviceIcon">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/laptopicon.svg" alt=" ">
 						</div>	
 			</div>
 	</div>
 	<!--IT SECURITY!-->
-	<div class="layout">	
+	<div class="layout3 hidden">	
 		<div class="titleBox">IT Security</div>
 			<div class="service">
 				<div class="serviceIcon">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/securityicon.svg" alt=" ">
 				</div>
-			<div class="serviceContent">Hello this is a test, this is a test</div>
+			<div class="serviceContent">
+				
+
+						 <?php
+				// /the query 
+				//$the_query = new WP_Query( 'page_id=209');
+				$the_query = new WP_Query( 'page_id=372'); ?>
+
+				<?php if ( $the_query->have_posts() ) : ?>
+
+				<!-- the loop -->
+					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+							<div class="formContent"><?php the_content(); ?></div>
+
+								<?php // This code adds an edit link for wp-users to edit content
+									edit_post_link( $link, $before, $after, $id ); ?> 
+
+
+					<?php endwhile; ?>
+				<!-- end of the loop -->
+
+				<!-- pagination here -->
+
+				<?php wp_reset_postdata(); ?>
+
+					<?php else : ?>
+						<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+				<?php endif; 
+
+		?>	
+
+			</div>
 		</div>
 	</div>
 	<!-- <div id="primary" class="content-area">
@@ -55,17 +145,50 @@ get_header(); ?>
 
 <?php /* get_sidebar(); */?>
 <!--Velocity Animation Test!-->
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
-		$('.serviceIcon').velocity({opacity:0},{delay:700});
-		$('.serviceContent').velocity({opacity:0});
-		$('.titleBox').velocity("transition.expandIn", 800);
-		$('.serviceContent').fadeIn().velocity("transition.bounceLeftIn", 700);
-		$('.serviceIcon').fadeIn().velocity("transition.slideLeftBigIn", 700);
-		
+		$('.layout .serviceIcon').velocity({opacity:0},{delay:500});
+		$('.layout .serviceContent').velocity({opacity:0});
+		$('.layout .titleBox').velocity("transition.expandIn", 600);
+		$('.layout .serviceContent').fadeIn().velocity("transition.bounceLeftIn", 500);
+		$('.layout .serviceIcon').fadeIn().velocity("transition.slideLeftBigIn", 600);
 
 		})
-	</script>!-->
+	</script>
+        <script type="text/javascript">
+                
+                var lay2 = $('div.layout2'),
+                    lay2Offset = lay2.offset().top/2,
+                    doc= $(document);
+                
+                doc.on('scroll', function() {
+                    if ( doc.scrollTop() > lay2Offset && lay2.hasClass('hidden') )
+                    { 
+                    	lay2.removeClass('hidden'); 
+                		$('.layout2 .serviceIcon').velocity({opacity:0},{delay:500});
+						$('.layout2 .serviceContent').velocity({opacity:0});
+						$('.layout2 .titleBox').velocity("transition.expandIn", 600);
+						$('.layout2 .serviceContent').fadeIn().velocity("transition.bounceLeftIn", 500);
+						$('.layout2 .serviceIcon').fadeIn().velocity("transition.slideLeftBigIn", 500);
+					}
+                });
+                 
+                  var lay3 = $('div.layout3'),
+                    lay3Offset = lay3.offset().top-500;
+                
+                doc.on('scroll', function() {
+                    if ( doc.scrollTop() > lay3Offset && lay3.hasClass('hidden') )
+                    { 
+                    	lay3.removeClass('hidden'); 
+                		$('.layout3 .serviceIcon').velocity({opacity:0},{delay:500});
+						$('.layout3 .serviceContent').velocity({opacity:0});
+						$('.layout3 .titleBox').velocity("transition.expandIn", 600);
+						$('.layout3 .serviceContent').fadeIn().velocity("transition.bounceLeftIn", 500);
+						$('.layout3 .serviceIcon').fadeIn().velocity("transition.slideLeftBigIn", 500);
+					}
+                });
+            
+        </script>
 
 <?php get_footer(); ?>

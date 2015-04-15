@@ -12,25 +12,8 @@ background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
 
 }
 
-.layout{
-	min-height:750px;
-	width:100%;
-}
-
-.layout2{
-	min-height:750px;
-	width:100%;
-}
-
-.layout2 .serviceContent{
-	float:left;
-	margin:0;
-	//margin-top:-2.7em;
-}
-
-.layout2 .serviceIcon{
-	float:right;
-	padding-top: 4em;
+.page-services img{
+	width:450px;
 }
 
 .service {
@@ -39,36 +22,6 @@ background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
 	//visibility: hidden;
 	//float:left;
 }
-
-.serviceIcon{
-	float:left;
-	padding-top: 4em;
-	//display: none;
-}
-
-.serviceContent{
-	border: 1px solid #FFFFFF;
-	border-radius: 1px;
-	//font-size: 12px;
-	/* Rectangle 8: */
-	background: rgba(0,0,0,0.09);
-	/* We offer a wide rang: */
-	font-family: Helvetica-Light;
-	font-size: 24px;
-	color: #F7F1F1;
-	line-height: 28px;
-	float: right;
-	//margin-left: 2em;
-	padding:1em;
-	height:23em;
-	width:20em;
-	//margin-top:-2.7em;
-	//display:none;
-	// -webkit-transition: opacity .7s ease-in-out;
-	// -moz-transition: opacity .7s ease-in-out;
-	// -o-transition: opacity .7s ease-in-out;
-}
-
 
 .page-services .titleBox{
 border: 1px solid #FFFFFF;
@@ -82,4 +35,130 @@ width: 90%;
 margin: 0 auto;
 padding-top:.5em;
 padding-left: .5em;
+}
+/**********************
+ * Layout 1 Styles
+ *********************/
+.layout{
+	min-height:600px;
+	width:100%;
+}
+
+.layout .serviceIcon{
+	float:left;
+	padding-top: 4em;
+	padding-left: 3em;
+	display: none;
+}
+
+.layout .serviceContent{
+	margin-top: -0.1em;
+	border: 1px solid #FFFFFF;
+	border-radius: 1px;
+	//font-size: 12px;
+	background: rgba(0,0,0,0.09);
+	font-family: Helvetica-Light;
+	font-size: 12px;
+	color: #F7F1F1;
+	line-height: 28px;
+	float: right;
+	//margin-left: 2em;
+	padding:1em;
+	height:90%;
+	width:45%;
+	//margin-top:-2.7em;
+	display:none;
+
+
+	// -webkit-transition: opacity .7s ease-in-out;
+	// -moz-transition: opacity .7s ease-in-out;
+	// -o-transition: opacity .7s ease-in-out;
+}
+
+/**********************
+ * Layout 2 Styles
+ *********************/
+
+.layout2 {
+	min-height:600px;
+	width:100%;
+}
+
+.layout2 .serviceContent{
+	margin-top: -1em;
+	border: 1px solid #FFFFFF;
+	border-radius: 1px;
+	//font-size: 12px;
+	background: rgba(0,0,0,0.09);
+	font-family: Helvetica-Light;
+	font-size: 12px;
+	color: #F7F1F1;
+	line-height: 28px;
+	padding:1em;
+	height:90%;
+	width:45%;
+
+	float:left;
+	margin:0;
+	//margin-top:-2.7em;
+	display: none;
+
+}
+
+.layout2 .serviceIcon{
+	float:right;
+	padding-top: 4em;
+	display: none;
+}
+
+.layout2.hidden{
+	opacity:0;
+}
+
+/**********************
+ * Layout 3 Styles
+ *********************/
+
+
+.layout3{
+	min-height:600px;
+	width:100%;
+}
+
+
+.layout3 img{
+	width:300px;
+}
+
+.layout3 .serviceIcon{
+	float:left;
+	padding-top: 4em;
+	padding-left:5em;
+	display: none;
+}
+
+.layout3 .serviceContent{
+	margin-top: -0.06em;
+	border: 1px solid #FFFFFF;
+	border-radius: 1px;
+	//font-size: 12px;
+	background: rgba(0,0,0,0.09);
+	font-family: Helvetica-Light;
+	font-size: 12px;
+	color: #F7F1F1;
+	line-height: 28px;
+	float: right;
+	padding:1em;
+	height:90%;
+	width:45%;
+	display:none;
+
+
+	// -webkit-transition: opacity .7s ease-in-out;
+	// -moz-transition: opacity .7s ease-in-out;
+	// -o-transition: opacity .7s ease-in-out;
+}
+
+.layout3.hidden{
+	opacity:0;
 }
