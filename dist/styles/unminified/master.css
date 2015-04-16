@@ -1838,7 +1838,7 @@ ul.tabs li.current {
   margin-top: 100px; }
 
 .layout2 .serviceContent {
-  margin-top: -1em;
+  margin-top: -0.1em;
   border: 1px solid #FFFFFF;
   border-radius: 1px;
   background: rgba(0, 0, 0, 0.09);
@@ -1850,7 +1850,6 @@ ul.tabs li.current {
   height: 90%;
   width: 45%;
   float: left;
-  margin: 0;
   display: none; }
 
 .layout2 .serviceIcon {
