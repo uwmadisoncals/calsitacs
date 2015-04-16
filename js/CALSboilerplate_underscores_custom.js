@@ -156,12 +156,12 @@
 
 
 				});
-				console.log(searchWidthArray);
-				console.log(singleSearchResultArr);
-				console.log(typeof singleSearchResultArr);
+				//console.log(searchWidthArray);
+				//console.log(singleSearchResultArr);
+				//console.log(typeof singleSearchResultArr);
 
 
-			}
+				}
 			
 			
 		}
@@ -191,16 +191,17 @@
 			
 
 		}
-
-		$(".serviceWrapper > div > a, .serviceHeading").mousedown(function(){
+		//On mouse down, prevent certain elements from triggering onBlur event
+		$(".serviceWrapper > div > a, .serviceHeading, .singleSearchResult").mousedown(function(){
 
 			iconClickInProgress = true;
-			console.log("iconClickInProgress: "+iconClickInProgress);
+			//console.log("iconClickInProgress: "+iconClickInProgress);
 		});
 
-		$(".serviceWrapper > div > a, .serviceHeading").mouseup(function(){
+		//On mouse up, restore original onBlur functionality
+		$(".serviceWrapper > div > a, .serviceHeading, .singleSearchResult").mouseup(function(){
 			iconClickInProgress = false;
-			console.log("iconClickInProgress: "+iconClickInProgress);
+			//console.log("iconClickInProgress: "+iconClickInProgress);
 		});
 
 		//Handle searchfield on focus event
@@ -223,7 +224,7 @@
 				
 				if( $("body").hasClass("page-home") ){
 
-				//serviceSearchDeactivate(); 
+				serviceSearchDeactivate(); 
 				
 				}
 
