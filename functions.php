@@ -164,3 +164,22 @@ $output = $copyright;
 }
 return $output;
 }
+
+
+//trying out .getScript
+wp_register_script( 'testjs', get_template_directory_uri() . '/js/test.js'); //register the script for later use in enqueue_script
+
+ $testjs =89;  //an arbitrary variable
+
+$translation_array = array(  //an array for testing
+	'some_string' =>'Some string to translate',
+	'a_value' => '10',
+	'NestedArray'=>array("index"=>"value","postID"=>"6")
+);
+
+$commonSearchArray = array("term1","term2","robots" );
+
+// make php array available via javascript. Params: which registered script, what it will be named for use in js, which array
+wp_localize_script( 'testjs', 'testjs_object', $commonSearchArray );
+
+wp_enqueue_script( 'testjs' );
