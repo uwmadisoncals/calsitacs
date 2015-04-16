@@ -167,7 +167,7 @@ return $output;
 
 
 //trying out .getScript
-wp_register_script( 'testjs', get_template_directory_uri() . '/js/test.js'); //register the script for later use in enqueue_script
+wp_register_script( 'testjs', get_template_directory_uri() . '/js/test.js', array('jquery')); //register the script for later use in enqueue_script
 
  $testjs =89;  //an arbitrary variable
 
@@ -177,9 +177,38 @@ $translation_array = array(  //an array for testing
 	'NestedArray'=>array("index"=>"value","postID"=>"6")
 );
 
-$commonSearchArray = array("term1","term2","robots" );
+$commonSearchArray = array("term1","term2","robots","term4","term5","term6","term7","term8","term9","term10","term11" );
+$commonSearchArray2 = array
+	(
+
+	"0" => array
+		( 
+		"term_name"=>"cheerios",
+		"href"=>"http://it.calsmain.localhost/services"
+		),
+
+	"1" => array
+		(
+		"term_name"=>"term2",
+		"href"=>"http://it.calsmain.localhost/services"
+		),
+
+	"2" => array
+		(
+		"term_name"=>"robots",
+		"href"=>"http://it.calsmain.localhost/services"
+		),
+
+	"3" => array
+		(
+		"term_name"=>"term4",
+		"href"=>"http://it.calsmain.localhost/services"
+		)
+
+
+	);
 
 // make php array available via javascript. Params: which registered script, what it will be named for use in js, which array
-wp_localize_script( 'testjs', 'testjs_object', $commonSearchArray );
+wp_localize_script( 'testjs', 'testjs_object', $commonSearchArray2 );
 
 wp_enqueue_script( 'testjs' );

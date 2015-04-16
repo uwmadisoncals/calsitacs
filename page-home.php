@@ -56,5 +56,8 @@ get_header(); ?>
 <?php //get_sidebar(); 
 //logit($wp_query,'$wp_query: ');
 //logit($translation_array,'$translation_array: ');
+//logit($commonSearchArray,'$commonSearchArray: ');
+//logit($commonSearchArray2,'$commonSearchArray2: ');
+?>
 ?>
 <?php get_footer(); ?>

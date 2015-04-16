@@ -88,17 +88,16 @@ if ( is_front_page() ) { ?>
 
 			<div class="searchResults">
 				<ul> 
-					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 1</a></li>
-					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 2</a></li>
-					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 3</a></li>
-					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 4</a></li>
-					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 5</a></li>
-					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 6</a></li>
-					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 7</a></li>
-					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 8</a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="http://it.calsmain.localhost/services" ></a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
 
-					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">Search Result 9</a></li>
-					<li class="singleSearchResult" ><a class="linkSearchResult" href="" alt="">10</a></li>
 
 					<!-- Commenting these out until able to use text-fadeout effect on overflow
 					     TODO: linear gradient with transparency that fades out overflowing text
