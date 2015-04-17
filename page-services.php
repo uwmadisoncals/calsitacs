@@ -144,18 +144,19 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php /* get_sidebar(); */?>
-<!--Velocity Animation Test!-->
+<!--Velocity Animation Test-->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
 		$('.layout .serviceIcon').velocity({opacity:0},{delay:500});
 		$('.layout .serviceContent').velocity({opacity:0});
 		$('.layout .titleBox').velocity("transition.expandIn", 600);
-		$('.layout .serviceContent').fadeIn().velocity("transition.bounceLeftIn", 500);
+		$('.layout .serviceContent').fadeIn().velocity("transition.slideRightBigIn", 500);
 		$('.layout .serviceIcon').fadeIn().velocity("transition.slideLeftBigIn", 600);
 
 		})
 	</script>
+<!--Scroll Animation Triggers-->
         <script type="text/javascript">
                 
                 var lay2 = $('div.layout2'),
@@ -169,8 +170,8 @@ get_header(); ?>
                 		$('.layout2 .serviceIcon').velocity({opacity:0},{delay:500});
 						$('.layout2 .serviceContent').velocity({opacity:0});
 						$('.layout2 .titleBox').velocity("transition.expandIn", 600);
-						$('.layout2 .serviceContent').fadeIn().velocity("transition.bounceLeftIn", 500);
-						$('.layout2 .serviceIcon').fadeIn().velocity("transition.slideLeftBigIn", 500);
+						$('.layout2 .serviceContent').fadeIn().velocity("transition.slideLeftBigIn", 500);
+						$('.layout2 .serviceIcon').fadeIn().velocity("transition.slideRightBigIn", 500);
 					}
                 });
                  
@@ -184,7 +185,7 @@ get_header(); ?>
                 		$('.layout3 .serviceIcon').velocity({opacity:0},{delay:500});
 						$('.layout3 .serviceContent').velocity({opacity:0});
 						$('.layout3 .titleBox').velocity("transition.expandIn", 600);
-						$('.layout3 .serviceContent').fadeIn().velocity("transition.bounceLeftIn", 500);
+						$('.layout3 .serviceContent').fadeIn().velocity("transition.slideRightBigIn", 500);
 						$('.layout3 .serviceIcon').fadeIn().velocity("transition.slideLeftBigIn", 500);
 					}
                 });
