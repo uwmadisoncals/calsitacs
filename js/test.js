@@ -2,8 +2,6 @@
 jQuery(document).ready(function(){
 
 
-
-
 //console.log("test.js executed!");
 //console.log("in NestedArray, the value for postID: "+testjs_object.NestedArray.postID);
 console.log( testjs_object);
@@ -21,11 +19,12 @@ console.log(searchObj[0].term_name, searchObj[0].href);
 
 $("#input-16").focus(function(){
 
+/*
 	$(".linkSearchResult").contents().filter(function(){
 
 							return this.nodeType == 3 ; //remove any text nodes already there
 
-						}).remove();
+						}).remove(); */
 
 /*
 	//$(".linkSearchResult").html("something else");
@@ -36,17 +35,28 @@ $("#input-16").focus(function(){
 		if(index === 8) return false; //ensure that it iterates only 9 times max
 	}); 
 */
+var testjs_object;
 
-for(i=0;testjs_object.length;i++) {
+var numOfMatchedElem = testjs_object.length;
+
+for(i=0;i <= numOfMatchedElem; i++) {
 
 	$(".searcResults ul").append("<li><a href='#'>" + testjs_object[i].term_name + "</a></li>");
+	//$(".searcResults ul").append("<li class=\"singleSearchResult\" ><a class=\"linkSearchResult\" href=\"http://it.calsmain.localhost/services\" >dogchow</a></li>");
 
+	//console.log("term_name: "+testjs_object[i].term_name);
 
-	if(i===8) return false;
-}
+	
 
+	//if(i===8) return false;
+} 
 
+/*
 $(".linkSearchResult").each(function(i,value){
+
+var numOfMatchedElem = testjs_object.length;
+
+console.log("numOfMatchedElem: "+numOfMatchedElem);
 
 	//console.log(testjs_object[index].term_name, testjs_object[index].href );
 
@@ -55,11 +65,11 @@ $(".linkSearchResult").each(function(i,value){
 
 //console.log(testjs_object[i].term_name);
 
-	if(i === 8) return false; //ensure that it iterates only 9 times max
+	if(i === numOfMatchedElem) return false; //ensure that it iterates only 9 times max
 
-}); 
+}); */
 
-console.log(testjs_object.length);
+//console.log(testjs_object.length);
 
 });
 

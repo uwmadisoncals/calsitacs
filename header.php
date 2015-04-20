@@ -87,7 +87,7 @@ if ( is_front_page() ) { ?>
 		<div class="searchResultsWrapper">
 
 			<div class="searchResults">
-				<ul> 
+				<ul> <!--
 					<li class="singleSearchResult" ><a class="linkSearchResult" href="http://it.calsmain.localhost/services" ></a></li>
 					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
 					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
@@ -96,7 +96,8 @@ if ( is_front_page() ) { ?>
 					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
 					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
 					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
-					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
+					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li> -->
+
 
 
 					<!-- Commenting these out until able to use text-fadeout effect on overflow
