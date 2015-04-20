@@ -221,11 +221,79 @@ wp_enqueue_script( 'testjs' );
 
 
 
-function add_our_script() {
- 
-wp_register_script( 'ajax-js', get_template_directory_uri() . '/js/ajax.js', array( 'jquery' ), '', true );
-wp_localize_script( 'ajax-js', 'ajax_params', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
-wp_enqueue_script( 'ajax-js' );
- 
+
+function itacs_ajax_scripts(){
+
+wp_register_script( 'ajaxjs', get_template_directory_uri() . '/js/ajax.js', array('jquery')); //register the script for later use in enqueue_script
+
+wp_enqueue_script('ajaxjs');
+
+wp_localize_script( 'ajaxjs', 'MyAjax', 
+	array(
+		'ajaxurl' => admin_url( 'admin-ajax.php' ),
+		'security' => wp_create_nonce( 'my-special-string' )
+		) 
+);
+
+} //END itacs_ajax_scripts()
+
+add_action( 'wp_enqueue_scripts', 'itacs_ajax_scripts' );
+
+// The ajax server side event handler, it passes data to the javascript success callback function
+function itacs_ajax_callback(){ 
+	
+	$args = array( //parameters for get_posts function
+	'posts_per_page'   => -1,
+	'offset'           => 0,
+	'category'         => '',
+	'category_name'    => '',
+	'orderby'          => 'post_date',
+	'order'            => 'DESC',
+	'include'          => '',
+	'exclude'          => '',
+	'meta_key'         => '',
+	'meta_value'       => '',
+	'post_type'        => 'post',
+	'post_mime_type'   => '',
+	'post_parent'      => '',
+	'post_status'      => 'publish',
+	'suppress_filters' => true 
+);
+
+$posts_array = get_posts( $args ); //assign variable to a PHP array of all posts, with args defining parameters
+
+$JSON_posts_array = json_encode($posts_array); //Pass data from PHP array to JSON String using json_encode
+
+//logit($posts_array,'$posts_array: ');
+//logit(gettype($JSON_posts_array),'gettype -> $JSON_posts_array: '); 
+//logit(gettype($posts_array),'gettype -> $posts_array: ');
+
+
+
+
+	check_ajax_referer( 'my-special-string', 'security');
+
+	$whatever = intval( $_POST['whatever'] );
+  	$whatever += 10;
+ 	//echo $whatever;
+ 	header( "Content-Type: application/json" ); //Explicity defines Content type as JSON
+
+ 	echo $JSON_posts_array;
+ 	
+  	die(); // this is required to return a proper result
 }
-add_action( 'wp_enqueue_scripts', 'add_our_script' );
+
+if ( is_admin() ) {
+    add_action( 'wp_ajax_my_frontend_action', 'itacs_ajax_callback' ); // for users logged in, on frontend
+    add_action( 'wp_ajax_nopriv_my_frontend_action', 'itacs_ajax_callback' ); // for non-logged in users, frontend
+    //add_action( 'wp_ajax_my_backend_action', 'itacs_ajax_callback' ); //for logged in back end users
+    // Add other back-end action hooks here
+} else {
+    // Add non-Ajax front-end action hooks here
+}
+
+
+
+
+
+

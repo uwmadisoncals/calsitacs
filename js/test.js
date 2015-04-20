@@ -37,11 +37,12 @@ $("#input-16").focus(function(){
 */
 var testjs_object;
 
-var numOfMatchedElem = testjs_object.length;
+//var numOfMatchedElem = testjs_object.length;
 
+/*
 for(i=0;i <= numOfMatchedElem; i++) {
 
-	$(".searcResults ul").append("<li><a href='#'>" + testjs_object[i].term_name + "</a></li>");
+	//$(".searcResults ul").append("<li><a href='#'>" + testjs_object[i].term_name + "</a></li>");
 	//$(".searcResults ul").append("<li class=\"singleSearchResult\" ><a class=\"linkSearchResult\" href=\"http://it.calsmain.localhost/services\" >dogchow</a></li>");
 
 	//console.log("term_name: "+testjs_object[i].term_name);
@@ -49,7 +50,7 @@ for(i=0;i <= numOfMatchedElem; i++) {
 	
 
 	//if(i===8) return false;
-} 
+} */
 
 /*
 $(".linkSearchResult").each(function(i,value){
