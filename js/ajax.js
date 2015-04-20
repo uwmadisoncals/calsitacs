@@ -7,6 +7,6 @@ jQuery(document).ready(function($) {
     };
  
     $.post(ajax_url, data, function(response) {
-        alert(response.whatever);
+        //alert(response.whatever);
     });
 });

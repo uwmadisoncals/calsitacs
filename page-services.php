@@ -13,12 +13,12 @@
 get_header(); ?>
 	<!--SERVICES!-->
 	<div class="layout">	
-		<div class="titleBox">Services</div>
 			<div class="service">
 				<div class="serviceIcon">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/hosticon.svg" alt=" ">
 				</div>
 			<div class="serviceContent">
+			<div class="titleBox">Services</div>
 			  <?php
 				// /the query 
 				//$the_query = new WP_Query( 'page_id=209');
@@ -52,10 +52,10 @@ get_header(); ?>
 	</div>
 	<!--EQUIPMENT!-->
 	<div class="layout2 hidden">
-		<div class="titleBox">Equipment</div>
 			<div class="service">
 					<div class="serviceContent">
-						
+						<div class="titleBox">Equipment</div> 
+						<!--'page_id=368'-->
 						 <?php
 				// /the query 
 				//$the_query = new WP_Query( 'page_id=209');
@@ -92,9 +92,9 @@ get_header(); ?>
 	</div>
 	<!--IT SECURITY!-->
 	<div class="layout3 hidden">	
-		<div class="titleBox">IT Security</div>
 			<div class="service">
 				<div class="serviceIcon">
+					<div class="titleBox">IT Security</div>
 					<img src="<?php echo get_template_directory_uri(); ?>/img/securityicon.svg" alt=" ">
 				</div>
 			<div class="serviceContent">
@@ -144,6 +144,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php /* get_sidebar(); */?>
+
 <!--Velocity Animation Test-->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script>
@@ -176,7 +177,7 @@ get_header(); ?>
                 });
                  
                   var lay3 = $('div.layout3'),
-                    lay3Offset = lay3.offset().top-500;
+                    lay3Offset = lay3.offset().top/1.5;
                 
                 doc.on('scroll', function() {
                     if ( doc.scrollTop() > lay3Offset && lay3.hasClass('hidden') )
@@ -189,6 +190,7 @@ get_header(); ?>
 						$('.layout3 .serviceIcon').fadeIn().velocity("transition.slideLeftBigIn", 500);
 					}
                 });
+
             
         </script>
 
