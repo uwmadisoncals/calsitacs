@@ -58,6 +58,7 @@ get_header(); ?>
 //logit($translation_array,'$translation_array: ');
 //logit($commonSearchArray,'$commonSearchArray: ');
 //logit($commonSearchArray2,'$commonSearchArray2: ');
+
 ?>
 ?>
 <?php get_footer(); ?>
