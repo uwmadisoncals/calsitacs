@@ -15,12 +15,18 @@ jQuery(document).ready(function($) {
 	  // This is the ajax request to the server
 	  $.post(MyAjax.ajaxurl, data, function(response) {
 
-	    console.log(response); //this is the ajax success callback function, it manipulates the RESPONSE from the server
+	  		var ajaxResponseLength = response.length;
 
-	    console.log( response[1].post_title );
+	    	console.log(response); //this is the ajax success callback function, it manipulates the RESPONSE from the server	
 
-	  });
+			for( i=0; i < ajaxResponseLength; i++ ) {
 
-	}
+				$(".searchResults ul").append("<li><a href='" + response[i].post_permalink + "'>" + response[i].post_title + "</a></li>");
+
+			}
+
+	  }); //END $.post
+
+	}//END ispage home
 
 }); //END jQuery.ready

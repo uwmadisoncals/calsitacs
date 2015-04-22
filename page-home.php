@@ -60,5 +60,4 @@ get_header(); ?>
 //logit($commonSearchArray2,'$commonSearchArray2: ');
 
 ?>
-?>
 <?php get_footer(); ?>
