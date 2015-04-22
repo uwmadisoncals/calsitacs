@@ -497,6 +497,8 @@ textarea {
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
+  padding-bottom:7px;
+
 }
 
 .input__label--yoko {
@@ -504,6 +506,7 @@ textarea {
   width: 100%;
   color: $uwTan;
   text-align: left;
+  font-size:1em;
 }
 
 .input__label--yoko::before {

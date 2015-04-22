@@ -17,11 +17,11 @@ jQuery(document).ready(function($) {
 
 	  		var ajaxResponseLength = response.length;
 
-	    	console.log(response); //this is the ajax success callback function, it manipulates the RESPONSE from the server	
+	    	//console.log(response); //this is the ajax success callback function, it manipulates the RESPONSE from the server	
 
 			for( i=0; i < ajaxResponseLength; i++ ) {
 
-				$(".searchResults ul").append("<li><a href='" + response[i].post_permalink + "'>" + response[i].post_title + "</a></li>");
+				$(".searchResults ul").append("<li class='singleSearchResult' ><a class='linkSearchResult' href='" + response[i].post_permalink + "'>" + response[i].post_title + "</a></li>");
 
 			}
 

@@ -1405,13 +1405,15 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
   color: #f5f5f5;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s; }
+  transition: opacity 0.3s;
+  padding-bottom: 7px; }
 
 .input__label--yoko {
   position: relative;
   width: 100%;
   color: #CBC8B7;
-  text-align: left; }
+  text-align: left;
+  font-size: 1em; }
 
 .input__label--yoko::before {
   content: '';
