@@ -498,7 +498,12 @@ textarea {
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
   padding-bottom:7px;
+  font-size:3.5em;
 
+}
+
+input#input-16{
+  padding:0px;
 }
 
 .input__label--yoko {
@@ -508,6 +513,8 @@ textarea {
   text-align: left;
   font-size:1em;
 }
+
+
 
 .input__label--yoko::before {
   content: '';

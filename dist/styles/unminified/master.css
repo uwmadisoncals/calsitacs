@@ -1406,7 +1406,11 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
-  padding-bottom: 7px; }
+  padding-bottom: 7px;
+  font-size: 3.5em; }
+
+input#input-16 {
+  padding: 0px; }
 
 .input__label--yoko {
   position: relative;
