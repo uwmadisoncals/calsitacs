@@ -1199,7 +1199,7 @@ html body.page {
     width: 80%; }
     .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult {
       margin: 0 0 0.5em 0;
-      text-align: center;
+      text-align: left;
       font-family: Raleway, sans-serif;
       font-size: 1.2em;
       letter-spacing: 1px;
@@ -1215,6 +1215,10 @@ html body.page {
           text-decoration: none; }
         .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult:hover {
           color: #CBC8B7; }
+
+.commonSearches {
+  margin-bottom: 10px;
+  margin-top: 15px; }
 
 .cyan.service-search-active div.serviceWrapper {
   width: 25%;

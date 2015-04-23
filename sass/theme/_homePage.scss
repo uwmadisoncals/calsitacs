@@ -198,7 +198,7 @@ z-index:2;
  
       & > li.singleSearchResult{
         margin: 0 0 .5em 0;
-        text-align:center;
+        text-align:left;
         font-family: Raleway, sans-serif;
         font-size:1.2em;
         letter-spacing: 1px;
@@ -239,6 +239,11 @@ z-index:2;
 
 
 
+}
+
+.commonSearches{
+  margin-bottom:10px;
+  margin-top:15px;
 }
 
 .cyan.service-search-active div.serviceWrapper{
