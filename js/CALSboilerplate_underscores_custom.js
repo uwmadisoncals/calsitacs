@@ -4,9 +4,17 @@
 	//  Notes: new requirements for SPO
 	//  * Redudce animation speed by .5 or even less
 	//  * searchbox more prominent, replace background fill (see http://tympanus.net/Development/TextInputEffects/    ...akira)
-	//  * Instead of row of icons, display list (below it/acs heading).
+	//  
 	//  * Initially, list displays common items, but search suggests as user types (fading away irrelevent list items)
 	//  * make responsive
+	//  * remove calsit/acs, but on focus it should fade
+	//  *"how may we help you " text should be styled the same as was before, not italicized eetc
+	//  *put padding below the searchbox on how may we help
+	//  *add headings to common search items
+	//  *left align search items, and width should match searchfield or "how may...help you"
+	//  *if # of suggested/common search items is in excess, programatically show a button for more search results
+	//  * the icons in the white area below should not have description text, but rather be like a grid, and show more details on hover card
+	//  *typography fixes ...see notes
 	//  
 	//  
 	//  Additional:
