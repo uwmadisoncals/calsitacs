@@ -503,7 +503,13 @@ textarea {
 }
 
 input#input-16{
-  padding:0px;
+  padding:0 .5em;
+  position:relative;
+  top:10px;
+
+  &:focus{
+    color:white;
+  }
 }
 
 .input__label--yoko {

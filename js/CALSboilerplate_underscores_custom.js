@@ -7,9 +7,6 @@
 	//  
 	//  * Initially, list displays common items, but search suggests as user types (fading away irrelevent list items)
 	//  * make responsive
-	//  * remove calsit/acs, but on focus it should fade
-	//  *"how may we help you " text should be styled the same as was before, not italicized eetc
-	//  *put padding below the searchbox on how may we help
 	//  *add headings to common search items
 	//  *left align search items, and width should match searchfield or "how may...help you"
 	//  *if # of suggested/common search items is in excess, programatically show a button for more search results
@@ -135,12 +132,12 @@
 
 			//Remove old sub heading text with fade transition and replace it 
 			$(".subHeading").fadeOut("slow",function(){
-								
-				$(this).css({"font-weight": "500","font-style":"italic"});
 
 				$(this).text("How may we help you?").fadeIn();
 
 			});
+
+			$(".branding").animate({opacity:0},700);
 
 			//add .service-search-active to several selectors 
 			$(" .height-div, .homePageFeature, .subHeading, #services-searchfield, #input-16, .cyan, .serviceWrapper, .opacityLayer ").addClass("service-search-active");
@@ -181,9 +178,10 @@
 			//reinstate the original subheading text with fade transition
 			$(".subHeading").fadeOut("slow",function(){
 
-				$(this).css({"font-weight": "100","font-style":"normal"});
-
 				$(this).text("Here for you.").fadeIn();
+
+				$(".branding").animate({opacity:1},700);
+
 			});
 
 			setTimeout(function(){

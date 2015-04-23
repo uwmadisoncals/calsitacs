@@ -1410,7 +1410,11 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
   font-size: 3.5em; }
 
 input#input-16 {
-  padding: 0px; }
+  padding: 0 0.5em;
+  position: relative;
+  top: 10px; }
+  input#input-16:focus {
+    color: white; }
 
 .input__label--yoko {
   position: relative;
