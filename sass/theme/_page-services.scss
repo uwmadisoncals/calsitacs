@@ -1,8 +1,9 @@
 .page-services #content{
-	//background:white;
+	background:white;
 	//background: #4A4A4A;
 /* Grid Patter */
-background-color:$primaryHeaderBg;
+//background-color:$primaryHeaderBg;
+//background-color: #423030;
 // background-image: linear-gradient(white 2px, transparent 2px),
 // linear-gradient(90deg, white 2px, transparent 2px),
 // linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
@@ -14,6 +15,7 @@ background-color:$primaryHeaderBg;
 
 .page-services img{
 	width:450px;
+	padding-left: 4em;
 }
 
 .service {
@@ -21,36 +23,54 @@ background-color:$primaryHeaderBg;
 	padding-right:4em;
 	//visibility: hidden;
 	//float:left;
+
+	p{
+		font-family: 'Open Sans',sans-serif;
+  		font-weight: 100;
+  		font-size: 1.4em;
+  		line-height: 2.2em;
+  		color: black;
+
+	}
 }
 
 .page-services .titleBox{
-border: 1px solid #FFFFFF;
-border-radius: 1px;
-font-family: Helvetica-Light;
+//border: 1px solid #FFFFFF;
+//border-radius: 1px;
 font-size: 36px;
-color: #F7F1F1;
 //line-height: 43px;
-height: 2em;
+//height: 2em;
 width: 90%;
 margin: 0 auto;
 padding-top:.5em;
-padding-left: .5em;
+//padding-left: .5em;
+font-family: Helvetica;
+font-size: 48px;
+color: #696A6A;
+line-height: 58px;
 }
 /**********************
  * Layout 1 Styles
  *********************/
 .layout{
-	min-height:500px;
+	min-height:430px;
 	width:100%;
 	//margin-top:10px;
 	//background:white;
+}
+
+.layoutBottom{
+	background-image: url("../../../img/serviceBottomLayOut.svg");
+	min-height:300px;
+	//width:100%;
 }
 
 .layout .serviceIcon{
 	float:left;
 	padding-top: 4em;
 	padding-left: 3em;
-	display: none;
+	//display: none;
+	//width:100%;
 }
 
 .layout .serviceContent{
@@ -63,13 +83,13 @@ padding-left: .5em;
 	font-size: 12px;
 	color: #F7F1F1;
 	line-height: 28px;
-	float: right;
+	float: left;
 	//margin-left: 2em;
 	padding:1em;
 	height:90%;
 	width:45%;
 	//margin-top:-2.7em;
-	display:none;
+	//display:none;
 	overflow:auto;
 	margin-right: -.2em;
 
@@ -86,7 +106,22 @@ padding-left: .5em;
 .layout2 {
 	min-height:500px;
 	width:100%;
-	margin-top:100px;
+	//margin-top:100px;
+	background: #4A4A4A;
+
+	.titleBox{
+		color:white;
+	}
+
+	p{
+		font-family: Helvetica-Light;
+  		font-weight: 100;
+  		font-size: 1.4em;
+  		line-height: 2.2em;
+  		color: white;
+
+	}
+
 }
 
 .layout2 .serviceContent{
@@ -103,18 +138,19 @@ padding-left: .5em;
 	height:90%;
 	width:45%;
 	float:left;
-	display: none;
+	//display: none;
 	margin-left: -.2em;
+
 }
 
 .layout2 .serviceIcon{
 	float:right;
 	padding-top: 4em;
-	display: none;
+	//display: none;
 }
 
 .layout2.hidden{
-	opacity:0;
+	//opacity:0;
 }
 
 /**********************
@@ -125,19 +161,39 @@ padding-left: .5em;
 .layout3{
 	min-height:600px;
 	width:100%;
-	margin-top:50px;
+	//margin-top:50px;
+	background: #5E889E;
+
+	.titleBox{
+		color:white;
+	}
+
+	p{
+		font-family: Helvetica-Light;
+  		font-weight: 100;
+  		font-size: 1.4em;
+  		line-height: 2.2em;
+  		color: white;
+
+	}
+}
+
+.layout3Top{
+	background-color: #4A4A4A;
+	background-image: url("../../../img/itSecurityTopLayOut.svg");
+	height:300px;
 }
 
 
 .layout3 img{
-	width:300px;
+	//width:300px;
 }
 
 .layout3 .serviceIcon{
 	float:left;
 	padding-top: 4em;
 	padding-left:5em;
-	display: none;
+	//display: none;
 }
 
 .layout3 .serviceContent{
@@ -154,30 +210,11 @@ padding-left: .5em;
 	padding:1em;
 	height:90%;
 	width:45%;
-	display:none;
+	//display:none;
 	margin-right: -.2em;
 
-	// -webkit-transition: opacity .7s ease-in-out;
-	// -moz-transition: opacity .7s ease-in-out;
-	// -o-transition: opacity .7s ease-in-out;
 }
 
 .layout3.hidden{
-	opacity:0;
+	//opacity:0;
 }
-
-  // margin-top: -.1em;
-  // /* border: 1px solid #FFF; */
-  // border-radius: 1px;
-  // /* background: rgba(0,0,0,.09); */
-  // font-family: Helvetica-Light;
-  // font-size: 12px;
-  // color: #F7F1F1;
-  // line-height: 28px;
-  // float: right;
-  // padding: 1em;
-  // height: 90%;
-  // width: 45%;
-  // display: none;
-  // overflow: auto;
-  // margin-right: -.2em;

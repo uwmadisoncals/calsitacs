@@ -15,7 +15,7 @@ get_header(); ?>
 	<div class="layout">	
 			<div class="service">
 				<div class="serviceIcon">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/hosticon.svg" alt=" ">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/service.svg" alt=" ">
 				</div>
 			<div class="serviceContent">
 			<div class="titleBox">Services</div>
@@ -50,6 +50,7 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+<div class="layoutBottom"></div>
 	<!--EQUIPMENT!-->
 	<div class="layout2 hidden">
 			<div class="service">
@@ -86,20 +87,19 @@ get_header(); ?>
 
 					</div>
 						<div class="serviceIcon">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/laptopicon.svg" alt=" ">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/equipment.svg" alt=" ">
 						</div>	
 			</div>
 	</div>
 	<!--IT SECURITY!-->
+<div class="layout3Top"></div>
 	<div class="layout3 hidden">	
 			<div class="service">
 				<div class="serviceIcon">
-					<div class="titleBox">IT Security</div>
-					<img src="<?php echo get_template_directory_uri(); ?>/img/securityicon.svg" alt=" ">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/itSecurity.svg" alt=" ">
 				</div>
-			<div class="serviceContent">
-				
-
+			<div class="serviceContent">	
+				<div class="titleBox">IT Security</div>
 						 <?php
 				// /the query 
 				//$the_query = new WP_Query( 'page_id=209');
@@ -147,51 +147,51 @@ get_header(); ?>
 
 <!--Velocity Animation Test-->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-		$('.layout .serviceIcon').velocity({opacity:0},{delay:500});
-		$('.layout .serviceContent').velocity({opacity:0});
-		$('.layout .titleBox').velocity("transition.expandIn", 600);
-		$('.layout .serviceContent').fadeIn().velocity("transition.slideRightBigIn", 500);
-		$('.layout .serviceIcon').fadeIn().velocity("transition.slideLeftBigIn", 600);
+	// <script>
+	// 	$(document).ready(function(){
+	// 	$('.layout .serviceIcon').velocity({opacity:0},{delay:500});
+	// 	$('.layout .serviceContent').velocity({opacity:0});
+	// 	//$('.layout .titleBox').velocity("transition.expandIn", 600);
+	// 	$('.layout .serviceContent').fadeIn().velocity("transition.slideRightBigIn", 500);
+	// 	$('.layout .serviceIcon').fadeIn().velocity("transition.slideLeftBigIn", 600);
 
-		})
-	</script>
+	// 	})
+	// </script>
 <!--Scroll Animation Triggers-->
-        <script type="text/javascript">
+     //    <script type="text/javascript">
                 
-                var lay2 = $('div.layout2'),
-                    lay2Offset = lay2.offset().top/2,
-                    doc= $(document);
+     //            var lay2 = $('div.layout2'),
+     //                lay2Offset = lay2.offset().top/2,
+     //                doc= $(document);
                 
-                doc.on('scroll', function() {
-                    if ( doc.scrollTop() > lay2Offset && lay2.hasClass('hidden') )
-                    { 
-                    	lay2.removeClass('hidden'); 
-                		$('.layout2 .serviceIcon').velocity({opacity:0},{delay:500});
-						$('.layout2 .serviceContent').velocity({opacity:0});
-						$('.layout2 .titleBox').velocity("transition.expandIn", 600);
-						$('.layout2 .serviceContent').fadeIn().velocity("transition.slideLeftBigIn", 500);
-						$('.layout2 .serviceIcon').fadeIn().velocity("transition.slideRightBigIn", 500);
-					}
-                });
+     //            doc.on('scroll', function() {
+     //                if ( doc.scrollTop() > lay2Offset && lay2.hasClass('hidden') )
+     //                { 
+     //                	lay2.removeClass('hidden'); 
+     //            		$('.layout2 .serviceIcon').velocity({opacity:0},{delay:500});
+					// 	$('.layout2 .serviceContent').velocity({opacity:0});
+					// 	//$('.layout2 .titleBox').velocity("transition.expandIn", 600);
+					// 	$('.layout2 .serviceContent').fadeIn().velocity("transition.slideLeftBigIn", 500);
+					// 	$('.layout2 .serviceIcon').fadeIn().velocity("transition.slideRightBigIn", 500);
+					// }
+     //            });
                  
-                  var lay3 = $('div.layout3'),
-                    lay3Offset = lay3.offset().top/1.5;
+     //              var lay3 = $('div.layout3'),
+     //                lay3Offset = lay3.offset().top/1.7;
                 
-                doc.on('scroll', function() {
-                    if ( doc.scrollTop() > lay3Offset && lay3.hasClass('hidden') )
-                    { 
-                    	lay3.removeClass('hidden'); 
-                		$('.layout3 .serviceIcon').velocity({opacity:0},{delay:500});
-						$('.layout3 .serviceContent').velocity({opacity:0});
-						$('.layout3 .titleBox').velocity("transition.expandIn", 600);
-						$('.layout3 .serviceContent').fadeIn().velocity("transition.slideRightBigIn", 500);
-						$('.layout3 .serviceIcon').fadeIn().velocity("transition.slideLeftBigIn", 500);
-					}
-                });
+     //            doc.on('scroll', function() {
+     //                if ( doc.scrollTop() > lay3Offset && lay3.hasClass('hidden') )
+     //                { 
+     //                	lay3.removeClass('hidden'); 
+     //            		$('.layout3 .serviceIcon').velocity({opacity:0},{delay:500});
+					// 	$('.layout3 .serviceContent').velocity({opacity:0});
+					// 	//$('.layout3 .titleBox').velocity("transition.expandIn", 600);
+					// 	$('.layout3 .serviceContent').fadeIn().velocity("transition.slideRightBigIn", 500);
+					// 	$('.layout3 .serviceIcon').fadeIn().velocity("transition.slideLeftBigIn", 500);
+					// }
+     //            });
 
             
-        </script>
+     //    </script>
 
 <?php get_footer(); ?>

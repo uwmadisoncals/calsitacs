@@ -1774,40 +1774,48 @@ ul.tabs li.current {
   padding-top: 5px; }
 
 .page-services #content {
-  /* Grid Patter */
-  background-color: #960001; }
+  background: white;
+  /* Grid Patter */ }
 
 .page-services img {
-  width: 450px; }
+  width: 450px;
+  padding-left: 4em; }
 
 .service {
   padding-left: 4em;
   padding-right: 4em; }
+  .service p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 1.4em;
+    line-height: 2.2em;
+    color: black; }
 
 .page-services .titleBox {
-  border: 1px solid #FFFFFF;
-  border-radius: 1px;
-  font-family: Helvetica-Light;
   font-size: 36px;
-  color: #F7F1F1;
-  height: 2em;
   width: 90%;
   margin: 0 auto;
   padding-top: 0.5em;
-  padding-left: 0.5em; }
+  font-family: Helvetica;
+  font-size: 48px;
+  color: #696A6A;
+  line-height: 58px; }
 
 /**********************
  * Layout 1 Styles
  *********************/
 .layout {
-  min-height: 500px;
+  min-height: 430px;
   width: 100%; }
+
+.layoutBottom {
+  background-image: url("../../../img/serviceBottomLayOut.svg");
+  min-height: 300px; }
 
 .layout .serviceIcon {
   float: left;
   padding-top: 4em;
-  padding-left: 3em;
-  display: none; }
+  padding-left: 3em; }
 
 .layout .serviceContent {
   margin-top: -0.1em;
@@ -1816,11 +1824,10 @@ ul.tabs li.current {
   font-size: 12px;
   color: #F7F1F1;
   line-height: 28px;
-  float: right;
+  float: left;
   padding: 1em;
   height: 90%;
   width: 45%;
-  display: none;
   overflow: auto;
   margin-right: -0.2em; }
 
@@ -1830,7 +1837,15 @@ ul.tabs li.current {
 .layout2 {
   min-height: 500px;
   width: 100%;
-  margin-top: 100px; }
+  background: #4A4A4A; }
+  .layout2 .titleBox {
+    color: white; }
+  .layout2 p {
+    font-family: Helvetica-Light;
+    font-weight: 100;
+    font-size: 1.4em;
+    line-height: 2.2em;
+    color: white; }
 
 .layout2 .serviceContent {
   margin-top: -0.1em;
@@ -1843,16 +1858,11 @@ ul.tabs li.current {
   height: 90%;
   width: 45%;
   float: left;
-  display: none;
   margin-left: -0.2em; }
 
 .layout2 .serviceIcon {
   float: right;
-  padding-top: 4em;
-  display: none; }
-
-.layout2.hidden {
-  opacity: 0; }
+  padding-top: 4em; }
 
 /**********************
  * Layout 3 Styles
@@ -1860,16 +1870,25 @@ ul.tabs li.current {
 .layout3 {
   min-height: 600px;
   width: 100%;
-  margin-top: 50px; }
+  background: #5E889E; }
+  .layout3 .titleBox {
+    color: white; }
+  .layout3 p {
+    font-family: Helvetica-Light;
+    font-weight: 100;
+    font-size: 1.4em;
+    line-height: 2.2em;
+    color: white; }
 
-.layout3 img {
-  width: 300px; }
+.layout3Top {
+  background-color: #4A4A4A;
+  background-image: url("../../../img/itSecurityTopLayOut.svg");
+  height: 300px; }
 
 .layout3 .serviceIcon {
   float: left;
   padding-top: 4em;
-  padding-left: 5em;
-  display: none; }
+  padding-left: 5em; }
 
 .layout3 .serviceContent {
   margin-top: -0.06em;
@@ -1882,11 +1901,7 @@ ul.tabs li.current {
   padding: 1em;
   height: 90%;
   width: 45%;
-  display: none;
   margin-right: -0.2em; }
-
-.layout3.hidden {
-  opacity: 0; }
 
 body.stop-scrolling {
   height: 100%;
