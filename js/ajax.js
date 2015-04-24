@@ -1,17 +1,4 @@
 jQuery(document).ready(function($) {
-<<<<<<< HEAD
- 
-    var ajax_url = ajax_params.ajax_url; // so we access our ajax_url through the ajax_params object
-    var data = {
-        'action': 'my_action',
-        'whatever': 1234
-    };
- 
-    $.post(ajax_url, data, function(response) {
-        //alert(response.whatever);
-    });
-});
-=======
 
 	if($('body').is('.page-home')){
 
@@ -28,13 +15,18 @@ jQuery(document).ready(function($) {
 	  // This is the ajax request to the server
 	  $.post(MyAjax.ajaxurl, data, function(response) {
 
-	    console.log(response); //this is the ajax success callback function, it manipulates the RESPONSE from the server
+	  		var ajaxResponseLength = response.length;
 
-	    console.log( response[1].post_title );
+	    	console.log(response); //this is the ajax success callback function, it manipulates the RESPONSE from the server	
 
-	  });
+			for( i=0; i < ajaxResponseLength; i++ ) {
 
-	}
+				$(".searchResults ul").append("<li><a href='" + response[i].post_permalink + "'>" + response[i].post_title + "</a></li>");
+
+			}
+
+	  }); //END $.post
+
+	}//END ispage home
 
 }); //END jQuery.ready
->>>>>>> 1fd08164ba29562a1aa87a007b22e27ee8cd5103
