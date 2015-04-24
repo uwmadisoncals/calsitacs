@@ -1199,7 +1199,7 @@ html body.page {
     width: 80%; }
     .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult {
       margin: 0 0 0.5em 0;
-      text-align: center;
+      text-align: left;
       font-family: Raleway, sans-serif;
       font-size: 1.2em;
       letter-spacing: 1px;
@@ -1215,6 +1215,10 @@ html body.page {
           text-decoration: none; }
         .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult:hover {
           color: #CBC8B7; }
+
+.commonSearches {
+  margin-bottom: 10px;
+  margin-top: 15px; }
 
 .cyan.service-search-active div.serviceWrapper {
   width: 25%;
@@ -1405,13 +1409,23 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
   color: #f5f5f5;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s; }
+  transition: opacity 0.3s;
+  padding-bottom: 7px;
+  font-size: 3.5em; }
+
+input#input-16 {
+  padding: 0 0.5em;
+  position: relative;
+  top: 10px; }
+  input#input-16:focus {
+    color: white; }
 
 .input__label--yoko {
   position: relative;
   width: 100%;
   color: #CBC8B7;
-  text-align: left; }
+  text-align: left;
+  font-size: 1em; }
 
 .input__label--yoko::before {
   content: '';

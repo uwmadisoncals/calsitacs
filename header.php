@@ -59,7 +59,7 @@
 if ( is_front_page() ) { ?>
 
 	<div class="homePageFeature">
-		<h2>CALS IT/ACS</h2>
+		<h2 class="branding" >CALS IT/ACS</h2>
 		<h2 class="subHeading">Here for you.</h2>
 		
 		<div class="services-searchbox">
@@ -87,17 +87,8 @@ if ( is_front_page() ) { ?>
 		<div class="searchResultsWrapper">
 
 			<div class="searchResults">
-				<ul> <!--
-					<li class="singleSearchResult" ><a class="linkSearchResult" href="http://it.calsmain.localhost/services" ></a></li>
-					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
-					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
-					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
-					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
-					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
-					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
-					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li>
-					<li class="singleSearchResult" ><a class="linkSearchResult" href="" ></a></li> -->
-
+				<ul> 
+					<li class="commonSearches" >Common Searches:</li>
 
 
 					<!-- Commenting these out until able to use text-fadeout effect on overflow

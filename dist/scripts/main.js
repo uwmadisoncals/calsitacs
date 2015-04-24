@@ -13835,9 +13835,14 @@ return function (global, window, document, undefined) {
 	//  Notes: new requirements for SPO
 	//  * Redudce animation speed by .5 or even less
 	//  * searchbox more prominent, replace background fill (see http://tympanus.net/Development/TextInputEffects/    ...akira)
-	//  * Instead of row of icons, display list (below it/acs heading).
+	//  
 	//  * Initially, list displays common items, but search suggests as user types (fading away irrelevent list items)
 	//  * make responsive
+	//  *add headings to common search items
+	//  *left align search items, and width should match searchfield or "how may...help you"
+	//  *if # of suggested/common search items is in excess, programatically show a button for more search results
+	//  * the icons in the white area below should not have description text, but rather be like a grid, and show more details on hover card
+	//  *typography fixes ...see notes
 	//  
 	//  
 	//  Additional:
@@ -13958,12 +13963,12 @@ return function (global, window, document, undefined) {
 
 			//Remove old sub heading text with fade transition and replace it 
 			$(".subHeading").fadeOut("slow",function(){
-								
-				$(this).css({"font-weight": "500","font-style":"italic"});
 
 				$(this).text("How may we help you?").fadeIn();
 
 			});
+
+			$(".branding").animate({opacity:0},700);
 
 			//add .service-search-active to several selectors 
 			$(" .height-div, .homePageFeature, .subHeading, #services-searchfield, #input-16, .cyan, .serviceWrapper, .opacityLayer ").addClass("service-search-active");
@@ -14004,9 +14009,10 @@ return function (global, window, document, undefined) {
 			//reinstate the original subheading text with fade transition
 			$(".subHeading").fadeOut("slow",function(){
 
-				$(this).css({"font-weight": "100","font-style":"normal"});
-
 				$(this).text("Here for you.").fadeIn();
+
+				$(".branding").animate({opacity:1},700);
+
 			});
 
 			setTimeout(function(){
