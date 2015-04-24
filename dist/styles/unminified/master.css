@@ -1797,13 +1797,21 @@ ul.tabs li.current {
 
 .service {
   padding-left: 4em;
-  padding-right: 4em; }
+  padding-right: 4em;
+  min-height: 500px;
+  padding-top: 4em; }
   .service p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     font-size: 1.4em;
     line-height: 2.2em;
     color: black; }
+
+.service2 {
+  padding-left: 4em;
+  padding-right: 4em;
+  min-height: 450px;
+  padding-top: 4em; }
 
 .page-services .titleBox {
   font-size: 36px;
@@ -1829,7 +1837,8 @@ ul.tabs li.current {
 .layout .serviceIcon {
   float: left;
   padding-top: 4em;
-  padding-left: 3em; }
+  padding-left: 3em;
+  display: none; }
 
 .layout .serviceContent {
   margin-top: -0.1em;
@@ -1838,10 +1847,11 @@ ul.tabs li.current {
   font-size: 12px;
   color: #F7F1F1;
   line-height: 28px;
-  float: left;
+  float: right;
   padding: 1em;
   height: 90%;
   width: 45%;
+  display: none;
   overflow: auto;
   margin-right: -0.2em; }
 
@@ -1872,7 +1882,7 @@ ul.tabs li.current {
   height: 90%;
   width: 45%;
   float: left;
-  margin-left: -0.2em; }
+  margin-left: 5em; }
 
 .layout2 .serviceIcon {
   float: right;
@@ -1897,15 +1907,13 @@ ul.tabs li.current {
 .layout3Top {
   background-color: #4A4A4A;
   background-image: url("../../../img/itSecurityTopLayOut.svg");
-  height: 300px; }
+  min-height: 250px; }
 
 .layout3 .serviceIcon {
   float: left;
-  padding-top: 4em;
   padding-left: 5em; }
 
 .layout3 .serviceContent {
-  margin-top: -0.06em;
   border-radius: 1px;
   font-family: Helvetica-Light;
   font-size: 12px;

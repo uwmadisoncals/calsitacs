@@ -53,7 +53,7 @@ get_header(); ?>
 <div class="layoutBottom"></div>
 	<!--EQUIPMENT!-->
 	<div class="layout2 hidden">
-			<div class="service">
+			<div class="service2">
 					<div class="serviceContent">
 						<div class="titleBox">Equipment</div> 
 						<!--'page_id=368'-->
@@ -147,28 +147,28 @@ get_header(); ?>
 
 <!--Velocity Animation Test-->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	// <script>
-	// 	$(document).ready(function(){
-	// 	$('.layout .serviceIcon').velocity({opacity:0},{delay:500});
-	// 	$('.layout .serviceContent').velocity({opacity:0});
-	// 	//$('.layout .titleBox').velocity("transition.expandIn", 600);
-	// 	$('.layout .serviceContent').fadeIn().velocity("transition.slideRightBigIn", 500);
-	// 	$('.layout .serviceIcon').fadeIn().velocity("transition.slideLeftBigIn", 600);
+	<script>
+	 	$(document).ready(function(){
+	 	$('.layout .serviceIcon').velocity({opacity:0},{delay:500});
+	 	$('.layout .serviceContent').velocity({opacity:0});
+		//$('.layout .titleBox').velocity("transition.expandIn", 600);
+	 	$('.layout .serviceContent').fadeIn().velocity("transition.shrinkIn", 300);
+	 	$('.layout .serviceIcon').fadeIn().velocity("transition.shrinkIn", 400);
 
-	// 	})
-	// </script>
+		})
+	</script>
 <!--Scroll Animation Triggers-->
-     //    <script type="text/javascript">
+        <script type="text/javascript">
                 
      //            var lay2 = $('div.layout2'),
-     //                lay2Offset = lay2.offset().top/2,
+     //                lay2Offset = lay2.offset().top/4,
      //                doc= $(document);
                 
      //            doc.on('scroll', function() {
      //                if ( doc.scrollTop() > lay2Offset && lay2.hasClass('hidden') )
      //                { 
      //                	lay2.removeClass('hidden'); 
-     //            		$('.layout2 .serviceIcon').velocity({opacity:0},{delay:500});
+     //            		$('.layout2 .serviceIcon').velocity({opacity:0},{delay:800});
 					// 	$('.layout2 .serviceContent').velocity({opacity:0});
 					// 	//$('.layout2 .titleBox').velocity("transition.expandIn", 600);
 					// 	$('.layout2 .serviceContent').fadeIn().velocity("transition.slideLeftBigIn", 500);
@@ -189,9 +189,9 @@ get_header(); ?>
 					// 	$('.layout3 .serviceContent').fadeIn().velocity("transition.slideRightBigIn", 500);
 					// 	$('.layout3 .serviceIcon').fadeIn().velocity("transition.slideLeftBigIn", 500);
 					// }
-     //            });
+                });
 
             
-     //    </script>
+         </script>
 
 <?php get_footer(); ?>
