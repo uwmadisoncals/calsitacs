@@ -165,6 +165,22 @@ z-index:2;
   }
 }
 
+.jqueryFontAnimationFix{
+  opacity: 0.99;
+  filter:alpha(opacity=99);
+}
+
+.commonSearches{
+
+  color:rgba(255, 255, 255, 0.8);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  font-weight:100;
+  @extend .jqueryFontAnimationFix;
+ 
+}
+
 .cyan.service-search-active div.searchResultsWrapper{
    /* width:25%;
   height: 100%;
@@ -192,50 +208,36 @@ z-index:2;
     //background-color:blue;
     margin: 0 auto;
     width:80%;
-    opacity: 0.99;
-    filter:alpha(opacity=99);
+    @extend .jqueryFontAnimationFix;
 
       & > ul{
-        opacity: 0.99;
-        filter:alpha(opacity=99);
+        @extend .jqueryFontAnimationFix;
      
  
       & > li.singleSearchResult{
-        margin: 0 0 .5em 0;
+        margin: 0 0 .4em 0;
         text-align:left;
         font-family: Raleway, sans-serif;
         font-size:1.2em;
         letter-spacing: 1px;
         color:$white;
         margin: 0 auto .5em;
-        opacity: 0.99;
-        filter:alpha(opacity=99);
+        @extend .jqueryFontAnimationFix;
 
 
         & a.linkSearchResult{
 
         text-decoration:underline;
-        opacity: 0.99;
-        filter:alpha(opacity=99);
+        @extend .jqueryFontAnimationFix;
 
           //unvisited link
           &:link{ 
-            text-decoration: none;
-            color:rgba(255, 255, 255, 0.8);
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-            font-weight: 100;
-            opacity: 0.99;
-            filter:alpha(opacity=99);
+            @extend .commonSearches;
           }
 
           //visited link
           &:visited{
-            text-decoration: none;
-            color:rgba(255, 255, 255, 0.8);
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-            font-weight:100;
-            opacity: 0.99;
-            filter:alpha(opacity=99);
+            @extend .commonSearches;
           }
 
           //mouse over link
@@ -251,21 +253,33 @@ z-index:2;
         }
       }
       & >li.commonSearches{
+        @extend .commonSearches;
+        margin-bottom:10px;
+        margin-top:15px;
 
-        color:rgba(255, 255, 255, 0.8);
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        & >li.moreCommon{
+          margin-top:.5em;
+          & >a{
+
+          @extend .commonSearches;
+
+          &:visited{
+
+            @extend .commonSearches;
+
+            }
+
+          }
+
+
+        }
       }
     }
   }
 
 
-
-}
-
-.commonSearches{
-  margin-bottom:10px;
-  margin-top:15px;
-}
 
 .cyan.service-search-active div.serviceWrapper{
   width:25%;
