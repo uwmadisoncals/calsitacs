@@ -142,9 +142,16 @@
 			//add .service-search-active to several selectors 
 			$(" .height-div, .homePageFeature, .subHeading, #services-searchfield, #input-16, .cyan, .serviceWrapper, .opacityLayer ").addClass("service-search-active");
 
-			//$(".serviceWrapper").velocity("transition.slideLeftIn", {stagger:100}).delay(500);
-			$(".searchResultsWrapper").velocity("transition.slideLeftIn", {stagger:100}).delay(500);
 
+			if( $(".cyan").is(".service-search-active")){
+
+				//$(".searchResultsWrapper").velocity("transition.slideUpIn", {duration:1}).velocity("fadeIn", { duration: 1000 });
+				$(".searchResultsWrapper").velocity("fadeIn", { duration: 1000 });
+				return false;
+			}
+
+			
+			
 			//if .searchResults exists in DOM
 			if( $(".searchResults").length > 0){
 
@@ -184,11 +191,13 @@
 
 			});
 
+			
+
 			setTimeout(function(){
 
 			//remove .service-search-active to several selectors 
 			$(" .height-div, .homePageFeature, .subHeading, #services-searchfield, #input-16, .cyan, .opacityLayer ").removeClass("service-search-active");
-
+			$(".searchResultsWrapper").velocity("fadeOut", { duration: 1000 });
 			
 			},200);
 	
