@@ -1797,8 +1797,8 @@ ul.tabs li.current {
   background: white; }
 
 .page-services img {
-  width: 450px;
-  padding-left: 4em; }
+  width: 100%;
+  margin-bottom: -1em; }
 
 .service {
   padding-left: 4em;
@@ -1811,12 +1811,17 @@ ul.tabs li.current {
     font-size: 1.4em;
     line-height: 2.2em;
     color: #ACADAE; }
+  .service img {
+    width: 450px;
+    padding-left: 4em; }
 
 .service2 {
   padding-left: 4em;
   padding-right: 4em;
-  min-height: 450px;
   padding-top: 4em; }
+  .service2 img {
+    width: 450px;
+    padding-left: 4em; }
 
 .page-services .titleBox {
   font-size: 36px;
@@ -1834,10 +1839,6 @@ ul.tabs li.current {
 .layout {
   min-height: 430px;
   width: 100%; }
-
-.layoutBottom {
-  background-image: url("../../../img/serviceBottomLayOut.svg");
-  min-height: 300px; }
 
 .layout .serviceIcon {
   float: left;
@@ -1866,7 +1867,8 @@ ul.tabs li.current {
 .layout2 {
   min-height: 500px;
   width: 100%;
-  background: #4A4A4A; }
+  background: #4A4A4A;
+  height: 100%; }
   .layout2 .titleBox {
     font-family: Helvetica-Light;
     color: white; }
@@ -1888,11 +1890,16 @@ ul.tabs li.current {
   height: 90%;
   width: 45%;
   float: left;
-  margin-left: 5em; }
+  margin-left: 5em;
+  display: none; }
 
 .layout2 .serviceIcon {
   float: right;
-  padding-top: 4em; }
+  padding-top: 4em;
+  display: none; }
+
+.layout2.hidden {
+  opacity: 0; }
 
 /**********************
  * Layout 3 Styles
@@ -1911,14 +1918,10 @@ ul.tabs li.current {
     line-height: 2.2em;
     color: white; }
 
-.layout3Top {
-  background-color: #4A4A4A;
-  background-image: url("../../../img/itSecurityTopLayOut.svg");
-  min-height: 250px; }
-
 .layout3 .serviceIcon {
   float: left;
-  padding-left: 5em; }
+  padding-left: 5em;
+  display: none; }
 
 .layout3 .serviceContent {
   border-radius: 1px;
@@ -1930,7 +1933,11 @@ ul.tabs li.current {
   padding: 1em;
   height: 90%;
   width: 45%;
+  display: none;
   margin-right: -0.2em; }
+
+.layout3.hidden {
+  opacity: 0; }
 
 body.stop-scrolling {
   height: 100%;

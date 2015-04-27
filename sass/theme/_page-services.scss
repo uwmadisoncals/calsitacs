@@ -4,8 +4,8 @@
 }
 
 .page-services img{
-	width:450px;
-	padding-left: 4em;
+	width:100%;
+	margin-bottom:-1em;
 }
 
 .service {
@@ -24,14 +24,24 @@
   		color: #ACADAE;
 
 	}
+
+	img{
+	width:450px;
+	padding-left: 4em;
+}
 }
 
 .service2 {
 
 	padding-left:4em;
 	padding-right:4em;
-	min-height: 450px;
+	//min-height: 450px;
 	padding-top: 4em;
+
+	img{
+	width:450px;
+	padding-left: 4em;
+}
 
 }
 
@@ -62,11 +72,13 @@ line-height: 58px;
 	//background:white;
 }
 
-.layoutBottom{
-	background-image: url("../../../img/serviceBottomLayOut.svg");
-	min-height:300px;
-	//width:100%;
-}
+// .layoutBottom{
+// 	background-image: url("../../../img/serviceBottomLayOut.svg");
+// 	background-size:cover;
+// 	background-repeat:no-repeat;
+// 	min-height:300px;
+// 	width:100%;
+// }
 
 .layout .serviceIcon{
 	float:left;
@@ -111,7 +123,7 @@ line-height: 58px;
 	width:100%;
 	//margin-top:100px;
 	background: #4A4A4A;
-
+	height:100%;
 	.titleBox{
 		font-family: Helvetica-Light;
 		color:white;
@@ -144,7 +156,7 @@ line-height: 58px;
 	float:left;
 	margin-left: 5em;
 	//margin-left: -.2em;
-	//display: none;
+	display: none;
 	
 
 }
@@ -152,11 +164,11 @@ line-height: 58px;
 .layout2 .serviceIcon{
 	float:right;
 	padding-top: 4em;
-	//display: none;
+	display: none;
 }
 
 .layout2.hidden{
-	//opacity:0;
+	opacity:0;
 }
 
 /**********************
@@ -185,11 +197,12 @@ line-height: 58px;
 	}
 }
 
-.layout3Top{
-	background-color: #4A4A4A;
-	background-image: url("../../../img/itSecurityTopLayOut.svg");
-	min-height:250px;
-}
+// .layout3Top{
+// 	background-color: #4A4A4A;
+// 	background-image: url("../../../img/itSecurityTopLayOut.svg");
+// 	min-height:250px;
+// 	width:100%;
+// }
 
 
 .layout3 img{
@@ -200,7 +213,7 @@ line-height: 58px;
 	float:left;
 	//padding-top: 4em;
 	padding-left:5em;
-	//display: none;
+	display: none;
 }
 
 .layout3 .serviceContent{
@@ -217,11 +230,11 @@ line-height: 58px;
 	padding:1em;
 	height:90%;
 	width:45%;
-	//display:none;
+	display:none;
 	margin-right: -.2em;
 
 }
 
 .layout3.hidden{
-	//opacity:0;
+	opacity:0;
 }
