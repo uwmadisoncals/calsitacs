@@ -1808,8 +1808,7 @@ ul.tabs li.current {
   padding-top: 5px; }
 
 .page-services #content {
-  background: white;
-  /* Grid Patter */ }
+  background: white; }
 
 .page-services img {
   width: 450px;
@@ -1821,11 +1820,11 @@ ul.tabs li.current {
   min-height: 500px;
   padding-top: 4em; }
   .service p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Helvetica-Light;
     font-weight: 100;
     font-size: 1.4em;
     line-height: 2.2em;
-    color: black; }
+    color: #ACADAE; }
 
 .service2 {
   padding-left: 4em;
@@ -1838,7 +1837,7 @@ ul.tabs li.current {
   width: 90%;
   margin: 0 auto;
   padding-top: 0.5em;
-  font-family: Helvetica;
+  font-family: Helvetica-Light;
   font-size: 48px;
   color: #696A6A;
   line-height: 58px; }
@@ -1883,13 +1882,14 @@ ul.tabs li.current {
   width: 100%;
   background: #4A4A4A; }
   .layout2 .titleBox {
+    font-family: Helvetica-Light;
     color: white; }
   .layout2 p {
     font-family: Helvetica-Light;
     font-weight: 100;
     font-size: 1.4em;
     line-height: 2.2em;
-    color: white; }
+    color: #ACADAE; }
 
 .layout2 .serviceContent {
   margin-top: -0.1em;
@@ -1916,7 +1916,8 @@ ul.tabs li.current {
   width: 100%;
   background: #5E889E; }
   .layout3 .titleBox {
-    color: white; }
+    font-family: Helvetica-Light;
+    color: #ACADAE; }
   .layout3 p {
     font-family: Helvetica-Light;
     font-weight: 100;
