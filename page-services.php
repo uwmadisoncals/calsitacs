@@ -93,7 +93,7 @@ get_header(); ?>
 			</div>
 	</div>
 	<!--IT SECURITY!-->
-<img src="<?php echo get_template_directory_uri(); ?>/img/itSecurityTopLayOut.svg" alt=" " style="background-color:#4A4A4A;">
+<img src="<?php echo get_template_directory_uri(); ?>/img/itSecurityTopLayOut.svg" alt=" " style="background-color: #5E889E;">
 	<div class="layout3 hidden">	
 			<div class="service">
 				<div class="serviceIcon">
@@ -172,22 +172,22 @@ get_header(); ?>
                 		$('.layout2 .serviceIcon').velocity({opacity:0},{delay:300});
 						$('.layout2 .serviceContent').velocity({opacity:0});
 						//$('.layout2 .titleBox').velocity("transition.expandIn", 600);
-						$('.layout2 .serviceContent').fadeIn().velocity("transition.slideLeftBigIn", 500);
+						$('.layout2 .serviceContent').fadeIn().velocity("transition.slideUpBigIn", 500);
 						$('.layout2 .serviceIcon').fadeIn().velocity("transition.slideRightBigIn", 500);
 					}
                 });
                  
                   var lay3 = $('div.layout3'),
-                    lay3Offset = lay3.offset().top/1.7;
+                    lay3Offset = lay3.offset().top/1.4;
                 
                 doc.on('scroll', function() {
                     if ( doc.scrollTop() > lay3Offset && lay3.hasClass('hidden') )
                     { 
                     	lay3.removeClass('hidden'); 
-                		$('.layout3 .serviceIcon').velocity({opacity:0},{delay:300});
+                		$('.layout3 .serviceIcon').velocity({opacity:0},{delay:400});
 						$('.layout3 .serviceContent').velocity({opacity:0});
 						//$('.layout3 .titleBox').velocity("transition.expandIn", 600);
-						$('.layout3 .serviceContent').fadeIn().velocity("transition.slideRightBigIn", 500);
+						$('.layout3 .serviceContent').fadeIn().velocity("transition.slideDownBigIn", 500);
 						$('.layout3 .serviceIcon').fadeIn().velocity("transition.slideLeftBigIn", 500);
 					}
                 });

@@ -1867,8 +1867,7 @@ ul.tabs li.current {
 .layout2 {
   min-height: 500px;
   width: 100%;
-  background: #4A4A4A;
-  height: 100%; }
+  background: #4A4A4A; }
   .layout2 .titleBox {
     font-family: Helvetica-Light;
     color: white; }
