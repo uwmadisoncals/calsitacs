@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
 
 
 	  		var ajaxResponseLength = response.length;
-	  		var noOfMoreResults = ajaxResponseLength-10;
+	  		var noOfMoreResults = ajaxResponseLength-9;
 
 	    	//console.log(response); //this is the ajax success callback function, it manipulates the RESPONSE from the server	
 
@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
 
 				if (!appended){
 
-					for( i=0; i < 10; i++ ) {
+					for( i=0; i < 9; i++ ) {
 
 						$(".searchResults ul").append("<li class=\"singleSearchResult\"><a class=\"linkSearchResult\" href='" + response[i].post_permalink + "'>" + response[i].post_title + "</a></li>");
 
