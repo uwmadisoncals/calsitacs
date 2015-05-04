@@ -8,10 +8,11 @@
 }
 
 .service {
-	padding-left:4em;
-	padding-right:4em;
-	min-height: 500px;
-	padding-top: 4em;
+	// padding-left:4em;
+	// padding-right:4em;
+	// min-height: 500px;
+	//padding-top: 4em;
+	padding:5%;
 
 	p{
 		font-family: Helvetica-Light;
@@ -19,14 +20,13 @@
   		font-size: 1.4em;
   		line-height: 2.2em;
   		color: #ACADAE;
-
 	}
 
 	img{
 		width:450px;
 		min-width:100px;
 		padding-left: 4em;
-}
+	}
 }
 
 .service2 {
@@ -36,7 +36,7 @@
 
 	img{
 	width:450px;
-	padding-left: 4em;
+	//padding-left: 4em;
 	}
 }
 
@@ -53,7 +53,7 @@
  * Layout 1 Styles
  *********************/
 .layout{
-	min-height:430px;
+	min-height:470px;
 	width:100%;
 
 	.serviceIcon{
@@ -124,7 +124,6 @@
 		display: none;
 		width:50%;
 	}
-
 }
 
 .layout2.hidden{
@@ -141,7 +140,7 @@
 	width:100%;
 	margin-top:-1em;
 	background: #5E889E;
-
+	
 	.titleBox{
 		font-family: Helvetica-Light;
 		color:#ACADAE;
@@ -186,31 +185,20 @@
 
 
 /***********************
-MEDIAQUIRIES for Mobile 
+*
+* MEDIAQUIRIES for Mobile 
+*
 ************************/
 
 @media only screen and (max-width : 900px) {
 
 .service {
-	padding-left:4em;
-	padding-right:4em;
-	min-height: 500px;
-	padding-top: 4em;
-
 	p{
 		font-family: Helvetica-Light;
   		font-weight: 100;
   		font-size: 1em;
   		line-height: 2.2em;
-  		color: #ACADAE;
-
 	}
-
-	img{
-		width:450px;
-		min-width:100px;
-		padding-left: 4em;
-}
 }
 
 .service2 {
@@ -226,10 +214,6 @@ MEDIAQUIRIES for Mobile
 
 	}
 
-	img{
-	width:450px;
-	padding-left: 4em;
-	}
 }
 
 .titleBox{
@@ -248,7 +232,7 @@ MEDIAQUIRIES for Mobile
 @media only screen and (max-width : 600px) {
 
 .layout{
-	min-height:800px;
+	min-height:750px;
 
 	.serviceContent{
 		width:100%;
@@ -256,12 +240,12 @@ MEDIAQUIRIES for Mobile
 	.serviceIcon{
 		float:left;
 		width:100%;
-		margin-left: -4em;
+		margin-left:-4em;
 	}
 }
 
 .layout2{
-	min-height:800px;
+	min-height:750px;
 
 	.serviceContent{
 		width:100%;
@@ -270,12 +254,12 @@ MEDIAQUIRIES for Mobile
 	.serviceIcon{
 		float:left;
 		width:100%;
-		margin-left: -4em;
+		margin-left:-4em;
 	}
 }
 
 .layout3{
-	min-height:800px;
+	min-height:750px;
 
 	.serviceContent{
 		width:100%;
@@ -284,7 +268,7 @@ MEDIAQUIRIES for Mobile
 	.serviceIcon{
 		float:left;
 		width:100%;
-		margin-left: -4em;
+		margin-left:-4em;
 	}
 }
 }
