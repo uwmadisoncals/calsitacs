@@ -1797,8 +1797,7 @@ ul.tabs li.current {
   background: white; }
 
 .page-services img {
-  width: 100%;
-  margin-bottom: -1em; }
+  width: 100%; }
 
 .service {
   padding-left: 4em;
@@ -1844,7 +1843,8 @@ ul.tabs li.current {
   float: left;
   padding-top: 4em;
   padding-left: 3em;
-  display: none; }
+  display: none;
+  width: 50%; }
 
 .layout .serviceContent {
   margin-top: -0.1em;
@@ -1853,10 +1853,9 @@ ul.tabs li.current {
   font-size: 12px;
   color: #F7F1F1;
   line-height: 28px;
-  float: right;
+  float: left;
   padding: 1em;
-  height: 90%;
-  width: 45%;
+  width: 50%;
   display: none;
   overflow: auto;
   margin-right: -0.2em; }
@@ -1885,17 +1884,19 @@ ul.tabs li.current {
   font-size: 12px;
   color: #F7F1F1;
   line-height: 28px;
-  padding: 1em;
-  height: 90%;
-  width: 45%;
   float: left;
-  margin-left: 5em;
-  display: none; }
+  padding: 1em;
+  width: 50%;
+  display: none;
+  overflow: auto;
+  margin-right: -0.2em; }
 
 .layout2 .serviceIcon {
-  float: right;
+  float: left;
   padding-top: 4em;
-  display: none; }
+  padding-left: 3em;
+  display: none;
+  width: 50%; }
 
 .layout2.hidden {
   opacity: 0; }
@@ -1906,6 +1907,7 @@ ul.tabs li.current {
 .layout3 {
   min-height: 600px;
   width: 100%;
+  margin-top: -1em;
   background: #5E889E; }
   .layout3 .titleBox {
     font-family: Helvetica-Light;
@@ -1919,20 +1921,23 @@ ul.tabs li.current {
 
 .layout3 .serviceIcon {
   float: left;
-  padding-left: 5em;
-  display: none; }
+  padding-top: 4em;
+  padding-left: 3em;
+  display: none;
+  width: 50%; }
 
 .layout3 .serviceContent {
+  margin-top: -0.1em;
   border-radius: 1px;
   font-family: Helvetica-Light;
   font-size: 12px;
   color: #F7F1F1;
   line-height: 28px;
-  float: right;
+  float: left;
   padding: 1em;
-  height: 90%;
-  width: 45%;
+  width: 50%;
   display: none;
+  overflow: auto;
   margin-right: -0.2em; }
 
 .layout3.hidden {

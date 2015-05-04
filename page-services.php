@@ -51,7 +51,7 @@ get_header(); ?>
 		</div>
 	</div>
 <!--<div class="layoutBottom"></div>-->
-<img src="<?php echo get_template_directory_uri(); ?>/img/serviceBottomLayOut.svg" alt=" " style="width:100%;">
+<img src="<?php echo get_template_directory_uri(); ?>/img/serviceBottomLayOut.svg" alt=" " style="width:100%; margin-bottom:-1em;">
 	<!--EQUIPMENT!-->
 	<div class="layout2 hidden">
 			<div class="service2">
