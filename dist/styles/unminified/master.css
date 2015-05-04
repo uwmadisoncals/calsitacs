@@ -1796,9 +1796,6 @@ ul.tabs li.current {
 .page-services #content {
   background: white; }
 
-.page-services .formContent {
-  max-height: 300px; }
-
 .page-services img {
   width: 100%; }
 
@@ -1826,8 +1823,7 @@ ul.tabs li.current {
     width: 450px;
     padding-left: 4em; }
 
-.page-services .titleBox {
-  font-size: 36px;
+.titleBox {
   width: 90%;
   margin: 0 auto;
   padding-top: 0.5em;
@@ -1940,7 +1936,46 @@ ul.tabs li.current {
 .layout3.hidden {
   opacity: 0; }
 
-/* MEDIAQUIRIES for Mobile */
+/***********************
+MEDIAQUIRIES for Mobile 
+************************/
+@media only screen and (max-width: 900px) {
+  .service {
+    padding-left: 4em;
+    padding-right: 4em;
+    min-height: 500px;
+    padding-top: 4em; }
+    .service p {
+      font-family: Helvetica-Light;
+      font-weight: 100;
+      font-size: 1em;
+      line-height: 2.2em;
+      color: #ACADAE; }
+    .service img {
+      width: 450px;
+      min-width: 100px;
+      padding-left: 4em; }
+  .service2 {
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 4em; }
+    .service2 p {
+      font-family: Helvetica-Light;
+      font-weight: 100;
+      font-size: 1em;
+      line-height: 2.2em; }
+    .service2 img {
+      width: 450px;
+      padding-left: 4em; }
+  .titleBox {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 0.5em;
+    font-family: Helvetica-Light;
+    font-size: 35px;
+    color: #696A6A;
+    line-height: 58px; } }
+
 @media only screen and (max-width: 600px) {
   .layout {
     min-height: 800px; }

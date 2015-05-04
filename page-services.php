@@ -178,7 +178,7 @@ get_header(); ?>
                 });
                  
                   var lay3 = $('div.layout3'),
-                    lay3Offset = lay3.offset().top/1.4;
+                    lay3Offset = lay3.offset().top/1.3;
                 
                 doc.on('scroll', function() {
                     if ( doc.scrollTop() > lay3Offset && lay3.hasClass('hidden') )
