@@ -1796,6 +1796,9 @@ ul.tabs li.current {
 .page-services #content {
   background: white; }
 
+.page-services .formContent {
+  max-height: 300px; }
+
 .page-services img {
   width: 100%; }
 
@@ -1812,6 +1815,7 @@ ul.tabs li.current {
     color: #ACADAE; }
   .service img {
     width: 450px;
+    min-width: 100px;
     padding-left: 4em; }
 
 .service2 {
@@ -1838,27 +1842,24 @@ ul.tabs li.current {
 .layout {
   min-height: 430px;
   width: 100%; }
-
-.layout .serviceIcon {
-  float: left;
-  padding-top: 4em;
-  padding-left: 3em;
-  display: none;
-  width: 50%; }
-
-.layout .serviceContent {
-  margin-top: -0.1em;
-  border-radius: 1px;
-  font-family: Helvetica-Light;
-  font-size: 12px;
-  color: #F7F1F1;
-  line-height: 28px;
-  float: left;
-  padding: 1em;
-  width: 50%;
-  display: none;
-  overflow: auto;
-  margin-right: -0.2em; }
+  .layout .serviceIcon {
+    float: left;
+    padding-top: 4em;
+    padding-left: 3em;
+    display: none;
+    width: 50%; }
+  .layout .serviceContent {
+    margin-top: -0.1em;
+    font-family: Helvetica-Light;
+    font-size: 12px;
+    color: #F7F1F1;
+    line-height: 28px;
+    float: left;
+    padding: 1em;
+    width: 50%;
+    display: none;
+    overflow: auto;
+    margin-right: -0.2em; }
 
 /**********************
  * Layout 2 Styles
@@ -1876,27 +1877,25 @@ ul.tabs li.current {
     font-size: 1.4em;
     line-height: 2.2em;
     color: #ACADAE; }
-
-.layout2 .serviceContent {
-  margin-top: -0.1em;
-  border-radius: 1px;
-  font-family: Helvetica-Light;
-  font-size: 12px;
-  color: #F7F1F1;
-  line-height: 28px;
-  float: left;
-  padding: 1em;
-  width: 50%;
-  display: none;
-  overflow: auto;
-  margin-right: -0.2em; }
-
-.layout2 .serviceIcon {
-  float: left;
-  padding-top: 4em;
-  padding-left: 3em;
-  display: none;
-  width: 50%; }
+  .layout2 .serviceContent {
+    margin-top: -0.1em;
+    border-radius: 1px;
+    font-family: Helvetica-Light;
+    font-size: 12px;
+    color: #F7F1F1;
+    line-height: 28px;
+    float: left;
+    padding: 1em;
+    width: 50%;
+    display: none;
+    overflow: auto;
+    margin-right: -0.2em; }
+  .layout2 .serviceIcon {
+    float: left;
+    padding-top: 4em;
+    padding-left: 3em;
+    display: none;
+    width: 50%; }
 
 .layout2.hidden {
   opacity: 0; }
@@ -1918,30 +1917,55 @@ ul.tabs li.current {
     font-size: 1.4em;
     line-height: 2.2em;
     color: white; }
-
-.layout3 .serviceIcon {
-  float: left;
-  padding-top: 4em;
-  padding-left: 3em;
-  display: none;
-  width: 50%; }
-
-.layout3 .serviceContent {
-  margin-top: -0.1em;
-  border-radius: 1px;
-  font-family: Helvetica-Light;
-  font-size: 12px;
-  color: #F7F1F1;
-  line-height: 28px;
-  float: left;
-  padding: 1em;
-  width: 50%;
-  display: none;
-  overflow: auto;
-  margin-right: -0.2em; }
+  .layout3 .serviceIcon {
+    float: left;
+    padding-top: 4em;
+    padding-left: 3em;
+    display: none;
+    width: 50%; }
+  .layout3 .serviceContent {
+    margin-top: -0.1em;
+    border-radius: 1px;
+    font-family: Helvetica-Light;
+    font-size: 12px;
+    color: #F7F1F1;
+    line-height: 28px;
+    float: left;
+    padding: 1em;
+    width: 50%;
+    display: none;
+    overflow: auto;
+    margin-right: -0.2em; }
 
 .layout3.hidden {
   opacity: 0; }
+
+/* MEDIAQUIRIES for Mobile */
+@media only screen and (max-width: 600px) {
+  .layout {
+    min-height: 800px; }
+    .layout .serviceContent {
+      width: 100%; }
+    .layout .serviceIcon {
+      float: left;
+      width: 100%;
+      margin-left: -4em; }
+  .layout2 {
+    min-height: 800px; }
+    .layout2 .serviceContent {
+      width: 100%; }
+    .layout2 .serviceIcon {
+      float: left;
+      width: 100%;
+      margin-left: -4em; }
+  .layout3 {
+    min-height: 800px; }
+    .layout3 .serviceContent {
+      width: 100%; }
+    .layout3 .serviceIcon {
+      float: left;
+      width: 100%;
+      margin-left: -4em; } }
 
 nav.navigation.post-navigation {
   height: 2em; }
