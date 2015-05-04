@@ -35,10 +35,12 @@
 	
 	var windowHeight = $( window ).height(); // get the computed height of the browser viewport
 	var footerHeight = 250; // hardcoded height for the footer
-	var bodyHeight = $("body.page").height(); // get the computed height of the body
+	var bodyHeight = $("body").height(); // get the computed height of the body
 
 	//Console.log for Debugging
-	//console.log("Position: " + $("#colophon").css("position") + ", windowHeight: " + windowHeight + ", bodyHeight: "+bodyHeight +", bodyHeight+250: "+(bodyHeight+250));
+	//console.log("footerHeight: "+ footerHeight);
+
+	//console.log("Position: " + $("#colophon").css("position") + ", windowHeight: " + windowHeight + ", bodyHeight: "+bodyHeight +", bodyHeight_fixed: "+(bodyHeight+250));
 
 	// If footer is position fixed. This matters because whether fixed vs static affects calculation of body height.
 	if($("#colophon").css("position") == "fixed"){
@@ -69,7 +71,7 @@
 
 		var windowHeight = $( window ).height(); // get the computed height of the browser viewport
 		var footerHeight = 250; // get the computed height of the footer
-		var bodyHeight = $("body.page").height(); // get the computed height of the body
+		var bodyHeight = $("body").height(); // get the computed height of the body
 	
 		// If footer is position fixed. This matters because whether fixed vs static affects calculation of body height.
 		if($("#colophon").css("position") == "fixed"){
