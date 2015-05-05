@@ -1998,22 +1998,41 @@ body.single-post div#primary {
 body div#comments {
   margin: 0 2em 1em 2em;
   padding: 1em;
+  background-color: lightgray;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
   body div#comments h2.comments-title {
     margin-bottom: 0.5em;
     line-height: 1.5em; }
-  body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.comment-author, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.vcard {
-    width: 50%;
-    height: 1.5em;
-    float: left; }
-    body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.comment-author img, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.vcard img {
-      display: inline; }
-  body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.comment-metadata {
-    width: 50%;
-    height: auto;
-    float: left; }
+  body div#comments ol.comment-list {
+    background-color: thistle; }
+    body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.comment-author, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.vcard {
+      width: 60%;
+      height: 32px;
+      float: left;
+      line-height: 32px;
+      overflow: hidden; }
+      body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.comment-author img, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.vcard img {
+        display: block;
+        float: left; }
+      body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.comment-author b.fn, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.vcard b.fn {
+        height: 32px;
+        line-height: 32px;
+        margin-left: 5px; }
+      body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.comment-author span.says, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.vcard span.says {
+        height: 32px;
+        line-height: 32px; }
+    body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.comment-metadata {
+      width: 40%;
+      height: 32px;
+      line-height: 32px;
+      float: left; }
+    body div#comments ol.comment-list li.comment article.comment-body div.reply {
+      display: block;
+      position: static; }
+  body div#comments div#respond {
+    background-color: red; }
 
 body.stop-scrolling {
   height: 100%;

@@ -1,7 +1,7 @@
 body div#comments{
   margin: 0 2em 1em 2em;
   padding:1em;
-  //background-color: lightgray;
+  background-color: lightgray;
   box-sizing: border-box;
 
   h2.comments-title{
@@ -12,32 +12,44 @@ body div#comments{
 
   ol.comment-list{
 
-    //background-color: thistle;
+    background-color: thistle;
 
     li.comment article.comment-body{
 
       footer.comment-meta{
 
         div.comment-author, div.vcard{
-          width:50%;
-          height:1.5em;
+          width:60%;
+          height:32px;
           float:left;
+          line-height: 32px;
+          overflow:hidden;
 
 
 
           img{
-            display:inline;
+            display:block;
+            float:left;
           }
 
-          b.fn, span.says{
+          b.fn{
+            height: 32px;
+            line-height: 32px;
+            margin-left:5px;
 
+          }
+
+          span.says{
+            height: 32px;
+            line-height: 32px;
           }
 
         }
 
         div.comment-metadata{
-          width:50%;
-          height:auto;
+          width:40%;
+          height:32px;
+          line-height: 32px;
           float:left;
         }
       }
@@ -46,12 +58,15 @@ body div#comments{
 
       }
 
-      div.reply{}
+      div.reply{
+        display: block;
+        position: static;
+      }
     }
   }
 
   div#respond{
-    //background-color: red;
+    background-color: red;
 
   }
 
