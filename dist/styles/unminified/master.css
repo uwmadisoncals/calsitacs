@@ -1832,7 +1832,7 @@ ul.tabs li.current {
  * Layout 1 Styles
  *********************/
 .layout {
-  min-height: 470px;
+  min-height: 490px;
   width: 100%; }
   .layout .serviceIcon {
     float: left;
