@@ -1987,12 +1987,33 @@ ul.tabs li.current {
       width: 100%;
       margin-left: -4em; } }
 
-nav.navigation.post-navigation {
-  height: 2em; }
+body.single-post div#primary {
+  padding: 0 2em; }
+  body.single-post div#primary nav.navigation.post-navigation {
+    height: 2em; }
+  body.single-post div#primary article header h1.entry-title {
+    margin-top: 1.5%;
+    margin-bottom: 1%; }
 
-article header h1.entry-title {
-  margin-top: 1.5%;
-  margin-bottom: 1%; }
+body div#comments {
+  margin: 0 2em 1em 2em;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  body div#comments h2.comments-title {
+    margin-bottom: 0.5em;
+    line-height: 1.5em; }
+  body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.comment-author, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.vcard {
+    width: 50%;
+    height: 1.5em;
+    float: left; }
+    body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.comment-author img, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.vcard img {
+      display: inline; }
+  body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.comment-metadata {
+    width: 50%;
+    height: auto;
+    float: left; }
 
 body.stop-scrolling {
   height: 100%;

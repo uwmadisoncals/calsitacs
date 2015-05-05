@@ -1,0 +1,62 @@
+body div#comments{
+  margin: 0 2em 1em 2em;
+  padding:1em;
+  //background-color: lightgray;
+  box-sizing: border-box;
+
+  h2.comments-title{
+    margin-bottom:.5em;
+    //background-color: peachpuff;
+    line-height: 1.5em;
+  }
+
+  ol.comment-list{
+
+    //background-color: thistle;
+
+    li.comment article.comment-body{
+
+      footer.comment-meta{
+
+        div.comment-author, div.vcard{
+          width:50%;
+          height:1.5em;
+          float:left;
+
+
+
+          img{
+            display:inline;
+          }
+
+          b.fn, span.says{
+
+          }
+
+        }
+
+        div.comment-metadata{
+          width:50%;
+          height:auto;
+          float:left;
+        }
+      }
+
+      div.comment-content{
+
+      }
+
+      div.reply{}
+    }
+  }
+
+  div#respond{
+    //background-color: red;
+
+  }
+
+  textarea{
+
+
+  }
+}
