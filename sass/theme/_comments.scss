@@ -18,6 +18,8 @@ body div#comments{
 
       footer.comment-meta{
 
+
+
         div.comment-author, div.vcard{
           width:60%;
           height:32px;
@@ -55,12 +57,12 @@ body div#comments{
       }
 
       div.comment-content{
+      width:50%;
 
       }
 
       div.reply{
-        display: block;
-        position: static;
+        width:50%;
       }
     }
   }

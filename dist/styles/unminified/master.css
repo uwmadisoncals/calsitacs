@@ -2028,9 +2028,10 @@ body div#comments {
       height: 32px;
       line-height: 32px;
       float: left; }
+    body div#comments ol.comment-list li.comment article.comment-body div.comment-content {
+      width: 50%; }
     body div#comments ol.comment-list li.comment article.comment-body div.reply {
-      display: block;
-      position: static; }
+      width: 50%; }
   body div#comments div#respond {
     background-color: red; }
 
