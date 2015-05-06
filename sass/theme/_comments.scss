@@ -21,7 +21,7 @@ body div#comments{
 
 
         div.comment-author, div.vcard{
-          width:60%;
+          width:auto;
           height:32px;
           float:left;
           line-height: 32px;
@@ -49,7 +49,7 @@ body div#comments{
         }
 
         div.comment-metadata{
-          width:40%;
+          width:auto;
           height:32px;
           line-height: 32px;
           float:left;
@@ -59,10 +59,12 @@ body div#comments{
       div.comment-content{
       width:50%;
 
+
       }
 
       div.reply{
         width:50%;
+
       }
     }
   }

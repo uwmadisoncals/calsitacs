@@ -2008,7 +2008,7 @@ body div#comments {
   body div#comments ol.comment-list {
     background-color: thistle; }
     body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.comment-author, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.vcard {
-      width: 60%;
+      width: auto;
       height: 32px;
       float: left;
       line-height: 32px;
@@ -2024,7 +2024,7 @@ body div#comments {
         height: 32px;
         line-height: 32px; }
     body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.comment-metadata {
-      width: 40%;
+      width: auto;
       height: 32px;
       line-height: 32px;
       float: left; }
