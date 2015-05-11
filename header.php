@@ -63,18 +63,17 @@ if ( is_front_page() ) { ?>
 		<h2 class="subHeading">Here for you.</h2>
 		
 		<div class="services-searchbox">
-				
-				<input  type="text" id="services-searchfield" value="" placeholder="Search">
-				<a href="#" class="our-services button large blue">Our Services</a>
 
-				<span class="input input--minoru">
-					<input class="input__field input__field--yoko" type="text" id="input-16" />
+			<span class="input input--minoru">
+				<form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<input class="input__field input__field--yoko" type="search" value="<?php echo get_search_query()?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" id="input-16" />
 
-					<label class="input__label input__label--yoko" for="input-16">
-						<span class="input__label-content input__label-content--yoko">Search</span>
-					</label>
+				<label class="input__label input__label--yoko" for="input-16">
+					<span class="input__label-content input__label-content--yoko">Search</span>
+				</label>
+				</form>
 			
-				</span>
+			</span>
 				
 		</div><!-- END .searchbox-->
 	</div>
