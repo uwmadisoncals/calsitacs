@@ -14,21 +14,21 @@ body div#comments{
   ol.comment-list{
 
     li.comment {
-      margin-bottom:1em;
+      margin-bottom:2.5em;
 
       article.comment-body {
-        background-color:lighten($uwTan, 5%);
+        //background-color:lighten($uwTan, 5%);
         @extend .cf;
         //background-color: seagreen;
-        //background-color:$lightGrayBorder;
+        background-color:$lightGrayBorder;
         position: relative;
 
 
         footer.comment-meta {
-
+          color:white;
           @extend .cf;
           //background-color: lightgreen;
-          background-color:darken($lightGrayBorder, 32%);
+          background-color:darken($lightGrayBorder, 20%);
 
           div.comment-author, div.vcard {
             width: auto;
@@ -87,7 +87,7 @@ body div#comments{
       } //END <article>.comment-body
 
       ol.children{
-        margin:1em 0 1em 2em;
+        margin:1em 0 2em 2em;
       }
 
     } //END <li>.comment
@@ -95,7 +95,7 @@ body div#comments{
 
   div#respond{
     //background-color: red;
-    background-color:darken($lightGrayBorder, 32%);
+    background-color:darken($lightGrayBorder, 20%);
     padding:.5em;
 
     h3#reply-title{
@@ -106,7 +106,7 @@ body div#comments{
     form.comment-form{
       //background-color:tomato;
       //background-color:$uwTan;
-      background-color:darken($lightGrayBorder, 32%);
+      background-color:darken($lightGrayBorder, 20%);
       padding:.5em;
 
       p.logged-in-as{

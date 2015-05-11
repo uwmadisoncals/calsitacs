@@ -2007,12 +2007,13 @@ body div#comments {
     margin-bottom: 0.5em;
     line-height: 1.5em; }
   body div#comments ol.comment-list li.comment {
-    margin-bottom: 1em; }
+    margin-bottom: 2.5em; }
     body div#comments ol.comment-list li.comment article.comment-body {
-      background-color: #d6d3c6;
+      background-color: #f4f5f6;
       position: relative; }
       body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta {
-        background-color: #9aa3ad; }
+        color: white;
+        background-color: #bcc2c8; }
         body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.comment-author, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.vcard {
           width: auto;
           height: 32px;
@@ -2049,14 +2050,14 @@ body div#comments {
         margin: 0.5em;
         background-color: transparent; }
     body div#comments ol.comment-list li.comment ol.children {
-      margin: 1em 0 1em 2em; }
+      margin: 1em 0 2em 2em; }
   body div#comments div#respond {
-    background-color: #9aa3ad;
+    background-color: #bcc2c8;
     padding: 0.5em; }
     body div#comments div#respond h3#reply-title {
       margin: 0.25em 0; }
     body div#comments div#respond form.comment-form {
-      background-color: #9aa3ad;
+      background-color: #bcc2c8;
       padding: 0.5em; }
       body div#comments div#respond form.comment-form p.logged-in-as {
         margin: 0.25em 0; }
