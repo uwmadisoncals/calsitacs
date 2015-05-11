@@ -1416,15 +1416,10 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
-  padding-bottom: 7px;
-  font-size: 3.5em; }
+  padding-bottom: 7px; }
 
-input#input-16 {
-  padding: 0 0.5em;
-  position: relative;
-  top: 10px; }
-  input#input-16:focus {
-    color: white; }
+input#input-16:focus {
+  color: white; }
 
 .input__label--yoko {
   position: relative;
