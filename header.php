@@ -65,7 +65,7 @@ if ( is_front_page() ) { ?>
 		<div class="services-searchbox">
 
 			<span class="input input--minoru">
-				<form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>" autocomplete="off">
 				<input class="input__field input__field--yoko" type="search" value="<?php echo get_search_query()?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" id="input-16" />
 
 				<label class="input__label input__label--yoko" for="input-16">
