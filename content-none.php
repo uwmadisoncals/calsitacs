@@ -9,6 +9,7 @@
 ?>
 
 <section class="no-results not-found">
+	<?php get_template_part('breadcrumb', 'menu'); ?>
 	<header class="page-header">
 		<h1 class="page-title"><?php _e( 'Nothing Found', 'calsboilerplate_underscores' ); ?></h1>
 	</header><!-- .page-header -->

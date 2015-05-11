@@ -5,13 +5,16 @@ jQuery(document).ready(function($) {
 
 	if($('body').is('.page-home')){
 
+		//Building the href string for linking to more searches
+		var linkmoreURI = MyAjax.siteUrl+"/?s=todo";
 
-	  var data = {
-	    action: 'my_frontend_action', //the php ajax event handler named 'wp_ajax_my_frontend_action' defined in functions.php
-	    security : MyAjax.security, 
-	    dataType:"json",
-	    whatever: 1234
-	  };
+		var data = {
+			action: 'my_frontend_action', //the php ajax event handler named 'wp_ajax_my_frontend_action' defined in functions.php
+			security : MyAjax.security,
+			dataType:"json",
+			whatever: 1234,
+			stylesheetDir: MyAjax.siteUrl
+		};
 
 	  // since 2.8 ajaxurl is always defined in the admin header and points to admin-ajax.php
 	  
@@ -41,6 +44,7 @@ jQuery(document).ready(function($) {
 					}
 
 					$(".searchResults ul").append("<li class=\"moreCommon\"><a class=\"linkMoreCommon\" href='#'>" + noOfMoreResults + " more...</a></li>");
+					$(".linkMoreCommon").attr("href", linkmoreURI);
 
 				}
 				

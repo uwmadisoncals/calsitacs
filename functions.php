@@ -181,7 +181,8 @@ wp_enqueue_script('ajaxjs'); //enque script
 wp_localize_script( 'ajaxjs', 'MyAjax',  
 	array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
-		'security' => wp_create_nonce( 'my-special-string' )
+		'security' => wp_create_nonce( 'my-special-string' ),
+		'siteUrl' => site_url()
 		) 
 );
 
@@ -252,6 +253,14 @@ if ( is_admin() ) {
     // Add non-Ajax front-end action hooks here
 }
 
+
+function fb_change_search_url_rewrite() {
+	if ( is_search() && ! empty( $_GET['s'] ) ) {
+		wp_redirect( home_url( "/search/" ) . urlencode( get_query_var( 's' ) ) );
+		exit();
+	}
+}
+add_action( 'template_redirect', 'fb_change_search_url_rewrite' );
 
 
 

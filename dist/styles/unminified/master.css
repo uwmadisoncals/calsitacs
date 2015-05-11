@@ -2066,6 +2066,21 @@ body div#comments {
       body div#comments div#respond form.comment-form p.form-submit {
         margin: 1em 0 0 0; }
 
+/*
+Description: SASS rules for search.php
+*/
+body.search {
+  /*
+  content-none
+  */ }
+  body.search header.page-header {
+    margin: 48px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    color: rgba(64, 64, 64, 0.7); }
+  body.search.search-no-results div.page-content {
+    background-color: pink; }
+
 body.stop-scrolling {
   height: 100%;
   overflow: hidden; }
