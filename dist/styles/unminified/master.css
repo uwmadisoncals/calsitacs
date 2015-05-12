@@ -2080,8 +2080,11 @@ body.search {
     color: rgba(64, 64, 64, 0.7); }
   body.search article.post, body.search article.page {
     margin: 0 48px 1.5em 48px;
-    padding: 0.5em;
+    padding: 0.7em;
     margin-bottom: 2em; }
+    body.search article.post.sr-even, body.search article.page.sr-even {
+      background-color: rgba(229, 229, 229, 0.7);
+      border-radius: 10px; }
     body.search article.post header.entry-header h1.entry-title, body.search article.page header.entry-header h1.entry-title {
       display: block;
       -webkit-box-sizing: border-box;
@@ -2106,9 +2109,19 @@ body.search {
       float: left;
       width: 50%;
       margin-bottom: 0.5em; }
-  body.search article.sr-even {
-    background-color: rgba(229, 229, 229, 0.7);
-    border-radius: 10px; }
+      body.search article.post header.entry-header div.entry-meta span.posted-on, body.search article.page header.entry-header div.entry-meta span.posted-on {
+        display: block;
+        float: right;
+        margin-left: 1em; }
+      body.search article.post header.entry-header div.entry-meta span.byline, body.search article.page header.entry-header div.entry-meta span.byline {
+        display: block;
+        float: right; }
+    body.search article.post div.entry-summary, body.search article.page div.entry-summary {
+      margin-bottom: 1em; }
+    body.search article.post footer.entry-footer span.comments-link, body.search article.page footer.entry-footer span.comments-link {
+      margin-left: 0.5em; }
+    body.search article.post footer.entry-footer span.edit-link, body.search article.page footer.entry-footer span.edit-link {
+      margin-left: 0.5em; }
   body.search.search-no-results div.page-content {
     background-color: pink; }
 

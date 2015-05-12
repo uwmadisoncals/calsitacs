@@ -13,12 +13,17 @@ body.search{
 
   }
 
-  article.post,article.page{
+  article.post, article.page{
     margin: 0 48px 1.5em 48px;
     //padding: 0 48px 1.5em 48px;
-    padding:.5em;
+    padding:.7em;
 
     margin-bottom:2em;
+
+    &.sr-even{
+      background-color:lighten($charcoalRGBA,65%);
+      border-radius:10px;
+    }
 
     header.entry-header{
       h1.entry-title{
@@ -63,6 +68,15 @@ body.search{
         float:left;
         width:50%;
         margin-bottom:.5em;
+        span.posted-on{
+          display:block;
+          float:right;
+          margin-left:1em;
+        }
+        span.byline{
+          display:block;
+          float:right;
+        }
 
 
       }
@@ -70,14 +84,20 @@ body.search{
 
     div.entry-summary{
       @extend .cf:after;
+      margin-bottom:1em;
+    }
+
+    footer.entry-footer{
+      span.cat-links{}
+      span.comments-link{
+        margin-left:.5em;
+      }
+      span.edit-link{
+        margin-left:.5em;
+      }
     }
   }
 
-  article.sr-even{
-    //border:3px solid lighten($charcoalRGBA,50%);
-    background-color:lighten($charcoalRGBA,65%);
-    border-radius:10px;
-  }
 
   /*
   content-none
