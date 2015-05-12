@@ -9,6 +9,74 @@ body.search{
     font-weight: 400;
     font-family:"Raleway",sans-serif;
     color: $charcoalRGBA;
+
+
+  }
+
+  article.post,article.page{
+    margin: 0 48px 1.5em 48px;
+    //padding: 0 48px 1.5em 48px;
+    padding:.5em;
+
+    margin-bottom:2em;
+
+    header.entry-header{
+      h1.entry-title{
+        display:block;
+        box-sizing: border-box;
+        float:left;
+        width:50%;
+        margin-bottom:.5em;
+        a{
+          font-size:.8em;
+
+          //unvisited link
+          &:link{
+
+            text-decoration: none;
+          }
+
+          //visited link
+          &:visited{
+
+            text-decoration: none;
+          }
+
+          //mouse over link
+          &:hover{
+
+
+
+          }
+
+          //selected link
+          &:active{
+
+          }
+        }
+      }
+      div.entry-meta{
+        display:block;
+        height:48px;
+        line-height: 48px;
+        box-sizing: border-box;
+        float:left;
+        width:50%;
+        margin-bottom:.5em;
+
+
+      }
+    }//END .entry-header
+
+    div.entry-summary{
+      @extend .cf:after;
+    }
+  }
+
+  article.sr-even{
+    //border:3px solid lighten($charcoalRGBA,50%);
+    background-color:lighten($charcoalRGBA,65%);
+    border-radius:10px;
   }
 
   /*

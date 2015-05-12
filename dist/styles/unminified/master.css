@@ -633,13 +633,13 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.cf:before, body div#comments ol.comment-list li.comment article.comment-body:before, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta:before, body div#comments ol.comment-list li.comment article.comment-body div.comment-content:before, .cf:after, body div#comments ol.comment-list li.comment article.comment-body:after, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta:after, body div#comments ol.comment-list li.comment article.comment-body div.comment-content:after {
+.cf:before, body div#comments ol.comment-list li.comment article.comment-body:before, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta:before, body div#comments ol.comment-list li.comment article.comment-body div.comment-content:before, .cf:after, body div#comments ol.comment-list li.comment article.comment-body:after, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta:after, body div#comments ol.comment-list li.comment article.comment-body div.comment-content:after, body.search article.post div.entry-summary, body.search article.page div.entry-summary {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.cf:after, body div#comments ol.comment-list li.comment article.comment-body:after, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta:after, body div#comments ol.comment-list li.comment article.comment-body div.comment-content:after {
+.cf:after, body div#comments ol.comment-list li.comment article.comment-body:after, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta:after, body div#comments ol.comment-list li.comment article.comment-body div.comment-content:after, body.search article.post div.entry-summary, body.search article.page div.entry-summary {
   clear: both; }
 
 /**
@@ -2078,6 +2078,37 @@ body.search {
     font-weight: 400;
     font-family: "Raleway", sans-serif;
     color: rgba(64, 64, 64, 0.7); }
+  body.search article.post, body.search article.page {
+    margin: 0 48px 1.5em 48px;
+    padding: 0.5em;
+    margin-bottom: 2em; }
+    body.search article.post header.entry-header h1.entry-title, body.search article.page header.entry-header h1.entry-title {
+      display: block;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      float: left;
+      width: 50%;
+      margin-bottom: 0.5em; }
+      body.search article.post header.entry-header h1.entry-title a, body.search article.page header.entry-header h1.entry-title a {
+        font-size: 0.8em; }
+        body.search article.post header.entry-header h1.entry-title a:link, body.search article.page header.entry-header h1.entry-title a:link {
+          text-decoration: none; }
+        body.search article.post header.entry-header h1.entry-title a:visited, body.search article.page header.entry-header h1.entry-title a:visited {
+          text-decoration: none; }
+    body.search article.post header.entry-header div.entry-meta, body.search article.page header.entry-header div.entry-meta {
+      display: block;
+      height: 48px;
+      line-height: 48px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      float: left;
+      width: 50%;
+      margin-bottom: 0.5em; }
+  body.search article.sr-even {
+    background-color: rgba(229, 229, 229, 0.7);
+    border-radius: 10px; }
   body.search.search-no-results div.page-content {
     background-color: pink; }
 
