@@ -108,6 +108,16 @@
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	if($('body').is('.page-home')){
 
+		//Tipped.create('.icon','some tooltip text',{size:'medium',position:'left',fadeIn:200,fadeOut:200,hideOthers:true});
+		//Tipped.create('#theIcon', $('.move-into-tooltip');
+		Tipped.create('.icon',function(){
+			return {
+				title:$(this).data('title'),
+				content:$(this).data('content')
+			}
+		});
+
+
 		//Check if user is logged in
 		if($("#wpadminbar").length) {
 
