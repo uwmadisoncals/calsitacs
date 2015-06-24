@@ -18,22 +18,22 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		
 			<div class="row homeSubFeatures">
-				<div class="span-33 service-item">
+				<div class="span-25 service-item">
 					<div class="icon" id="webhosting-service" data-content="Here is a short blurb about all the services that CALS IT is providing to the departments, centers, and other groups within the College" data-title="Web Hosting"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/hosting.svg" alt=" "></div>
 					<h3>Web Hosting</h3>
 				</div>
 
-				<div class="span-33 service-item">
+				<div class="span-25 service-item">
 					<div class="icon" id="security-service" data-content="CALS IT is committed to improving the information security position of the college and all of its departments and units." data-title="IT Security"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/security.svg" alt=" "></div>
 					<h3>IT Security</h3>
 				</div>
 
-				<div class="span-33 service-item">
+				<div class="span-25 service-item">
 					<div class="icon" id="Equipment-service" data-content="CALS is running an installation of Axiope's eCAT v4.0.4 software. It's currently being tested and used in a production environment in conjunction with Prof. Jean-Michel Ane of the Agronomy Department." data-title="Equipment"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/notebook.svg" alt=" "></div>
 					<h3>Equipment</h3>
 				</div>
 
-				<div class="span-33 service-item">
+				<div class="span-25 service-item">
 					<div class="icon" id="InstructionalIT-service" data-content="CALS is running an installation of Axiope's eCAT v4.0.4 software. It's currently being tested and used in a production environment in conjunction with Prof. Jean-Michel Ane of the Agronomy Department." data-title="Instructional IT"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/notebook.svg" alt=" "></div>
 					<h3>Instructional IT</h3>
 				</div>

@@ -1059,6 +1059,11 @@ html body.page {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
+body.page-home .site-content {
+  min-height: 0; }
+body.page-home .page #content {
+  min-height: 0; }
+
 .homePageFeature {
   padding: 2em;
   text-align: center;
@@ -1132,8 +1137,11 @@ html body.page {
       width: 100%;
       height: auto; }
 
+.row.homeSubFeatures {
+  padding-top: 3em; }
+
 .homeSubFeatures > div {
-  padding: 5em; }
+  padding: 0; }
   .homeSubFeatures > div div.icon {
     margin: 0 auto;
     width: 50%;
@@ -1626,7 +1634,7 @@ html body footer#colophon.site-footer.footerPositionStatic {
   min-height: 250px;
   position: static; }
 
-.page #content {
+.page-help #content {
   min-height: 800px; }
 
 .page-help .gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit] {
