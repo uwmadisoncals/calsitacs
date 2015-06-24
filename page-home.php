@@ -32,6 +32,11 @@ get_header(); ?>
 					<div class="icon" id="Equipment-service" data-content="CALS is running an installation of Axiope's eCAT v4.0.4 software. It's currently being tested and used in a production environment in conjunction with Prof. Jean-Michel Ane of the Agronomy Department." data-title="Equipment"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/notebook.svg" alt=" "></div>
 					<h3>Equipment</h3>
 				</div>
+
+				<div class="span-33 service-item">
+					<div class="icon" id="InstructionalIT-service" data-content="CALS is running an installation of Axiope's eCAT v4.0.4 software. It's currently being tested and used in a production environment in conjunction with Prof. Jean-Michel Ane of the Agronomy Department." data-title="Instructional IT"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/notebook.svg" alt=" "></div>
+					<h3>Instructional IT</h3>
+				</div>
 			</div>
 
 			<?php while ( have_posts() ) : the_post(); ?>
