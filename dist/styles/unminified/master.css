@@ -1059,238 +1059,32 @@ html body.page {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
-body.page-home .site-content {
-  min-height: 0; }
-body.page-home .page #content {
-  min-height: 0; }
-
-.homePageFeature {
-  padding: 2em;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.9);
-  background-color: transparent;
-  min-height: 400px;
-  z-index: 2;
-  position: relative;
-  top: 0;
-  -webkit-transition: top 1s;
-  /* Safari */
-  transition: top 1s; }
-  .homePageFeature .button.large {
-    padding: 2em;
-    font-weight: 300;
-    font-family: "Raleway", sans-serif;
-    padding-top: 1.2em;
-    padding-bottom: 1.2em;
-    margin-top: 2em; }
-  .homePageFeature h2 {
-    position: relative;
-    z-index: 5;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    font-size: 1.6em;
-    margin-top: 3.5em;
-    letter-spacing: 1px; }
-  .homePageFeature h2.subHeading {
-    position: relative;
-    z-index: 5;
-    font-family: "Raleway", sans-serif;
-    font-weight: 100;
-    color: rgba(255, 255, 255, 0.8);
-    -webkit-font-smoothing: antialiased;
-    font-size: 3.7em;
-    margin-top: 0px; }
-  .homePageFeature div.services-searchbox {
-    padding: 2% 0; }
-    .homePageFeature div.services-searchbox input#services-searchfield {
-      -webkit-transition-property: width, height;
-      transition-property: width, height;
-      webkit-transition-duration: 1s;
-      -webkit-transition-duration: 1s;
-      transition-duration: 1s;
-      webkit-transition-timing-function: ease;
-      -webkit-transition-timing-function: ease;
-      transition-timing-function: ease;
-      width: 16%;
-      height: 3em;
-      background-color: white;
-      text-transform: capitalize;
-      padding: 10px;
-      border: solid 7px white;
-      border-radius: initial;
-      display: none; }
-      .homePageFeature div.services-searchbox input#services-searchfield.service-search-active {
-        width: 24%;
-        height: 5em; }
-    .homePageFeature div.services-searchbox a.our-services {
-      padding: 3px;
-      line-height: 1.5em;
-      display: none; }
-  .homePageFeature .equipment {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    z-index: 3; }
-    .homePageFeature .equipment img {
-      width: 100%;
-      height: auto; }
-
-.row.homeSubFeatures {
-  padding-top: 3em; }
-
-.homeSubFeatures > div {
-  padding: 0; }
-  .homeSubFeatures > div div.icon {
-    margin: 0 auto;
-    width: 50%;
-    margin-bottom: 1.4em; }
-    .homeSubFeatures > div div.icon img {
-      width: 100%;
-      height: auto; }
-  .homeSubFeatures > div h3 {
-    text-align: center;
-    margin-bottom: 1em;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500; }
-  .homeSubFeatures > div p {
-    text-align: center;
-    line-height: 1.6;
-    font-family: "Raleway", sans-serif;
-    font-weight: 300; }
-
-.homePageFeature.service-search-active {
-  top: -8em; }
-
-.height-div {
-  height: 0;
-  -webkit-transition: height 0.6s;
-  /* Safari */
-  transition: height 0.6s; }
-  .height-div.service-search-active {
-    height: 9em; }
-
-.cyan {
-  width: 95%;
-  height: 60%;
-  position: absolute;
-  top: 35%;
-  left: 2.5%;
-  display: none;
-  z-index: 2; }
-  .cyan.service-search-active {
-    display: block; }
-
-.jqueryFontAnimationFix, .commonSearches, .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult:link, .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult:visited, .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.commonSearches, .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.moreCommon > a, .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.moreCommon > a:visited, .cyan.service-search-active div.searchResultsWrapper div.searchResults, .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul, .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult, .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult {
+.jqueryFontAnimationFix, body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults, body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults > ul, body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult, body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult, body.page-home div.siteWrapper div.headerContainer div.cyan div.searchResultsWrapper div.searchResults ul li.commonSearches, body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.commonSearches {
   opacity: 0.99;
   filter: alpha(opacity=99); }
 
-.commonSearches, .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult:link, .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult:visited, .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.commonSearches, .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.moreCommon > a, .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.moreCommon > a:visited {
-  color: rgba(255, 255, 255, 0.8);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  font-weight: 100; }
+/*.button.large {
+padding: 2em;
+font-weight: 300;
+font-family: "Raleway",sans-serif;
+padding-top: 1.2em;
+padding-bottom: 1.2em;
+margin-top: 2em;
+}*/
+/*.equipment {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index:3;
 
-.cyan.service-search-active div.searchResultsWrapper {
-  /* width:25%;
-  height: 100%;
-  float:left;
-  box-sizing:border-box;
-  padding:2%;
-  padding-top:8%;
-  display:block;
-  background-color:pink; // OLD STYLES   */
-  width: 40%;
-  height: 100%;
-  float: left;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  top: 30%;
-  left: 30%; }
-  .cyan.service-search-active div.searchResultsWrapper div.searchResults {
-    margin: 0 auto;
-    width: 80%; }
-    .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult {
-      margin: 0 0 0.4em 0;
-      text-align: left;
-      font-family: Raleway, sans-serif;
-      font-size: 1.2em;
-      letter-spacing: 1px;
-      color: rgba(255, 255, 255, 0.9);
-      margin: 0 auto 0.5em; }
-      .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult {
-        text-decoration: underline; }
-        .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult:hover {
-          color: #CBC8B7; }
-    .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.commonSearches {
-      margin-bottom: 10px;
-      margin-top: 15px; }
-    .cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.moreCommon {
-      margin-top: 0.5em; }
-
-.cyan.service-search-active div.serviceWrapper {
-  width: 25%;
-  height: 100%;
-  float: left;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 2%;
-  padding-top: 8%;
-  display: none; }
-  .cyan.service-search-active div.serviceWrapper.service-search-active {
-    display: none; }
-    .cyan.service-search-active div.serviceWrapper.service-search-active div {
-      position: absolute;
-      left: 38%;
-      max-width: 128px;
-      overflow: hidden;
-      -webkit-transition: 2s;
-      transition: 2s;
-      display: none; }
-      .cyan.service-search-active div.serviceWrapper.service-search-active div:hover {
-        -webkit-transform: scale(1.2, 1.2);
-        -ms-transform: scale(1.2, 1.2);
-        transform: scale(1.2, 1.2); }
-      .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceIcon {
-        display: inline-block;
-        float: left; }
-      .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceHeading {
-        float: left;
-        clear: both;
-        width: 100%;
-        text-align: center;
-        margin: 0.2em 0;
-        font-family: Raleway, sans-serif;
-        font-weight: 300;
-        font-size: 1.6em;
-        letter-spacing: 2px;
-        -webkit-transition-property: font-size, color;
-        /* Safari */
-        transition-property: font-size, color;
-        webkit-transition-duration: 0.8s;
-        -webkit-transition-duration: 0.8s;
-        transition-duration: 0.8s;
-        webkit-transition-timing-function: ease;
-        -webkit-transition-timing-function: ease;
-        transition-timing-function: ease; }
-        .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceHeading:link {
-          color: rgba(255, 255, 255, 0.9);
-          text-decoration: none; }
-        .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceHeading:visited {
-          color: rgba(255, 255, 255, 0.9);
-          text-decoration: none; }
-        .cyan.service-search-active div.serviceWrapper.service-search-active div a.serviceHeading:hover {
-          color: #CBC8B7;
-          font-size: 1.8em; }
-
-input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea {
+	img {
+		width: 100%;
+		height: auto;
+	}
+}*/
+VENDOR css input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea {
   color: #666;
   border: none;
   border-radius: 3px; }
@@ -1426,9 +1220,6 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
   transition: opacity 0.3s;
   padding-bottom: 7px; }
 
-input#input-16:focus {
-  color: white; }
-
 .input__label--yoko {
   position: relative;
   width: 100%;
@@ -1489,6 +1280,160 @@ input#input-16:focus {
 .input__field--yoko:focus + .input__label--yoko::after, .input--filled .input__label--yoko::after {
   -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, -90deg);
   transform: perspective(1000px) rotate3d(1, 0, 0, -90deg); }
+
+body.page-home div.siteWrapper div.headerContainer div.homePageFeature {
+  padding: 2em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: transparent;
+  min-height: 400px;
+  z-index: 2;
+  position: relative;
+  top: 0;
+  -webkit-transition: top 1s;
+  /* Safari */
+  transition: top 1s; }
+  body.page-home div.siteWrapper div.headerContainer div.homePageFeature h2 {
+    position: relative;
+    z-index: 5;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 1.6em;
+    margin-top: 3.5em;
+    letter-spacing: 1px; }
+  body.page-home div.siteWrapper div.headerContainer div.homePageFeature h2.subHeading {
+    position: relative;
+    z-index: 5;
+    font-family: "Raleway", sans-serif;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-font-smoothing: antialiased;
+    font-size: 3.7em;
+    margin-top: 0px; }
+  body.page-home div.siteWrapper div.headerContainer div.homePageFeature div.services-searchbox {
+    padding: 2% 0;
+    /*input#services-searchfield{
+				    	//padding-left:25px;
+				        -webkit-transition-property: width, height; 
+				        transition-property: width,height;
+
+				        webkit-transition-duration: 1s;
+				        transition-duration: 1s;
+
+				        webkit-transition-timing-function:ease;
+				        transition-timing-function:ease;
+
+				        width:16%;
+				        height:3em;
+				        //background: url("../../../img/search.png") no-repeat 4px 4px;
+				        background-color:white;
+				        text-transform: capitalize;
+				        padding:10px;
+				        border:solid 7px white;
+				        border-radius:initial;
+				        display:none;
+
+				        &.service-search-active{
+				          width:24%;
+				          height:5em;
+				        }
+
+				    }*/
+    /*a.our-services{
+				        padding:3px;
+				        line-height: 1.5em;
+				        display: none;
+				      
+				      }*/ }
+    body.page-home div.siteWrapper div.headerContainer div.homePageFeature div.services-searchbox span.input.input--minoru form input#input-16 {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0;
+      margin: 0; }
+      body.page-home div.siteWrapper div.headerContainer div.homePageFeature div.services-searchbox span.input.input--minoru form input#input-16:focus {
+        color: white; }
+  body.page-home div.siteWrapper div.headerContainer div.homePageFeature.service-search-active {
+    top: -8em; }
+body.page-home div.siteWrapper div.headerContainer div.height-div {
+  height: 0;
+  -webkit-transition: height 0.6s;
+  /* Safari */
+  transition: height 0.6s; }
+  body.page-home div.siteWrapper div.headerContainer div.height-div.service-search-active {
+    height: 9em; }
+body.page-home div.siteWrapper div.headerContainer div.cyan {
+  width: 95%;
+  height: 60%;
+  position: absolute;
+  top: 35%;
+  left: 2.5%;
+  display: none;
+  z-index: 2; }
+  body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active {
+    display: block; }
+    body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper {
+      width: 40%;
+      height: 100%;
+      float: left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      top: 30%;
+      left: 30%; }
+      body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults {
+        margin: 0 auto;
+        width: 80%; }
+        body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult {
+          margin: 0 0 0.4em 0;
+          text-align: left;
+          font-family: Raleway, sans-serif;
+          font-size: 1.2em;
+          letter-spacing: 1px;
+          color: rgba(255, 255, 255, 0.9);
+          margin: 0 auto 0.5em; }
+          body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult {
+            text-decoration: underline; }
+            body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult:hover {
+              color: #CBC8B7; }
+        body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.commonSearches {
+          margin-bottom: 10px;
+          margin-top: 15px; }
+        body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.moreCommon {
+          margin-top: 0.5em; }
+  body.page-home div.siteWrapper div.headerContainer div.cyan div.searchResultsWrapper div.searchResults ul li.commonSearches, body.page-home div.siteWrapper div.headerContainer div.cyan div.searchResultsWrapper div.searchResults ul body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.commonSearches, body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > body.page-home div.siteWrapper div.headerContainer div.cyan div.searchResultsWrapper div.searchResults ul li.commonSearches {
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    font-weight: 100; }
+body.page-home div.siteWrapper div#content {
+  min-height: 0; }
+  body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures {
+    padding-top: 3em; }
+    body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures > div {
+      padding: 0; }
+      body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures > div div.icon {
+        margin: 0 auto;
+        width: 50%;
+        margin-bottom: 1.4em; }
+        body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures > div div.icon img {
+          width: 100%;
+          height: auto; }
+      body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures > div h3 {
+        text-align: center;
+        margin-bottom: 1em;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500; }
+      body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures > div p {
+        text-align: center;
+        line-height: 1.6;
+        font-family: "Raleway", sans-serif;
+        font-weight: 300; }
 
 body.page.page-template-default div.site-content {
   background-color: #f9f9f9; }

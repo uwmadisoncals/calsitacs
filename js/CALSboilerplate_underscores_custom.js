@@ -195,15 +195,15 @@
 			$("body").removeClass("service-search-active"); //remove said class from body
 
 			//reinstate the original subheading text with fade transition
-			$(".subHeading").fadeOut("slow",function(){
+			
+			/// @TEMP : disble this function, see branch "/feature/ajax-search-enabled"
+			/*$(".subHeading").fadeOut("slow",function(){
 
-				$(this).text("Here for you.").fadeIn();
+				$(this).text("IT as a service.").fadeIn();
 
 				$(".branding").animate({opacity:1},700);
 
-			});
-
-			
+			});*/		
 
 			setTimeout(function(){
 
@@ -238,7 +238,8 @@
 
 				if($("body").hasClass("page-home")){
 
-				serviceSearchActivate();
+				//@TEMP : disble this statement, see branch "/feature/ajax-search-enabled"
+				//serviceSearchActivate();
 
 				}
 
