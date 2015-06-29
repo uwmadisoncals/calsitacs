@@ -1,0 +1,65 @@
+body.page-services{
+
+	div.siteWrapper{
+
+		div#content{
+
+			div#primary{
+
+				main#main{
+
+					article{
+						header.entry-header{
+							h1.entry-title{
+								margin: 24px 48px 48px 0;
+							}
+						}//END .entry-header
+
+						div.entry-content{
+							padding:2em;
+							margin:0;
+
+							>h2{
+								margin-bottom:0.5em;
+								margin-top:0.5em;
+							}
+
+							>h2:nth-of-type(1){
+								margin-top:0;
+							}
+
+							ul>li{
+								line-height: 1.5em;
+							}
+
+						}//END .entry-content
+
+						footer.entry-footer{
+							
+							position: relative;
+							span.edit-link{
+								position:absolute;
+								right:0;
+								margin-top:.5em;
+							}
+						}//END .entry-footer
+
+					}//END article
+
+				}//END main#main
+
+			}//END #primary
+
+		}//END #content
+
+	}//END .siteWrapper
+}
+
+
+
+
+
+
+
+
+
