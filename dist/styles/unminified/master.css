@@ -1213,7 +1213,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
   background-color: #313131;
   color: #f4f5f6;
   width: 100%;
-  z-index: -1; }
+  z-index: 1; }
 
 /* Use this next selector to style things like font-size and line-height: */
 .calsitacs-frontpage-tooltip .tooltipster-content {
@@ -1963,25 +1963,6 @@ ul.tabs li.current {
 .page-news #edit-link {
   font-size: 10px;
   padding-top: 5px; }
-
-body.page-services div.siteWrapper div#content div#primary main#main article header.entry-header h1.entry-title {
-  margin: 24px 48px 48px 0; }
-body.page-services div.siteWrapper div#content div#primary main#main article div.entry-content {
-  padding: 2em;
-  margin: 0; }
-  body.page-services div.siteWrapper div#content div#primary main#main article div.entry-content > h2 {
-    margin-bottom: 0.5em;
-    margin-top: 0.5em; }
-  body.page-services div.siteWrapper div#content div#primary main#main article div.entry-content > h2:nth-of-type(1) {
-    margin-top: 0; }
-  body.page-services div.siteWrapper div#content div#primary main#main article div.entry-content ul > li {
-    line-height: 1.5em; }
-body.page-services div.siteWrapper div#content div#primary main#main article footer.entry-footer {
-  position: relative; }
-  body.page-services div.siteWrapper div#content div#primary main#main article footer.entry-footer span.edit-link {
-    position: absolute;
-    right: 0;
-    margin-top: 0.5em; }
 
 .page-services #content {
   background: white; }

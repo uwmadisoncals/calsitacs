@@ -283,7 +283,8 @@
   background-color:$www-qa_dark;
   color: $lightGrayBorder;
   width:100%;
-  //z-index:-1;
+  z-index:1;
+  //margin-top:6px;//12px difference between chrome and ff
 
 }
 /* Use this next selector to style things like font-size and line-height: */
