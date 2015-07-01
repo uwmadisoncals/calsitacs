@@ -28,8 +28,8 @@ jQuery(document).ready(function($) {
 	    	//console.log(response); //this is the ajax success callback function, it manipulates the RESPONSE from the server	
 
 		
-				
-			$("#input-16").focus(function(){
+			//@TEMP : disble this function, see branch "/feature/ajax-search-enabled"	
+			/*$("#input-16").focus(function(){
 
 				if (!appended){
 
@@ -51,7 +51,7 @@ jQuery(document).ready(function($) {
 				
 
 				
-			});
+			});*/
 
 			
 	  }); //END $.post
