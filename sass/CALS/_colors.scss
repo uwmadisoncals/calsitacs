@@ -16,6 +16,7 @@ $navbg: #333333;
 $navtextcolor: rgba(255,255,255,0.8);
 $offwhite: rgba(249,249,249, 1);
 $lightGrayBorder: rgba(244,245,246,1);
+$GrayBorder:darken($lightGrayBorder,20%);
 
 $charcoalRGBA: rgba(64,64,64, .7);
 $www-qa_dark: #313131;
@@ -23,7 +24,11 @@ $www-qa_dark: #313131;
 
 $lightGrayfooter:(255,255,255,0.5);
 $uwTan:#CBC8B7;
+$uwTanLighter:lighten($uwTan,5%);
 $uwTanDarker: darken($uwTan,20%);
 
 $calsitacsRed: #960001;
 $calsitacsOffWhite:#f9f9f9;
+
+$footerCharcoal: #3E3938;
+$lightfooterCharcoal: lighten($footerCharcoal,20%);

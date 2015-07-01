@@ -25,7 +25,7 @@ $linkTo_instructionalIT = get_permalink((get_page_by_path( 'instructional-it' )-
 			<div class="row homeSubFeatures">
 				<div class="span-25 service-item" >
 					<div class="icon tooltip" id="webhosting-service" title="some title"><a href="<?php echo $linkTo_webHosting; ?>"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/hosting.svg" alt=" "></a></div>
-					<a href="<?php echo $linkTo_webHosting; ?>"><h3>Web Hosting</h3></a>
+					<a href="<?php echo $linkTo_webHosting; ?>"><h3>Web Hosting</h3></a><i class="icon-link-ext"></i>
 				</div>
 
 				<div class="span-25 service-item tooltip">

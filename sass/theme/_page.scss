@@ -28,15 +28,32 @@ body.page.page-template-default div.site-content{
 					background-color:$white;
 					border:1px solid #f4f5f6;
 					border-radius:3px;
+					
 					p,li{
 					font-size:1.2rem;
 					line-height: 2em;
 					-webkit-font-smoothing: antialiased;
 					text-rendering: optimizelegibility;
 					word-spacing: .2rem;
+					margin-bottom: 1em;
 					}
+
+					li{
+
+					font-size:1.2rem;
+					line-height: 2em;
+					-webkit-font-smoothing: antialiased;
+					text-rendering: optimizelegibility;
+					word-spacing: .2rem;
+					}
+
 					h1{
 					margin-bottom:24px;
+					}
+
+					a{
+						
+						@extend .icon-link-ext;
 					}
 
 				}

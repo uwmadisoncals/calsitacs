@@ -301,3 +301,28 @@
   margin:0 8px 0 8px;
   text-align:center;
 }
+
+a.tooltip-readmore{
+  color:red;
+  margin-left:.3em;
+
+  &:link{
+  text-decoration: none;
+  color:$GrayBorder;
+  }
+
+  &:visited{
+  color:$GrayBorder;
+  text-decoration: none;
+  }
+
+  &:hover{
+  text-decoration:underline;
+  color:$GrayBorder;
+  }
+
+  &:active{
+  color:$uwTanLighter;
+  }
+
+}//END .tooltip-readmore

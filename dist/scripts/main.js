@@ -13948,7 +13948,7 @@ return function (global, window, document, undefined) {
 
 	$('.tooltip#webhosting-service').tooltipster({
 
-		content:$('<span>CALS IT provides to the departments, centers, and other groups within the College<a href="' + MyAjax.linkTo_webHosting + '"> Read More</a> </span>'),
+		content:$('<span>CALS IT provides to the departments, centers, and other groups within the College<a class="tooltip-readmore" href="' + MyAjax.linkTo_webHosting + '">Read More</a> </span>'),
 		theme:".calsitacs-frontpage-tooltip",
 		autoClose:true,
 		interactive:true,
@@ -13957,7 +13957,7 @@ return function (global, window, document, undefined) {
 
 	$('.tooltip#security-service').tooltipster({
 
-		content:$('<span>CALS IT is committed to improving the information security position of the college and all of its departments and units.<a href="' + MyAjax.linkTo_itSecurity + '"> Read More</a></span>'),
+		content:$('<span>CALS IT is committed to improving the information security position of the college and all of its departments and units.<a class="tooltip-readmore" href="' + MyAjax.linkTo_itSecurity + '">Read More</a></span>'),
 		theme:".calsitacs-frontpage-tooltip",
 		autoClose:true,
 		interactive:true,
@@ -13966,7 +13966,7 @@ return function (global, window, document, undefined) {
 
 	$('.tooltip#Equipment-service').tooltipster({
 
-		content:$('<span>CALS is running an installation of Axiope\'s eCAT v4.0.4 software. It\'s currently being tested and used in a production environment.<a href="' + MyAjax.linkTo_equipment + '"> Read More</a></span>'),
+		content:$('<span>CALS is running an installation of Axiope\'s eCAT v4.0.4 software. It\'s currently being tested and used in a production environment.<a class="tooltip-readmore" href="' + MyAjax.linkTo_equipment + '">Read More</a></span>'),
 		theme:".calsitacs-frontpage-tooltip",
 		autoClose:true,
 		interactive:true,
@@ -13975,7 +13975,7 @@ return function (global, window, document, undefined) {
 
 	$('.tooltip#InstructionalIT-service').tooltipster({
 
-		content:$('<span>CALS is running an installation of Axiope\'s eCAT v4.0.4 software. It\'s currently being tested and used in a production environment.<a href="' + MyAjax.linkTo_instructionalIT + '"> Read More</a></span>'),
+		content:$('<span>CALS is running an installation of Axiope\'s eCAT v4.0.4 software. It\'s currently being tested and used in a production environment.<a class="tooltip-readmore" href="' + MyAjax.linkTo_instructionalIT + '">Read More</a></span>'),
 		theme:".calsitacs-frontpage-tooltip",
 		autoClose:true,
 		interactive:true,
