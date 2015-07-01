@@ -1213,7 +1213,9 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
   background-color: #313131;
   color: #f4f5f6;
   width: 100%;
-  z-index: 1; }
+  z-index: 1;
+  margin-bottom: 2em;
+  padding-bottom: 1em; }
 
 /* Use this next selector to style things like font-size and line-height: */
 .calsitacs-frontpage-tooltip .tooltipster-content {
@@ -1620,7 +1622,10 @@ body.page-home div.siteWrapper div.headerContainer div.cyan {
           color: rgba(255, 255, 255, 0.9);
           margin: 0 auto 0.5em; }
           body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult {
-            text-decoration: underline; }
+            text-decoration: underline;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizelegibility; }
             body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult:hover {
               color: #CBC8B7; }
         body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.commonSearches {
@@ -1637,22 +1642,32 @@ body.page-home div.siteWrapper div.headerContainer div.cyan {
 body.page-home div.siteWrapper div#content {
   min-height: 0; }
   body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures {
-    padding-top: 3em; }
-    body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures > div {
+    padding-top: 3.3em;
+    padding-bottom: 2em; }
+    body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures > div.service-item {
       padding: 0; }
-      body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures > div div.icon {
+      body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures > div.service-item div.icon {
         margin: 0 auto;
         width: 50%;
         margin-bottom: 1.4em; }
-        body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures > div div.icon img {
+        body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures > div.service-item div.icon a img {
           width: 100%;
           height: auto; }
-      body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures > div h3 {
+      body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures > div.service-item a h3 {
         text-align: center;
         margin-bottom: 1em;
         font-family: "Raleway", sans-serif;
         font-weight: 500; }
-      body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures > div p {
+      body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures > div.service-item a:link {
+        text-decoration: none;
+        color: #746a68; }
+      body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures > div.service-item a:visited {
+        color: #746a68;
+        text-decoration: none; }
+      body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures > div.service-item a:hover {
+        text-decoration: none;
+        color: #746a68; }
+      body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures > div.service-item p {
         text-align: center;
         line-height: 1.6;
         font-family: "Raleway", sans-serif;

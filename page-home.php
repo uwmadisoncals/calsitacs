@@ -12,30 +12,35 @@
 
 get_header(); ?>
 
-<?php ?>
+<?php
+$linkTo_itSecurity = get_permalink((get_page_by_path( 'it-security' )->ID));
+$linkTo_webHosting = get_permalink((get_page_by_path( 'website-hosting' )->ID));
+$linkTo_equipment = get_permalink((get_page_by_path( 'equipment' )->ID));
+$linkTo_instructionalIT = get_permalink((get_page_by_path( 'instructional-it' )->ID));
+ ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 		
 			<div class="row homeSubFeatures">
 				<div class="span-25 service-item" >
-					<div class="icon tooltip" id="webhosting-service" title="some title"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/hosting.svg" alt=" "></div>
-					<h3>Web Hosting</h3>
+					<div class="icon tooltip" id="webhosting-service" title="some title"><a href="<?php echo $linkTo_webHosting; ?>"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/hosting.svg" alt=" "></a></div>
+					<a href="<?php echo $linkTo_webHosting; ?>"><h3>Web Hosting</h3></a>
 				</div>
 
 				<div class="span-25 service-item tooltip">
-					<div class="icon tooltip" id="security-service"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/security.svg" alt=" "></div>
-					<h3>IT Security</h3>
+					<div class="icon tooltip" id="security-service"><a href="<?php echo $linkTo_itSecurity; ?>"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/security.svg" alt=" "></a></div>
+					<a href="<?php echo $linkTo_itSecurity; ?>"><h3>IT Security</h3></a>
 				</div>
 
 				<div class="span-25 service-item">
-					<div class="icon tooltip" id="Equipment-service"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/notebook.svg" alt=" "></div>
-					<h3>Equipment</h3>
+					<div class="icon tooltip" id="Equipment-service"><a href="<?php echo $linkTo_equipment; ?>"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/notebook.svg" alt=" "></a></div>
+					<a href="<?php echo $linkTo_equipment; ?>"><h3>Equipment</h3></a>
 				</div>
 
 				<div class="span-25 service-item">
-					<div class="icon tooltip" id="InstructionalIT-service"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/Tablet-Chart.svg" alt=" "></div>
-					<h3>Instructional IT</h3>
+					<div class="icon tooltip" id="InstructionalIT-service"><a href="<?php echo $linkTo_instructionalIT; ?>"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/Tablet-Chart.svg" alt=" "></a></div>
+					<a href="<?php echo $linkTo_instructionalIT; ?>"><h3>Instructional IT</h3></a>
 				</div>
 			</div>
 

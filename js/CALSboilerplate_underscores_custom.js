@@ -25,41 +25,7 @@
 
 (function($) {
 
-	$('.tooltip#webhosting-service').tooltipster({
 
-		content:$('<span>CALS IT provides to the departments, centers, and other groups within the College<a href="' + MyAjax.linkTo_webHosting + '"> Read More</a> </span>'),
-		theme:".calsitacs-frontpage-tooltip",
-		autoClose:true,
-		interactive:true,
-		position:'top'
-	});
-
-	$('.tooltip#security-service').tooltipster({
-
-		content:$('<span>CALS IT is committed to improving the information security position of the college and all of its departments and units.<a href="' + MyAjax.linkTo_itSecurity + '"> Read More</a></span>'),
-		theme:".calsitacs-frontpage-tooltip",
-		autoClose:true,
-		interactive:true,
-		position:'top'
-	});
-
-	$('.tooltip#Equipment-service').tooltipster({
-
-		content:$('<span>CALS is running an installation of Axiope\'s eCAT v4.0.4 software. It\'s currently being tested and used in a production environment.<a href="' + MyAjax.linkTo_equipment + '"> Read More</a></span>'),
-		theme:".calsitacs-frontpage-tooltip",
-		autoClose:true,
-		interactive:true,
-		position:'top'
-	});
-
-	$('.tooltip#InstructionalIT-service').tooltipster({
-
-		content:$('<span>CALS is running an installation of Axiope\'s eCAT v4.0.4 software. It\'s currently being tested and used in a production environment.<a href="' + MyAjax.linkTo_instructionalIT + '"> Read More</a></span>'),
-		theme:".calsitacs-frontpage-tooltip",
-		autoClose:true,
-		interactive:true,
-		position:'top'
-	});
 
 
 
@@ -148,6 +114,89 @@
 	if($('body').is('.page-home')){
 
 
+	$('.tooltip#webhosting-service').tooltipster({
+
+		content:$('<span>CALS IT provides to the departments, centers, and other groups within the College<a href="' + MyAjax.linkTo_webHosting + '"> Read More</a> </span>'),
+		theme:".calsitacs-frontpage-tooltip",
+		autoClose:true,
+		interactive:true,
+		position:'top'
+	});
+
+	$('.tooltip#security-service').tooltipster({
+
+		content:$('<span>CALS IT is committed to improving the information security position of the college and all of its departments and units.<a href="' + MyAjax.linkTo_itSecurity + '"> Read More</a></span>'),
+		theme:".calsitacs-frontpage-tooltip",
+		autoClose:true,
+		interactive:true,
+		position:'top'
+	});
+
+	$('.tooltip#Equipment-service').tooltipster({
+
+		content:$('<span>CALS is running an installation of Axiope\'s eCAT v4.0.4 software. It\'s currently being tested and used in a production environment.<a href="' + MyAjax.linkTo_equipment + '"> Read More</a></span>'),
+		theme:".calsitacs-frontpage-tooltip",
+		autoClose:true,
+		interactive:true,
+		position:'top'
+	});
+
+	$('.tooltip#InstructionalIT-service').tooltipster({
+
+		content:$('<span>CALS is running an installation of Axiope\'s eCAT v4.0.4 software. It\'s currently being tested and used in a production environment.<a href="' + MyAjax.linkTo_instructionalIT + '"> Read More</a></span>'),
+		theme:".calsitacs-frontpage-tooltip",
+		autoClose:true,
+		interactive:true,
+		position:'top'
+	});
+
+	//toggle tooltip on hover over service icon title link : webhosting
+	$('#webhosting-service + a')
+
+	.mouseenter(function(){
+
+			$('.tooltip#webhosting-service').tooltipster('show');
+
+	})
+	.mouseleave(function(){
+			$('.tooltip#webhosting-service').tooltipster('hide');
+	});
+
+		//toggle tooltip on hover over service icon title link : security-service
+	$('#security-service + a')
+
+	.mouseenter(function(){
+
+			$('.tooltip#security-service').tooltipster('show');
+
+	})
+	.mouseleave(function(){
+			$('.tooltip#security-service').tooltipster('hide');
+	});
+		
+	//toggle tooltip on hover over service icon title link : Equipment-service
+	$('#Equipment-service + a')
+
+	.mouseenter(function(){
+
+			$('.tooltip#Equipment-service').tooltipster('show');
+
+	})
+	.mouseleave(function(){
+			$('.tooltip#Equipment-service').tooltipster('hide');
+	});
+
+	//toggle tooltip on hover over service icon title link : Instructional
+	$('#InstructionalIT-service + a')
+
+	.mouseenter(function(){
+
+			$('.tooltip#InstructionalIT-service').tooltipster('show');
+
+	})
+	.mouseleave(function(){
+			$('.tooltip#InstructionalIT-service').tooltipster('hide');
+	});
 
 
 		//Check if user is logged in
