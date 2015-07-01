@@ -173,6 +173,12 @@ return $output;
  */
 function itacs_ajax_scripts(){
 
+//page link variables
+$linkTo_itSecurity = get_permalink((get_page_by_path( 'it-security' )->ID));
+$linkTo_webHosting = get_permalink((get_page_by_path( 'website-hosting' )->ID));
+$linkTo_equipment = get_permalink((get_page_by_path( 'equipment' )->ID));
+$linkTo_instructionalIT = get_permalink((get_page_by_path( 'instructional-it' )->ID));
+
 wp_register_script( 'ajaxjs', get_template_directory_uri() . '/js/ajax.js', array('jquery')); //register the script for later use in enqueue_script
 
 wp_enqueue_script('ajaxjs'); //enque script
@@ -182,7 +188,11 @@ wp_localize_script( 'ajaxjs', 'MyAjax',
 	array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
 		'security' => wp_create_nonce( 'my-special-string' ),
-		'siteUrl' => site_url()
+		'siteUrl' => site_url(),
+		'linkTo_itSecurity'=>$linkTo_itSecurity,
+		'linkTo_webHosting'=>$linkTo_webHosting,
+		'linkTo_equipment'=>$linkTo_equipment,
+		'linkTo_instructionalIT'=>$linkTo_instructionalIT
 		) 
 );
 

@@ -45,6 +45,10 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 </div><!-- .siteWrapper -->
+<?php 
+$pbp = get_permalink((get_page_by_path( 'it-security' )->ID));
+logit($pbp,'$pbp: '); 
+?>
 <?php wp_footer(); ?>
 
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/scripts/main.min.js"></script>
