@@ -47,7 +47,7 @@
 </div><!-- .siteWrapper -->
 <?php 
 $pbp = get_permalink((get_page_by_path( 'it-security' )->ID));
-logit($pbp,'$pbp: '); 
+//logit($pbp,'$pbp: '); 
 ?>
 <?php wp_footer(); ?>
 
