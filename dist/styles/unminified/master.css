@@ -814,8 +814,8 @@ p {
 
 @font-face {
   font-family: 'fontello';
-  src: url('../../../vendor/fontello/font/fontello.eot?42233701');
-  src: url('../../../vendor/fontello/font/fontello.eot?42233701#iefix') format('embedded-opentype'), url('../../../vendor/fontello/font/fontello.woff?42233701') format('woff'), url('../../../vendor/fontello/font/fontello.ttf?42233701') format('truetype'), url('../../../vendor/fontello/font/fontello.svg?42233701#fontello') format('svg');
+  src: url('../../../vendor/fontello/font/fontello.eot?80291050');
+  src: url('../../../vendor/fontello/font/fontello.eot?80291050#iefix') format('embedded-opentype'), url('../../../vendor/fontello/font/fontello.woff?80291050') format('woff'), url('../../../vendor/fontello/font/fontello.ttf?80291050') format('truetype'), url('../../../vendor/fontello/font/fontello.svg?80291050#fontello') format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -825,7 +825,7 @@ p {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?42233701#fontello') format('svg');
+    src: url('../font/fontello.svg?80291050#fontello') format('svg');
   }
 }
 */
@@ -892,6 +892,18 @@ p {
   content: '\e808'; }
 
 /* '' */
+.icon-location:before {
+  content: '\e809'; }
+
+/* '' */
+.icon-location-inv:before {
+  content: '\e80a'; }
+
+/* '' */
+.icon-location-alt:before {
+  content: '\e80b'; }
+
+/* '' */
 input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea {
   color: #666;
   border: none;
@@ -1872,7 +1884,10 @@ html body footer#colophon.site-footer {
   min-height: 250px;
   position: static;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility; }
   html body footer#colophon.site-footer div.darkband {
     width: 100%;
     height: 8px;
@@ -1883,14 +1898,59 @@ html body footer#colophon.site-footer {
     float: left;
     margin: 1.5% 0 0 1.5%;
     line-height: 1.2em; }
+    html body footer#colophon.site-footer div.contactInfo div.uwaddress img.calsitLogo {
+      width: 50%;
+      margin-bottom: 16px; }
     html body footer#colophon.site-footer div.contactInfo div.uwaddress a {
-      color: #CBC8B7;
-      font-size: 0.8em;
-      font-weight: normal; }
-    html body footer#colophon.site-footer div.contactInfo div.uwaddress span, html body footer#colophon.site-footer div.contactInfo div.uwaddress div.phone {
-      color: white;
-      font-size: 0.8em;
-      font-weight: normal; }
+      margin-bottom: 4px;
+      display: block; }
+    html body footer#colophon.site-footer div.contactInfo div.uwaddress address {
+      color: #989898;
+      font-size: 16px;
+      font-weight: normal;
+      text-decoration: none;
+      margin-bottom: 4px; }
+      html body footer#colophon.site-footer div.contactInfo div.uwaddress address a {
+        display: inline;
+        margin: 0; }
+        html body footer#colophon.site-footer div.contactInfo div.uwaddress address a:hover {
+          text-decoration: none;
+          color: #b2b2b2; }
+        html body footer#colophon.site-footer div.contactInfo div.uwaddress address a i.locationIcon:before {
+          content: '\e80a';
+          font-family: fontello;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0;
+          text-decoration: none;
+          color: inherit;
+          font-size: 1.5em;
+          padding-left: 6px; }
+    html body footer#colophon.site-footer div.contactInfo div.uwaddress a {
+      color: #989898;
+      font-size: 16px;
+      font-weight: normal;
+      text-decoration: none; }
+      html body footer#colophon.site-footer div.contactInfo div.uwaddress a:hover {
+        text-decoration: none;
+        color: #b2b2b2; }
+    html body footer#colophon.site-footer div.contactInfo div.uwaddress div.phone {
+      margin-bottom: 4px;
+      color: #989898;
+      font-size: 16px;
+      font-weight: normal;
+      text-decoration: none;
+      /*&:before{
+					content:'\e804';//.icon-phone
+					font-family:fontello;
+					font-weight:normal;
+					font-style:normal;
+					margin:0;
+					color:inherit;
+					padding-right:1.04em;
+					}*/ }
+    html body footer#colophon.site-footer div.contactInfo div.uwaddress div.links a {
+      display: inline; }
     html body footer#colophon.site-footer div.contactInfo div.uwaddress h3 {
       color: white;
       font-size: 1em;
@@ -1913,17 +1973,26 @@ html body footer#colophon.site-footer {
     html body footer#colophon.site-footer div.support p {
       color: white;
       font-size: 0.8em; }
-  html body footer#colophon.site-footer a.copyright_link {
+  html body footer#colophon.site-footer div.copyright_container {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+    display: block;
+    width: 100%;
+    height: 32px;
     float: left;
     margin-left: 1.5%;
-    margin-top: 1.5%;
-    font-size: 0.7em;
-    text-decoration: none; }
-    html body footer#colophon.site-footer a.copyright_link:visited {
-      color: white;
-      text-decoration: none; }
-    html body footer#colophon.site-footer a.copyright_link:hover {
-      text-decoration: underline; }
+    margin-top: 2.5em;
+    color: #989898; }
+    html body footer#colophon.site-footer div.copyright_container p.copyright_link {
+      display: inline;
+      float: left;
+      font-weight: normal;
+      font-size: 12px;
+      text-decoration: none;
+      line-height: 1.2em;
+      text-align: center;
+      width: 100%; }
 
 html body footer#colophon.site-footer.footerPositionFixed {
   width: 100%;

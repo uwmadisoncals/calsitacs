@@ -5,6 +5,7 @@ html body footer#colophon.site-footer{
 	position:static;
 	bottom: 0;
 	left:0;
+	@include fontAntialiasing;
 	div.darkband{
 		width:100%;
 		height:8px;
@@ -18,15 +19,99 @@ html body footer#colophon.site-footer{
 		margin: 1.5% 0  0 1.5%;
 		line-height: 1.2em;
 		div.uwaddress{
-			a{
-				color:$uwTan;
-				font-size: .8em;
-				font-weight: normal;
+
+			img.calsitLogo{
+			width:50%;
+			margin-bottom:16px;
 			}
-			span,div.phone{
-				color:white;
-				font-size: .8em;
+			a{
+				margin-bottom:4px;
+				display:block;
+			}
+			address{
+				color:$calsGrayFooterText;
+				//font-size: .8em;
+				font-size:16px;
 				font-weight: normal;
+				text-decoration: none;
+				margin-bottom:4px;
+				a{
+					display: inline;
+					margin:0;
+					&:hover{
+						text-decoration:none;
+						color:lighten($calsGrayFooterText,10%);
+					}
+
+					i.locationIcon{
+						&:before{
+						content:'\e80a';//.icon-location-inv
+						font-family:fontello;
+						font-weight:normal;
+						font-style:normal;
+						margin:0;
+						text-decoration: none;
+						color:inherit;
+						font-size:1.5em;
+						padding-left:6px;
+
+						}
+					}
+				}
+
+			}
+
+			a{
+				//color:$uwTan;
+				color:$calsGrayFooterText;
+				//font-size: .8em;
+				font-size:16px;
+				font-weight: normal;
+				text-decoration: none;
+
+				//unvisited link
+		        &:link{ 
+		       
+		        }
+
+		        //visited link
+		        &:visited{
+		        
+		        }
+
+		        //mouse over link
+		        &:hover{
+		        	text-decoration: none;
+		        	color:lighten($calsGrayFooterText,10%);
+		        }
+
+		        //selected link
+		        &:active{
+		        }
+
+			}//END a
+
+			div.phone{
+				margin-bottom:4px;
+				color:$calsGrayFooterText;
+				//font-size: .8em;
+				font-size:16px;
+				font-weight: normal;
+				text-decoration: none;
+					/*&:before{
+					content:'\e804';//.icon-phone
+					font-family:fontello;
+					font-weight:normal;
+					font-style:normal;
+					margin:0;
+					color:inherit;
+					padding-right:1.04em;
+					}*/
+			}
+			div.links{
+				a{
+					display:inline;
+				}
 			}
 			h3{
 				color:white;
@@ -58,20 +143,30 @@ html body footer#colophon.site-footer{
 			font-size: .8em;	
 		}
 	}
-	a.copyright_link{
+	div.copyright_container{
+		@include fontAntialiasing;
+		display:block;
+		width:100%;
+		height:32px;
 		float:left;
 		margin-left:1.5%;
-		margin-top:1.5%;
-		font-size: .7em;
-		text-decoration: none;
-		&:visited{
-			color:white;
+		margin-top:2.5em;
+		color:$calsGrayFooterText;
+		//margin:0 auto;
+
+		p.copyright_link{
+			display:inline;
+			float:left;
+			font-weight: normal;
+			//font-size: .6em;
+			font-size:12px;
 			text-decoration: none;
-		}
-		&:hover{
-			text-decoration:underline;
-		}
-	}
+			line-height: 1.2em;
+			text-align: center;
+			width:100%;
+		}//END .copyright_link
+
+	}//END .copyright_container
 }
 
 html body footer#colophon.site-footer.footerPositionFixed{
