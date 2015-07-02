@@ -39,7 +39,8 @@
 			<h3>Did you know?</h3>
 			<p class="mission-statement">CALS_IT_ presently hosts over 130 sites.</p>
 			<a href="https://www.myuwconnect.org/give" class="button blue 1234">Support CALS</a>
-			<img src="<?php echo get_template_directory_uri(); ?>/images/calsitlogo-grey-textonly.svg" />
+			<!--<img src="<?php echo get_template_directory_uri(); ?>/dist/images/test.svg" />-->
+			<img src="<?php echo get_template_directory_uri(); ?>/dist/images/calsitlogo-grey-textonly.svg" />
 		</div>
 		<div class="copyright_container"><a class="copyright_link cf" href=""><?php echo comicpress_copyright(); ?>. Board of Regents of the University of Wisconsin System</a></div>
 		
