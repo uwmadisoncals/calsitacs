@@ -1321,8 +1321,10 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
   text-align: center; }
 
 a.tooltip-readmore {
-  color: red;
-  margin-left: 0.3em; }
+  margin-left: 0.3em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility; }
   a.tooltip-readmore:link {
     text-decoration: none;
     color: #bcc2c8; }
@@ -1330,8 +1332,8 @@ a.tooltip-readmore {
     color: #bcc2c8;
     text-decoration: none; }
   a.tooltip-readmore:hover {
-    text-decoration: underline;
-    color: #bcc2c8; }
+    text-decoration: none;
+    color: #d8dcdf; }
   a.tooltip-readmore:active {
     color: #d6d3c6; }
 
@@ -1773,7 +1775,7 @@ body.page-home div.siteWrapper div#content {
         text-decoration: none; }
       body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures > div.service-item a:hover {
         text-decoration: none;
-        color: #746a68; }
+        color: #9a908f; }
       body.page-home div.siteWrapper div#content div#primary main#main.site-main div.row.homeSubFeatures > div.service-item p {
         text-align: center;
         line-height: 1.6;

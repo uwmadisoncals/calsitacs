@@ -1,7 +1,7 @@
 //////////////////////////////////
 // Include all CALS sass        //
 //////////////////////////////////
-
+@import "CALS/_mixins.scss"; //imports CALS mobile styles
 @import "CALS/_reset.scss"; //imports CALS css reset
 @import "CALS/_scaffolding.scss"; //imports CALS scaffolding
 @import "CALS/_button.scss"; //imports CALS button styles

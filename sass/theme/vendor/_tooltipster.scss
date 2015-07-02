@@ -303,8 +303,8 @@
 }
 
 a.tooltip-readmore{
-  color:red;
   margin-left:.3em;
+  @include fontAntialiasing;
 
   &:link{
   text-decoration: none;
@@ -317,8 +317,8 @@ a.tooltip-readmore{
   }
 
   &:hover{
-  text-decoration:underline;
-  color:$GrayBorder;
+  text-decoration:none;
+  color:lighten($GrayBorder,10%);
   }
 
   &:active{
