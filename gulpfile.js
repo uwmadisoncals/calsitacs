@@ -57,6 +57,7 @@ gulp.task('hello', function(){
 });
 
 // Images
+
 gulp.task('images', function() {
   return gulp.src('img/**/*')
     .pipe(cache(imagemin({ svgoPlugins: [{removeViewBox: false}], progressive: true })))
@@ -99,7 +100,7 @@ gulp.task('watch', function() {
     gulp.watch('js/**/*.js', ['scripts']);
 
     // Watch image files
-    gulp.watch('img/**/*', ['images']);
+    //gulp.watch('img/**/*', ['images']);
 
 
 
