@@ -3,14 +3,14 @@ Description: SASS rules for search.php
 */
 
 body.search{
+ //@include fontAntialiasing;
+  background-color:$offwhite;
 
-  header.page-header{
+  header.page-header > h1{
     margin:48px;
     font-weight: 400;
     font-family:"Raleway",sans-serif;
     color: $charcoalRGBA;
-
-
   }
 
   article.post, article.page, article.services{

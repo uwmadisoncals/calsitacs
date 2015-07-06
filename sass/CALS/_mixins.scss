@@ -12,11 +12,11 @@ text-rendering: optimizelegibility;
 
 	@include fontAntialiasing;
 	color:darken($calsGrayFooterText,20%);
-	text-decoration: none;
+	text-decoration: underline;
 
 	//unvisited link
     &:link{ 
-    	
+    	//font-weight:bold;
     }
 
     //visited link
@@ -26,8 +26,9 @@ text-rendering: optimizelegibility;
 
     //mouse over link
     &:hover{
-    text-decoration: none;
+    text-decoration: underline;
 	color:$calsGrayFooterText;
+    cursor: pointer;
 
     }
 

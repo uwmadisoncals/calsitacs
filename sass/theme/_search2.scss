@@ -1,0 +1,70 @@
+/*
+Description: SASS rules for search.php
+This is revision 2. I am attempting to refactor _search.scss and one of these will need to be removed.
+*/
+
+body.search.search-results{
+	background-color:$offwhite;
+	div.siteWrapper{
+
+		div#content{
+
+			section#primary{
+
+				main#main{
+
+					header.page-header{
+
+						h1.page-title{
+							margin:48px;
+						    font-weight: 400;
+						    font-family:"Raleway",sans-serif;
+						    color: $charcoalRGBA;
+						}//END .page-title
+
+					}//END header.page-header
+
+					article{
+						margin: 0 48px 1.5em 48px;
+    					padding:.7em;
+    					margin-bottom:2em;
+    					&.sr-even{
+					    background-color:lighten($charcoalRGBA,65%);
+					    border-radius:10px;
+						}//END &.sr-even
+
+					    header.entry-header{
+
+							h1.entry-title{
+								a{}
+							}//END h1.entry-title
+
+							div.entry-meta{
+
+							}//END .entry-meta
+
+					    }//END header.entry-header
+
+					    div.entry-summary{
+
+					    }//END .entry-summary
+
+					    footer.entry-footer{
+
+					    }//END footer.entry-footer
+    					
+					}//END article
+
+					nav.navigation.paging-navigation{
+
+					}//END .navigation.paging-navigation
+
+				}//END main#main
+
+			}//END section#primary
+
+		}//END #content
+
+	}//END .siteWrapper
+
+}//END body

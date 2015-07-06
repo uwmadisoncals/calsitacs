@@ -633,13 +633,13 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.cf:before, body div#comments ol.comment-list li.comment article.comment-body:before, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta:before, body div#comments ol.comment-list li.comment article.comment-body div.comment-content:before, .cf:after, body div#comments ol.comment-list li.comment article.comment-body:after, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta:after, body div#comments ol.comment-list li.comment article.comment-body div.comment-content:after, body.search article.post div.entry-summary, body.search article.page div.entry-summary, body.search article.services div.entry-summary {
+.cf:before, body div#comments ol.comment-list li.comment article.comment-body:before, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta:before, body div#comments ol.comment-list li.comment article.comment-body div.comment-content:before, .cf:after, body div#comments ol.comment-list li.comment article.comment-body:after, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta:after, body div#comments ol.comment-list li.comment article.comment-body div.comment-content:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.cf:after, body div#comments ol.comment-list li.comment article.comment-body:after, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta:after, body div#comments ol.comment-list li.comment article.comment-body div.comment-content:after, body.search article.post div.entry-summary, body.search article.page div.entry-summary, body.search article.services div.entry-summary {
+.cf:after, body div#comments ol.comment-list li.comment article.comment-body:after, body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta:after, body div#comments ol.comment-list li.comment article.comment-body div.comment-content:after {
   clear: both; }
 
 /**
@@ -1681,6 +1681,10 @@ body.page-home div.siteWrapper div.headerContainer div.homePageFeature {
 				      
 				      }*/ }
     body.page-home div.siteWrapper div.headerContainer div.homePageFeature div.services-searchbox span.input.input--minoru form input#input-16 {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizelegibility;
+      font-family: Raleway, sans-serif;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -1691,7 +1695,7 @@ body.page-home div.siteWrapper div.headerContainer div.homePageFeature {
       line-height: 2em;
       padding: 0 0.25em 0 0.25em; }
       body.page-home div.siteWrapper div.headerContainer div.homePageFeature div.services-searchbox span.input.input--minoru form input#input-16:focus {
-        color: white; }
+        color: rgba(64, 64, 64, 0.7); }
   body.page-home div.siteWrapper div.headerContainer div.homePageFeature.service-search-active {
     top: -8em; }
 body.page-home div.siteWrapper div.headerContainer div.height-div {
@@ -1860,20 +1864,29 @@ body.page.page-template-default div.site-content {
         body.page.page-template-default div.site-content div#primary #main article div.entry-content h1, body.page.page-template-default div.site-content div#primary #main article div.entry-content h2, body.page.page-template-default div.site-content div#primary #main article div.entry-content h3, body.page.page-template-default div.site-content div#primary #main article div.entry-content h4, body.page.page-template-default div.site-content div#primary #main article div.entry-content h5, body.page.page-template-default div.site-content div#primary #main article div.entry-content h6 {
           margin-bottom: 18px;
           color: rgba(64, 64, 64, 0.7);
+          text-rendering: optimizelegibility;
+          font-weight: 400;
+          font-family: "Raleway", sans-serif; }
+        body.page.page-template-default div.site-content div#primary #main article div.entry-content a {
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
           text-rendering: optimizelegibility;
-          font-weight: 400; }
-        body.page.page-template-default div.site-content div#primary #main article div.entry-content a.calsFontLink {
-          text-decoration: none; }
-          body.page.page-template-default div.site-content div#primary #main article div.entry-content a.calsFontLink:after {
-            content: '\e800';
-            font-family: fontello;
-            font-weight: normal;
-            font-style: normal;
-            margin: 0;
-            text-decoration: none;
-            color: inherit; }
+          color: #656565;
+          text-decoration: underline; }
+          body.page.page-template-default div.site-content div#primary #main article div.entry-content a:hover {
+            text-decoration: underline;
+            color: #989898;
+            cursor: pointer; }
+          body.page.page-template-default div.site-content div#primary #main article div.entry-content a.calsFontLink {
+            text-decoration: none; }
+            body.page.page-template-default div.site-content div#primary #main article div.entry-content a.calsFontLink:after {
+              content: '\e800';
+              font-family: fontello;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0;
+              text-decoration: none;
+              color: inherit; }
       body.page.page-template-default div.site-content div#primary #main article footer.entry-footer {
         width: 100%;
         /*a.post-edit-link{
@@ -2476,10 +2489,11 @@ body.single-post {
         -moz-osx-font-smoothing: grayscale;
         text-rendering: optimizelegibility;
         color: #656565;
-        text-decoration: none; }
+        text-decoration: underline; }
         body.single-post div#primary article header.entry-header div.entry-meta span.byline span.author.vcard a:hover {
-          text-decoration: none;
-          color: #989898; }
+          text-decoration: underline;
+          color: #989898;
+          cursor: pointer; }
     body.single-post div#primary article div.entry-content {
       position: relative;
       margin: 0;
@@ -2500,14 +2514,15 @@ body.single-post {
           -moz-osx-font-smoothing: grayscale;
           text-rendering: optimizelegibility;
           color: #656565;
-          text-decoration: none;
+          text-decoration: underline;
           display: block;
           text-align: center;
           font-size: 16px;
           font-weight: normal; }
           body.single-post div#primary article div.entry-content div.edit-post span.edit-link a.post-edit-link:hover {
-            text-decoration: none;
-            color: #989898; }
+            text-decoration: underline;
+            color: #989898;
+            cursor: pointer; }
           body.single-post div#primary article div.entry-content div.edit-post span.edit-link a.post-edit-link:after {
             content: '\e80c';
             font-family: fontello;
@@ -2547,10 +2562,11 @@ body.single-post {
         -moz-osx-font-smoothing: grayscale;
         text-rendering: optimizelegibility;
         color: #656565;
-        text-decoration: none; }
+        text-decoration: underline; }
         body.single-post div#primary article div.entry-content a:hover {
-          text-decoration: none;
-          color: #989898; }
+          text-decoration: underline;
+          color: #989898;
+          cursor: pointer; }
         body.single-post div#primary article div.entry-content a.calsFontLink {
           text-decoration: none; }
           body.single-post div#primary article div.entry-content a.calsFontLink:after {
@@ -2566,13 +2582,13 @@ body.single-post {
       body.single-post div#primary article footer.entry-footer div.category-list {
         width: 100%;
         margin-bottom: 1em;
-        text-align: center; }
+        margin-left: 48px; }
         body.single-post div#primary article footer.entry-footer div.category-list a {
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
           text-rendering: optimizelegibility;
           color: #656565;
-          text-decoration: none;
+          text-decoration: underline;
           font-size: 20px;
           line-height: 1.3em;
           -webkit-font-smoothing: antialiased;
@@ -2584,18 +2600,31 @@ body.single-post {
           width: -moz-fit-content;
           width: fit-content; }
           body.single-post div#primary article footer.entry-footer div.category-list a:hover {
-            text-decoration: none;
-            color: #989898; }
-    body.single-post div#primary nav.navigation.post-navigation div.nav-links div.nav-previous a, body.single-post div#primary nav.navigation.post-navigation div.nav-links div.nav-next a {
+            text-decoration: underline;
+            color: #989898;
+            cursor: pointer; }
+    body.single-post div#primary nav.navigation.post-navigation div.nav-links div.nav-previous a {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizelegibility;
       color: #656565;
-      text-decoration: none;
+      text-decoration: underline;
       font-weight: normal; }
-      body.single-post div#primary nav.navigation.post-navigation div.nav-links div.nav-previous a:hover, body.single-post div#primary nav.navigation.post-navigation div.nav-links div.nav-next a:hover {
-        text-decoration: none;
-        color: #989898; }
+      body.single-post div#primary nav.navigation.post-navigation div.nav-links div.nav-previous a:hover {
+        text-decoration: underline;
+        color: #989898;
+        cursor: pointer; }
+    body.single-post div#primary nav.navigation.post-navigation div.nav-links div.nav-next a {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizelegibility;
+      color: #656565;
+      text-decoration: underline;
+      font-weight: normal; }
+      body.single-post div#primary nav.navigation.post-navigation div.nav-links div.nav-next a:hover {
+        text-decoration: underline;
+        color: #989898;
+        cursor: pointer; }
 
 body div#comments {
   margin: 0 2em 1em 2em;
@@ -2675,59 +2704,19 @@ body div#comments {
 
 /*
 Description: SASS rules for search.php
+This is revision 2. I am attempting to refactor _search.scss and one of these will need to be removed.
 */
-body.search {
-  /*
-  content-none
-  */ }
-  body.search header.page-header {
+body.search.search-results {
+  background-color: #f9f9f9; }
+  body.search.search-results div.siteWrapper div#content section#primary main#main header.page-header h1.page-title {
     margin: 48px;
     font-weight: 400;
     font-family: "Raleway", sans-serif;
     color: rgba(64, 64, 64, 0.7); }
-  body.search article.post, body.search article.page, body.search article.services {
+  body.search.search-results div.siteWrapper div#content section#primary main#main article {
     margin: 0 48px 1.5em 48px;
     padding: 0.7em;
     margin-bottom: 2em; }
-    body.search article.post.sr-even, body.search article.page.sr-even, body.search article.services.sr-even {
+    body.search.search-results div.siteWrapper div#content section#primary main#main article.sr-even {
       background-color: rgba(229, 229, 229, 0.7);
       border-radius: 10px; }
-    body.search article.post header.entry-header h1.entry-title, body.search article.page header.entry-header h1.entry-title, body.search article.services header.entry-header h1.entry-title {
-      display: block;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      float: left;
-      width: 50%;
-      margin-bottom: 0.5em; }
-      body.search article.post header.entry-header h1.entry-title a, body.search article.page header.entry-header h1.entry-title a, body.search article.services header.entry-header h1.entry-title a {
-        font-size: 0.8em; }
-        body.search article.post header.entry-header h1.entry-title a:link, body.search article.page header.entry-header h1.entry-title a:link, body.search article.services header.entry-header h1.entry-title a:link {
-          text-decoration: none; }
-        body.search article.post header.entry-header h1.entry-title a:visited, body.search article.page header.entry-header h1.entry-title a:visited, body.search article.services header.entry-header h1.entry-title a:visited {
-          text-decoration: none; }
-    body.search article.post header.entry-header div.entry-meta, body.search article.page header.entry-header div.entry-meta, body.search article.services header.entry-header div.entry-meta {
-      display: block;
-      height: 48px;
-      line-height: 48px;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      float: left;
-      width: 50%;
-      margin-bottom: 0.5em; }
-      body.search article.post header.entry-header div.entry-meta span.posted-on, body.search article.page header.entry-header div.entry-meta span.posted-on, body.search article.services header.entry-header div.entry-meta span.posted-on {
-        display: block;
-        float: right;
-        margin-left: 1em; }
-      body.search article.post header.entry-header div.entry-meta span.byline, body.search article.page header.entry-header div.entry-meta span.byline, body.search article.services header.entry-header div.entry-meta span.byline {
-        display: block;
-        float: right; }
-    body.search article.post div.entry-summary, body.search article.page div.entry-summary, body.search article.services div.entry-summary {
-      margin-bottom: 1em; }
-    body.search article.post footer.entry-footer span.comments-link, body.search article.page footer.entry-footer span.comments-link, body.search article.services footer.entry-footer span.comments-link {
-      margin-left: 0.5em; }
-    body.search article.post footer.entry-footer span.edit-link, body.search article.page footer.entry-footer span.edit-link, body.search article.services footer.entry-footer span.edit-link {
-      margin-left: 0.5em; }
-  body.search.search-no-results div.page-content {
-    background-color: pink; }

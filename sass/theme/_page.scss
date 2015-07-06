@@ -106,14 +106,16 @@ body.page.page-template-default div.site-content{
 					h1,h2,h3,h4,h5,h6{
 					margin-bottom:18px;
 					color: $charcoalRGBA;
-					-webkit-font-smoothing: antialiased;
-					-moz-osx-font-smoothing: grayscale;
+					//-webkit-font-smoothing: antialiased;
+					//-moz-osx-font-smoothing: grayscale;
 					text-rendering: optimizelegibility;
 					font-weight: 400;
+					font-family:"Raleway",sans-serif;
+
 					}
 
 					a{
-						
+						@include calsitacsDefaultLinks;
 						&.calsFontLink{
 						text-decoration: none;
 							&:after{

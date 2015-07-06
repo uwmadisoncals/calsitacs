@@ -160,7 +160,8 @@ body.single-post{
         div.category-list{
           width:100%;
           margin-bottom:1em;
-          text-align: center;
+          //text-align: center;
+          margin-left:48px;
           a{
             @include calsitacsDefaultLinks;
             font-size:20px;
@@ -183,13 +184,22 @@ body.single-post{
 
     nav.navigation.post-navigation{
       div.nav-links{
-        div.nav-previous,div.nav-next{
+        div.nav-previous{
           a{
             @include calsitacsDefaultLinks;
             font-weight: normal;
             span{}
           }
         }//END .nav-previous
+
+        div.nav-next{
+          a{
+            @include calsitacsDefaultLinks;
+            font-weight: normal;
+            span{}
+          }
+        }//END .nav-next
+
       }//END .nav-links
     }//END .navigation.post-navigation
 
