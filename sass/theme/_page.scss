@@ -20,14 +20,64 @@ body.page.page-template-default div.site-content{
 					color: $charcoalRGBA;
 				}
 				div.entry-content{
+					position:relative;
 					margin: 0;
 					padding:48px;
 					padding-right:48px;
 					background-color:tan;
-					margin-bottom:48px;
+					margin-bottom:6px;
 					background-color:$white;
 					border:1px solid #f4f5f6;
 					border-radius:3px;
+					
+					div.edit-post{
+						position:absolute;
+            			width:30%;
+            			top:6px;
+            			left:35%;
+						a.post-edit-link{
+						@include fontAntialiasing;
+						display:block;
+						text-align: center;
+						color:darken($calsGrayFooterText,20%);
+						font-size:16px;
+						font-weight: normal;
+						text-decoration: none;
+
+						//unvisited link
+				        &:link{ 
+				        	
+				        }
+
+				        //visited link
+				        &:visited{
+				        	
+				        }
+
+				        //mouse over link
+				        &:hover{
+				        text-decoration: none;
+        				color:$calsGrayFooterText;
+
+				        }
+
+				        //selected link
+				        	&:active{
+				        }
+
+				        &:after{
+							content:'\e80c';//font-awesome,icon-edit
+							font-family:fontello;
+							font-weight:normal;
+							font-style:normal;
+							margin:0;
+							text-decoration: none;
+							color:inherit;
+							padding-left:6px;
+						}
+
+						}//END .post-edit-link
+					}//END .edit-post
 					
 					
 					p{
@@ -78,8 +128,53 @@ body.page.page-template-default div.site-content{
 						}//END .calsFontLink
 					}
 
+				}//END .entry-content
+				footer.entry-footer{
+					width:100%;
+					/*a.post-edit-link{
+						@include fontAntialiasing;
+						display:block;
+						text-align: center;
+						color:darken($calsGrayFooterText,20%);
+						font-size:16px;
+						font-weight: normal;
+						text-decoration: none;
+
+						//unvisited link
+				        &:link{ 
+				        	
+				        }
+
+				        //visited link
+				        &:visited{
+				        	
+				        }
+
+				        //mouse over link
+				        &:hover{
+				        text-decoration: none;
+        				color:$calsGrayFooterText;
+
+				        }
+
+				        //selected link
+				        	&:active{
+				        }
+
+				        &:after{
+							content:'\e80c';//font-awesome,icon-edit
+							font-family:fontello;
+							font-weight:normal;
+							font-style:normal;
+							margin:0;
+							text-decoration: none;
+							color:inherit;
+							padding-left:6px;
+						}
+
+					}//END .post-edit-link*/
 				}
-			}
+			}//END article
 		}
 	}
 }

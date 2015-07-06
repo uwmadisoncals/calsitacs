@@ -6,3 +6,32 @@
 -moz-osx-font-smoothing: grayscale;
 text-rendering: optimizelegibility;
 }
+
+//Default stylings for fonts, minus font-weight,text-align and size etc
+@mixin calsitacsDefaultLinks{
+
+	@include fontAntialiasing;
+	color:darken($calsGrayFooterText,20%);
+	text-decoration: none;
+
+	//unvisited link
+    &:link{ 
+    	
+    }
+
+    //visited link
+    &:visited{
+    	
+    }
+
+    //mouse over link
+    &:hover{
+    text-decoration: none;
+	color:$calsGrayFooterText;
+
+    }
+
+    //selected link
+    	&:active{
+    }
+}

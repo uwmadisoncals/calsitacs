@@ -14,6 +14,10 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+		<div class="edit-post">
+		<?php edit_post_link( __( 'Edit', 'calsboilerplate_underscores' ), '<span class="edit-link">', '</span>' ); ?>
+		</div><!-- END .edit-post -->
+
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
@@ -24,6 +28,7 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
+		<div class="category-list">
 		<?php
 			/* translators: used between list items, there is a space after the comma */
 			$category_list = get_the_category_list( __( ', ', 'calsboilerplate_underscores' ) );
@@ -34,17 +39,17 @@
 			if ( ! calsboilerplate_underscores_categorized_blog() ) {
 				// This blog only has 1 category so we just need to worry about tags in the meta text
 				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'calsboilerplate_underscores' );
+					$meta_text = __( 'This entry was tagged %2$s.', 'calsboilerplate_underscores' );
 				} else {
-					$meta_text = __( 'Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'calsboilerplate_underscores' );
+					$meta_text = __( '', 'calsboilerplate_underscores' );
 				}
 
 			} else {
 				// But this blog has loads of categories so we should probably display them here
 				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'calsboilerplate_underscores' );
+					$meta_text = __( 'This entry was posted in %1$s and tagged %2$s.', 'calsboilerplate_underscores' );
 				} else {
-					$meta_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'calsboilerplate_underscores' );
+					$meta_text = __( 'This entry was posted in %1$s.', 'calsboilerplate_underscores' );
 				}
 
 			} // end check for categories on this blog
@@ -56,7 +61,8 @@
 				get_permalink()
 			);
 		?>
+		</div><!-- END .category-list -->
 
-		<?php edit_post_link( __( 'Edit', 'calsboilerplate_underscores' ), '<span class="edit-link">', '</span>' ); ?>
+
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

@@ -1,28 +1,200 @@
 //Post navigation
 
 body.single-post{
-
+  @include fontAntialiasing;
+  background-color:$offwhite;
   div#primary{
-  padding:0 2em;
-    nav.navigation.post-navigation{
-      height:2em;
+    max-width: 1140px;
+    main#main{
+      max-width:inherit;
+      margin: 0 auto;
+      padding: 0% 2% 1% 2%;
     }
 
     article{
 
-      header{
-
+      header.entry-header{
         h1.entry-title{
-            //background-color:peachpuff;
-            margin-top:1.5%;
-            margin-bottom:1%;
-        }
-      }
+          margin:48px 48px 24px 48px;
+          font-weight: 400;
+          font-family:"Raleway",sans-serif;
+          color: $charcoalRGBA;
+        }//END h1.entry-title
 
-    }
+        div.entry-meta{
+          margin-bottom:1em;
+          margin-left:48px;
+          span.posted-on{
+            a{
+              
+              color:$calsGray;
+              @include fontAntialiasing;
+              text-decoration: none;
+
+              //unvisited link
+                &:link{ 
+                  
+                }
+
+                //visited link
+                &:visited{
+                  
+                }
+
+                //mouse over link
+                &:hover{
+                text-decoration: none;
+                color:$calsGray;
+                cursor:default;
+                }
+
+                //selected link
+                  &:active{
+                }
+            }//END a
+          }
+
+          span.byline{
+            span.author.vcard{
+              a{
+                @include calsitacsDefaultLinks;
+              }
+            }//END .author.vcard
+          }//END .byline
+
+        }//END .entry-meta
+
+      }//END header.entry-header
+
+      div.entry-content{
+        position:relative;
+        margin: 0;
+        padding:48px;
+        padding-right:48px;
+        background-color:tan;
+        margin-bottom:6px;
+        background-color:$white;
+        border:1px solid #f4f5f6;
+        border-radius:3px;
+
+        div.edit-post{
+            position:absolute;
+            width:30%;
+            top:6px;
+            left:35%;
+            span.edit-link{
+              a.post-edit-link{
+              @include calsitacsDefaultLinks;
+              display:block;
+              text-align: center;
+              font-size:16px;
+              font-weight: normal;
+
+              &:after{
+                content:'\e80c';//font-awesome,icon-edit
+                font-family:fontello;
+                font-weight:normal;
+                font-style:normal;
+                margin:0;
+                text-decoration: none;
+                color:inherit;
+                padding-left:6px;
+              }//END &:after
+
+            }//END .post-edit-link
+
+          }//END .edit-link
+        }//END .edit-post
+      
+          p{
+          font-size:1.2rem;
+          line-height: 1.3em;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          text-rendering: optimizelegibility;
+          word-spacing: .2rem;
+          margin-bottom: 1em;
+          width: -webkit-fit-content;
+          width: -moz-fit-content;
+          width: fit-content;
+          }
+
+          li{
+          font-size:1.2rem;
+          line-height: 2em;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          text-rendering: optimizelegibility;
+          word-spacing: .2rem;
+          }
+
+          h1,h2,h3,h4,h5,h6{
+          margin-bottom:18px;
+          color: $charcoalRGBA;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          text-rendering: optimizelegibility;
+          font-weight: 400;
+          }
+
+          a{
+            @include calsitacsDefaultLinks;
+            &.calsFontLink{
+            text-decoration: none;
+              &:after{
+                content:'\e800';//font-awesome,.font-link
+                font-family:fontello;
+                font-weight:normal;
+                font-style:normal;
+                margin:0;
+                text-decoration: none;
+                color:inherit;
+              }
+            }//END .calsFontLink 
+          }//END a
+
+      }//END .entry-content
+
+      footer.entry-footer{
+        width:100%;
+        div.category-list{
+          width:100%;
+          margin-bottom:1em;
+          text-align: center;
+          a{
+            @include calsitacsDefaultLinks;
+            font-size:20px;
+            line-height: 1.3em;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizelegibility;
+            word-spacing: .2rem;
+            margin-bottom: 1em;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            width: fit-content;
+          }//END a
+
+        }//END .category-list
+
+      }//END .entry-footer
+
+    }//END article
+
+    nav.navigation.post-navigation{
+      div.nav-links{
+        div.nav-previous,div.nav-next{
+          a{
+            @include calsitacsDefaultLinks;
+            font-weight: normal;
+            span{}
+          }
+        }//END .nav-previous
+      }//END .nav-links
+    }//END .navigation.post-navigation
 
   }
 
 
-}
+}//END body.single-post
 
