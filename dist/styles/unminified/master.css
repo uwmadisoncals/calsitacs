@@ -2916,3 +2916,66 @@ body.search.search-results {
 /*
 Description: SASS rules for search.php when loading content-none.php
 */
+body.search-no-results {
+  background-color: #f9f9f9; }
+  body.search-no-results div.siteWrapper div#content section#primary {
+    max-width: 1140px; }
+    body.search-no-results div.siteWrapper div#content section#primary main#main {
+      max-width: inherit;
+      margin: 0 auto;
+      padding: 0% 2% 1% 2%; }
+      body.search-no-results div.siteWrapper div#content section#primary main#main section.no-results.not-found div.breadcrumb {
+        width: 100%;
+        margin-top: 3em;
+        display: inline-block; }
+      body.search-no-results div.siteWrapper div#content section#primary main#main section.no-results.not-found header.page-header h1 {
+        margin: 48px;
+        font-weight: 400;
+        font-family: "Raleway", sans-serif;
+        color: rgba(64, 64, 64, 0.7); }
+      body.search-no-results div.siteWrapper div#content section#primary main#main section.no-results.not-found div.page-content {
+        position: relative;
+        margin: 0;
+        padding: 48px;
+        padding-right: 48px;
+        background-color: tan;
+        margin-bottom: 6px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border: 1px solid #f4f5f6;
+        border-radius: 3px; }
+        body.search-no-results div.siteWrapper div#content section#primary main#main section.no-results.not-found div.page-content p {
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          text-rendering: optimizelegibility;
+          font-size: 1.2rem;
+          line-height: 1.3em;
+          word-spacing: 0.2rem;
+          margin-bottom: 1em;
+          width: -webkit-fit-content;
+          width: -moz-fit-content;
+          width: fit-content; }
+        body.search-no-results div.siteWrapper div#content section#primary main#main section.no-results.not-found div.page-content a {
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          text-rendering: optimizelegibility;
+          color: #656565;
+          text-decoration: underline;
+          border: 0; }
+          body.search-no-results div.siteWrapper div#content section#primary main#main section.no-results.not-found div.page-content a:link {
+            border: 0; }
+          body.search-no-results div.siteWrapper div#content section#primary main#main section.no-results.not-found div.page-content a:visited {
+            border: 0; }
+          body.search-no-results div.siteWrapper div#content section#primary main#main section.no-results.not-found div.page-content a:hover {
+            text-decoration: underline;
+            color: #989898;
+            cursor: pointer;
+            border: 0; }
+          body.search-no-results div.siteWrapper div#content section#primary main#main section.no-results.not-found div.page-content a:active {
+            border: 0; }
+
+body.archive {
+  background-color: #f9f9f9; }
+  body.archive div.siteWrapper div#content section#primary main#main {
+    max-width: inherit;
+    margin: 0 auto;
+    padding: 0% 2% 1% 2%; }

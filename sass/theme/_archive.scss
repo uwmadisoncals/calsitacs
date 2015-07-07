@@ -1,0 +1,30 @@
+body.archive{
+	background-color:$offwhite;
+	div.siteWrapper{
+
+		div#content{
+
+			section#primary{
+
+				main#main{
+				max-width:inherit;
+				margin: 0 auto;
+				padding: 0% 2% 1% 2%;
+				
+					header.page-header{
+						
+					}//END header.page-header
+
+					article{
+
+					}//END article
+
+				}//END main#main
+
+			}//END section#primary
+
+		}//END #content
+
+	}//.siteWrapper
+
+}//END body.archive

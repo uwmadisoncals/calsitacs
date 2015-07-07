@@ -2,17 +2,91 @@
 Description: SASS rules for search.php when loading content-none.php
 */
 body.search-no-results{
+	background-color:$offwhite;
+
 	div.siteWrapper{
+
 		div#content{
+
 			section#primary{
+			max-width: 1140px;
+
 				main#main{
+				max-width:inherit;
+				margin: 0 auto;
+				padding: 0% 2% 1% 2%;
+
+
 					section.no-results.not-found{
-						div.breadcrumb{}//END .breadcrumb
-						header.page-header{}//END header.page-header
-						div.page-content{}//END .page-content
+						//padding:48px;
+						div.breadcrumb{
+						width:100%;
+						margin-top:3em;
+						display:inline-block;
+						}//END .breadcrumb
+
+						header.page-header{
+
+							h1{
+							margin:48px;
+							font-weight: 400;
+							font-family:"Raleway",sans-serif;
+							color: $charcoalRGBA;
+							}
+
+						}//END header.page-header
+
+						div.page-content{
+							position:relative;
+							margin: 0;
+							padding:48px;
+							padding-right:48px;
+							background-color:tan;
+							margin-bottom:6px;
+							background-color:$white;
+							border:1px solid #f4f5f6;
+							border-radius:3px;
+							p{
+								@include fontAntialiasing;
+								font-size:1.2rem;
+								line-height: 1.3em;
+								word-spacing: .2rem;
+								margin-bottom: 1em;
+								width: -webkit-fit-content;
+			  					width: -moz-fit-content;
+			  					width: fit-content;
+							}//END p
+							a{
+								@include calsitacsDefaultLinks;
+							}//END a
+
+							form.search-form{
+
+								label{
+
+									input.search-field{
+									
+									}//END input.search-field
+
+								}//END label
+
+								input.search-submit{
+								//background:none;
+
+								}//END input.search-submit
+
+							}//END .search-form
+
+						}//END .page-content
+
 					}//END section.no-results.not-found
+
 				}//END main#main
+
 			}//END section#primary
+
 		}//END #content
+
 	}//END .siteWrapper
+
 }//END body.search-no-results

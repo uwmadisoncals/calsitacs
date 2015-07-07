@@ -22,12 +22,14 @@
 		<?php elseif ( is_search() ) : ?>
 
 			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'calsboilerplate_underscores' ); ?></p>
-			<?php get_search_form(); ?>
+			<?php// get_search_form(); ?>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Return to Search Page</a>
 
 		<?php else : ?>
 
 			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'calsboilerplate_underscores' ); ?></p>
-			<?php get_search_form(); ?>
+			<?php// get_search_form(); ?>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Return to Search Page</a>
 
 		<?php endif; ?>
 	</div><!-- .page-content -->
