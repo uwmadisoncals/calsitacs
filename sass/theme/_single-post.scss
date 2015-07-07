@@ -84,11 +84,37 @@ body.single-post{
             left:35%;
             span.edit-link{
               a.post-edit-link{
-              @include calsitacsDefaultLinks;
+              //@include calsitacsDefaultLinks;
               display:block;
               text-align: center;
               font-size:16px;
               font-weight: normal;
+
+              color:darken($calsGrayFooterText,20%);
+              text-decoration: none;
+
+              //unvisited link
+                &:link{ 
+                  //font-weight:bold;
+                }
+
+                //visited link
+                &:visited{
+                  
+                }
+
+                //mouse over link
+                &:hover{
+                text-decoration: none;
+                color:$calsGrayFooterText;
+                cursor: pointer;
+
+                }
+
+                //selected link
+                  &:active{
+                }
+
 
               &:after{
                 content:'\e80c';//font-awesome,icon-edit

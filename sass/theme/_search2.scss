@@ -10,13 +10,16 @@ body.search.search-results{
 		div#content{
 
 			section#primary{
-
+			max-width: 1140px;
 				main#main{
+				max-width:inherit;
+				margin: 0 auto;
+				padding: 0% 2% 1% 2%;
 
 					header.page-header{
 
 						h1.page-title{
-							margin:48px;
+							margin:48px 48px 48px 48px;
 						    font-weight: 400;
 						    font-family:"Raleway",sans-serif;
 						    color: $charcoalRGBA;
@@ -24,38 +27,331 @@ body.search.search-results{
 
 					}//END header.page-header
 
-					article{
+					article.post{
+						@include fontAntialiasing;
 						margin: 0 48px 1.5em 48px;
-    					padding:.7em;
+    					padding:0.7em 1.4em;
     					margin-bottom:2em;
     					&.sr-even{
 					    background-color:lighten($charcoalRGBA,65%);
-					    border-radius:10px;
+					    //border-radius:10px;
 						}//END &.sr-even
+						
+						div.edit-post{
+
+							span.edit-link{
+
+								a.post-edit-link{
+									  display:block;
+						              text-align: center;
+						              font-size:16px;
+						              font-weight: normal;
+
+						              color:darken($calsGrayFooterText,20%);
+						              text-decoration: none;
+
+						              //unvisited link
+						                &:link{ 
+						                  //font-weight:bold;
+						                }
+
+						                //visited link
+						                &:visited{
+						                  
+						                }
+
+						                //mouse over link
+						                &:hover{
+						                text-decoration: none;
+						                color:$calsGrayFooterText;
+						                cursor: pointer;
+
+						                }
+
+						                //selected link
+						                  &:active{
+						                }
+
+
+						              &:after{
+						                content:'\e80c';//font-awesome,icon-edit
+						                font-family:fontello;
+						                font-weight:normal;
+						                font-style:normal;
+						                margin:0;
+						                text-decoration: none;
+						                color:inherit;
+						                padding-left:6px;
+						              }//END &:after
+								}//END a.post-edit-link
+
+							}//END .edit-link
+
+						}//END .edit-post
 
 					    header.entry-header{
 
-							h1.entry-title{
-								a{}
+							h3.entry-title{
+								font-weight: 400;
+								font-family:"Raleway",sans-serif;
+								color: $charcoalRGBA;
+								margin-bottom:12px;
+								a{
+									color:darken($calsGrayFooterText,20%);
+									text-decoration: none;
+
+									//unvisited link
+								    &:link{ 
+								    	//font-weight:bold;
+								    }
+
+								    //visited link
+								    &:visited{
+								    	
+								    }
+
+								    //mouse over link
+								    &:hover{
+								    text-decoration: none;
+									color:$calsGrayFooterText;
+								    cursor: pointer;
+
+								    }
+
+								    //selected link
+								    	&:active{
+								    }
+
+								}//END a
 							}//END h1.entry-title
 
 							div.entry-meta{
+
+								span.posted-on{
+									a{
+										color:$calsGray;
+							            @include fontAntialiasing;
+							            text-decoration: none;
+
+							            //unvisited link
+							                &:link{ 
+							                  
+							            }
+
+							            //visited link
+							                &:visited{
+							                  
+							            }
+
+							            //mouse over link
+							                &:hover{
+							                text-decoration: none;
+							                color:$calsGray;
+							                cursor:default;
+							            }
+
+							            //selected link
+							            	&:active{
+							            }
+									}//END a
+
+								}//END .posted-on
+
+								span.byline{
+
+									span.author.vcard{
+
+									}//END .author.vcard
+
+								}//END .byline
 
 							}//END .entry-meta
 
 					    }//END header.entry-header
 
 					    div.entry-summary{
+					    	p{
+							font-size:1.2rem;
+							line-height: 1.3em;
+							word-spacing: .2rem;
+							margin-bottom: 1em;
+							width: -webkit-fit-content;
+		  					width: -moz-fit-content;
+		  					width: fit-content;
+					    	}//END p
 
 					    }//END .entry-summary
 
 					    footer.entry-footer{
+							margin-bottom: 12px;
+							span.cat-links{
+
+								a{
+									@include calsitacsDefaultLinks;
+								}//END a
+
+							}//END .cat-links
+
+							span.tags-links{
+								a{
+									@include calsitacsDefaultLinks;
+								}//END a
+							}//END .tag-links
 
 					    }//END footer.entry-footer
     					
-					}//END article
+					}//END article .post
+
+					article.page{
+						@include fontAntialiasing;
+						margin: 0 48px 1.5em 48px;
+    					padding:0.7em 1.4em;
+    					margin-bottom:2em;
+    					&.sr-even{
+					    background-color:lighten($charcoalRGBA,65%);
+					    //border-radius:10px;
+						}//END &.sr-even
+
+						div.edit-post{
+
+							span.edit-link{
+
+								a.post-edit-link{
+									  display:block;
+						              text-align: center;
+						              font-size:16px;
+						              font-weight: normal;
+
+						              color:darken($calsGrayFooterText,20%);
+						              text-decoration: none;
+
+						              //unvisited link
+						                &:link{ 
+						                  //font-weight:bold;
+						                }
+
+						                //visited link
+						                &:visited{
+						                  
+						                }
+
+						                //mouse over link
+						                &:hover{
+						                text-decoration: none;
+						                color:$calsGrayFooterText;
+						                cursor: pointer;
+
+						                }
+
+						                //selected link
+						                  &:active{
+						                }
+
+
+						              &:after{
+						                content:'\e80c';//font-awesome,icon-edit
+						                font-family:fontello;
+						                font-weight:normal;
+						                font-style:normal;
+						                margin:0;
+						                text-decoration: none;
+						                color:inherit;
+						                padding-left:6px;
+						              }//END &:after
+								}//END a.post-edit-link
+
+							}//END .edit-link
+
+						}//END .edit-post
+
+						header.entry-header{
+
+							h3.entry-title{
+							font-weight: 400;
+							font-family:"Raleway",sans-serif;
+							color: $charcoalRGBA;
+								a{
+									color:darken($calsGrayFooterText,20%);
+									text-decoration: none;
+
+									//unvisited link
+								    &:link{ 
+								    	//font-weight:bold;
+								    }
+
+								    //visited link
+								    &:visited{
+								    	
+								    }
+
+								    //mouse over link
+								    &:hover{
+								    text-decoration: none;
+									color:$calsGrayFooterText;
+								    cursor: pointer;
+
+								    }
+
+								    //selected link
+								    	&:active{
+								    }
+								}//END a
+
+							}//END .entry-title
+
+							div.entry-summary{
+								p{
+									margin-bottom:12px;
+								}
+
+							}//END .entry-summary
+
+							footer.entry-footer{
+								margin-bottom: 12px;
+							}//END .entry-footer
+
+						}//END .entry-header
+
+					}//END article.page
 
 					nav.navigation.paging-navigation{
+
+						div.nav-links{
+
+							div.nav-previous,div.nav-next{
+
+								a{
+									color:darken($calsGrayFooterText,20%);
+									text-decoration: none;
+
+									//unvisited link
+								    &:link{ 
+								    	//font-weight:bold;
+								    }
+
+								    //visited link
+								    &:visited{
+								    	
+								    }
+
+								    //mouse over link
+								    &:hover{
+								    text-decoration: none;
+									color:$calsGrayFooterText;
+								    cursor: pointer;
+
+								    }
+
+								    //selected link
+								    	&:active{
+								    }
+
+								}//END a
+
+							}//END.nav-previous
+
+
+						}//END .nav-links
 
 					}//END .navigation.paging-navigation
 

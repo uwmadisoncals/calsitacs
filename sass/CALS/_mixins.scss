@@ -13,15 +13,17 @@ text-rendering: optimizelegibility;
 	@include fontAntialiasing;
 	color:darken($calsGrayFooterText,20%);
 	text-decoration: underline;
+    border: 0;
 
 	//unvisited link
     &:link{ 
     	//font-weight:bold;
+        border: 0;
     }
 
     //visited link
     &:visited{
-    	
+    	border: 0;
     }
 
     //mouse over link
@@ -29,10 +31,12 @@ text-rendering: optimizelegibility;
     text-decoration: underline;
 	color:$calsGrayFooterText;
     cursor: pointer;
+    border: 0;
 
     }
 
     //selected link
     	&:active{
+        border: 0;
     }
 }

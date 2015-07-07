@@ -1,0 +1,18 @@
+/*
+Description: SASS rules for search.php when loading content-none.php
+*/
+body.search-no-results{
+	div.siteWrapper{
+		div#content{
+			section#primary{
+				main#main{
+					section.no-results.not-found{
+						div.breadcrumb{}//END .breadcrumb
+						header.page-header{}//END header.page-header
+						div.page-content{}//END .page-content
+					}//END section.no-results.not-found
+				}//END main#main
+			}//END section#primary
+		}//END #content
+	}//END .siteWrapper
+}//END body.search-no-results

@@ -9,8 +9,13 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+<div class="edit-post">
+<?php edit_post_link( __( 'Edit', 'calsboilerplate_underscores' ), '<span class="edit-link">', '</span>' ); ?>
+</div><!-- END .edit-post -->
+
 	<header class="entry-header">
-		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
+		<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
@@ -50,6 +55,6 @@
 		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'calsboilerplate_underscores' ), __( '1 Comment', 'calsboilerplate_underscores' ), __( '% Comments', 'calsboilerplate_underscores' ) ); ?></span>
 		<?php endif; ?>
 
-		<?php edit_post_link( __( 'Edit', 'calsboilerplate_underscores' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php // edit_post_link( __( 'Edit', 'calsboilerplate_underscores' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
