@@ -116,8 +116,38 @@ body.page.page-template-default div.site-content{
 					&:nth-of-type(1){
 						margin-top:0;
 					}
+					a{
+						color:darken($calsGrayFooterText,20%);
+						text-decoration: none;
+					    border: 0;
 
-					}
+						//unvisited link
+					    &:link{ 
+					    	//font-weight:bold;
+					        border: 0;
+					    }
+
+					    //visited link
+					    &:visited{
+					    	border: 0;
+					    }
+
+					    //mouse over link
+					    &:hover{
+					    text-decoration:none;
+						color:$calsGrayFooterText;
+					    cursor: pointer;
+					    border: 0;
+
+					    }
+
+					    //selected link
+					    	&:active{
+					        border: 0;
+					    }
+					}//END a
+
+					}//END h1,h2,h3,h4,h5,h6
 
 					a{
 						@include calsitacsDefaultLinks;
