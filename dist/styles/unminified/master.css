@@ -1913,7 +1913,9 @@ body.page.page-template-default div.site-content {
               font-style: normal;
               margin: 0;
               text-decoration: none;
-              color: inherit; }
+              color: inherit;
+              font-size: 90%;
+              margin-left: 0.3em; }
       body.page.page-template-default div.site-content div#primary #main article footer.entry-footer {
         width: 100%;
         /*a.post-edit-link{
