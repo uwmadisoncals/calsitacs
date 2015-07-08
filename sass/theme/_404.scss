@@ -3,5 +3,129 @@ Description: SASS rules for 404.php
 */
 
 body.error404{
-	background-color:pink;  
+	background-color:$offwhite;
+	div.siteWrapper{
+
+		div#content{
+
+			div#primary{
+				max-width: 1140px;
+				main#main{
+				max-width:inherit;
+				margin: 0 auto;
+				padding: 0% 2% 1% 2%;
+					section.error-404{
+
+						header.page-header{
+
+							h1.page-title{
+								margin:48px;
+								font-weight: 400;
+								font-family:"Raleway",sans-serif;
+								color: $charcoalRGBA;
+
+							}//END h1.page-title
+
+						}//header.page-header
+
+						div.page-content{
+							@include fontAntialiasing;
+							position:relative;
+							margin: 0;
+							padding:48px;
+							padding-right:48px;
+							background-color:tan;
+							margin-bottom:6px;
+							background-color:$white;
+							border:1px solid #f4f5f6;
+							border-radius:3px;
+							p{
+								font-size:1.2rem;
+								line-height: 1.3em;
+								word-spacing: .2rem;
+								margin-bottom: 1em;
+								width: -webkit-fit-content;
+			  					width: -moz-fit-content;
+			  					width: fit-content;
+
+			  					a{
+									@include calsitacsDefaultLinks;
+			  					}
+
+							}//END p
+
+							div.widget_recent_entries{
+								margin-bottom:30px;
+								h2.widgettitle{
+									font-size:28px;
+									margin-bottom:12px;
+									color: $charcoalRGBA;
+									font-weight: 400;
+									font-family:"Raleway",sans-serif;
+									text-transform: uppercase;
+								}//END .widgettitle
+
+								ul{
+									li{
+										a{
+											@include calsitacsDefaultLinks;
+										}
+									}
+								}//END ul
+
+							}//END .widget_recent_entries
+
+							div.widget_categories{
+								margin-bottom:30px;
+								h2.widget-title{
+									font-size:28px;
+									margin-bottom:12px;
+									color: $charcoalRGBA;
+									font-weight: 400;
+									font-family:"Raleway",sans-serif;
+									text-transform: uppercase;
+								}//END .widget-title
+
+								ul{
+									li{
+										color:darken($calsGrayFooterText,20%);
+										a{
+											@include calsitacsDefaultLinks;
+										}
+									}
+								}
+
+							}//END .widget_categories
+
+							div.widget_tag_cloud{
+								margin-bottom:30px;
+								h2.widgettitle{
+									font-size:28px;
+									margin-bottom:12px;
+									color: $charcoalRGBA;
+									font-weight: 400;
+									font-family:"Raleway",sans-serif;
+									text-transform: uppercase;
+								}//END .widgettitle
+
+								div.tagcloud{
+									a{
+										@include calsitacsDefaultLinks;
+									}
+								}//END .tagcloud
+
+							}//END .widget_tag_cloud
+
+						}//END page-content
+
+					}//END section.error-404
+
+				}//END main#main
+
+			}//END #primary
+
+		}//END #content
+
+	}//END .siteWrapper 
+
 }//END body.error404

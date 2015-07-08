@@ -3057,6 +3057,42 @@ body.archive {
         width: -webkit-fit-content;
         width: -moz-fit-content;
         width: fit-content; }
+      body.archive div.siteWrapper div#content section#primary main#main article div.entry-content a {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizelegibility;
+        color: #656565;
+        text-decoration: underline;
+        border: 0; }
+        body.archive div.siteWrapper div#content section#primary main#main article div.entry-content a:link {
+          border: 0; }
+        body.archive div.siteWrapper div#content section#primary main#main article div.entry-content a:visited {
+          border: 0; }
+        body.archive div.siteWrapper div#content section#primary main#main article div.entry-content a:hover {
+          text-decoration: underline;
+          color: #989898;
+          cursor: pointer;
+          border: 0; }
+        body.archive div.siteWrapper div#content section#primary main#main article div.entry-content a:active {
+          border: 0; }
+      body.archive div.siteWrapper div#content section#primary main#main article footer.entry-footer a {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizelegibility;
+        color: #656565;
+        text-decoration: underline;
+        border: 0; }
+        body.archive div.siteWrapper div#content section#primary main#main article footer.entry-footer a:link {
+          border: 0; }
+        body.archive div.siteWrapper div#content section#primary main#main article footer.entry-footer a:visited {
+          border: 0; }
+        body.archive div.siteWrapper div#content section#primary main#main article footer.entry-footer a:hover {
+          text-decoration: underline;
+          color: #989898;
+          cursor: pointer;
+          border: 0; }
+        body.archive div.siteWrapper div#content section#primary main#main article footer.entry-footer a:active {
+          border: 0; }
       body.archive div.siteWrapper div#content section#primary main#main article footer.entry-footer span.cat-links a {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -3082,4 +3118,137 @@ body.archive {
 Description: SASS rules for 404.php
 */
 body.error404 {
-  background-color: pink; }
+  background-color: #f9f9f9; }
+  body.error404 div.siteWrapper div#content div#primary {
+    max-width: 1140px; }
+    body.error404 div.siteWrapper div#content div#primary main#main {
+      max-width: inherit;
+      margin: 0 auto;
+      padding: 0% 2% 1% 2%; }
+      body.error404 div.siteWrapper div#content div#primary main#main section.error-404 header.page-header h1.page-title {
+        margin: 48px;
+        font-weight: 400;
+        font-family: "Raleway", sans-serif;
+        color: rgba(64, 64, 64, 0.7); }
+      body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizelegibility;
+        position: relative;
+        margin: 0;
+        padding: 48px;
+        padding-right: 48px;
+        background-color: tan;
+        margin-bottom: 6px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border: 1px solid #f4f5f6;
+        border-radius: 3px; }
+        body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content p {
+          font-size: 1.2rem;
+          line-height: 1.3em;
+          word-spacing: 0.2rem;
+          margin-bottom: 1em;
+          width: -webkit-fit-content;
+          width: -moz-fit-content;
+          width: fit-content; }
+          body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content p a {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizelegibility;
+            color: #656565;
+            text-decoration: underline;
+            border: 0; }
+            body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content p a:link {
+              border: 0; }
+            body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content p a:visited {
+              border: 0; }
+            body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content p a:hover {
+              text-decoration: underline;
+              color: #989898;
+              cursor: pointer;
+              border: 0; }
+            body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content p a:active {
+              border: 0; }
+        body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_recent_entries {
+          margin-bottom: 30px; }
+          body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_recent_entries h2.widgettitle {
+            font-size: 28px;
+            margin-bottom: 12px;
+            color: rgba(64, 64, 64, 0.7);
+            font-weight: 400;
+            font-family: "Raleway", sans-serif;
+            text-transform: uppercase; }
+          body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_recent_entries ul li a {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizelegibility;
+            color: #656565;
+            text-decoration: underline;
+            border: 0; }
+            body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_recent_entries ul li a:link {
+              border: 0; }
+            body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_recent_entries ul li a:visited {
+              border: 0; }
+            body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_recent_entries ul li a:hover {
+              text-decoration: underline;
+              color: #989898;
+              cursor: pointer;
+              border: 0; }
+            body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_recent_entries ul li a:active {
+              border: 0; }
+        body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_categories {
+          margin-bottom: 30px; }
+          body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_categories h2.widget-title {
+            font-size: 28px;
+            margin-bottom: 12px;
+            color: rgba(64, 64, 64, 0.7);
+            font-weight: 400;
+            font-family: "Raleway", sans-serif;
+            text-transform: uppercase; }
+          body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_categories ul li {
+            color: #656565; }
+            body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_categories ul li a {
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+              text-rendering: optimizelegibility;
+              color: #656565;
+              text-decoration: underline;
+              border: 0; }
+              body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_categories ul li a:link {
+                border: 0; }
+              body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_categories ul li a:visited {
+                border: 0; }
+              body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_categories ul li a:hover {
+                text-decoration: underline;
+                color: #989898;
+                cursor: pointer;
+                border: 0; }
+              body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_categories ul li a:active {
+                border: 0; }
+        body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_tag_cloud {
+          margin-bottom: 30px; }
+          body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_tag_cloud h2.widgettitle {
+            font-size: 28px;
+            margin-bottom: 12px;
+            color: rgba(64, 64, 64, 0.7);
+            font-weight: 400;
+            font-family: "Raleway", sans-serif;
+            text-transform: uppercase; }
+          body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_tag_cloud div.tagcloud a {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizelegibility;
+            color: #656565;
+            text-decoration: underline;
+            border: 0; }
+            body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_tag_cloud div.tagcloud a:link {
+              border: 0; }
+            body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_tag_cloud div.tagcloud a:visited {
+              border: 0; }
+            body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_tag_cloud div.tagcloud a:hover {
+              text-decoration: underline;
+              color: #989898;
+              cursor: pointer;
+              border: 0; }
+            body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_tag_cloud div.tagcloud a:active {
+              border: 0; }

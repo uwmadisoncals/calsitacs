@@ -136,12 +136,18 @@ body.archive{
 	  					width: fit-content;
 						}//END p
 
+						a{
+							@include calsitacsDefaultLinks;
+						}
+
 					}//END .entry-content
 
 					footer.entry-footer{
-
+						a{
+							@include calsitacsDefaultLinks;
+						}
 						span.cat-links{
-
+							
 							a{
 							@include calsitacsDefaultLinks;
 							}//END a
