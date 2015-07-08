@@ -105,6 +105,7 @@ body.page.page-template-default div.site-content{
 
 					h1,h2,h3,h4,h5,h6{
 					margin-bottom:18px;
+					margin-top:18px;
 					color: $charcoalRGBA;
 					//-webkit-font-smoothing: antialiased;
 					//-moz-osx-font-smoothing: grayscale;
@@ -112,6 +113,9 @@ body.page.page-template-default div.site-content{
 					font-weight: 400;
 					font-family:"Raleway",sans-serif;
 					text-transform: uppercase;
+					&:nth-of-type(1){
+						margin-top:0;
+					}
 
 					}
 
