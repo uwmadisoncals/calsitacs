@@ -2862,27 +2862,27 @@ body.search.search-results {
               border: 0; }
             body.search.search-results div.siteWrapper div#content section#primary main#main article.post footer.entry-footer span.tags-links a:active {
               border: 0; }
-      body.search.search-results div.siteWrapper div#content section#primary main#main article.page {
+      body.search.search-results div.siteWrapper div#content section#primary main#main article.page, body.search.search-results div.siteWrapper div#content section#primary main#main article.services {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-rendering: optimizelegibility;
         margin: 0 48px 1.5em 48px;
         padding: 0.7em 1.4em;
         margin-bottom: 2em; }
-        body.search.search-results div.siteWrapper div#content section#primary main#main article.page.sr-even {
+        body.search.search-results div.siteWrapper div#content section#primary main#main article.page.sr-even, body.search.search-results div.siteWrapper div#content section#primary main#main article.services.sr-even {
           background-color: rgba(229, 229, 229, 0.7); }
-        body.search.search-results div.siteWrapper div#content section#primary main#main article.page div.edit-post span.edit-link a.post-edit-link {
+        body.search.search-results div.siteWrapper div#content section#primary main#main article.page div.edit-post span.edit-link a.post-edit-link, body.search.search-results div.siteWrapper div#content section#primary main#main article.services div.edit-post span.edit-link a.post-edit-link {
           display: block;
           text-align: center;
           font-size: 16px;
           font-weight: normal;
           color: #656565;
           text-decoration: none; }
-          body.search.search-results div.siteWrapper div#content section#primary main#main article.page div.edit-post span.edit-link a.post-edit-link:hover {
+          body.search.search-results div.siteWrapper div#content section#primary main#main article.page div.edit-post span.edit-link a.post-edit-link:hover, body.search.search-results div.siteWrapper div#content section#primary main#main article.services div.edit-post span.edit-link a.post-edit-link:hover {
             text-decoration: none;
             color: #989898;
             cursor: pointer; }
-          body.search.search-results div.siteWrapper div#content section#primary main#main article.page div.edit-post span.edit-link a.post-edit-link:after {
+          body.search.search-results div.siteWrapper div#content section#primary main#main article.page div.edit-post span.edit-link a.post-edit-link:after, body.search.search-results div.siteWrapper div#content section#primary main#main article.services div.edit-post span.edit-link a.post-edit-link:after {
             content: '\e80c';
             font-family: fontello;
             font-weight: normal;
@@ -2891,20 +2891,20 @@ body.search.search-results {
             text-decoration: none;
             color: inherit;
             padding-left: 6px; }
-        body.search.search-results div.siteWrapper div#content section#primary main#main article.page header.entry-header h3.entry-title {
+        body.search.search-results div.siteWrapper div#content section#primary main#main article.page header.entry-header h3.entry-title, body.search.search-results div.siteWrapper div#content section#primary main#main article.services header.entry-header h3.entry-title {
           font-weight: 400;
           font-family: "Raleway", sans-serif;
           color: rgba(64, 64, 64, 0.7); }
-          body.search.search-results div.siteWrapper div#content section#primary main#main article.page header.entry-header h3.entry-title a {
+          body.search.search-results div.siteWrapper div#content section#primary main#main article.page header.entry-header h3.entry-title a, body.search.search-results div.siteWrapper div#content section#primary main#main article.services header.entry-header h3.entry-title a {
             color: #656565;
             text-decoration: none; }
-            body.search.search-results div.siteWrapper div#content section#primary main#main article.page header.entry-header h3.entry-title a:hover {
+            body.search.search-results div.siteWrapper div#content section#primary main#main article.page header.entry-header h3.entry-title a:hover, body.search.search-results div.siteWrapper div#content section#primary main#main article.services header.entry-header h3.entry-title a:hover {
               text-decoration: none;
               color: #989898;
               cursor: pointer; }
-        body.search.search-results div.siteWrapper div#content section#primary main#main article.page div.entry-summary {
+        body.search.search-results div.siteWrapper div#content section#primary main#main article.page div.entry-summary, body.search.search-results div.siteWrapper div#content section#primary main#main article.services div.entry-summary {
           margin: 1.5em 0 1.5em 0; }
-        body.search.search-results div.siteWrapper div#content section#primary main#main article.page footer.entry-footer {
+        body.search.search-results div.siteWrapper div#content section#primary main#main article.page footer.entry-footer, body.search.search-results div.siteWrapper div#content section#primary main#main article.services footer.entry-footer {
           margin-bottom: 12px; }
       body.search.search-results div.siteWrapper div#content section#primary main#main nav.navigation.paging-navigation div.nav-links div.nav-previous a, body.search.search-results div.siteWrapper div#content section#primary main#main nav.navigation.paging-navigation div.nav-links div.nav-next a {
         color: #656565;

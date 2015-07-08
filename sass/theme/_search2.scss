@@ -204,7 +204,7 @@ body.search.search-results{
     					
 					}//END article .post
 
-					article.page{
+					article.page,article.services{
 						@include fontAntialiasing;
 						margin: 0 48px 1.5em 48px;
     					padding:0.7em 1.4em;
