@@ -1866,7 +1866,8 @@ body.page.page-template-default div.site-content {
           color: rgba(64, 64, 64, 0.7);
           text-rendering: optimizelegibility;
           font-weight: 400;
-          font-family: "Raleway", sans-serif; }
+          font-family: "Raleway", sans-serif;
+          text-transform: uppercase; }
         body.page.page-template-default div.site-content div#primary #main article div.entry-content a {
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
@@ -2819,7 +2820,7 @@ body.search.search-results {
           font-size: 1.2rem;
           line-height: 1.3em;
           word-spacing: 0.2rem;
-          margin-bottom: 1em;
+          margin: 1em 0 1em 0;
           width: -webkit-fit-content;
           width: -moz-fit-content;
           width: fit-content; }
@@ -2901,9 +2902,9 @@ body.search.search-results {
               text-decoration: none;
               color: #989898;
               cursor: pointer; }
-        body.search.search-results div.siteWrapper div#content section#primary main#main article.page header.entry-header div.entry-summary p {
-          margin-bottom: 12px; }
-        body.search.search-results div.siteWrapper div#content section#primary main#main article.page header.entry-header footer.entry-footer {
+        body.search.search-results div.siteWrapper div#content section#primary main#main article.page div.entry-summary {
+          margin: 1.5em 0 1.5em 0; }
+        body.search.search-results div.siteWrapper div#content section#primary main#main article.page footer.entry-footer {
           margin-bottom: 12px; }
       body.search.search-results div.siteWrapper div#content section#primary main#main nav.navigation.paging-navigation div.nav-links div.nav-previous a, body.search.search-results div.siteWrapper div#content section#primary main#main nav.navigation.paging-navigation div.nav-links div.nav-next a {
         color: #656565;
@@ -2979,3 +2980,106 @@ body.archive {
     max-width: inherit;
     margin: 0 auto;
     padding: 0% 2% 1% 2%; }
+    body.archive div.siteWrapper div#content section#primary main#main header.page-header h1.page-title {
+      margin: 48px;
+      font-weight: 400;
+      font-family: "Raleway", sans-serif;
+      color: rgba(64, 64, 64, 0.7); }
+    body.archive div.siteWrapper div#content section#primary main#main article {
+      position: relative;
+      margin: 0;
+      padding: 48px;
+      padding-right: 48px;
+      background-color: tan;
+      margin-bottom: 6px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 1px solid #f4f5f6;
+      border-radius: 3px;
+      margin-bottom: 24px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizelegibility; }
+      body.archive div.siteWrapper div#content section#primary main#main article header.entry-header h1.entry-title {
+        margin-bottom: 18px;
+        color: rgba(64, 64, 64, 0.7);
+        font-weight: 400;
+        font-family: "Raleway", sans-serif;
+        text-transform: uppercase;
+        font-size: 2em; }
+        body.archive div.siteWrapper div#content section#primary main#main article header.entry-header h1.entry-title a {
+          color: #656565;
+          text-decoration: none;
+          border: 0; }
+          body.archive div.siteWrapper div#content section#primary main#main article header.entry-header h1.entry-title a:link {
+            border: 0; }
+          body.archive div.siteWrapper div#content section#primary main#main article header.entry-header h1.entry-title a:visited {
+            border: 0; }
+          body.archive div.siteWrapper div#content section#primary main#main article header.entry-header h1.entry-title a:hover {
+            text-decoration: none;
+            color: #989898;
+            cursor: pointer;
+            border: 0; }
+          body.archive div.siteWrapper div#content section#primary main#main article header.entry-header h1.entry-title a:active {
+            border: 0; }
+      body.archive div.siteWrapper div#content section#primary main#main article header.entry-header div.entry-meta span.posted-on a {
+        color: #404040;
+        text-decoration: none; }
+        body.archive div.siteWrapper div#content section#primary main#main article header.entry-header div.entry-meta span.posted-on a:hover {
+          text-decoration: none;
+          color: #404040;
+          cursor: default; }
+      body.archive div.siteWrapper div#content section#primary main#main article header.entry-header div.entry-meta span.byline a {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizelegibility;
+        color: #656565;
+        text-decoration: underline;
+        border: 0; }
+        body.archive div.siteWrapper div#content section#primary main#main article header.entry-header div.entry-meta span.byline a:link {
+          border: 0; }
+        body.archive div.siteWrapper div#content section#primary main#main article header.entry-header div.entry-meta span.byline a:visited {
+          border: 0; }
+        body.archive div.siteWrapper div#content section#primary main#main article header.entry-header div.entry-meta span.byline a:hover {
+          text-decoration: underline;
+          color: #989898;
+          cursor: pointer;
+          border: 0; }
+        body.archive div.siteWrapper div#content section#primary main#main article header.entry-header div.entry-meta span.byline a:active {
+          border: 0; }
+      body.archive div.siteWrapper div#content section#primary main#main article div.entry-content p {
+        font-size: 1.2rem;
+        line-height: 1.3em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizelegibility;
+        word-spacing: 0.2rem;
+        margin-bottom: 1em;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content; }
+      body.archive div.siteWrapper div#content section#primary main#main article footer.entry-footer span.cat-links a {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizelegibility;
+        color: #656565;
+        text-decoration: underline;
+        border: 0; }
+        body.archive div.siteWrapper div#content section#primary main#main article footer.entry-footer span.cat-links a:link {
+          border: 0; }
+        body.archive div.siteWrapper div#content section#primary main#main article footer.entry-footer span.cat-links a:visited {
+          border: 0; }
+        body.archive div.siteWrapper div#content section#primary main#main article footer.entry-footer span.cat-links a:hover {
+          text-decoration: underline;
+          color: #989898;
+          cursor: pointer;
+          border: 0; }
+        body.archive div.siteWrapper div#content section#primary main#main article footer.entry-footer span.cat-links a:active {
+          border: 0; }
+      body.archive div.siteWrapper div#content section#primary main#main article footer.entry-footer span.edit-link {
+        display: none; }
+
+/*
+Description: SASS rules for 404.php
+*/
+body.error404 {
+  background-color: pink; }

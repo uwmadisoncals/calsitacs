@@ -5,6 +5,7 @@ This is revision 2. I am attempting to refactor _search.scss and one of these wi
 
 body.search.search-results{
 	background-color:$offwhite;
+
 	div.siteWrapper{
 
 		div#content{
@@ -174,7 +175,8 @@ body.search.search-results{
 							font-size:1.2rem;
 							line-height: 1.3em;
 							word-spacing: .2rem;
-							margin-bottom: 1em;
+							//margin-bottom: 1em;
+							margin:1em 0 1em 0;
 							width: -webkit-fit-content;
 		  					width: -moz-fit-content;
 		  					width: fit-content;
@@ -298,19 +300,18 @@ body.search.search-results{
 								}//END a
 
 							}//END .entry-title
-
-							div.entry-summary{
-								p{
-									margin-bottom:12px;
-								}
-
-							}//END .entry-summary
-
-							footer.entry-footer{
-								margin-bottom: 12px;
-							}//END .entry-footer
-
 						}//END .entry-header
+
+						div.entry-summary{
+							margin:1.5em 0 1.5em 0;
+							p{
+							}
+
+						}//END .entry-summary
+
+						footer.entry-footer{
+							margin-bottom: 12px;
+						}//END .entry-footer
 
 					}//END article.page
 

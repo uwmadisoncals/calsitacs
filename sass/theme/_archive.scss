@@ -12,10 +12,151 @@ body.archive{
 				padding: 0% 2% 1% 2%;
 				
 					header.page-header{
-						
+
+						h1.page-title{
+						margin:48px;
+						font-weight: 400;
+						font-family:"Raleway",sans-serif;
+						color: $charcoalRGBA;
+						}//END .page-title
+
 					}//END header.page-header
 
 					article{
+					position:relative;
+					margin: 0;
+					padding:48px;
+					padding-right:48px;
+					background-color:tan;
+					margin-bottom:6px;
+					background-color:$white;
+					border:1px solid #f4f5f6;
+					border-radius:3px;
+					margin-bottom:24px;
+					@include fontAntialiasing;
+
+					header.entry-header{
+
+						h1.entry-title{
+							margin-bottom:18px;
+							color: $charcoalRGBA;
+							font-weight: 400;
+							font-family:"Raleway",sans-serif;
+							text-transform: uppercase;
+							font-size:2em;
+
+							a{
+								color:darken($calsGrayFooterText,20%);
+								text-decoration: none;
+							    border: 0;
+
+								//unvisited link
+							    &:link{ 
+							    	//font-weight:bold;
+							        border: 0;
+							    }
+
+							    //visited link
+							    &:visited{
+							    	border: 0;
+							    }
+
+							    //mouse over link
+							    &:hover{
+							    text-decoration: none;
+								color:$calsGrayFooterText;
+							    cursor: pointer;
+							    border: 0;
+
+							    }
+
+							    //selected link
+							    	&:active{
+							        border: 0;
+							    }
+							}//END a
+						}//entry-title
+
+						div.entry-meta{
+							span.posted-on{
+
+								a{
+								color:$calsGray;
+				                text-decoration: none;
+
+				                //unvisited link
+				                &:link{ 
+				                  
+				                }
+
+				                //visited link
+				                &:visited{
+				                  
+				                }
+
+				                //mouse over link
+				                &:hover{
+				                text-decoration: none;
+				                color:$calsGray;
+				                cursor:default;
+				                }
+
+				                //selected link
+				                  &:active{
+				                }
+
+								}//END a
+
+							}//END .posted-on
+
+							span.byline{
+
+								a{
+								@include calsitacsDefaultLinks;
+
+								}//END a
+
+							}//END .byline
+
+						}//END .entry-meta
+
+					}//END header.entry-header
+
+					div.entry-content{
+						p{
+						font-size:1.2rem;
+						line-height: 1.3em;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						text-rendering: optimizelegibility;
+						word-spacing: .2rem;
+						margin-bottom: 1em;
+						width: -webkit-fit-content;
+	  					width: -moz-fit-content;
+	  					width: fit-content;
+						}//END p
+
+					}//END .entry-content
+
+					footer.entry-footer{
+
+						span.cat-links{
+
+							a{
+							@include calsitacsDefaultLinks;
+							}//END a
+
+						}//END .cat-links
+
+						span.edit-link{
+						display:none; 
+							a{
+							
+							}//END a
+
+						}//END .cat-link
+
+					}//END .entry-footer
 
 					}//END article
 
