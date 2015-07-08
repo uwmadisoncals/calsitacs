@@ -58,6 +58,8 @@
 <?php
 if ( is_front_page() ) { ?>
 
+	<div class="right-tab">TEXT</div>
+	
 	<div class="homePageFeature">
 		<h2 class="branding" >CALS ACS</h2>
 		<h2 class="subHeading">IT as a service.</h2>
