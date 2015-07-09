@@ -1588,13 +1588,6 @@ html body.page {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
-body div.siteWrapper div.headerContainer div.right-tab {
-  position: fixed;
-  top: 30%;
-  background-color: red;
-  text-align: left;
-  height: 45px;
-  width: 90px; }
 body div.siteWrapper div.headerContainer div.cyan {
   display: none; }
 
