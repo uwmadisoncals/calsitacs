@@ -12,3 +12,47 @@ body{
 
 		}//END .siteWrapper
 }
+
+.filtered.expanded {
+	height: 200px;
+}
+
+.filtered {
+	max-width: 400px;
+	margin: 0 auto;
+	height: 0px;
+	overflow: auto;
+	transition: 0.3s height;
+	-webkit-transition: 0.3s height;
+	
+	ul {
+		li {
+			display: none;
+			text-align: left;
+			
+			a {
+				display: block;
+				
+				color: rgba(255,255,255,0.8);
+				text-decoration: none;
+				padding-top: 0.8em;
+				padding-bottom: 0.8em;
+				padding-left: 0.4em;
+				padding-right: 0.4em;
+				border-bottom: 1px solid rgba(255,255,255,0.2);
+			}
+			
+			a:hover {
+				background: rgba(255,255,255,0.1);
+			}
+		}
+	}
+	
+	.visible {
+		display: block;
+	}
+	
+	.hidden {
+		display: none;
+	}
+}

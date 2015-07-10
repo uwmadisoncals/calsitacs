@@ -1591,6 +1591,35 @@ html body.page {
 body div.siteWrapper div.headerContainer div.cyan {
   display: none; }
 
+.filtered.expanded {
+  height: 200px; }
+
+.filtered {
+  max-width: 400px;
+  margin: 0 auto;
+  height: 0px;
+  overflow: auto;
+  transition: 0.3s height;
+  -webkit-transition: 0.3s height; }
+  .filtered ul li {
+    display: none;
+    text-align: left; }
+    .filtered ul li a {
+      display: block;
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      padding-left: 0.4em;
+      padding-right: 0.4em;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    .filtered ul li a:hover {
+      background: rgba(255, 255, 255, 0.1); }
+  .filtered .visible {
+    display: block; }
+  .filtered .hidden {
+    display: none; }
+
 .jqueryFontAnimationFix, body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults, body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults > ul, body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult, body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.singleSearchResult a.linkSearchResult, body.page-home div.siteWrapper div.headerContainer div.cyan div.searchResultsWrapper div.searchResults ul li.commonSearches, body.page-home div.siteWrapper div.headerContainer div.cyan.service-search-active div.searchResultsWrapper div.searchResults > ul > li.commonSearches {
   opacity: 0.99;
   filter: alpha(opacity=99); }

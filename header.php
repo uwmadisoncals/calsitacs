@@ -74,6 +74,16 @@ if ( is_front_page() ) { ?>
 				</form>
 			
 			</span>
+			
+			<div class="filtered">
+				<ul>
+					<li><a href="#">Test</a></li>
+					<li><a href="#">cheese</a></li>
+					<li><a href="#">paper</a></li>
+					<li><a href="#">sandwhich</a></li>
+					<li><a href="#">chips</a></li>
+				</ul>
+			</div>
 				
 		</div><!-- END .searchbox-->
 	</div>
