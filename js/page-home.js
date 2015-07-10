@@ -52,9 +52,11 @@
 			    $(".filtered ul li").removeClass("visible").removeClass("hidden");
 			    $(".filtered").removeClass("expanded");
 		    } else {
-			    $(".filtered").addClass("expanded");
+			    if(resultscounted > 0) {
+			    			    $(".filtered").addClass("expanded");
+			    			   }
 		    }
-		    
+		   
 		    
 		  /* $(".filtered li.visible").each(function () {
 		    	//console.log('ran');
