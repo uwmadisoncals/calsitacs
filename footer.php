@@ -23,7 +23,7 @@ $calsLocation = 'https://www.google.com/maps/place/College+of+Agricultural+and+L
 		<!-- <img src="" alt="" class="logo"> -->
 		<div class="uwaddress">
 			<!--<h3>CALS IT ACS</h3>-->
-			<img class="calsitLogo" src="<?php echo get_template_directory_uri(); ?>/dist/images/calsitlogo-grey-textonly.svg" />
+			<img class="calsitLogo" src="<?php echo get_template_directory_uri(); ?>/img/calsitlogo-grey-textonly.svg" />
 			<div class="cf"></div>
 			<a href="http://www.wisc.edu/">University of Wisconsin Madison</a>
 			<address>

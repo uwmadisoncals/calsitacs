@@ -143,6 +143,14 @@ body.single-post{
           width: -webkit-fit-content;
           width: -moz-fit-content;
           width: fit-content;
+          &.firstLetter{
+            &::first-letter{
+              font-size:1.5em;
+              font-weight: 400;
+              font-family:"Raleway",sans-serif;
+              color: $charcoalRGBA;
+            }//END &::first-letter
+          }//END &.firstLetter
           }
 
           li{
@@ -178,6 +186,32 @@ body.single-post{
               }
             }//END .calsFontLink 
           }//END a
+
+          figure{
+            background-color:$offwhite;
+            padding:1em;
+            box-sizing:content-box;
+            word-wrap:break-word;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+
+            a{
+              display:block;
+
+
+              img{
+
+              }//END img
+
+            }//END a
+
+            figcaption{
+
+            }//END figcaption
+
+          }//END figure
 
       }//END .entry-content
 

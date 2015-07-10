@@ -15,9 +15,10 @@
 
 	<div class="entry-content">
 		<div class="edit-post">
+
 		<?php edit_post_link( __( 'Edit', 'calsboilerplate_underscores' ), '<span class="edit-link">', '</span>' ); ?>
 		</div><!-- END .edit-post -->
-
+		<?php the_post_thumbnail( 'full' ); ?>
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(

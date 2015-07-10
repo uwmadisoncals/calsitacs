@@ -2606,6 +2606,11 @@ body.single-post {
         width: -webkit-fit-content;
         width: -moz-fit-content;
         width: fit-content; }
+        body.single-post div#primary article div.entry-content p.firstLetter::first-letter {
+          font-size: 1.5em;
+          font-weight: 400;
+          font-family: "Raleway", sans-serif;
+          color: rgba(64, 64, 64, 0.7); }
       body.single-post div#primary article div.entry-content li {
         font-size: 1.2rem;
         line-height: 2em;
@@ -2648,6 +2653,19 @@ body.single-post {
             margin: 0;
             text-decoration: none;
             color: inherit; }
+      body.single-post div#primary article div.entry-content figure {
+        background-color: #f9f9f9;
+        padding: 1em;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        word-wrap: break-word;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto; }
+        body.single-post div#primary article div.entry-content figure a {
+          display: block; }
     body.single-post div#primary article footer.entry-footer {
       width: 100%; }
       body.single-post div#primary article footer.entry-footer div.category-list {
