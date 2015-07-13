@@ -25,7 +25,7 @@ $calsLocation = 'https://www.google.com/maps/place/College+of+Agricultural+and+L
 			<!--<h3>CALS IT ACS</h3>-->
 			<img class="calsitLogo" src="<?php echo get_template_directory_uri(); ?>/img/calsitlogo-grey-textonly.svg" />
 			<div class="cf"></div>
-			<a href="http://www.wisc.edu/">University of Wisconsin Madison</a>
+			<a href="http://www.wisc.edu/">University of Wisconsin - Madison</a>
 			<address>
 				<span class="street">216 Agricultural Hall,</span>
 				<span>• 1450 Linden Dr.</span>
@@ -33,7 +33,7 @@ $calsLocation = 'https://www.google.com/maps/place/College+of+Agricultural+and+L
 				<span>• 53706</span>
 				<a href="<?php echo $calsLocation; ?>" target="_blank"><i class='locationIcon'></i></a>
 			</address>
-			<div class="phone">(608) 262-3193</div>
+			<!-- <div class="phone">(608) 262-3193</div> -->
 			<div class="links">
 				<a href="<?php echo site_url(); ?>/contact">Contact Us</a>
 				<a href="<?php echo site_url(); ?>/accessibility">• Accessibility</a>
