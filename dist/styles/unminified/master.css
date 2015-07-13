@@ -2319,199 +2319,189 @@ ul.tabs li.current {
   font-size: 10px;
   padding-top: 5px; }
 
-.page-services #content {
-  background: white; }
-
-.page-services img {
-  width: 100%; }
-
-.service {
-  padding: 5%; }
-  .service p {
-    font-family: Helvetica-Light;
-    font-weight: 100;
-    font-size: 1.4em;
-    line-height: 2.2em;
-    color: #ACADAE; }
-  .service img {
-    width: 450px;
-    min-width: 100px;
-    padding-left: 4em; }
-
-.service2 {
-  padding-left: 4em;
-  padding-right: 4em;
-  padding-top: 4em; }
-  .service2 img {
-    width: 450px; }
-
-.titleBox {
-  width: 90%;
-  margin: 0 auto;
-  padding-top: 0.5em;
-  font-family: Helvetica-Light;
-  font-size: 48px;
-  color: #696A6A;
-  line-height: 58px; }
-
-/**********************
+body.page-about-services {
+  /**********************
  * Layout 1 Styles
  *********************/
-.layout {
-  min-height: 490px;
-  width: 100%; }
-  .layout .serviceIcon {
-    float: left;
-    padding-top: 4em;
-    padding-left: 3em;
-    display: none;
-    width: 50%; }
-  .layout .serviceContent {
-    margin-top: -0.1em;
-    font-family: Helvetica-Light;
-    font-size: 12px;
-    color: #F7F1F1;
-    line-height: 28px;
-    float: left;
-    padding: 1em;
-    width: 50%;
-    display: none;
-    overflow: auto;
-    margin-right: -0.2em; }
-
-/**********************
+  /**********************
  * Layout 2 Styles
  *********************/
-.layout2 {
-  min-height: 500px;
-  width: 100%;
-  background: #4A4A4A; }
-  .layout2 .titleBox {
-    font-family: Helvetica-Light;
-    color: white; }
-  .layout2 p {
-    font-family: Helvetica-Light;
-    font-weight: 100;
-    font-size: 1.4em;
-    line-height: 2.2em;
-    color: #ACADAE; }
-  .layout2 .serviceContent {
-    margin-top: -0.1em;
-    border-radius: 1px;
-    font-family: Helvetica-Light;
-    font-size: 12px;
-    color: #F7F1F1;
-    line-height: 28px;
-    float: left;
-    padding: 1em;
-    width: 50%;
-    display: none;
-    overflow: auto;
-    margin-right: -0.2em; }
-  .layout2 .serviceIcon {
-    float: left;
-    padding-top: 4em;
-    padding-left: 3em;
-    display: none;
-    width: 50%; }
-
-.layout2.hidden {
-  opacity: 0; }
-
-/**********************
+  /**********************
  * Layout 3 Styles
  *********************/
-.layout3 {
-  min-height: 600px;
-  width: 100%;
-  margin-top: -1em;
-  background: #5E889E; }
-  .layout3 .titleBox {
-    font-family: Helvetica-Light;
-    color: #ACADAE; }
-  .layout3 p {
-    font-family: Helvetica-Light;
-    font-weight: 100;
-    font-size: 1.4em;
-    line-height: 2.2em;
-    color: white; }
-  .layout3 .serviceIcon {
-    float: left;
-    padding-top: 4em;
-    padding-left: 3em;
-    display: none;
-    width: 50%; }
-  .layout3 .serviceContent {
-    margin-top: -0.1em;
-    border-radius: 1px;
-    font-family: Helvetica-Light;
-    font-size: 12px;
-    color: #F7F1F1;
-    line-height: 28px;
-    float: left;
-    padding: 1em;
-    width: 50%;
-    display: none;
-    overflow: auto;
-    margin-right: -0.2em; }
-
-.layout3.hidden {
-  opacity: 0; }
-
-/***********************
+  /***********************
 *
 * MEDIAQUIRIES for Mobile 
 *
-************************/
-@media only screen and (max-width: 900px) {
-  .service p {
-    font-family: Helvetica-Light;
-    font-weight: 100;
-    font-size: 1em;
-    line-height: 2.2em; }
-  .service2 {
+************************/ }
+  body.page-about-services .page-about-services #content {
+    background: white; }
+  body.page-about-services .page-about-services img {
+    width: 100%; }
+  body.page-about-services .service {
+    padding: 5%; }
+    body.page-about-services .service p {
+      font-family: Helvetica-Light;
+      font-weight: 100;
+      font-size: 1.4em;
+      line-height: 2.2em;
+      color: #ACADAE; }
+    body.page-about-services .service img {
+      width: 450px;
+      min-width: 100px;
+      padding-left: 4em; }
+  body.page-about-services .service2 {
     padding-left: 4em;
     padding-right: 4em;
     padding-top: 4em; }
-    .service2 p {
-      font-family: Helvetica-Light;
-      font-weight: 100;
-      font-size: 1em;
-      line-height: 2.2em; }
-  .titleBox {
+    body.page-about-services .service2 img {
+      width: 450px; }
+  body.page-about-services .titleBox {
     width: 90%;
     margin: 0 auto;
     padding-top: 0.5em;
     font-family: Helvetica-Light;
-    font-size: 35px;
+    font-size: 48px;
     color: #696A6A;
-    line-height: 58px; } }
-
-@media only screen and (max-width: 600px) {
-  .layout {
-    min-height: 750px; }
-    .layout .serviceContent {
-      width: 100%; }
-    .layout .serviceIcon {
+    line-height: 58px; }
+  body.page-about-services .layout {
+    min-height: 490px;
+    width: 100%; }
+    body.page-about-services .layout .serviceIcon {
       float: left;
-      width: 100%;
-      margin-left: -4em; }
-  .layout2 {
-    min-height: 750px; }
-    .layout2 .serviceContent {
-      width: 100%; }
-    .layout2 .serviceIcon {
+      padding-top: 4em;
+      padding-left: 3em;
+      display: none;
+      width: 50%; }
+    body.page-about-services .layout .serviceContent {
+      margin-top: -0.1em;
+      font-family: Helvetica-Light;
+      font-size: 12px;
+      color: #F7F1F1;
+      line-height: 28px;
       float: left;
-      width: 100%;
-      margin-left: -4em; }
-  .layout3 {
-    min-height: 750px; }
-    .layout3 .serviceContent {
-      width: 100%; }
-    .layout3 .serviceIcon {
+      padding: 1em;
+      width: 50%;
+      display: none;
+      overflow: auto;
+      margin-right: -0.2em; }
+  body.page-about-services .layout2 {
+    min-height: 500px;
+    width: 100%;
+    background: #4A4A4A; }
+    body.page-about-services .layout2 .titleBox {
+      font-family: Helvetica-Light;
+      color: white; }
+    body.page-about-services .layout2 p {
+      font-family: Helvetica-Light;
+      font-weight: 100;
+      font-size: 1.4em;
+      line-height: 2.2em;
+      color: #ACADAE; }
+    body.page-about-services .layout2 .serviceContent {
+      margin-top: -0.1em;
+      border-radius: 1px;
+      font-family: Helvetica-Light;
+      font-size: 12px;
+      color: #F7F1F1;
+      line-height: 28px;
       float: left;
-      width: 100%;
-      margin-left: -4em; } }
+      padding: 1em;
+      width: 50%;
+      display: none;
+      overflow: auto;
+      margin-right: -0.2em; }
+    body.page-about-services .layout2 .serviceIcon {
+      float: left;
+      padding-top: 4em;
+      padding-left: 3em;
+      display: none;
+      width: 50%; }
+  body.page-about-services .layout2.hidden {
+    opacity: 0; }
+  body.page-about-services .layout3 {
+    min-height: 600px;
+    width: 100%;
+    margin-top: -1em;
+    background: #5E889E; }
+    body.page-about-services .layout3 .titleBox {
+      font-family: Helvetica-Light;
+      color: #ACADAE; }
+    body.page-about-services .layout3 p {
+      font-family: Helvetica-Light;
+      font-weight: 100;
+      font-size: 1.4em;
+      line-height: 2.2em;
+      color: white; }
+    body.page-about-services .layout3 .serviceIcon {
+      float: left;
+      padding-top: 4em;
+      padding-left: 3em;
+      display: none;
+      width: 50%; }
+    body.page-about-services .layout3 .serviceContent {
+      margin-top: -0.1em;
+      border-radius: 1px;
+      font-family: Helvetica-Light;
+      font-size: 12px;
+      color: #F7F1F1;
+      line-height: 28px;
+      float: left;
+      padding: 1em;
+      width: 50%;
+      display: none;
+      overflow: auto;
+      margin-right: -0.2em; }
+  body.page-about-services .layout3.hidden {
+    opacity: 0; }
+  @media only screen and (max-width: 900px) {
+    body.page-about-services .service p {
+      font-family: Helvetica-Light;
+      font-weight: 100;
+      font-size: 1em;
+      line-height: 2.2em; }
+    body.page-about-services .service2 {
+      padding-left: 4em;
+      padding-right: 4em;
+      padding-top: 4em; }
+      body.page-about-services .service2 p {
+        font-family: Helvetica-Light;
+        font-weight: 100;
+        font-size: 1em;
+        line-height: 2.2em; }
+    body.page-about-services .titleBox {
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 0.5em;
+      font-family: Helvetica-Light;
+      font-size: 35px;
+      color: #696A6A;
+      line-height: 58px; } }
+  @media only screen and (max-width: 600px) {
+    body.page-about-services .layout {
+      min-height: 750px; }
+      body.page-about-services .layout .serviceContent {
+        width: 100%; }
+      body.page-about-services .layout .serviceIcon {
+        float: left;
+        width: 100%;
+        margin-left: -4em; }
+    body.page-about-services .layout2 {
+      min-height: 750px; }
+      body.page-about-services .layout2 .serviceContent {
+        width: 100%; }
+      body.page-about-services .layout2 .serviceIcon {
+        float: left;
+        width: 100%;
+        margin-left: -4em; }
+    body.page-about-services .layout3 {
+      min-height: 750px; }
+      body.page-about-services .layout3 .serviceContent {
+        width: 100%; }
+      body.page-about-services .layout3 .serviceIcon {
+        float: left;
+        width: 100%;
+        margin-left: -4em; } }
 
 body.single-post {
   -webkit-font-smoothing: antialiased;
