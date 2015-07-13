@@ -40,14 +40,15 @@
 
 				<div class="row">
 
-					<div class="span-50">
+					<div class="span-50 siteBrandingWrapper">
 						<div class="site-branding">
 							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 							<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 						</div>
 					</div>
 
-					<div class="span-50">
+					<div class="span-50 menuTriggerWrapper">
+						<a class="headerFormsLink" href="#">forms</a>
 						<a href="#" class="menuTrigger"><?php include("dist/images/menuicon.svg"); ?> Menu</a>
 					</div>
 

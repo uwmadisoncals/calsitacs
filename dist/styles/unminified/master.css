@@ -1590,6 +1590,8 @@ html body.page {
 
 body div.siteWrapper div.headerContainer div.cyan {
   display: none; }
+body div.siteWrapper div.headerContainer div#page header#masthead div.menuTriggerWrapper a.menuTrigger {
+  float: right; }
 
 .filtered.expanded {
   height: 200px; }
