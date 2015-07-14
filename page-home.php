@@ -17,6 +17,7 @@ $linkTo_itSecurity = get_permalink((get_page_by_path( 'it-security' )->ID));
 $linkTo_webHosting = get_permalink((get_page_by_path( 'website-hosting' )->ID));
 $linkTo_equipment = get_permalink((get_page_by_path( 'equipment' )->ID));
 $linkTo_instructionalIT = get_permalink((get_page_by_path( 'instructional-it' )->ID));
+$linkTo_itSupport = get_permalink((get_page_by_path( 'it-support' )->ID));
  ?>
 
 	<div id="primary" class="content-area">
@@ -34,8 +35,8 @@ $linkTo_instructionalIT = get_permalink((get_page_by_path( 'instructional-it' )-
 				</div>
 
 				<div class="span-25 service-item">
-					<div class="icon tooltip" id="Equipment-service"><a href="<?php echo $linkTo_equipment; ?>"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/notebook.svg" alt=" "></a></div>
-					<a href="<?php echo $linkTo_equipment; ?>"><h3>Equipment</h3></a>
+					<div class="icon tooltip" id="itSupport-service"><a href="<?php echo $linkTo_itSupport; ?>"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/notebook.svg" alt=" "></a></div>
+					<a href="<?php echo $linkTo_itSupport; ?>"><h3>IT Support</h3></a>
 				</div>
 
 				<div class="span-25 service-item">

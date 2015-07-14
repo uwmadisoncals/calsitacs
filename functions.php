@@ -178,6 +178,7 @@ $linkTo_itSecurity = get_permalink((get_page_by_path( 'it-security' )->ID));
 $linkTo_webHosting = get_permalink((get_page_by_path( 'website-hosting' )->ID));
 $linkTo_equipment = get_permalink((get_page_by_path( 'equipment' )->ID));
 $linkTo_instructionalIT = get_permalink((get_page_by_path( 'instructional-it' )->ID));
+$linkTo_itSupport = get_permalink((get_page_by_path( 'it-support' )->ID));
 
 wp_register_script( 'ajaxjs', get_template_directory_uri() . '/js/ajax.js', array('jquery')); //register the script for later use in enqueue_script
 
@@ -192,7 +193,8 @@ wp_localize_script( 'ajaxjs', 'MyAjax',
 		'linkTo_itSecurity'=>$linkTo_itSecurity,
 		'linkTo_webHosting'=>$linkTo_webHosting,
 		'linkTo_equipment'=>$linkTo_equipment,
-		'linkTo_instructionalIT'=>$linkTo_instructionalIT
+		'linkTo_instructionalIT'=>$linkTo_instructionalIT,
+		'linkTo_itSupport'=>$linkTo_itSupport
 		) 
 );
 
