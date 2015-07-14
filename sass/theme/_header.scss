@@ -18,13 +18,53 @@ body{
 						div.menuTriggerWrapper{
 							//background-color:pink;
 
-							a.headerFormsLink{
-								/*
+							a.headerFormsLink{ 
 								display:block;
-								font-size:1em;
+								box-sizing:border-box;
 								float:right;
-								position:static;
-								*/
+								padding:0.6em;
+								font-family: "Raleway", sans-serif;
+								font-size:1.2em;
+								@include fontAntialiasing;
+								color:rgba(255, 255, 255, 0.9);
+								text-decoration: none;
+							    border: 0;
+							    height:2.2em;
+
+
+							    font-weight: bold;
+  								text-transform: uppercase;
+  								letter-spacing: 1px;*/
+
+								//unvisited link
+							    &:link{ 
+							    	//font-weight:bold;
+							        border: 0;
+							    }
+
+							    //visited link
+							    &:visited{
+							    	border: 0;
+							    }
+
+							    //mouse over link
+							    &:hover{
+							    text-decoration: none;
+								//color:$calsGrayFooterText;
+							    cursor: pointer;
+							    border: 0;
+							    border: 1px solid rgba(255, 255, 255, 0.8);
+							    font-weight: bold;
+  								text-transform: uppercase;
+  								letter-spacing: 1px;
+
+							    }
+
+							    //selected link
+							    	&:active{
+							        border: 0;
+							    }
+
 							}//END a.headerFormsLink
 
 							a.menuTrigger{

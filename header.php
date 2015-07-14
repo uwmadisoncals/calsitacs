@@ -48,8 +48,9 @@
 					</div>
 
 					<div class="span-50 menuTriggerWrapper">
-						<a class="headerFormsLink" href="#">forms</a>
 						<a href="#" class="menuTrigger"><?php include("dist/images/menuicon.svg"); ?> Menu</a>
+						<a class="headerFormsLink" title="forms" href="#">forms</a>
+						
 					</div>
 
 			</header><!-- #masthead -->
