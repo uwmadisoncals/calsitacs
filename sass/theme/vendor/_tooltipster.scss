@@ -326,3 +326,22 @@ a.tooltip-readmore{
   }
 
 }//END .tooltip-readmore
+
+.calsitacs-gethelp-tooltip{
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  line-height: 38px;
+  padding: 8px 10px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin:0 8px 0 8px;
+  text-align:center;
+  z-index: 3;
+  .tooltipster-content{
+    z-index:3;
+    a.tooltip-readmore{
+      z-index:3;
+    }//END a.tooltip-readmore
+  }//END .tooltipster-content
+
+  }//END .calsitacs-gethelp-tooltip

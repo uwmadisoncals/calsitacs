@@ -13946,9 +13946,35 @@ return function (global, window, document, undefined) {
 	if($('body').is('.page-home')){
 
 		//toggle styles on get-help button hover
-		$(".headerFormsLink").mouseenter(function(){
+		/*$(".headerFormsLink").mouseenter(function(){
 			console.log("entered .headerFormsLink");
-		}); 
+			//$(".formsMenuWrapper").addClass("hovered");
+			//$(".formsMenuWrapper").velocity("transition.slideUpIn", {duration:1}).velocity("fadeIn", { duration: 1000 });
+			
+
+		});*/ 
+
+		$('.headerFormsLink').tooltipster({
+		content:$('<a class="tooltip-readmore" href="' + MyAjax.linkTo_webHosting + '">Read More</a>'),
+		theme:"calsitacs-gethelp-tooltip",
+		autoClose:false,
+		interactive:false,
+		position:'top'
+		});
+
+		/*
+		//toggle tooltip on hover over service icon title link : webhosting
+		$('.headerFormsLink')
+
+		.mouseenter(function(){
+
+			$('.headerFormsLink').tooltipster('show');
+
+		})
+		.mouseleave(function(){
+			$('.headerFormsLink').tooltipster('hide');
+		});
+*/
 
 
 	$('.tooltip#webhosting-service').tooltipster({
