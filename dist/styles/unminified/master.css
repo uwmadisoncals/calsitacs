@@ -1590,82 +1590,72 @@ html body.page {
 
 body div.siteWrapper div.headerContainer div.cyan {
   display: none; }
-body div.siteWrapper div.headerContainer div#page header#masthead div.menuTriggerWrapper {
+body div.siteWrapper div.headerContainer div#page header#masthead div.menuTriggerWrapper a.headerFormsLink {
+  display: block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  body div.siteWrapper div.headerContainer div#page header#masthead div.menuTriggerWrapper a.headerFormsLink {
-    /*display:block;
-								box-sizing:border-box;
-								float:right;
-								padding:0.6em;
-								font-family: "Raleway", sans-serif;
-								font-size:1.2em;
-								@include fontAntialiasing;
-								color:rgba(255, 255, 255, 0.9);
-								text-decoration: none;
-							    border: 0;
-							    height:2.2em;
-
-
-							    font-weight: bold;
-  								text-transform: uppercase;
-  								letter-spacing: 1px;*/
-    height: 2.2em;
+  box-sizing: border-box;
+  float: right;
+  padding: 0.6em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  text-decoration: none;
+  height: 2.2em;
+  border: 1px solid cyan;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+  body div.siteWrapper div.headerContainer div#page header#masthead div.menuTriggerWrapper a.headerFormsLink:link {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     float: right;
     padding: 0.6em;
-    color: rgba(255, 255, 255, 0.9);
+    font-family: "Raleway", sans-serif;
     font-size: 1.2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+    color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
-    font-family: "Raleway";
+    height: 2.2em;
+    border: 1px solid transparent; }
+  body div.siteWrapper div.headerContainer div#page header#masthead div.menuTriggerWrapper a.headerFormsLink:visited {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: right;
+    padding: 0.6em;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    height: 2.2em;
+    border: 1px solid transparent; }
+  body div.siteWrapper div.headerContainer div#page header#masthead div.menuTriggerWrapper a.headerFormsLink:hover {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    border: 1px solid rgba(255, 255, 255, 0.8);
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    border: 1px solid rgba(255, 255, 255, 0);
-    border-radius: 3px;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-    body div.siteWrapper div.headerContainer div#page header#masthead div.menuTriggerWrapper a.headerFormsLink::after {
-      display: block;
-      content: attr(title);
-      font-weight: bold;
-      height: 1px;
-      color: transparent;
-      overflow: hidden;
-      visibility: hidden;
-      margin-bottom: -1px; }
-    body div.siteWrapper div.headerContainer div#page header#masthead div.menuTriggerWrapper a.headerFormsLink:link {
-      border: 0; }
-    body div.siteWrapper div.headerContainer div#page header#masthead div.menuTriggerWrapper a.headerFormsLink:visited {
-      border: 0; }
-    body div.siteWrapper div.headerContainer div#page header#masthead div.menuTriggerWrapper a.headerFormsLink:hover {
-      /*
-							    text-decoration: none;
-								//color:$calsGrayFooterText;
-							    cursor: pointer;
-							    border: 0;
-							    border: 1px solid rgba(255, 255, 255, 0.8);
-							    font-weight: bold;
-  								text-transform: uppercase;
-  								letter-spacing: 1px;*/
-      float: right;
-      padding: 0.6em;
-      color: rgba(255, 255, 255, 0.8);
-      border: 1px solid rgba(255, 255, 255, 0.8);
-      font-size: 1.2em;
-      text-decoration: none;
-      font-family: "Raleway";
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      text-rendering: optimizeLegibility;
-      -webkit-font-smoothing: antialiased; }
-    body div.siteWrapper div.headerContainer div#page header#masthead div.menuTriggerWrapper a.headerFormsLink:active {
-      border: 0; }
-  body div.siteWrapper div.headerContainer div#page header#masthead div.menuTriggerWrapper a.menuTrigger {
-    float: right; }
+    letter-spacing: 1px; }
+  body div.siteWrapper div.headerContainer div#page header#masthead div.menuTriggerWrapper a.headerFormsLink:active {
+    border: 0; }
+body div.siteWrapper div.headerContainer div#page header#masthead div.menuTriggerWrapper a.menuTrigger {
+  float: right; }
 
 .filtered.expanded {
   height: 200px; }

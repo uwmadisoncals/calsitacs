@@ -13964,9 +13964,9 @@ return function (global, window, document, undefined) {
 		position:'top'
 	});
 
-	$('.tooltip#Equipment-service').tooltipster({
+	$('.tooltip#itSupport-service').tooltipster({
 
-		content:$('<span>CALS is running an installation of Axiope\'s eCAT v4.0.4 software. It\'s currently being tested and used in a production environment.<a class="tooltip-readmore" href="' + MyAjax.linkTo_equipment + '">Read More</a></span>'),
+		content:$('<span>CALS is running an installation of Axiope\'s eCAT v4.0.4 software. It\'s currently being tested and used in a production environment.<a class="tooltip-readmore" href="' + MyAjax.linkTo_itSupport + '">Read More</a></span>'),
 		theme:".calsitacs-frontpage-tooltip",
 		autoClose:true,
 		interactive:true,
@@ -14007,15 +14007,15 @@ return function (global, window, document, undefined) {
 	});
 		
 	//toggle tooltip on hover over service icon title link : Equipment-service
-	$('#Equipment-service + a')
+	$('#itSupport-service + a')
 
 	.mouseenter(function(){
 
-			$('.tooltip#Equipment-service').tooltipster('show');
+			$('.tooltip#itSupport-service').tooltipster('show');
 
 	})
 	.mouseleave(function(){
-			$('.tooltip#Equipment-service').tooltipster('hide');
+			$('.tooltip#itSupport-service').tooltipster('hide');
 	});
 
 	//toggle tooltip on hover over service icon title link : Instructional

@@ -17,6 +17,7 @@ body{
 
 						div.menuTriggerWrapper{
 							//background-color:pink;
+							///border: 1px solid transparent;
 
 							a.headerFormsLink{ 
 								display:block;
@@ -26,29 +27,50 @@ body{
 								font-family: "Raleway", sans-serif;
 								font-size:1.2em;
 								@include fontAntialiasing;
-								color:rgba(255, 255, 255, 0.9);
+								///color:rgba(255, 255, 255, 0.9);
 								text-decoration: none;
-							    border: 0;
 							    height:2.2em;
+							    border: 1px solid cyan;
 
 
 							    font-weight: bold;
   								text-transform: uppercase;
-  								letter-spacing: 1px;*/
+  								letter-spacing: 1px;
 
 								//unvisited link
-							    &:link{ 
-							    	//font-weight:bold;
-							        border: 0;
+							    &:link{
+							    display:block;
+								box-sizing:border-box;
+								float:right;
+								padding:0.6em;
+								font-family: "Raleway", sans-serif;
+								font-size:1.2em;
+								@include fontAntialiasing;
+								color:rgba(255, 255, 255, 0.9);
+								text-decoration: none;
+							    height:2.2em;
+							    border: 1px solid transparent;
 							    }
 
 							    //visited link
 							    &:visited{
-							    	border: 0;
+							    	display:block;
+									box-sizing:border-box;
+									float:right;
+									padding:0.6em;
+									font-family: "Raleway", sans-serif;
+									font-size:1.2em;
+									@include fontAntialiasing;
+									color:rgba(255, 255, 255, 0.9);
+									text-decoration: none;
+								    height:2.2em;
+								    border: 1px solid transparent;
 							    }
 
 							    //mouse over link
 							    &:hover{
+							    	@include fontAntialiasing;
+							    font-family: "Raleway", sans-serif;
 							    text-decoration: none;
 								//color:$calsGrayFooterText;
 							    cursor: pointer;
