@@ -1,9 +1,11 @@
 /* global jQuery:false */
 
 (function($) {
-
-	var peoplecount = 0;
 	 
+	 if($('body').is('.page-home')){
+
+	 var peoplecount = 0;
+
 	//Regular Expression Search Filter Auto Complete
 		$("#input-16").keyup(function () {
 			var filter = $(this).val(), count = 0;
@@ -159,7 +161,7 @@
 			}
 			
 			
-
+}//END if body is page-home
 
 })( jQuery );
  

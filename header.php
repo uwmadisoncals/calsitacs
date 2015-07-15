@@ -50,6 +50,8 @@
 					<div class="span-50 menuTriggerWrapper">
 						<a href="#" class="menuTrigger"><?php include("dist/images/menuicon.svg"); ?> Menu</a>
 						<a class="headerFormsLink" title="forms" href="#">Get Help</a>
+						<div class="cf"></div>
+						<div class="formsMenuWrapper"></div>
 						
 					</div>
 

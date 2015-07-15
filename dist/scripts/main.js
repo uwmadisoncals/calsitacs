@@ -13945,6 +13945,11 @@ return function (global, window, document, undefined) {
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	if($('body').is('.page-home')){
 
+		//toggle styles on get-help button hover
+		$(".headerFormsLink").mouseenter(function(){
+			console.log("entered .headerFormsLink");
+		}); 
+
 
 	$('.tooltip#webhosting-service').tooltipster({
 
@@ -14358,9 +14363,11 @@ return function (global, window, document, undefined) {
 /* global jQuery:false */
 
 (function($) {
-
-	var peoplecount = 0;
 	 
+	 if($('body').is('.page-home')){
+
+	 var peoplecount = 0;
+
 	//Regular Expression Search Filter Auto Complete
 		$("#input-16").keyup(function () {
 			var filter = $(this).val(), count = 0;
@@ -14516,7 +14523,7 @@ return function (global, window, document, undefined) {
 			}
 			
 			
-
+}//END if body is page-home
 
 })( jQuery );
  

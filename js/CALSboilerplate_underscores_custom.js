@@ -113,6 +113,11 @@
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	if($('body').is('.page-home')){
 
+		//toggle styles on get-help button hover
+		$(".headerFormsLink").mouseenter(function(){
+			console.log("entered .headerFormsLink");
+		}); 
+
 
 	$('.tooltip#webhosting-service').tooltipster({
 
