@@ -25,8 +25,37 @@
 
 (function($) {
 
+		/*$(".headerFormsLink").on("mouseout",function(){
+			//$('.headerFormsLink').tooltipster('hide');
+			console.log("chipper");
+		});*/
 
+		//Setup Get Help tooltip on all pages
+		$('.headerFormsLink').tooltipster({
+		content:$('<ul><li><a class="tooltip-readmore" href="' + MyAjax.linkTo_desktopSupport + '">Get Help with your Desktop</a></li><li><a class="tooltip-readmore" href="' + MyAjax.linkTo_webSupport + '">Get Help with your Website</a></li></ul>'),
+		theme:"calsitacs-gethelp-tooltip",
+		autoClose:true,
+		interactive:true,
+		position:'top',
+		arrow:false,
+		offsetY:-20,
+		trigger:'click',
+		});
 
+		
+		$('a.headerFormsLink').click(function(){
+
+			setTimeout(function(){ 
+
+			$('.tooltipster-content').mouseleave(function(event){
+				event.stopPropagation();
+				$('.headerFormsLink').tooltipster('hide');
+				//console.log("chipper");
+			});
+
+			}, 200);
+
+		});
 
 
 	//alert("test");
@@ -112,38 +141,6 @@
 	// Execute the following if current page is .page-home
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	if($('body').is('.page-home')){
-
-		//toggle styles on get-help button hover
-		/*$(".headerFormsLink").mouseenter(function(){
-			console.log("entered .headerFormsLink");
-			//$(".formsMenuWrapper").addClass("hovered");
-			//$(".formsMenuWrapper").velocity("transition.slideUpIn", {duration:1}).velocity("fadeIn", { duration: 1000 });
-			
-
-		});*/ 
-
-		$('.headerFormsLink').tooltipster({
-		content:$('<a class="tooltip-readmore" href="' + MyAjax.linkTo_webHosting + '">Read More</a>'),
-		theme:"calsitacs-gethelp-tooltip",
-		autoClose:false,
-		interactive:false,
-		position:'top'
-		});
-
-		/*
-		//toggle tooltip on hover over service icon title link : webhosting
-		$('.headerFormsLink')
-
-		.mouseenter(function(){
-
-			$('.headerFormsLink').tooltipster('show');
-
-		})
-		.mouseleave(function(){
-			$('.headerFormsLink').tooltipster('hide');
-		});
-*/
-
 
 	$('.tooltip#webhosting-service').tooltipster({
 

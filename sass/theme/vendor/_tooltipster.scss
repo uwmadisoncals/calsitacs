@@ -339,9 +339,12 @@ a.tooltip-readmore{
   z-index: 3;
   .tooltipster-content{
     z-index:3;
+    //border:1px solid white;
+
     a.tooltip-readmore{
-      z-index:3;
+      z-index:4;
     }//END a.tooltip-readmore
+
   }//END .tooltipster-content
 
   }//END .calsitacs-gethelp-tooltip

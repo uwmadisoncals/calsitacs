@@ -1354,7 +1354,7 @@ a.tooltip-readmore {
   .calsitacs-gethelp-tooltip .tooltipster-content {
     z-index: 3; }
     .calsitacs-gethelp-tooltip .tooltipster-content a.tooltip-readmore {
-      z-index: 3; }
+      z-index: 4; }
 
 html body.page {
   background-color: #f9f9f9; }
