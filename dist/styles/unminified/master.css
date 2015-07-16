@@ -370,9 +370,7 @@ a:hover, a:focus, a:active {
 
 @media screen and (max-width: 600px) {
   .menu-toggle, .main-navigation.toggled .nav-menu {
-    display: block; }
-  .main-navigation ul {
-    display: none; } }
+    display: block; } }
 
 .site-main .comment-navigation, .site-main .paging-navigation, .site-main .post-navigation {
   margin: 0 0 1.5em;
@@ -1603,63 +1601,26 @@ html body.page {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
-/*body{
+@media only screen and (min-width: 0px) and (max-width: 300px) {
+  div#content {
+    background-color: red; } }
 
-	div.siteWrapper{
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  div#content {
+    background-color: orange; } }
 
-		div.headerContainer{
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+  div#content {
+    background-color: yellow; } }
 
-		}//END .headerContainer
+@media only screen and (min-width: 960px) and (max-width: 1140px) {
+  div#content {
+    background-color: green; } }
 
-		div#content{
+@media only screen and (min-width: 1140px) {
+  div#content {
+    background-color: blue; } }
 
-		}//END #content
-
-		footer#colophon{
-
-		}//END footer#colophon
-
-	}//END .siteWrapper
-
-}//END body
-
-
-//width is >= 0px
-@media only screen and (min-width: 0px) and (max-width:300px){
-	div#content{
-	background-color:red;
-	}//END #content
-
-}
-
-//width is >= 300px && <= 600px
-@media only screen and (min-width: 300px) and (max-width:600px){
-	div#content{
-	background-color:orange;
-	}//END #content
-}
-
-//width is >= 600px && <= 960px
-@media only screen and (min-width: 600px) and (max-width:960px){
-	div#content{
-	background-color:yellow;
-	}//END #content
-}
-
-//width is >= 960px && <= 1140px
-@media only screen and (min-width: 960px) and (max-width:1140px){
-	div#content{
-	background-color:green;
-	}//END #content
-}
-
-//width is >= 1140px
-@media only screen and (min-width: 1140px){
-	div#content{
-	background-color:blue;
-	}//END #content
-}
-*/
 body div.siteWrapper div.headerContainer div.cyan {
   display: none; }
 body div.siteWrapper div.headerContainer div#page header#masthead div.menuTriggerWrapper {
