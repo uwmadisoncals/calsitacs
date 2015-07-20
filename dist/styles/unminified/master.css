@@ -2033,15 +2033,16 @@ body.page.page-template-default div.site-content {
           width: -moz-fit-content;
           width: fit-content; }
         body.page.page-template-default div.site-content div#primary #main article div.entry-content li {
-          font-size: 1.2rem;
-          line-height: 2em;
+          font-size: 1rem;
+          line-height: 1.2em;
+          margin-bottom: 6px;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
           text-rendering: optimizelegibility;
           word-spacing: 0.2rem; }
         body.page.page-template-default div.site-content div#primary #main article div.entry-content h1, body.page.page-template-default div.site-content div#primary #main article div.entry-content h2, body.page.page-template-default div.site-content div#primary #main article div.entry-content h3, body.page.page-template-default div.site-content div#primary #main article div.entry-content h4, body.page.page-template-default div.site-content div#primary #main article div.entry-content h5, body.page.page-template-default div.site-content div#primary #main article div.entry-content h6 {
-          margin-bottom: 18px;
-          margin-top: 18px;
+          margin-bottom: 12px;
+          margin-top: 26px;
           color: rgba(64, 64, 64, 0.7);
           text-rendering: optimizelegibility;
           font-weight: 400;
@@ -2050,9 +2051,10 @@ body.page.page-template-default div.site-content {
           body.page.page-template-default div.site-content div#primary #main article div.entry-content h1:nth-of-type(1), body.page.page-template-default div.site-content div#primary #main article div.entry-content h2:nth-of-type(1), body.page.page-template-default div.site-content div#primary #main article div.entry-content h3:nth-of-type(1), body.page.page-template-default div.site-content div#primary #main article div.entry-content h4:nth-of-type(1), body.page.page-template-default div.site-content div#primary #main article div.entry-content h5:nth-of-type(1), body.page.page-template-default div.site-content div#primary #main article div.entry-content h6:nth-of-type(1) {
             margin-top: 0; }
           body.page.page-template-default div.site-content div#primary #main article div.entry-content h1 a, body.page.page-template-default div.site-content div#primary #main article div.entry-content h2 a, body.page.page-template-default div.site-content div#primary #main article div.entry-content h3 a, body.page.page-template-default div.site-content div#primary #main article div.entry-content h4 a, body.page.page-template-default div.site-content div#primary #main article div.entry-content h5 a, body.page.page-template-default div.site-content div#primary #main article div.entry-content h6 a {
-            color: #656565;
+            color: #960001;
             text-decoration: none;
-            border: 0; }
+            border: 0;
+            font-size: 24px; }
             body.page.page-template-default div.site-content div#primary #main article div.entry-content h1 a:link, body.page.page-template-default div.site-content div#primary #main article div.entry-content h2 a:link, body.page.page-template-default div.site-content div#primary #main article div.entry-content h3 a:link, body.page.page-template-default div.site-content div#primary #main article div.entry-content h4 a:link, body.page.page-template-default div.site-content div#primary #main article div.entry-content h5 a:link, body.page.page-template-default div.site-content div#primary #main article div.entry-content h6 a:link {
               border: 0; }
             body.page.page-template-default div.site-content div#primary #main article div.entry-content h1 a:visited, body.page.page-template-default div.site-content div#primary #main article div.entry-content h2 a:visited, body.page.page-template-default div.site-content div#primary #main article div.entry-content h3 a:visited, body.page.page-template-default div.site-content div#primary #main article div.entry-content h4 a:visited, body.page.page-template-default div.site-content div#primary #main article div.entry-content h5 a:visited, body.page.page-template-default div.site-content div#primary #main article div.entry-content h6 a:visited {

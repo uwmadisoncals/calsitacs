@@ -96,8 +96,9 @@ body.page.page-template-default div.site-content{
 
 					li{
 
-					font-size:1.2rem;
-					line-height: 2em;
+					font-size:1rem;
+					line-height: 1.2em;
+					margin-bottom:6px;
 					-webkit-font-smoothing: antialiased;
 					-moz-osx-font-smoothing: grayscale;
 					text-rendering: optimizelegibility;
@@ -105,9 +106,10 @@ body.page.page-template-default div.site-content{
 					}
 
 					h1,h2,h3,h4,h5,h6{
-					margin-bottom:18px;
-					margin-top:18px;
+					margin-bottom:12px;
+					margin-top:26px;
 					color: $charcoalRGBA;
+
 					//-webkit-font-smoothing: antialiased;
 					//-moz-osx-font-smoothing: grayscale;
 					text-rendering: optimizelegibility;
@@ -118,9 +120,11 @@ body.page.page-template-default div.site-content{
 						margin-top:0;
 					}
 					a{
-						color:darken($calsGrayFooterText,20%);
+						//color:darken($calsGrayFooterText,20%);
+						color:$calsitacsRed;
 						text-decoration: none;
 					    border: 0;
+					    font-size:24px;
 
 						//unvisited link
 					    &:link{ 
