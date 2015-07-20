@@ -77,7 +77,50 @@ body div#comments{
             span.edit-link {
               position: absolute;
               top: 0;
-              right: -25%;
+              right: -40%;
+              a.comment-edit-link{
+                display:block;
+                text-align: center;
+                font-size:16px;
+                font-weight: normal;
+
+                color:darken($calsGrayFooterText,20%);
+                text-decoration: none;
+
+                //unvisited link
+                  &:link{ 
+                    //font-weight:bold;
+                  }
+
+                  //visited link
+                  &:visited{
+                    
+                  }
+
+                  //mouse over link
+                  &:hover{
+                  text-decoration: none;
+                  color:$calsGrayFooterText;
+                  cursor: pointer;
+
+                  }
+
+                  //selected link
+                    &:active{
+                  }
+
+
+                &:after{
+                  content:'\e80c';//font-awesome,icon-edit
+                  font-family:fontello;
+                  font-weight:normal;
+                  font-style:normal;
+                  margin:0;
+                  text-decoration: none;
+                  color:inherit;
+                  padding-left:6px;
+                }//END &:after
+              }//END .comment-edit-link
             }
           }
         }

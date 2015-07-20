@@ -2946,7 +2946,27 @@ body div#comments {
           body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.comment-metadata span.edit-link {
             position: absolute;
             top: 0;
-            right: -25%; }
+            right: -40%; }
+            body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.comment-metadata span.edit-link a.comment-edit-link {
+              display: block;
+              text-align: center;
+              font-size: 16px;
+              font-weight: normal;
+              color: #656565;
+              text-decoration: none; }
+              body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.comment-metadata span.edit-link a.comment-edit-link:hover {
+                text-decoration: none;
+                color: #989898;
+                cursor: pointer; }
+              body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.comment-metadata span.edit-link a.comment-edit-link:after {
+                content: '\e80c';
+                font-family: fontello;
+                font-weight: normal;
+                font-style: normal;
+                margin: 0;
+                text-decoration: none;
+                color: inherit;
+                padding-left: 6px; }
       body div#comments ol.comment-list li.comment article.comment-body div.comment-content {
         padding: 0.5em; }
       body div#comments ol.comment-list li.comment article.comment-body div.reply {
