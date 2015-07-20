@@ -1,0 +1,54 @@
+//partials (output css) for the theme-level of includes
+
+//button styles
+
+//#calsitacs_comment_form
+
+@mixin calsitacs_comment_button{
+	@include fontAntialiasing;
+	background-image:none;
+	background-attachment:scroll;
+	background-clip:border-box;
+	background-origin:padding-box;
+	background-position:0 0;
+	background-repeat:repeat;
+	background-size:auto auto;
+	text-decoration-color: currentColor;
+	text-decoration-line:none;
+	text-decoration-style:solid;
+	cursor:pointer;
+	vertical-align:baseline;
+	display: inline-block;
+  	margin: 0 10px 0 0;
+  	padding: 15px 45px;
+	font-size: 48px;
+	font-family: "Bitter",serif;
+	line-height: 1.8;
+	appearance: none;
+	box-shadow: none;
+	border-radius: 0;
+	color: #fff;
+	background-color:darken($lightGrayBorder, 20%);
+	//text-shadow: -1px 1px #417cb8;
+	border: none;
+
+	/* unvisited link */
+	&:link {
+	    
+	}
+
+	/* visited link */
+	&:visited {
+	   
+	}
+
+	/* mouse over link */
+	&:hover {
+	   
+	}
+
+	/* selected link */
+	&:active {
+	    
+	}
+}

@@ -2879,13 +2879,31 @@ body.single-post {
         border: 0; }
 
 body div#comments {
-  margin: 0 2em 1em 2em;
+  margin: 3em 0 1em 2em;
   padding: 1em;
-  background-color: #dee1e4;
+  background-color: #f9f9f9;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 8px; }
+  body div#comments a {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+    color: #656565;
+    text-decoration: underline;
+    border: 0; }
+    body div#comments a:link {
+      border: 0; }
+    body div#comments a:visited {
+      border: 0; }
+    body div#comments a:hover {
+      text-decoration: underline;
+      color: #989898;
+      cursor: pointer;
+      border: 0; }
+    body div#comments a:active {
+      border: 0; }
   body div#comments h2.comments-title {
     margin-bottom: 0.5em;
     line-height: 1.5em; }
@@ -2921,6 +2939,10 @@ body div#comments {
           position: absolute;
           top: 0;
           right: 10%; }
+          body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.comment-metadata a {
+            text-decoration: none;
+            color: #656565;
+            cursor: auto; }
           body div#comments ol.comment-list li.comment article.comment-body footer.comment-meta div.comment-metadata span.edit-link {
             position: absolute;
             top: 0;
@@ -2935,12 +2957,12 @@ body div#comments {
     body div#comments ol.comment-list li.comment ol.children {
       margin: 1em 0 2em 2em; }
   body div#comments div#respond {
-    background-color: #bcc2c8;
+    background-color: #f9f9f9;
     padding: 0.5em; }
     body div#comments div#respond h3#reply-title {
       margin: 0.25em 0; }
     body div#comments div#respond form.comment-form {
-      background-color: #bcc2c8;
+      background-color: #f9f9f9;
       padding: 0.5em; }
       body div#comments div#respond form.comment-form p.logged-in-as {
         margin: 0.25em 0; }
@@ -2953,6 +2975,43 @@ body div#comments {
         display: none; }
       body div#comments div#respond form.comment-form p.form-submit {
         margin: 1em 0 0 0; }
+        body div#comments div#respond form.comment-form p.form-submit input#calsitacs_comment_form {
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          text-rendering: optimizelegibility;
+          background-image: none;
+          background-attachment: scroll;
+          background-clip: border-box;
+          background-origin: padding-box;
+          background-position: 0 0;
+          background-repeat: repeat;
+          background-size: auto auto;
+          -moz-text-decoration-color: currentColor;
+          text-decoration-color: currentColor;
+          -moz-text-decoration-line: none;
+          text-decoration-line: none;
+          -webkit-text-decoration-style: solid;
+          -moz-text-decoration-style: solid;
+          text-decoration-style: solid;
+          cursor: pointer;
+          vertical-align: baseline;
+          display: inline-block;
+          margin: 0 10px 0 0;
+          padding: 15px 45px;
+          font-size: 48px;
+          font-family: "Bitter", serif;
+          line-height: 1.8;
+          appearance: none;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          border-radius: 0;
+          color: #fff;
+          background-color: #bcc2c8;
+          border: none;
+          /* unvisited link */
+          /* visited link */
+          /* mouse over link */
+          /* selected link */ }
 
 /*
 Description: SASS rules for search.php

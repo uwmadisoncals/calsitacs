@@ -1,9 +1,14 @@
 body div#comments{
-  margin: 0 2em 1em 2em;
+  margin: 3em 0 1em 2em;
   padding:1em;
-  background-color:darken($lightGrayBorder, 8%);
+  //background-color:darken($lightGrayBorder, 8%);
+  background-color:$offwhite;
   box-sizing: border-box;
   border-radius:8px;
+
+  a{
+    @include calsitacsDefaultLinks;
+  }
 
   h2.comments-title{
     margin-bottom:.5em;
@@ -64,6 +69,11 @@ body div#comments{
             position: absolute;
             top: 0;
             right: 10%;
+            a{
+                text-decoration: none;
+                color:darken($calsGrayFooterText,20%);
+                cursor:auto;
+            }
             span.edit-link {
               position: absolute;
               top: 0;
@@ -94,8 +104,8 @@ body div#comments{
   }
 
   div#respond{
-    //background-color: red;
-    background-color:darken($lightGrayBorder, 20%);
+    background-color:$offwhite;
+    //background-color:darken($lightGrayBorder, 20%);
     padding:.5em;
 
     h3#reply-title{
@@ -104,9 +114,8 @@ body div#comments{
     }
 
     form.comment-form{
-      //background-color:tomato;
-      //background-color:$uwTan;
-      background-color:darken($lightGrayBorder, 20%);
+      background-color:$offwhite;
+      //background-color:darken($lightGrayBorder, 20%);
       padding:.5em;
 
       p.logged-in-as{
@@ -131,6 +140,11 @@ body div#comments{
       p.form-submit{
         //background-color:burlywood;
         margin: 1em 0 0 0;
+        input#calsitacs_comment_form{
+
+          @include calsitacs_comment_button; // /SASS/theme/partials/_buttons.scss
+
+        }//END #calsitacs_comment_form
       }
     }
 
