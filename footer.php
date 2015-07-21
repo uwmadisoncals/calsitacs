@@ -15,44 +15,46 @@ $calsLocation = 'https://www.google.com/maps/place/College+of+Agricultural+and+L
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<!--<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'calsboilerplate_underscores' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'calsboilerplate_underscores' ), 'CALS Web Hosting' ); ?></a> -->
-		</div><!-- .site-info -->
 		<div class="darkband"></div>
-		<div class="contactInfo">
-		<!-- <img src="" alt="" class="logo"> -->
-		<div class="uwaddress">
-			<!--<h3>CALS IT ACS</h3>-->
-			<img class="calsitLogo" src="<?php echo get_template_directory_uri(); ?>/img/calsitlogo-grey-textonly.svg" />
-			<div class="cf"></div>
-			<a href="http://www.wisc.edu/">University of Wisconsin - Madison</a>
-			<address>
-				<span class="street">216 Agricultural Hall,</span>
-				<span>• 1450 Linden Dr.</span>
-				<span>• Madison, WI</span>
-				<span>• 53706</span>
-				<a href="<?php echo $calsLocation; ?>" target="_blank"><i class='locationIcon'></i></a>
-			</address>
-			<!-- <div class="phone">(608) 262-3193</div> -->
-			<div class="links">
-				<a href="<?php echo site_url(); ?>/contact">Contact Us</a>
-				<a href="<?php echo site_url(); ?>/accessibility">• Accessibility</a>
-				<a href="<?php echo site_url(); ?>/code-of-conduct">• Code-of-conduct</a>
+		<div class="footerWrapper">
+			<div class="site-info">
+				<!--<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'calsboilerplate_underscores' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'calsboilerplate_underscores' ), 'CALS Web Hosting' ); ?></a> -->
+			</div><!-- .site-info -->
+			
+			<div class="contactInfo">
+			<!-- <img src="" alt="" class="logo"> -->
+			<div class="uwaddress">
+				<!--<h3>CALS IT ACS</h3>-->
+				<img class="calsitLogo" src="<?php echo get_template_directory_uri(); ?>/img/calsitlogo-grey-textonly.svg" />
+				<div class="cf"></div>
+				<a href="http://www.wisc.edu/">University of Wisconsin - Madison</a>
+				<address>
+					<span class="street">216 Agricultural Hall,</span>
+					<span>• 1450 Linden Dr.</span>
+					<span>• Madison, WI</span>
+					<span>• 53706</span>
+					<a href="<?php echo $calsLocation; ?>" target="_blank"><i class='locationIcon'></i></a>
+				</address>
+				<!-- <div class="phone">(608) 262-3193</div> -->
+				<div class="links">
+					<a href="<?php echo site_url(); ?>/contact">Contact Us</a>
+					<a href="<?php echo site_url(); ?>/accessibility">• Accessibility</a>
+					<a href="<?php echo site_url(); ?>/code-of-conduct">• Code-of-conduct</a>
+				</div>
+				
 			</div>
-			
-		</div>
-			
-		</div>
-		<div class="support">
-			<!--<h3>Did you know?</h3>
-			<p class="mission-statement">CALS_IT_ presently hosts over 130 sites.</p>
-			<a href="https://www.myuwconnect.org/give" class="button blue 1234">Support CALS</a> -->
-			<!--<img src="<?php echo get_template_directory_uri(); ?>/dist/images/test.svg" />-->
-			
-		</div>
-		<div class="cf"></div>
-		<div class="copyright_container"><p class="copyright_link cf"><?php echo comicpress_copyright(); ?>. Board of Regents of the University of Wisconsin System</p></div>
-		
+				
+			</div>
+			<div class="support">
+				<!--<h3>Did you know?</h3>
+				<p class="mission-statement">CALS_IT_ presently hosts over 130 sites.</p>
+				<a href="https://www.myuwconnect.org/give" class="button blue 1234">Support CALS</a> -->
+				<!--<img src="<?php echo get_template_directory_uri(); ?>/dist/images/test.svg" />-->
+				
+			</div>
+			<div class="cf"></div>
+			<div class="copyright_container"><p class="copyright_link cf"><?php echo comicpress_copyright(); ?>. Board of Regents of the University of Wisconsin System</p></div>
+		</div><!--END .footerWrapper -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 </div><!-- .siteWrapper -->

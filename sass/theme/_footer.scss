@@ -6,168 +6,176 @@ html body footer#colophon.site-footer{
 	bottom: 0;
 	left:0;
 	@include fontAntialiasing;
-	div.darkband{
-		width:100%;
-		height:8px;
-		background-color:$uwTan;
-		//background: linear-gradient(to bottom, rgba(203,200,183,0) 0%,rgba(203,200,183,1) 100%);
-	}
-	div.contactInfo{
-		width:60%;
-		min-height: 100px;
-		float:left;
-		margin: 1.5% 0  0 1.5%;
-		line-height: 1.2em;
-		div.uwaddress{
 
-			img.calsitLogo{
-			width:50%;
-			margin-bottom:16px;
-			}
-			a{
-				margin-bottom:4px;
-				display:block;
-			}
-			address{
-				color:$calsGrayFooterText;
-				//font-size: .8em;
-				font-size:16px;
-				font-weight: normal;
-				text-decoration: none;
-				margin-bottom:4px;
+	div.darkband{
+	width:100%;
+	height:8px;
+	background-color:$uwTan;
+	//background: linear-gradient(to bottom, rgba(203,200,183,0) 0%,rgba(203,200,183,1) 100%);
+	}
+
+	div.footerWrapper{
+		max-width:1280px;
+		margin: 0 auto;
+
+		div.contactInfo{
+			width:60%;
+			min-height: 100px;
+			float:left;
+			margin: 1.5% 0  0 1.5%;
+			line-height: 1.2em;
+			div.uwaddress{
+
+				img.calsitLogo{
+				width:50%;
+				margin-bottom:16px;
+				margin-top:16px;
+				}
 				a{
-					display: inline;
-					margin:0;
-					&:hover{
-						text-decoration:none;
-						color:lighten($calsGrayFooterText,10%);
+					margin-bottom:4px;
+					display:block;
+				}
+				address{
+					color:$calsGrayFooterText;
+					//font-size: .8em;
+					font-size:16px;
+					font-weight: normal;
+					text-decoration: none;
+					margin-bottom:4px;
+					a{
+						display: inline;
+						margin:0;
+						&:hover{
+							text-decoration:none;
+							color:lighten($calsGrayFooterText,10%);
+						}
+
+						i.locationIcon{
+							&:before{
+							content:'\e80a';//.icon-location-inv
+							font-family:fontello;
+							font-weight:normal;
+							font-style:normal;
+							margin:0;
+							text-decoration: none;
+							color:inherit;
+							font-size:1.5em;
+							padding-left:6px;
+
+							}
+						}
 					}
 
-					i.locationIcon{
-						&:before{
-						content:'\e80a';//.icon-location-inv
+				}
+
+				a{
+					//color:$uwTan;
+					color:$calsGrayFooterText;
+					//font-size: .8em;
+					font-size:16px;
+					font-weight: normal;
+					text-decoration: none;
+
+					//unvisited link
+			        &:link{ 
+			       
+			        }
+
+			        //visited link
+			        &:visited{
+			        
+			        }
+
+			        //mouse over link
+			        &:hover{
+			        	text-decoration: none;
+			        	color:lighten($calsGrayFooterText,10%);
+			        }
+
+			        //selected link
+			        &:active{
+			        }
+
+				}//END a
+
+				div.phone{
+					margin-bottom:4px;
+					color:$calsGrayFooterText;
+					//font-size: .8em;
+					font-size:16px;
+					font-weight: normal;
+					text-decoration: none;
+						/*&:before{
+						content:'\e804';//.icon-phone
 						font-family:fontello;
 						font-weight:normal;
 						font-style:normal;
 						margin:0;
-						text-decoration: none;
 						color:inherit;
-						font-size:1.5em;
-						padding-left:6px;
-
-						}
+						padding-right:1.04em;
+						}*/
+				}
+				div.links{
+					a{
+						display:inline;
 					}
 				}
-
-			}
-
-			a{
-				//color:$uwTan;
-				color:$calsGrayFooterText;
-				//font-size: .8em;
-				font-size:16px;
-				font-weight: normal;
-				text-decoration: none;
-
-				//unvisited link
-		        &:link{ 
-		       
-		        }
-
-		        //visited link
-		        &:visited{
-		        
-		        }
-
-		        //mouse over link
-		        &:hover{
-		        	text-decoration: none;
-		        	color:lighten($calsGrayFooterText,10%);
-		        }
-
-		        //selected link
-		        &:active{
-		        }
-
-			}//END a
-
-			div.phone{
-				margin-bottom:4px;
-				color:$calsGrayFooterText;
-				//font-size: .8em;
-				font-size:16px;
-				font-weight: normal;
-				text-decoration: none;
-					/*&:before{
-					content:'\e804';//.icon-phone
-					font-family:fontello;
-					font-weight:normal;
-					font-style:normal;
-					margin:0;
-					color:inherit;
-					padding-right:1.04em;
-					}*/
-			}
-			div.links{
-				a{
-					display:inline;
+				h3{
+					color:white;
+					font-size: 1em;
+					font-weight: normal;
 				}
+			}
+		}
+		div.support{
+			width:35%;
+			float:right;
+			min-height: 100px;
+			margin-top:1.5%;
+			line-height: 2em;
+			a{
+				color:white;
+				font-size: 1em;
 			}
 			h3{
 				color:white;
 				font-size: 1em;
 				font-weight: normal;
 			}
+			a.button{
+				margin-top:1em;
+			}
+			p{
+				color:white;
+				font-size: .8em;	
+			}
 		}
-	}
-	div.support{
-		width:35%;
-		float:right;
-		min-height: 100px;
-		margin-top:1.5%;
-		line-height: 2em;
-		a{
-			color:white;
-			font-size: 1em;
-		}
-		h3{
-			color:white;
-			font-size: 1em;
-			font-weight: normal;
-		}
-		a.button{
-			margin-top:1em;
-		}
-		p{
-			color:white;
-			font-size: .8em;	
-		}
-	}
-	div.copyright_container{
-		@include fontAntialiasing;
-		display:block;
-		width:100%;
-		height:32px;
-		float:left;
-		margin-left:1.5%;
-		margin-top:2.5em;
-		color:$calsGrayFooterText;
-		//margin:0 auto;
-
-		p.copyright_link{
-			display:inline;
-			float:left;
-			font-weight: normal;
-			//font-size: .6em;
-			font-size:12px;
-			text-decoration: none;
-			line-height: 1.2em;
-			text-align: center;
+		div.copyright_container{
+			@include fontAntialiasing;
+			display:block;
 			width:100%;
-		}//END .copyright_link
+			height:32px;
+			float:left;
+			margin-left:1.5%;
+			margin-top:2.5em;
+			color:$calsGrayFooterText;
+			//margin:0 auto;
 
-	}//END .copyright_container
-}
+			p.copyright_link{
+				display:inline;
+				float:left;
+				font-weight: normal;
+				//font-size: .6em;
+				font-size:12px;
+				text-decoration: none;
+				line-height: 1.2em;
+				text-align: center;
+				width:100%;
+			}//END .copyright_link
+
+		}//END .copyright_container
+	}//END .footerWrapper
+}//END footer
 
 html body footer#colophon.site-footer.footerPositionFixed{
 	width:100%;
