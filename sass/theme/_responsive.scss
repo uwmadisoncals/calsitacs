@@ -1,4 +1,4 @@
-/*body{
+body{
 
 	div.siteWrapper{
 
@@ -27,31 +27,72 @@
 
 }
 
+
 //width is >= 300px && <= 600px
 @media only screen and (min-width: 300px) and (max-width:600px){
 	div#content{
-	background-color:orange;
+	//background-color:#FFBA8B;//orange
 	}//END #content
-}
+
+
+	body{
+
+		div.siteWrapper{
+
+			div.headerContainer{
+
+			}//END .headerContainer
+
+			div#content{
+
+			}//END #content
+
+			footer#colophon{
+				div.footerWrapper{
+					div.contactInfo{
+						div.uwaddress{
+							margin-top:20px;
+							img.calsitLogo{
+								display:none;
+							}//END img.calsitlogo
+							address{
+								span{
+									&:after{
+										content:'\A';
+										white-space:pre;
+									}//END &:after
+								}//END span
+							}//END address
+						}//END .uwaddress
+					}//END .contactInfo
+				}//END .footerWrapper
+
+			}//END footer#colophon
+
+		}//END .siteWrapper
+
+	}//END body
+
+}//END @media >=300 && <=600
 
 //width is >= 600px && <= 960px
 @media only screen and (min-width: 600px) and (max-width:960px){
 	div#content{
-	background-color:yellow;
+	//background-color:#FFFAD8;//yellow
 	}//END #content
 }
 
 //width is >= 960px && <= 1140px
 @media only screen and (min-width: 960px) and (max-width:1140px){
 	div#content{
-	background-color:green;
+	//background-color:#CFFFF3; //green
 	}//END #content
 }
 
 //width is >= 1140px
 @media only screen and (min-width: 1140px){
 	div#content{
-	background-color:blue;
+	//background-color:#E3FCFF;//blue
 	}//END #content
 }
-*/
+

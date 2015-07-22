@@ -30,9 +30,9 @@ $calsLocation = 'https://www.google.com/maps/place/College+of+Agricultural+and+L
 				<a href="http://www.wisc.edu/">University of Wisconsin - Madison</a>
 				<address>
 					<span class="street">216 Agricultural Hall,</span>
-					<span>• 1450 Linden Dr.</span>
-					<span>• Madison, WI</span>
-					<span>• 53706</span>
+					<span class="street-2">1450 Linden Dr.</span>
+					<span class="city">Madison, WI</span>
+					<span>53706</span>
 					<a href="<?php echo $calsLocation; ?>" target="_blank"><i class='locationIcon'></i></a>
 				</address>
 				<!-- <div class="phone">(608) 262-3193</div> -->
