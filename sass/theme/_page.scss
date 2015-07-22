@@ -82,7 +82,7 @@ body.page.page-template-default div.site-content{
 					
 					
 					p{
-					font-size:1.2rem;
+					font-size:18px;
 					line-height: 1.3em;
 					-webkit-font-smoothing: antialiased;
 					-moz-osx-font-smoothing: grayscale;
@@ -108,7 +108,10 @@ body.page.page-template-default div.site-content{
 					h1,h2,h3,h4,h5,h6{
 					margin-bottom:12px;
 					margin-top:26px;
-					color: $charcoalRGBA;
+					//color: $charcoalRGBA;
+					color:$calsitacsRed;
+					font-size:24px;
+
 
 					//-webkit-font-smoothing: antialiased;
 					//-moz-osx-font-smoothing: grayscale;
