@@ -2105,6 +2105,18 @@ body.page.page-template-default div.site-content {
 
 					}//END .post-edit-link*/ }
 
+span.dagger {
+  position: relative;
+  left: 4px;
+  top: -8px;
+  font-size: 0.7em; }
+
+span.Dagger {
+  position: relative;
+  left: 4px;
+  top: -8px;
+  font-size: 0.7em; }
+
 .breadcrumb {
   margin-top: 3em;
   font-size: 0.8em;
