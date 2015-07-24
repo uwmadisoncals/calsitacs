@@ -5,7 +5,7 @@
 	 if($('body').is('.page-home')){
 		 //alert('test');
 		 
-		 $(".filtered ul").load( "https://kb.wisc.edu/cals/ #kbleftul0" );
+		// $(".filtered ul").load( "https://kb.wisc.edu/cals/ #kbleftul0" );
 
 	 var peoplecount = 0;
 
