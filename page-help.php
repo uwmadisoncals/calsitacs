@@ -45,7 +45,7 @@ get_header(); ?>
 				<?php wp_reset_postdata(); ?>
 
 					<?php else : ?>
-						<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+						<p><?php// _e( 'Sorry, no posts matched your criteria.' ); ?>Submit a  <a class="supportRequestLink" href="http://www.cals.wisc.edu/acs/Support/RequestService/index.php">Desktop Support Help Request</a></p>
 				<?php endif; 
 
 		?>
@@ -76,7 +76,7 @@ get_header(); ?>
 				<?php wp_reset_postdata(); ?>
 
 					<?php else : ?>
-						<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+						<p><?php// _e( 'Sorry, no posts matched your criteria.' ); ?>Submit a <a class="CALSNETlink" href="https://apps.cals.wisc.edu/acs_services">CALSNET Services Form</a></p>
 				<?php endif; 
 		?>
 		</div>

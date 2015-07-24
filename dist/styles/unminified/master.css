@@ -2410,6 +2410,50 @@ ul.tabs li.current {
     height: 65px;
     width: 10em; } }
 
+a.supportRequestLink {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  color: #656565;
+  text-decoration: underline;
+  border: 0; }
+  a.supportRequestLink:link {
+    border: 0; }
+  a.supportRequestLink:visited {
+    border: 0; }
+  a.supportRequestLink:hover {
+    text-decoration: underline;
+    color: #989898;
+    cursor: pointer;
+    border: 0; }
+  a.supportRequestLink:active {
+    border: 0; }
+
+a.CALSNETlink {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  color: #656565;
+  text-decoration: underline;
+  border: 0; }
+  a.CALSNETlink:link {
+    border: 0; }
+  a.CALSNETlink:visited {
+    border: 0; }
+  a.CALSNETlink:hover {
+    text-decoration: underline;
+    color: #989898;
+    cursor: pointer;
+    border: 0; }
+  a.CALSNETlink:active {
+    border: 0; }
+
 /* Test css code for page-news */
 #news-section {
   margin-top: 2em; }

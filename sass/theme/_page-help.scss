@@ -123,8 +123,15 @@ ul.tabs {
     }
 }
 
+a.supportRequestLink{
+  @include fontAntialiasing;
+  @include calsitacsDefaultLinks;
+}
 
-
+a.CALSNETlink{
+  @include fontAntialiasing;
+  @include calsitacsDefaultLinks;
+}
 
 /* Test css code for page-news */
 
