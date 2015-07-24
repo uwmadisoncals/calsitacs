@@ -81,11 +81,37 @@ if ( is_front_page() ) { ?>
 			
 			<div class="filtered">
 				<ul>
-					<li><a href="#">Test</a></li>
-					<li><a href="#">cheese</a></li>
-					<li><a href="#">paper</a></li>
-					<li><a href="#">sandwhich</a></li>
-					<li><a href="#">chips</a></li>
+					<?php
+
+
+$args = array( 'posts_per_page' => 100 );
+
+$myposts = get_posts( $args );
+foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+	<li>
+		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+	</li>
+<?php endforeach;
+wp_reset_postdata();
+
+$pages = get_pages();
+  foreach ( $pages as $page ) {
+  	echo '<li>';
+  	echo '<a href="' . get_page_link( $page->ID ) . '">';
+	echo $page->post_title;
+	echo '</a>';
+	echo '</li>';
+
+  }
+
+
+  //cals_uw_directory_search($small=true, $add_class = 'search_results');
+
+  ?>
+					
+					<li><a href="https://kb.wisc.edu/cals/">CALS KB</a></li>
+					<div id="result"></div>
+					
 				</ul>
 			</div>
 				
