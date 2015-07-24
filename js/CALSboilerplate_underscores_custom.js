@@ -144,7 +144,7 @@
 
 	$('.tooltip#webhosting-service').tooltipster({
 
-		content:$('<span>CALS IT provides to the departments, centers, and other groups within the College<a class="tooltip-readmore" href="' + MyAjax.linkTo_webHosting + '">Read More</a> </span>'),
+		content:$('<span>We offer web hosting, WordPress development and support, and more.<a class="tooltip-readmore" href="' + MyAjax.linkTo_webHosting + '">Read More</a> </span>'),
 		theme:".calsitacs-frontpage-tooltip",
 		autoClose:true,
 		interactive:true,
@@ -162,7 +162,7 @@
 
 	$('.tooltip#itSupport-service').tooltipster({
 
-		content:$('<span>CALS is running an installation of Axiope\'s eCAT v4.0.4 software. It\'s currently being tested and used in a production environment.<a class="tooltip-readmore" href="' + MyAjax.linkTo_itSupport + '">Read More</a></span>'),
+		content:$('<span>We provide Desktop Support, Electronic Lab Notebooks, Research Software and more.<a class="tooltip-readmore" href="' + MyAjax.linkTo_itSupport + '">Read More</a></span>'),
 		theme:".calsitacs-frontpage-tooltip",
 		autoClose:true,
 		interactive:true,
@@ -171,7 +171,7 @@
 
 	$('.tooltip#InstructionalIT-service').tooltipster({
 
-		content:$('<span>CALS is running an installation of Axiope\'s eCAT v4.0.4 software. It\'s currently being tested and used in a production environment.<a class="tooltip-readmore" href="' + MyAjax.linkTo_instructionalIT + '">Read More</a></span>'),
+		content:$('<span>We provide assistance for improving computer classrooms, web conferencing spaces and more.<a class="tooltip-readmore" href="' + MyAjax.linkTo_instructionalIT + '">Read More</a></span>'),
 		theme:".calsitacs-frontpage-tooltip",
 		autoClose:true,
 		interactive:true,
