@@ -1776,6 +1776,8 @@ body.page-home div.siteWrapper div.headerContainer div.homePageFeature {
     font-size: 1.6em;
     margin-top: 3.5em;
     letter-spacing: 1px; }
+    body.page-home div.siteWrapper div.headerContainer div.homePageFeature h2.branding {
+      visibility: hidden; }
   body.page-home div.siteWrapper div.headerContainer div.homePageFeature h2.subHeading {
     position: relative;
     z-index: 5;
@@ -3565,3 +3567,17 @@ body.error404 {
               border: 0; }
             body.error404 div.siteWrapper div#content div#primary main#main section.error-404 div.page-content div.widget_tag_cloud div.tagcloud a:active {
               border: 0; }
+
+.accessibleHide {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
+
+.jlclear {
+  margin: 0;
+  padding: 0; }
