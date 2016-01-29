@@ -77,6 +77,20 @@ body.single-post{
         border:1px solid #f4f5f6;
         border-radius:3px;
 
+        ul{
+          list-style-type: disc;
+          list-style-position:inside;
+        }
+
+        ol{
+          list-style-type: decimal;
+          list-style-position: inside;
+        }
+
+        strong{
+          font-weight: 700;
+        }
+
         div.edit-post{
             position:absolute;
             width:30%;

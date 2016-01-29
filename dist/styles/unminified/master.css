@@ -1958,6 +1958,14 @@ body.page.page-template-default div.site-content {
         background-color: rgba(255, 255, 255, 0.9);
         border: 1px solid #f4f5f6;
         border-radius: 3px; }
+        body.page.page-template-default div.site-content div#primary #main article div.entry-content ul {
+          list-style-type: disc;
+          list-style-position: inside; }
+        body.page.page-template-default div.site-content div#primary #main article div.entry-content ol {
+          list-style-type: decimal;
+          list-style-position: inside; }
+        body.page.page-template-default div.site-content div#primary #main article div.entry-content strong {
+          font-weight: 700; }
         body.page.page-template-default div.site-content div#primary #main article div.entry-content div.edit-post {
           position: absolute;
           width: 30%;
@@ -2739,6 +2747,14 @@ body.single-post {
       background-color: rgba(255, 255, 255, 0.9);
       border: 1px solid #f4f5f6;
       border-radius: 3px; }
+      body.single-post div#primary article div.entry-content ul {
+        list-style-type: disc;
+        list-style-position: inside; }
+      body.single-post div#primary article div.entry-content ol {
+        list-style-type: decimal;
+        list-style-position: inside; }
+      body.single-post div#primary article div.entry-content strong {
+        font-weight: 700; }
       body.single-post div#primary article div.entry-content div.edit-post {
         position: absolute;
         width: 30%;
