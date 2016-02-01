@@ -1961,11 +1961,44 @@ body.page.page-template-default div.site-content {
         body.page.page-template-default div.site-content div#primary #main article div.entry-content ul {
           list-style-type: disc;
           list-style-position: inside; }
+          body.page.page-template-default div.site-content div#primary #main article div.entry-content ul ul {
+            list-style-type: circle; }
+            body.page.page-template-default div.site-content div#primary #main article div.entry-content ul ul ul {
+              list-style-type: square; }
         body.page.page-template-default div.site-content div#primary #main article div.entry-content ol {
           list-style-type: decimal;
           list-style-position: inside; }
         body.page.page-template-default div.site-content div#primary #main article div.entry-content strong {
           font-weight: 700; }
+        body.page.page-template-default div.site-content div#primary #main article div.entry-content em {
+          font-style: italic; }
+        body.page.page-template-default div.site-content div#primary #main article div.entry-content blockquote {
+          border-left: 10px solid #ccc;
+          font-family: Georgia, serif;
+          margin: 1.5em 10px;
+          padding: 0.5em 10px;
+          quotes: "\201C" "\201D" "\2018" "\2019";
+          background: #f9f9f9; }
+          body.page.page-template-default div.site-content div#primary #main article div.entry-content blockquote:before {
+            color: #ccc;
+            content: open-quote;
+            font-size: 4em;
+            line-height: 0.1em;
+            margin-right: 0.25em;
+            vertical-align: -0.4em; }
+          body.page.page-template-default div.site-content div#primary #main article div.entry-content blockquote p {
+            display: inline;
+            font-family: 'Raleway';
+            font-family: Cambria, Georgia, serif;
+            font-style: italic; }
+          body.page.page-template-default div.site-content div#primary #main article div.entry-content blockquote cite, body.page.page-template-default div.site-content div#primary #main article div.entry-content blockquote footer {
+            font-style: normal;
+            font-size: 0.9em;
+            display: block;
+            margin-left: 2.8em;
+            line-height: 2em; }
+            body.page.page-template-default div.site-content div#primary #main article div.entry-content blockquote cite:before, body.page.page-template-default div.site-content div#primary #main article div.entry-content blockquote footer:before {
+              content: "\2014 \2009"; }
         body.page.page-template-default div.site-content div#primary #main article div.entry-content div.edit-post {
           position: absolute;
           width: 30%;
@@ -2001,9 +2034,10 @@ body.page.page-template-default div.site-content {
           text-rendering: optimizelegibility;
           word-spacing: 0.2rem;
           margin-bottom: 1em;
-          width: -webkit-fit-content;
-          width: -moz-fit-content;
-          width: fit-content; }
+          /* 					width: -webkit-fit-content;
+  					width: -moz-fit-content;
+  					width: fit-content; */
+          width: 100%; }
         body.page.page-template-default div.site-content div#primary #main article div.entry-content li {
           font-size: 1rem;
           line-height: 1.2em;
@@ -2750,11 +2784,44 @@ body.single-post {
       body.single-post div#primary article div.entry-content ul {
         list-style-type: disc;
         list-style-position: inside; }
+        body.single-post div#primary article div.entry-content ul ul {
+          list-style-type: circle; }
+          body.single-post div#primary article div.entry-content ul ul ul {
+            list-style-type: square; }
       body.single-post div#primary article div.entry-content ol {
         list-style-type: decimal;
         list-style-position: inside; }
       body.single-post div#primary article div.entry-content strong {
         font-weight: 700; }
+      body.single-post div#primary article div.entry-content em {
+        font-style: italic; }
+      body.single-post div#primary article div.entry-content blockquote {
+        border-left: 10px solid #ccc;
+        font-family: Georgia, serif;
+        margin: 1.5em 10px;
+        padding: 0.5em 10px;
+        quotes: "\201C" "\201D" "\2018" "\2019";
+        background: #f9f9f9; }
+        body.single-post div#primary article div.entry-content blockquote:before {
+          color: #ccc;
+          content: open-quote;
+          font-size: 4em;
+          line-height: 0.1em;
+          margin-right: 0.25em;
+          vertical-align: -0.4em; }
+        body.single-post div#primary article div.entry-content blockquote p {
+          display: inline;
+          font-family: 'Raleway';
+          font-family: Cambria, Georgia, serif;
+          font-style: italic; }
+        body.single-post div#primary article div.entry-content blockquote cite, body.single-post div#primary article div.entry-content blockquote footer {
+          font-style: normal;
+          font-size: 0.9em;
+          display: block;
+          margin-left: 2.8em;
+          line-height: 2em; }
+          body.single-post div#primary article div.entry-content blockquote cite:before, body.single-post div#primary article div.entry-content blockquote footer:before {
+            content: "\2014 \2009"; }
       body.single-post div#primary article div.entry-content div.edit-post {
         position: absolute;
         width: 30%;
@@ -2788,9 +2855,10 @@ body.single-post {
         text-rendering: optimizelegibility;
         word-spacing: 0.2rem;
         margin-bottom: 1em;
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content; }
+        width: 100%;
+        /*           width: -webkit-fit-content;
+          width: -moz-fit-content;
+          width: fit-content; */ }
         body.single-post div#primary article div.entry-content p.firstLetter::first-letter {
           font-size: 1.5em;
           font-weight: 400;
