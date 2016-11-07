@@ -45,7 +45,7 @@ get_header(); ?>
 				<?php wp_reset_postdata(); ?>
 
 					<?php else : ?>
-						<p><?php// _e( 'Sorry, no posts matched your criteria.' ); ?>Submit a  <a class="supportRequestLink" href="http://www.cals.wisc.edu/acs/Support/RequestService/index.php">Desktop Support Help Request</a></p>
+						<p><?php// _e( 'Sorry, no posts matched your criteria.' ); ?>Submit a  <a class="supportRequestLink" href="https://websupport.cals.wisc.edu/">Desktop Support Help Request</a></p>
 				<?php endif; 
 
 		?>
